@@ -15,12 +15,14 @@ g=importlib.util.module_from_spec(spec);spec.loader.exec_module(g)
 
 class GeometryTests(unittest.TestCase):
     def setUp(self):
-        self.t=g.read_workbook(ROOT.parent/'VCU_inputs.xlsx')
+        self.t=g.read_workbook(ROOT/'tests/fixtures/VCU_inputs.xlsx')
 
     def test_baseline_closes_and_preserves_unknowns(self):
         m=g.solve(self.t)
         self.assertLess(m['closure_gap_mm'],.001)
-        self.assertEqual(len(m['sensors']),21)
+        self.assertEqual(len(m['sensors']),len(self.t['Sensors']))
+        self.assertNotIn('PTC-X', {s['Sensor ID'] for s in m['sensors']})
+        self.assertNotIn('PTC-X', {s['Sensor ID'] for s in self.t['Calibration']})
         self.assertTrue(all(s['sensor_xyz_mm'] is None for s in m['sensors']))
         self.assertFalse(m['model_ready'])
 
@@ -79,7 +81,7 @@ class GeometryTests(unittest.TestCase):
         # Modify a disposable XLSX value at the XML level to test the whole reader/export chain.
         with tempfile.TemporaryDirectory() as temp:
             fn=Path(temp)/'edited.xlsx'
-            with zipfile.ZipFile(ROOT.parent/'VCU_inputs.xlsx') as src,zipfile.ZipFile(fn,'w') as dst:
+            with zipfile.ZipFile(ROOT/'tests/fixtures/VCU_inputs.xlsx') as src,zipfile.ZipFile(fn,'w') as dst:
                 for item in src.infolist():
                     data=src.read(item.filename)
                     if item.filename=='xl/worksheets/sheet3.xml':

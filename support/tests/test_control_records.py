@@ -16,7 +16,7 @@ spec.loader.exec_module(g)
 
 class ControlRecordsTests(unittest.TestCase):
     def setUp(self):
-        self.tables = g.read_workbook(ROOT.parent/'VCU_inputs.xlsx')
+        self.tables = g.read_workbook(ROOT/'tests/fixtures/VCU_inputs.xlsx')
 
     def test_seed_evidence_is_complete_but_not_approved(self):
         g.validate_control(self.tables)
@@ -61,7 +61,7 @@ class ControlRecordsTests(unittest.TestCase):
         before = g.solve(self.tables)
         with tempfile.TemporaryDirectory() as temp:
             edited = Path(temp)/'submitted.xlsx'
-            with zipfile.ZipFile(ROOT.parent/'VCU_inputs.xlsx') as src, zipfile.ZipFile(edited,'w') as dst:
+            with zipfile.ZipFile(ROOT/'tests/fixtures/VCU_inputs.xlsx') as src, zipfile.ZipFile(edited,'w') as dst:
                 for item in src.infolist():
                     data = src.read(item.filename)
                     if item.filename == 'xl/worksheets/sheet9.xml':

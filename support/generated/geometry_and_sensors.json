@@ -1,7 +1,7 @@
 {
   "settings": {
     "Facility": "VCU",
-    "Configuration ID": "VCU-REV9-DRAFT-001",
+    "Configuration ID": "VCU-REV9-DRAFT-002",
     "Status": "Draft",
     "Geometry source": "VCU-R9-E01 (2026-10-08)",
     "Model support": "1-D and CFD / conjugate heat transfer",
@@ -13,9 +13,11 @@
     "Prepared by": null,
     "Checked by": null,
     "Editing sequence": "Start with Form pipe, Form sensor and Form material",
-    "Output refresh": "Package maintainer: see START_HERE.md",
+    "Output refresh": "Upload to GitHub; Actions builds the PDF. See support/docs/DATED_CHECKPOINTS.md.",
     "Scope": "Main-loop geometry and sensor-position prototype",
-    "Fluid scope": "VCU: Prop-30, air, water"
+    "Fluid scope": "VCU: Prop-30, air, water",
+    "Effective date": "2026-10-16",
+    "Change summary": "PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted."
   },
   "segments": {
     "upcomer": {
@@ -789,40 +791,6 @@
       "cfd_mapping": null
     },
     {
-      "Sensor ID": "PTC-X",
-      "Type": "PTC",
-      "Segment": "downcomer",
-      "From endpoint": "G",
-      "Distance mm": 50.799998652460545,
-      "Circumference deg": null,
-      "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
-      "Point basis": "Mount reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Conflicts with note: PTCX is a fluke; verify installed hardware.",
-      "station_from_start_mm": 1177.8685610942043,
-      "axis_xyz_mm": [
-        1442.8926209731067,
-        -212.1111581371173,
-        0.0
-      ],
-      "sensor_xyz_mm": null,
-      "zero_direction": [
-        1.0,
-        0.0,
-        0.0
-      ],
-      "positive_90_direction": [
-        -0.0,
-        0.0,
-        1.0
-      ],
-      "zero_reference": "Drawing +x (vertical pipe)",
-      "one_d_mapping": null,
-      "cfd_mapping": null
-    },
-    {
       "Sensor ID": "PTC-04",
       "Type": "PTC",
       "Segment": "heater",
@@ -1028,5 +996,5 @@
     "JTC-A/B, branch pipes, tank and coolant plumbing are retained as outstanding scope, not drawn.",
     "Model input draft only: missing bore, property selections, calibrations and approved boundary conditions."
   ],
-  "input_sha256": "a2ccee57e3746824de7e11d668f4b269eabfa5a15c16215beb01692c58587baa"
+  "input_sha256": "146dbd5127c4c68de94917b5e921df4836e4b7dd2c24c7e532c70d40f2c32322"
 }

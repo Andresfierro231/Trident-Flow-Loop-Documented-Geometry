@@ -7,7 +7,7 @@
     },
     {
       "Field": "Configuration ID",
-      "Value": "VCU-REV9-DRAFT-001",
+      "Value": "VCU-REV9-DRAFT-002",
       "Guidance": "Change after physical configuration changes."
     },
     {
@@ -67,7 +67,7 @@
     },
     {
       "Field": "Output refresh",
-      "Value": "Package maintainer: see START_HERE.md",
+      "Value": "Upload to GitHub; Actions builds the PDF. See support/docs/DATED_CHECKPOINTS.md.",
       "Guidance": "The experimental team can complete forms without running scripts."
     },
     {
@@ -79,6 +79,16 @@
       "Field": "Fluid scope",
       "Value": "VCU: Prop-30, air, water",
       "Guidance": "Assign the circuit and operating range for each experiment."
+    },
+    {
+      "Field": "Effective date",
+      "Value": "2026-10-16",
+      "Guidance": "Date this documentation configuration takes effect; ISO YYYY-MM-DD text."
+    },
+    {
+      "Field": "Change summary",
+      "Value": "PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted.",
+      "Guidance": "Describe changes since the preceding configuration and identify evidence or the request."
     }
   ],
   "Geometry": [
@@ -423,20 +433,6 @@
       "Notes": "Actual sensing location and channel mapping unverified."
     },
     {
-      "Sensor ID": "PTC-X",
-      "Type": "PTC",
-      "Segment": "downcomer",
-      "From endpoint": "G",
-      "Distance mm": 50.799998652460545,
-      "Circumference deg": null,
-      "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
-      "Point basis": "Mount reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Conflicts with note: PTCX is a fluke; verify installed hardware."
-    },
-    {
       "Sensor ID": "PTC-04",
       "Type": "PTC",
       "Segment": "heater",
@@ -706,20 +702,6 @@
     },
     {
       "Sensor ID": "LF-04",
-      "Model / serial": null,
-      "Last calibration": null,
-      "Certificate": null,
-      "Range": null,
-      "Correction": null,
-      "Uncertainty": null,
-      "Coverage factor": null,
-      "Acquisition / lag": null,
-      "1-D mapping": null,
-      "CFD mapping": null,
-      "Status": "Unknown"
-    },
-    {
-      "Sensor ID": "PTC-X",
       "Model / serial": null,
       "Last calibration": null,
       "Certificate": null,
@@ -1585,11 +1567,11 @@
       "Applicability": "VCU; every configuration and affected run",
       "Requirement source": "P0; DESIGN",
       "Requirement locator": "Campaign execution conventions; proposed revision log",
-      "Current evidence": "Unknown",
-      "Evidence type": "Unknown",
-      "Evidence source": "None supplied",
-      "Evidence locator": "Not available",
-      "Review state": "Needs information",
+      "Current evidence": "2026-10-16 / VCU-REV9-DRAFT-002: PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted.",
+      "Evidence type": "Reported",
+      "Evidence source": "USER",
+      "Evidence locator": "Repository owner request in the Codex session, 2026-10-16; Start effective date and change summary.",
+      "Review state": "Needs review",
       "Unresolved question": "Record effective date, author, changed item, reason, previous/new evidence, affected runs and whether recalibration or model revalidation is needed.",
       "Selected choice": null,
       "Decision scope / rationale": null,
@@ -1970,7 +1952,7 @@
       "Evidence source": "R9",
       "Evidence locator": "Sheet 5 inventory",
       "Review state": "Needs review",
-      "Unresolved question": "Confirm installed count and resolve PTC-X; no channel identity inferred.",
+      "Unresolved question": "Verify installed hardware count and channel identities for remaining sensors. PTC-X was removed from the active register at the repository owner's request on 2026-10-16; no physical removal is asserted.",
       "Selected choice": null,
       "Decision scope / rationale": null,
       "Reviewer / date": null,
@@ -3139,7 +3121,7 @@
       "Review partner": "Experimental + computational",
       "Field IDs": "C21-C33; M04",
       "Source locator": "P0 Method: instrumentation",
-      "VCU adaptation / caution": "Resolve PTC-X; do not copy CAD IDs or assume TC/Luna co-location.",
+      "VCU adaptation / caution": "PTC-X omitted from the active register by owner request, 2026-10-16. Verify remaining installed sensor identities; do not assume CAD IDs are DAQ channels or TC/Luna co-location.",
       "Completion check": "Evidence supplied and reviewed; open limitations recorded."
     },
     {
@@ -3355,9 +3337,9 @@
       "Issue ID": "I04",
       "Kind": "Conflicting sensor evidence",
       "Source and locator": "R9 sheets 5-6; SNOTE VCU Rev9 PTCX note",
-      "What conflicts / is missing": "CAD extraction includes PTC-X; note calls PTCX a fluke.",
+      "What conflicts / is missing": "Historical CAD extraction includes PTC-X; the supplied note calls PTCX a fluke. PTC-X was removed from the active sensor/calibration records by owner request, 2026-10-16. Installed hardware identity is unverified.",
       "Suggested owner": "Experimental instrumentation",
-      "Resolution needed": "Check installed hardware and source labeling; keep unresolved reference until dispositioned.",
+      "Resolution needed": "Retain the original CAD/source evidence. Confirm whether the excluded reference corresponds to installed hardware before using it in any run or model mapping.",
       "Affected fields": "C21; C23"
     },
     {

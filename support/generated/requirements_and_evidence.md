@@ -82,19 +82,19 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Campaign execution conventions; proposed revision log
 
 
-**Current evidence:** Unknown
+**Current evidence:** 2026-10-16 / VCU-REV9-DRAFT-002: PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** USER
 
 
-**Evidence locator:** Not available
+**Evidence locator:** Repository owner request in the Codex session, 2026-10-16; Start effective date and change summary.
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
 **Unresolved question:** Record effective date, author, changed item, reason, previous/new evidence, affected runs and whether recalibration or model revalidation is needed.
@@ -1104,7 +1104,7 @@ Evidence type and review state are independent. All proposed owners require team
 **Review state:** Needs review
 
 
-**Unresolved question:** Confirm installed count and resolve PTC-X; no channel identity inferred.
+**Unresolved question:** Verify installed hardware count and channel identities for remaining sensors. PTC-X was removed from the active register at the repository owner's request on 2026-10-16; no physical removal is asserted.
 
 
 **Selected choice:** Unknown
@@ -4194,7 +4194,7 @@ Evidence type and review state are independent. All proposed owners require team
 **Source locator:** P0 Method: instrumentation
 
 
-**VCU adaptation / caution:** Resolve PTC-X; do not copy CAD IDs or assume TC/Luna co-location.
+**VCU adaptation / caution:** PTC-X omitted from the active register by owner request, 2026-10-16. Verify remaining installed sensor identities; do not assume CAD IDs are DAQ channels or TC/Luna co-location.
 
 
 **Completion check:** Evidence supplied and reviewed; open limitations recorded.
@@ -4705,13 +4705,13 @@ Evidence type and review state are independent. All proposed owners require team
 **Source and locator:** R9 sheets 5-6; SNOTE VCU Rev9 PTCX note
 
 
-**What conflicts / is missing:** CAD extraction includes PTC-X; note calls PTCX a fluke.
+**What conflicts / is missing:** Historical CAD extraction includes PTC-X; the supplied note calls PTCX a fluke. PTC-X was removed from the active sensor/calibration records by owner request, 2026-10-16. Installed hardware identity is unverified.
 
 
 **Suggested owner:** Experimental instrumentation
 
 
-**Resolution needed:** Check installed hardware and source labeling; keep unresolved reference until dispositioned.
+**Resolution needed:** Retain the original CAD/source evidence. Confirm whether the excluded reference corresponds to installed hardware before using it in any run or model mapping.
 
 
 **Affected fields:** C21; C23

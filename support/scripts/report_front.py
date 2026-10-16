@@ -44,6 +44,7 @@ def build_front(tables, model, figs, esc, line, section, table):
         r'\refstepcounter{section}\label{overview}\addcontentsline{toc}{section}{1\quad Configuration overview}',
         r'{\color{muted}Flow-loop setup, instruments and supporting evidence}\par\vspace{8pt}',
         line('Configuration', settings['Configuration ID']),
+        line('Effective date', settings.get('Effective date')),
         line('Status', settings.get('Status')),
         r'\textbf{Basis:} Rev9 CAD candidate. The installed configuration has not yet been verified.\par',
         r'\vspace{8pt}']

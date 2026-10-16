@@ -4,6 +4,9 @@ For contributing evidence, use the [contributor guide](docs/START_HERE.md).
 For reviewing submissions, use the [maintainer guide](docs/MAINTAINER_START.md).
 Detailed conventions are in the [technical reference](docs/TECHNICAL_REFERENCE.md).
 
+Contributors can use [GitHub Actions and dated checkpoints](docs/DATED_CHECKPOINTS.md)
+without running commands. The commands below are the local maintainer alternative.
+
 Run these commands from the repository root:
 
 ```sh
@@ -22,8 +25,8 @@ booktabs, longtable and hyperref. The PDF is written to
 `support/output/pdf/VCU_control_package.pdf`.
 
 The root `main.tex` includes `support/generated/VCU_control_package.tex`.
-For Overleaf, select `main.tex` and upload/sync generated files after workbook
-changes; Overleaf does not run the workbook generator.
+For Overleaf, select `main.tex` and pull the generated files after GitHub Actions
+finishes. See the [Overleaf instructions](docs/DATED_CHECKPOINTS.md#use-overleaf-without-running-commands).
 
 Check `support/generated/validation.json` before using outputs. A failed
 generation marks previous outputs stale and stops the PDF build.
@@ -36,4 +39,6 @@ The record remains a draft pending evidence and review.
 | `generated/` | Generated LaTeX, drawings and data exports |
 | `scripts/`, `tests/` | Build tools and behavior checks |
 | `archive/` | Original drafts and preview |
+| `evidence/` | Photos, certificates and measurements for the working configuration |
+| `checkpoints/` | Permanent dated copies of the workbook, PDF, exports and evidence |
 | `output/`, `tmp/` | Local build files and layout previews; ignored by Git |

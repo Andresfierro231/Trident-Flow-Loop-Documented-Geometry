@@ -1,0 +1,85 @@
+name: Build document
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - VCU_inputs.xlsx
+      - main.tex
+      - support/scripts/**
+      - support/tests/**
+      - support/evidence/**
+      - .github/workflows/document.yml
+  workflow_dispatch:
+    inputs:
+      checkpoint:
+        description: Save a dated checkpoint from the workbook's Start fields
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: configuration-document-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  document:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require the main configuration branch
+        env:
+          CURRENT_REF: ${{ github.ref }}
+        run: test "$CURRENT_REF" = refs/heads/main
+      - name: Check workbook and generator
+        run: python3 -m unittest discover -s support/tests -v
+      - name: Install the PDF compiler
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends latexmk texlive-latex-recommended texlive-pictures lmodern
+      - name: Generate and compile
+        run: python3 support/scripts/build.py
+      - name: Save dated checkpoint
+        id: checkpoint
+        if: github.event_name == 'workflow_dispatch' && inputs.checkpoint
+        run: python3 support/scripts/checkpoint.py
+      - name: Downloadable PDF
+        id: pdf
+        uses: actions/upload-artifact@v4
+        with:
+          name: VCU-control-document
+          path: |
+            support/output/pdf/VCU_control_package.pdf
+            support/output/pdf/build_manifest.json
+          if-no-files-found: error
+          retention-days: 90
+      - name: Downloadable checkpoint
+        if: steps.checkpoint.outputs.path != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: VCU-dated-checkpoint
+          path: ${{ steps.checkpoint.outputs.path }}
+          if-no-files-found: error
+          retention-days: 90
+      - name: Save generated files for Overleaf and retain checkpoints
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add support/generated
+          if [ -d support/checkpoints ]; then git add support/checkpoints; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh configuration document and requested checkpoint'
+            git push origin HEAD:main
+          fi
+      - name: Show the download link
+        env:
+          PDF_URL: ${{ steps.pdf.outputs.artifact-url }}
+          CHECKPOINT_PATH: ${{ steps.checkpoint.outputs.path }}
+        run: |
+          echo "[Download the configuration PDF]($PDF_URL)" >> "$GITHUB_STEP_SUMMARY"
+          if [ -n "$CHECKPOINT_PATH" ]; then
+            echo "Dated checkpoint saved in: $CHECKPOINT_PATH" >> "$GITHUB_STEP_SUMMARY"
+          fi

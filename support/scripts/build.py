@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
 """Regenerate the workbook outputs and compile the repository PDF entry point."""
 from pathlib import Path
+import hashlib
+import json
 import shutil
 import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
+
+
+def sha256(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def main():
@@ -25,7 +31,13 @@ def main():
         raise RuntimeError('PDF compiler missing. Install TeX Live or MacTeX with '
                            'latexmk/pdflatex, or compile main.tex in Overleaf. '
                            'Workbook outputs have been generated successfully.')
-    print(f'PDF: {output / "VCU_control_package.pdf"}')
+    pdf = output / 'VCU_control_package.pdf'
+    # A checkpoint must verify that its PDF belongs to these exact inputs.
+    identity = {name: sha256(ROOT / name) for name in (
+        'VCU_inputs.xlsx', 'support/generated/VCU_control_package.tex',
+        'support/output/pdf/VCU_control_package.pdf')}
+    (output / 'build_manifest.json').write_text(json.dumps(identity, indent=2) + '\n')
+    print(f'PDF: {pdf}')
 
 
 if __name__ == '__main__':

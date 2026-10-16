@@ -90,7 +90,7 @@ The document summarizes selected calibration and geometry fields; the workbook a
 python3 -m unittest discover -s support/tests -v
 ```
 
-All 15 behavior checks pass. They cover loop closure, endpoint reversal, coordinate/angle transforms, unknown versus zero, geometry changes, impossible distances, duplicate IDs, VCU/ACU separation, full workbook regeneration, source references, complete review decisions, form responses reaching the document without changing baseline geometry, and configuration-first ordering with valid navigation targets. The seven original data sheets were also compared with the pre-edit workbook and remain unchanged.
+All 19 behavior checks pass. Behavior tests use the saved workbook under `support/tests/fixtures/` so contributors can change the working workbook without invalidating seed-specific checks; the build validates the actual working workbook separately. They cover loop closure, endpoint reversal, coordinate/angle transforms, unknown versus zero, geometry changes, impossible distances, duplicate IDs, VCU/ACU separation, full workbook regeneration, source references, complete review decisions, form responses reaching the document without changing baseline geometry, and configuration-first ordering with valid navigation targets. The seven original data sheets were also compared with the pre-edit workbook and remain unchanged.
 
 The repository PDF build compiles the root entry point with repeated passes for contents and cross-references. The reorganized document has been rendered for page-layout review. These checks do not verify installed hardware or simulation validity; there are no spreadsheet formulas or macros.
 

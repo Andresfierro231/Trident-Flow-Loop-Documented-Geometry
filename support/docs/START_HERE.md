@@ -4,6 +4,9 @@ You can contribute without editing LaTeX or running a program. Start with one it
 
 **Open [VCU_inputs.xlsx](../../VCU_inputs.xlsx).** Choose one of these tabs:
 
+For a new dated configuration, follow [Save a dated configuration](DATED_CHECKPOINTS.md).
+Upload the saved workbook to GitHub to build the PDF; contributors do not need to run commands.
+
 | I want to document… | Open this tab | Example already supplied |
 |---|---|---|
 | A pipe and its insulation | **Form pipe** | VCU upcomer, B–C |

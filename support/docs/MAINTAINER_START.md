@@ -31,7 +31,7 @@ The prototype has an overall **Draft** status and always reports modeling readin
 
 ## 4. Refresh the document and pictures
 
-Save and close the workbook’s editing session. Open a terminal in the repository folder and run:
+Save and close the workbook's editing session. Upload it to GitHub; **Actions → Build document** regenerates and compiles it. See [dated checkpoints](DATED_CHECKPOINTS.md) for the browser workflow and Overleaf synchronization. The local maintainer alternative is:
 
 ```sh
 python3 support/scripts/build.py
