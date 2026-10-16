@@ -1,6 +1,6 @@
 # VCU requirements and evidence register
 
-Generated from `inputs/VCU_inputs.xlsx`. Edit the workbook and regenerate. Draft; no release approval is implied.
+Generated from `VCU_inputs.xlsx`. Edit the workbook and regenerate. Draft; no release approval is implied.
 
 Evidence type and review state are independent. All proposed owners require team confirmation.
 

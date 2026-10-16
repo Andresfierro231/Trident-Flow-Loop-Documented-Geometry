@@ -5,14 +5,14 @@ import shutil
 import subprocess
 import sys
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def main():
     # The CLI also marks previous outputs stale when validation fails.
-    subprocess.run([sys.executable, str(ROOT / 'scripts/generate.py')],
+    subprocess.run([sys.executable, str(ROOT / 'support/scripts/generate.py')],
                    cwd=ROOT, check=True)
-    output = ROOT / 'output/pdf'
+    output = ROOT / 'support/output/pdf'
     output.mkdir(parents=True, exist_ok=True)
     common = ['-interaction=nonstopmode', '-halt-on-error', '-file-line-error',
               '-jobname=VCU_control_package', f'-output-directory={output}', 'main.tex']

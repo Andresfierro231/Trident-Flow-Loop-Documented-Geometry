@@ -1,6 +1,7 @@
 """Protect the distinction between submitted evidence and selected baseline inputs."""
 import importlib.util
 import json
+import re
 from pathlib import Path
 import tempfile
 import unittest
@@ -15,7 +16,7 @@ spec.loader.exec_module(g)
 
 class ControlRecordsTests(unittest.TestCase):
     def setUp(self):
-        self.tables = g.read_workbook(ROOT/'inputs/VCU_inputs.xlsx')
+        self.tables = g.read_workbook(ROOT.parent/'VCU_inputs.xlsx')
 
     def test_seed_evidence_is_complete_but_not_approved(self):
         g.validate_control(self.tables)
@@ -40,11 +41,27 @@ class ControlRecordsTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'not in Sources'):
             g.validate_control(self.tables)
 
+    def test_configuration_precedes_forms_and_all_navigation_targets_exist(self):
+        model = g.solve(self.tables)
+        report = g.report(self.tables, model, g.diagrams(model), 'test-workbook')
+        appendix = report.index(r'\appendix')
+        for target in ('overview', 'geometry-main', 'instruments-main',
+                       'thermal-main', 'materials-main', 'uncertainty-main'):
+            self.assertLess(report.index(r'\label{' + target + '}'), appendix)
+        for target in ('administration', 'form-pipe', 'form-sensor',
+                       'form-material', 'requirements', 'sources-detail'):
+            self.assertGreater(report.index(r'\label{' + target + '}'), appendix)
+        labels = re.findall(r'\\label\{([^}]+)\}', report)
+        self.assertEqual(len(labels), len(set(labels)))
+        targets = re.findall(r'\\hyperref\[([^]]+)\]', report)
+        self.assertTrue(targets)
+        self.assertTrue(set(targets).issubset(labels))
+
     def test_form_response_reaches_document_without_changing_geometry(self):
         before = g.solve(self.tables)
         with tempfile.TemporaryDirectory() as temp:
             edited = Path(temp)/'submitted.xlsx'
-            with zipfile.ZipFile(ROOT/'inputs/VCU_inputs.xlsx') as src, zipfile.ZipFile(edited,'w') as dst:
+            with zipfile.ZipFile(ROOT.parent/'VCU_inputs.xlsx') as src, zipfile.ZipFile(edited,'w') as dst:
                 for item in src.infolist():
                     data = src.read(item.filename)
                     if item.filename == 'xl/worksheets/sheet9.xml':

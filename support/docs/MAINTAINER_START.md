@@ -23,7 +23,7 @@ Approval does not change the evidence type. If multiple measurements or reports 
 
 ## 3. Update accepted baseline inputs deliberately
 
-Update Geometry, Sensors, Calibration, Thermal spans, Fluids, Materials or Model choices only after the relevant decision. Cite the supporting record in that table. Preserve the Rev9 source extraction and initial input snapshots under `reference/`.
+Update Geometry, Sensors, Calibration, Thermal spans, Fluids, Materials or Model choices only after the relevant decision. Cite the supporting record in that table. Preserve the Rev9 source extraction and initial input snapshots under `support/reference/`.
 
 Do not fill CAD nulls using nominal values without labeling the different basis. Do not map channels by similar names. Do not reuse ACU values or Rev8 dimensions. Keep active heater/cooling spans distinct from clamps and jacket envelopes.
 
@@ -34,21 +34,21 @@ The prototype has an overall **Draft** status and always reports modeling readin
 Save and close the workbook’s editing session. Open a terminal in the repository folder and run:
 
 ```sh
-python3 scripts/build.py
+python3 support/scripts/build.py
 ```
 
 The generator needs Python 3.9 or later, with no extra Python packages. It refreshes the existing LaTeX file, labeled figures, readable evidence register and input exports. Form responses appear in the document, while baseline diagrams use the separate baseline tables.
 
-The command validates and regenerates the inputs, then compiles `output/pdf/VCU_control_package.pdf`. It requires `latexmk` or `pdflatex`. To generate without compiling, use `python3 scripts/generate.py`. Open the root `main.tex` in your LaTeX editor or choose it as the Overleaf main document; it includes `generated/VCU_control_package.tex`. The standalone generated document includes its drawing code. The workbook itself has no macros and does not refresh figures when saved.
+The command validates and regenerates the inputs, then compiles `support/output/pdf/VCU_control_package.pdf`. It requires `latexmk` or `pdflatex`. To generate without compiling, use `python3 support/scripts/generate.py`. Open the root `main.tex` in your LaTeX editor or choose it as the Overleaf main document; it includes `support/generated/VCU_control_package.tex`. The standalone generated document includes its drawing code. The workbook itself has no macros and does not refresh figures when saved.
 
 ## 5. Check the result before sharing
 
-Read `generated/validation.json`. Confirm the build succeeded and the expected configuration and changes appear in the document and figures. The input hash ties the outputs to the saved workbook. A successful drawing build does not verify the hardware or validate a simulation.
+Read `support/generated/validation.json`. Confirm the build succeeded and the expected configuration and changes appear in the document and figures. The input hash ties the outputs to the saved workbook. A successful drawing build does not verify the hardware or validate a simulation.
 
 For generator changes, run the behavior checks:
 
 ```sh
-python3 -m unittest discover -s tests -v
+python3 -m unittest discover -s support/tests -v
 ```
 
 Then compile the existing LaTeX source and inspect the pages affected by the change. Record the reviewer and changed fields in the configuration change history before a release.

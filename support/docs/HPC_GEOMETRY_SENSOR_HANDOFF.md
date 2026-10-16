@@ -7,13 +7,13 @@ Prepared 2026-10-15. **Working draft, not an approved installed configuration.**
 The goal is to resolve what the **Rev9 CAD actually supports**, then give the experimental team a short list of measurements and records that CAD cannot supply. Support both the 1-D system model and CFD/conjugate heat-transfer model. Keep the same definitions in both.
 
 1. Transfer this repository folder to HPC. Keep its directory structure.
-2. Unzip `reference/VCU_Rev9_CAD_Model_Package.zip` into a separate working directory. The archive contains the supplied package unchanged, including its source STEP, tables, scripts and qualifications. Its Rev8 comparison files are historical context only.
+2. Unzip `support/reference/VCU_Rev9_CAD_Model_Package.zip` into a separate working directory. The archive contains the supplied package unchanged, including its source STEP, tables, scripts and qualifications. Its Rev8 comparison files are historical context only.
 3. Give Codex this document and the prompt below. Tell it where the extracted Rev9 package and template folder are located.
 4. Ask it to return a CAD findings report and the remaining experimental questions. Review those before changing the workbook or baseline.
 
 **You do not need to ask the experimental team to recover coordinates already available from CAD. You do need them to identify the installed hardware, sensing locations and acquisition channels.**
 
-For the complete requirements register, use `generated/requirements_and_evidence.md`. The friendly intake forms are in `inputs/VCU_inputs.xlsx`; the generated LaTeX is `generated/VCU_control_package.tex`.
+For the complete requirements register, use `support/generated/requirements_and_evidence.md`. The friendly intake forms are in `VCU_inputs.xlsx`; the generated LaTeX is `support/generated/VCU_control_package.tex`.
 
 ## Prompt to give Codex on HPC
 
@@ -68,10 +68,10 @@ The source describes native millimetres, SolidWorks 2026/AP214, export 2026-10-0
 | `data/VCU_Rev9_Sensor_Stations.csv`; `VCU_Rev9_Contact_Solutions.csv`; `VCU_Rev9_Probe_Shafts.csv` | Reference stations, all returned contacts and seven external sheaths | These do not define junctions or acquisition identities |
 | `data/VCU_Rev9_Heater_Clamps.csv`; `VCU_Rev9_Branch_Connections.csv` | Mechanical clamps and extended-axis crossings | Neither active heating boundaries nor physical tee planes are established |
 | `data/geometry.json`; `data/reconstructed_bends.json`; `raw/` | Derived geometry and the supporting extraction | Reconstructed surfaces need qualification |
-| `scripts/`; `scripts/environment_versions.json` | Reproduction and independent checks | Revision-specific paths/face selections; inspect before executing |
+| `support/scripts/`; `support/scripts/environment_versions.json` | Reproduction and independent checks | Revision-specific paths/face selections; inspect before executing |
 | `VCU_Rev9_CAD_Engineering_Drawings.pdf`, sheets 1-8 | Human review of the same package | Drawings are not an installed survey |
 
-The template's `reference/rev9_extraction.json` is a convenient subset, not a substitute for all the source data above. `reference/source_manifest.json` locates the other supplied notes and Phase 0-4 drafts and records their hashes. `reference/REV9_ARCHIVE.md` documents the portable archive.
+The template's `support/reference/rev9_extraction.json` is a convenient subset, not a substitute for all the source data above. `support/reference/source_manifest.json` locates the other supplied notes and Phase 0-4 drafts and records their hashes. `support/reference/REV9_ARCHIVE.md` documents the portable archive.
 
 Do not use the supplied Rev8-based VCU overview PNGs as dimensional evidence. Do not use ACU drawings, ANEC labels or ACU channel names as VCU evidence. Rev8 comparison files in the unmodified Rev9 archive must remain comparison-only.
 
@@ -97,7 +97,7 @@ These are reference checks, not newly measured values. The full precision remain
 
 The jacket annulus hydraulic diameter 44.5262 mm assumes a concentric, unobstructed annulus. It is **not** the main-pipe hydraulic diameter. A closed endpoint traversal does not prove a watertight fluid domain or an exact physical flow path.
 
-Reported notes mention nominal 1.049-inch main ID, 316L Schedule 40 pipe, about 2-inch fiberglass insulation and 1/4-inch heater insulation. Keep these as **reported information requiring confirmation**, separate from CAD and installed measurements. Do not use them to fill missing CAD bore or insulation fields automatically. See source IDs MAT and HEAT in `reference/source_manifest.json`.
+Reported notes mention nominal 1.049-inch main ID, 316L Schedule 40 pipe, about 2-inch fiberglass insulation and 1/4-inch heater insulation. Keep these as **reported information requiring confirmation**, separate from CAD and installed measurements. Do not use them to fill missing CAD bore or insulation fields automatically. See source IDs MAT and HEAT in `support/reference/source_manifest.json`.
 
 ## Coordinate and angle rules
 

@@ -1,28 +1,315 @@
 \documentclass[11pt]{article}
-\usepackage[letterpaper,margin=0.7in]{geometry}
+\usepackage[letterpaper,margin=0.75in,headheight=15pt]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern,booktabs,longtable,array,graphicx,tikz,xcolor,hyperref}
+\usepackage{lmodern,booktabs,longtable,array,graphicx,tikz,xcolor,hyperref,fancyhdr}
 \usetikzlibrary{arrows.meta}
 \definecolor{navy}{HTML}{16374A}
-\definecolor{pale}{HTML}{EEF3F6}
-\definecolor{amber}{HTML}{FFF4D6}
+\definecolor{pale}{HTML}{F2F5F6}
+\definecolor{amber}{HTML}{F2F5F6}
 \definecolor{muted}{HTML}{576976}
-\hypersetup{colorlinks=true,linkcolor=navy,urlcolor=navy,pdftitle={VCU Configuration and Modeling Control}}
+\hypersetup{colorlinks=true,linkcolor=navy,urlcolor=navy,pdftitle={VCU Configuration Record},bookmarksopen=false}
 \renewcommand{\familydefault}{\sfdefault}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{5pt}
+\setlength{\parskip}{6pt}
 \setlength{\emergencystretch}{3em}
 \setcounter{tocdepth}{1}
 \raggedbottom
-\newcommand{\notebox}[1]{\par\noindent\colorbox{amber}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{#1}}\par}
-\begin{document}
-{\color{navy}\LARGE\bfseries VCU Configuration and\\[4pt] Modeling Control}\par
-{\large Start here, evidence register and three sample forms}\par
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\footnotesize\color{muted}TRIDENT / VCU}
+\fancyhead[R]{\footnotesize\hyperref[overview]{Overview}\quad\hyperref[appendices]{Appendices}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\newcommand{\notebox}[1]{\par\noindent\colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{#1}}\par}
 
+\fancyfoot[L]{\footnotesize\color{muted}VCU-REV9-DRAFT-001 / Draft}
+\fancyfoot[R]{\footnotesize\thepage}
+\begin{document}
+{\color{navy}\LARGE\bfseries VCU configuration record}\par
+\refstepcounter{section}\label{overview}\addcontentsline{toc}{section}{1\quad Configuration overview}
+{\color{muted}Flow-loop setup, instruments and supporting evidence}\par\vspace{8pt}
 \textbf{Configuration:} VCU-REV9-DRAFT-001\par
-\notebox{\textbf{Draft for team completion.} The Rev9 geometry is a CAD candidate. Installed measurements and release approvals still need evidence.}
+\textbf{Status:} Draft\par
+\textbf{Basis:} Rev9 CAD candidate. The installed configuration has not yet been verified.\par
+\vspace{8pt}
+\begin{center}\begin{tikzpicture}[line cap=round,line join=round]
+\draw[navy,line width=1.5pt] (0.0000,1.1681) -- (0.0000,5.7873);
+\draw[navy,line width=1.5pt,dashed] (0.0000,5.7873) -- (0.2571,6.0000);
+\draw[navy,line width=1.5pt] (0.2571,6.0000) -- (5.2908,5.0398);
+\draw[navy,line width=1.5pt,dashed] (5.2908,5.0398) -- (5.4668,4.8271);
+\draw[navy,line width=1.5pt] (5.4668,4.8271) -- (5.4668,0.1720);
+\draw[navy,line width=1.5pt,dashed] (5.4668,0.1720) -- (5.1872,0.0000);
+\draw[navy,line width=1.5pt] (5.1872,0.0000) -- (0.1760,0.9554);
+\draw[navy,line width=1.5pt,dashed] (0.1760,0.9554) -- (0.0000,1.1681);
+\node[font=\small,text=muted,left,inner sep=8pt] at (0.0000,3.4777) {Upcomer};
+\node[font=\small,text=muted,above,inner sep=8pt] at (2.7740,5.5199) {Cooler};
+\node[font=\small,text=muted,right,inner sep=8pt] at (5.4668,2.4995) {Downcomer};
+\node[font=\small,text=muted,below,inner sep=8pt] at (2.6816,0.4777) {Heater};
+\node[text=muted,font=\small] at (3,3) {Main loop};
+\end{tikzpicture}\par{\footnotesize\color{muted}CAD overview. Dashed corners are schematic.}\end{center}
+\vspace{4pt}{\large\bfseries Read the configuration}\par
+\hyperref[geometry-main]{Geometry}\quad / \quad\hyperref[instruments-main]{Instruments}\quad / \quad\hyperref[thermal-main]{Heating and cooling}\par
+\hyperref[materials-main]{Materials and fluids}\quad / \quad\hyperref[uncertainty-main]{Uncertainty and limitations}\par
+\vspace{8pt}\textbf{Adding information?} Open \texttt{VCU\_inputs.xlsx} and start with one Form tab. \hyperref[administration]{Contributor instructions} and \hyperref[appendices]{supporting records} are in the appendices.\par
+{\footnotesize\color{muted}Unknown values remain open. This draft records available evidence; it is not a released facility description.}\par
+\clearpage\section{Geometry}\label{geometry-main}
+Axis-end dimensions and the recorded jacket envelope. Bore and insulation measurements remain open.
+\begin{center}\resizebox{0.93\textwidth}{!}{%
+\begin{tikzpicture}[x=0.01cm,y=-0.01cm]
+\path[use as bounding box] (0,0) rectangle (1400,1500);
+\definecolor{c263D4B}{HTML}{263D4B}
+\definecolor{c576976}{HTML}{576976}
+\definecolor{c5D9DC3}{HTML}{5D9DC3}
+\definecolor{cA3B0B9}{HTML}{A3B0B9}
+\definecolor{cCFD9DF}{HTML}{CFD9DF}
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{8.40}{10.20}\selectfont\bfseries] at (70.000,65.000) {VCU / GEOMETRY AND THERMAL COVERAGE};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-001 | generated from the editable workbook};
+\draw[draw=cCFD9DF,line width=0.520pt] (70.000,125.000) -- (1330.000,125.000);
+\draw[draw=c263D4B,line width=1.300pt] (370.000,973.358) -- (370.000,415.678);
+\draw[draw=c263D4B,line width=1.300pt,dashed] (370.000,415.678) -- (401.040,390.000);
+\draw[draw=c263D4B,line width=1.300pt] (401.040,390.000) -- (1008.757,505.928);
+\draw[draw=c263D4B,line width=1.300pt,dashed] (1008.757,505.928) -- (1030.000,531.607);
+\draw[draw=c263D4B,line width=1.300pt] (1030.000,531.607) -- (1030.000,1093.617);
+\draw[draw=c263D4B,line width=1.300pt,dashed] (1030.000,1093.617) -- (996.253,1114.378);
+\draw[draw=c263D4B,line width=1.300pt] (996.253,1114.378) -- (391.243,999.036);
+\draw[draw=c263D4B,line width=1.300pt,dashed] (391.243,999.036) -- (370.000,973.358);
+\draw[draw=c5D9DC3,line width=3.640pt] (458.355,400.933) -- (921.276,489.240);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (355.000,959.358) {B};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (355.000,401.678) {C};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (386.040,376.000) {D};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (993.757,491.928) {E};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1015.000,517.607) {F};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1015.000,1079.617) {G};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (981.253,1100.378) {H};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (376.243,985.036) {A};
+\node[anchor=base,inner sep=0pt,text=cA3B0B9,font=\sffamily\fontsize{15.12}{18.36}\selectfont] at (700.000,770.000) {VCU};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.16}{7.48}\selectfont\bfseries] at (80.000,700.000) {UPCOMER};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont] at (80.000,730.000) {1219.200 mm};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (80.000,757.000) {phi = 0.000 deg};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.16}{7.48}\selectfont\bfseries] at (700.000,265.000) {COOLER};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont] at (700.000,295.000) {1352.550 mm};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (700.000,322.000) {phi = 100.800 deg};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.16}{7.48}\selectfont\bfseries] at (1100.000,800.000) {DOWNCOMER};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont] at (1100.000,830.000) {1228.669 mm};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (1100.000,857.000) {phi = 180.000 deg};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.16}{7.48}\selectfont\bfseries] at (700.000,1250.000) {HEATER};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont] at (700.000,1280.000) {1346.496 mm};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (700.000,1307.000) {phi = 280.794 deg};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.04}{6.12}\selectfont] at (70.000,180.000) {Blue: jacket envelope. Red appears only for entered active heater spans.};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,1370.000) {Lengths are axis-end spans. Heater span is projected; it is not an exact joined path.};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,1400.000) {Dashed corners are schematic endpoint connectors, not hydraulic arc geometry.};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (70.000,1445.000) {VCU Rev9 CAD candidate | installed geometry and sensing locations require confirmation};
+\end{tikzpicture}
+}\end{center}
+{\small Details: \hyperref[geometry-detail]{coordinate conventions and CAD qualifications}; \hyperref[baseline-tables]{dimension tables}.}\par
+\clearpage\section{Instruments}\label{instruments-main}
+Geometric sensor references on the main loop. Drawing IDs are not confirmed DAQ channel names.
+\begin{center}\resizebox{0.93\textwidth}{!}{%
+\begin{tikzpicture}[x=0.01cm,y=-0.01cm]
+\path[use as bounding box] (0,0) rectangle (1400,1500);
+\definecolor{c263D4B}{HTML}{263D4B}
+\definecolor{c286AA6}{HTML}{286AA6}
+\definecolor{c388452}{HTML}{388452}
+\definecolor{c576976}{HTML}{576976}
+\definecolor{c5D9DC3}{HTML}{5D9DC3}
+\definecolor{c8B9AA5}{HTML}{8B9AA5}
+\definecolor{cA3B0B9}{HTML}{A3B0B9}
+\definecolor{cCFD9DF}{HTML}{CFD9DF}
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{8.40}{10.20}\selectfont\bfseries] at (70.000,65.000) {VCU / SENSOR LOCATIONS};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-001 | generated from the editable workbook};
+\draw[draw=cCFD9DF,line width=0.520pt] (70.000,125.000) -- (1330.000,125.000);
+\draw[draw=c263D4B,line width=1.300pt] (370.000,973.358) -- (370.000,415.678);
+\draw[draw=c263D4B,line width=1.300pt,dashed] (370.000,415.678) -- (401.040,390.000);
+\draw[draw=c263D4B,line width=1.300pt] (401.040,390.000) -- (1008.757,505.928);
+\draw[draw=c263D4B,line width=1.300pt,dashed] (1008.757,505.928) -- (1030.000,531.607);
+\draw[draw=c263D4B,line width=1.300pt] (1030.000,531.607) -- (1030.000,1093.617);
+\draw[draw=c263D4B,line width=1.300pt,dashed] (1030.000,1093.617) -- (996.253,1114.378);
+\draw[draw=c263D4B,line width=1.300pt] (996.253,1114.378) -- (391.243,999.036);
+\draw[draw=c263D4B,line width=1.300pt,dashed] (391.243,999.036) -- (370.000,973.358);
+\draw[draw=c5D9DC3,line width=3.640pt] (458.355,400.933) -- (921.276,489.240);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (355.000,959.358) {B};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (355.000,401.678) {C};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (386.040,376.000) {D};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (993.757,491.928) {E};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1015.000,517.607) {F};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1015.000,1079.617) {G};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (981.253,1100.378) {H};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (376.243,985.036) {A};
+\node[anchor=base,inner sep=0pt,text=cA3B0B9,font=\sffamily\fontsize{15.12}{18.36}\selectfont] at (700.000,770.000) {VCU};
+\draw[fill=white,draw=c286AA6,line width=0.5pt] (370.000,443.633) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (370.000,443.633) -- (320.000,470.000);
+\draw[draw=c8B9AA5,line width=0.260pt] (320.000,470.000) -- (265.000,470.000);
+\node[anchor=base west,inner sep=0pt,text=c286AA6,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,470.000) {LF-01};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,495.000) {C + 61.1 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (370.000,542.388) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (370.000,542.388) -- (320.000,575.000);
+\draw[draw=c8B9AA5,line width=0.260pt] (320.000,575.000) -- (265.000,575.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,575.000) {STC-05};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,600.000) {C + 277.0 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (370.000,641.144) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (370.000,641.144) -- (320.000,680.000);
+\draw[draw=c8B9AA5,line width=0.260pt] (320.000,680.000) -- (265.000,680.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,680.000) {STC-04};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,705.000) {C + 492.9 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (370.000,768.946) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (370.000,768.946) -- (320.000,785.000);
+\draw[draw=c8B9AA5,line width=0.260pt] (320.000,785.000) -- (265.000,785.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,785.000) {STC-03};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,810.000) {B + 446.9 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (370.000,919.984) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (370.000,919.984) -- (320.000,890.000);
+\draw[draw=c8B9AA5,line width=0.260pt] (320.000,890.000) -- (265.000,890.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,890.000) {STC-02};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,915.000) {B + 116.7 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (432.106,395.926) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (432.106,395.926) -- (150.000,260.000);
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (150.000,205.000) {STC-06};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (150.000,230.000) {D + 69.1 mm};
+\draw[fill=white,draw=c388452,line width=0.5pt] (444.659,398.321) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (444.659,398.321) -- (425.000,260.000);
+\node[anchor=base,inner sep=0pt,text=c388452,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (425.000,205.000) {PTC-01};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (425.000,230.000) {D + 97.1 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (938.965,492.615) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (938.965,492.615) -- (700.000,260.000);
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (700.000,205.000) {STC-07};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (700.000,230.000) {E + 155.3 mm};
+\draw[fill=white,draw=c286AA6,line width=0.5pt] (970.350,498.602) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (970.350,498.602) -- (975.000,260.000);
+\node[anchor=base,inner sep=0pt,text=c286AA6,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (975.000,205.000) {LF-03};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (975.000,230.000) {E + 85.5 mm};
+\draw[fill=white,draw=c388452,line width=0.5pt] (970.350,498.602) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (970.350,498.602) -- (1250.000,260.000);
+\node[anchor=base,inner sep=0pt,text=c388452,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1250.000,205.000) {PTC-03};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1250.000,230.000) {E + 85.5 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (1030.000,615.361) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,615.361) -- (1065.000,470.000);
+\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,470.000) -- (1102.000,470.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,470.000) {STC-08};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,495.000) {F + 183.1 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (1030.000,719.926) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,719.926) -- (1065.000,575.000);
+\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,575.000) -- (1102.000,575.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,575.000) {STC-09};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,600.000) {F + 411.7 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (1030.000,847.728) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,847.728) -- (1065.000,680.000);
+\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,680.000) -- (1102.000,680.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,680.000) {STC-10};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,705.000) {G + 537.6 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (1030.000,963.911) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,963.911) -- (1065.000,785.000);
+\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,785.000) -- (1102.000,785.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,785.000) {STC-11};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,810.000) {G + 283.6 mm};
+\draw[fill=white,draw=c286AA6,line width=0.5pt] (1030.000,1070.381) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,1070.381) -- (1065.000,890.000);
+\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,890.000) -- (1102.000,890.000);
+\node[anchor=base west,inner sep=0pt,text=c286AA6,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,890.000) {LF-04};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,915.000) {G + 50.8 mm};
+\draw[fill=white,draw=c388452,line width=0.5pt] (1030.000,1070.381) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,1070.381) -- (1065.000,995.000);
+\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,995.000) -- (1102.000,995.000);
+\node[anchor=base west,inner sep=0pt,text=c388452,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,995.000) {PTC-X};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,1020.000) {G + 50.8 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (413.452,1003.270) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (413.452,1003.270) -- (150.000,1220.000);
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (150.000,1245.000) {STC-01};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (150.000,1270.000) {A + 49.4 mm};
+\draw[fill=white,draw=c286AA6,line width=0.5pt] (428.714,1006.180) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (428.714,1006.180) -- (425.000,1220.000);
+\node[anchor=base,inner sep=0pt,text=c286AA6,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (425.000,1245.000) {LF-02};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (425.000,1270.000) {A + 83.4 mm};
+\draw[fill=white,draw=c388452,line width=0.5pt] (428.714,1006.180) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (428.714,1006.180) -- (700.000,1220.000);
+\node[anchor=base,inner sep=0pt,text=c388452,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (700.000,1245.000) {PTC-02};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (700.000,1270.000) {A + 83.4 mm};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (965.118,1108.442) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (965.118,1108.442) -- (975.000,1220.000);
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (975.000,1245.000) {STC-12};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (975.000,1270.000) {H + 69.3 mm};
+\draw[fill=white,draw=c388452,line width=0.5pt] (967.624,1108.920) circle (7);
+\draw[draw=c8B9AA5,line width=0.260pt] (967.624,1108.920) -- (1250.000,1220.000);
+\node[anchor=base,inner sep=0pt,text=c388452,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1250.000,1245.000) {PTC-04};
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1250.000,1270.000) {H + 63.7 mm};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,1370.000) {Markers show axial stations; circumferential positions are recorded separately.};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,1400.000) {STC = wall reference | PTC = penetrating TC reference | LF = fiber reference};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (70.000,1445.000) {VCU Rev9 CAD candidate | installed geometry and sensing locations require confirmation};
+\end{tikzpicture}
+}\end{center}
+{\small Details: \hyperref[calibration-detail]{calibration and model mapping}; \hyperref[form-sensor]{sensor evidence form}. Jacket-port sensors JTC-A/B are retained in the calibration record.}\par
+\clearpage\section{Heating and cooling}\label{thermal-main}
+The mechanical jacket envelope and active thermal regions are recorded separately.
+\subsection*{Recorded boundaries}
+\par
+\small\setlength{\tabcolsep}{4pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.2\textwidth}>{\raggedright\arraybackslash}p{0.14\textwidth}>{\raggedright\arraybackslash}p{0.14\textwidth}>{\raggedright\arraybackslash}p{0.2\textwidth}}
+\toprule
+\textbf{Region} & \textbf{Segment / from} & \textbf{Start mm} & \textbf{End mm} & \textbf{Basis} \\\midrule\endhead
+Complete jacket & cooler / D & 127.562 & 1157.849 & CAD-derived \\[3pt]
+Active heater & heater / H & \textit{Unknown} & \textit{Unknown} & Unknown \\[3pt]
+Active cooling & cooler / D & \textit{Unknown} & \textit{Unknown} & Unknown \\[3pt]
+\bottomrule\end{longtable}\normalsize
+Distances are measured along the named segment from the stated endpoint. A jacket envelope does not establish active cooling; clamps do not establish energized heater coverage.\par
+\subsection*{Power and control evidence}
+\small\setlength{\tabcolsep}{4pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.43\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.23\textwidth}}
+\toprule
+\textbf{Record} & \textbf{Selected choice} & \textbf{Review} \\\midrule\endhead
+Heater supply and circuit diagram & Not selected & Needs review \\[3pt]
+Measured heater power and uncertainty & Not selected & Needs information \\[3pt]
+Heater control and monitor signals & Not selected & Needs information \\[3pt]
+Coolant routing and measurement planes & Not selected & Needs information \\[3pt]
+Coolant flow and inlet/outlet measurements & Not selected & Needs information \\[3pt]
+Cooler feedback and setpoint history & Not selected & Needs information \\[3pt]
+\bottomrule\end{longtable}\normalsize
+\vfill{\small Supporting records: \hyperref[model-records]{boundary and control choices}; \hyperref[requirements]{full evidence register}.}\par
+\clearpage\section{Materials and fluids}\label{materials-main}
+Candidate identities are listed below. Circuit assignments and selected property models require their own evidence.
+\subsection*{Fluids}
+\small\setlength{\tabcolsep}{4pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.39\textwidth}>{\raggedright\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.18\textwidth}}
+\toprule
+\textbf{Fluid} & \textbf{Product} & \textbf{Circuit} & \textbf{Basis} \\\midrule\endhead
+PROP30 & Propylene glycol / water & \textit{Unknown} & Reported \\[3pt]
+AIR & Air & \textit{Unknown} & Reported \\[3pt]
+WATER & Water & \textit{Unknown} & Reported \\[3pt]
+\bottomrule\end{longtable}\normalsize
+\subsection*{Material and property records}
+\small\setlength{\tabcolsep}{4pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.53\textwidth}>{\raggedright\arraybackslash}p{0.19\textwidth}}
+\toprule
+\textbf{Record} & \textbf{Identity / product} & \textbf{Basis} \\\midrule\endhead
+PIPE & 316L stainless steel & Reported \\[3pt]
+MAIN-INS & Fiberglass / reported McMaster 5556K73 & Reported \\[3pt]
+HEATER-INS & Calcium aluminum silicate / reported 4057K14 & Reported \\[3pt]
+PROP30 & Product/formulation unresolved & Reported \\[3pt]
+AIR & Air & Unknown \\[3pt]
+WATER & Water & Unknown \\[3pt]
+\bottomrule\end{longtable}\normalsize
+\vfill{\small Equations, units, applicability and uncertainty: \hyperref[model-records]{full material records}. To propose a property choice: \hyperref[form-material]{material evidence form}.}\par
+\clearpage\section{Uncertainty and limitations}\label{uncertainty-main}
+The record must state how accurately the setup is known and what error is acceptable for each intended comparison.
+\small\setlength{\tabcolsep}{4pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.43\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.23\textwidth}}
+\toprule
+\textbf{Basis for comparison} & \textbf{Selected choice} & \textbf{Review} \\\midrule\endhead
+Dimension uncertainty and method & Not selected & Needs information \\[3pt]
+Measurement uncertainty and coverage & Not selected & Needs information \\[3pt]
+Property uncertainty and fit residuals & Not selected & Needs information \\[3pt]
+Steady-state class and acceptance limits & Not selected & Needs information \\[3pt]
+Mass/energy conservation and solution convergence & Not selected & Needs information \\[3pt]
+Validation metrics, discrepancy and applicability & Not selected & Needs information \\[3pt]
+\bottomrule\end{longtable}\normalsize
+\subsection*{Limits of this record}
+\begin{itemize}\item The main-loop geometry is a CAD candidate. Installed dimensions, bore and insulation need supporting measurements.\item Sensor stations are geometric references. Channel identity, calibration, junction positions and fiber sensing extents require evidence.\item Drawn bends are schematic connectors, not qualified hydraulic paths. The heater pieces have overlapping and offset CAD geometry.\item A successful document build checks input structure and drawing closure. It does not establish experimental or modeling readiness.\end{itemize}
+\vfill{\small Follow up: \hyperref[issues-detail]{open issues}; \hyperref[requirements]{requirements and decisions}; \hyperref[sources-detail]{source catalog}.}\par
+\clearpage\phantomsection\label{appendices}\pdfbookmark[0]{Appendices}{appendix-bookmark}
+{\color{navy}\LARGE\bfseries Appendices}\par
+Instructions, evidence and administrative detail. Return to the \hyperref[overview]{configuration overview} at any time using the page header.\par
+\tableofcontents
+\appendix
+\clearpage\section{Contributing evidence and reviewing changes}\label{administration}
 \section*{Start with one record}
-You do not need to learn LaTeX to contribute. Open \textbf{inputs/VCU\_inputs.xlsx}, choose a Form tab, and fill the amber response cells. The package maintainer turns the saved workbook into this document and the labeled drawings.
+You do not need to learn LaTeX to contribute. Open \textbf{VCU\_inputs.xlsx}, choose a Form tab, and fill the amber response cells. The package maintainer turns the saved workbook into this document and the labeled drawings.
 \begin{enumerate}
 \item \textbf{Choose one item.} Start with the upcomer pipe, the STC-02 sensor reference, or the insulation conductivity example.
 \item \textbf{Read the reference.} Gray cells show what the supplied evidence says and where to find it. They are not confirmed answers.
@@ -33,7 +320,7 @@ You do not need to learn LaTeX to contribute. Open \textbf{inputs/VCU\_inputs.xl
 \textbf{A useful first return:} one completed form, its evidence files, and a short list of anything you could not confirm. A partial, honest record is useful.
 \textbf{Keep the example attached to its item.} To work on a different segment, sensor or material, save a separate response copy. Clear the old example references or have the maintainer replace them with evidence for the new item.
 \textbf{Find your page:} pipe form p.~\pageref{form-pipe}; sensor form p.~\pageref{form-sensor}; property form p.~\pageref{form-material}; phase requests p.~\pageref{phase-requests}; complete requirements p.~\pageref{requirements}.
-\textbf{Need help?} The repository file \textbf{START\_HERE.md} has separate paths for the experimental team, computational team and package maintainer.
+\textbf{Need help?} The repository file \textbf{support/docs/START\_HERE.md} has separate paths for the experimental team, computational team and package maintainer.
 \clearpage\section{Who fills in what?}
 \textbf{Experimental team.} Record the installed hardware, fluids, sensor/channel mapping, calibration evidence, electrical wiring, coolant routing and raw logs. Use the phase requests to see what evidence is needed next.
 \textbf{Computational team.} Propose model domains, boundary conditions, material correlations, uncertainty methods and validation checks. Explain the intended use and why each choice is suitable.
@@ -41,7 +328,7 @@ You do not need to learn LaTeX to contribute. Open \textbf{inputs/VCU\_inputs.xl
 \textbf{Package maintainer.} Preserve the submitted evidence, update accepted input records deliberately, regenerate, and check that the document and diagrams match the saved workbook.
 \subsection*{Two labels answer two different questions}
 \small\setlength{\tabcolsep}{4pt}
-\begin{longtable}{p{0.24\textwidth}p{0.68\textwidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.68\textwidth}}
 \toprule
 \textbf{Evidence type} & \textbf{What it means} \\\midrule\endhead
 CAD-derived & A result from the identified Rev9 model; installation not verified. \\[3pt]
@@ -56,7 +343,7 @@ Unknown & No supported value is available yet. \\[3pt]
 \textbf{Modeling Control} describes how that setup is represented: 1-D and CFD/CHT domains, boundary/initial conditions, shared properties, closures, numerical checks, uncertainty and independent validation.
 \textbf{Shared records} connect the two: evidence, approvals, sensor-to-model mapping, measured power, property selection and validation applicability.
 \notebox{The STNCL documents are draft evidence sources. The requests in this package do not authorize running a test or establish that Nick Luciano has approved the draft requirements.}
-\clearpage\tableofcontents
+\par
 \clearpage\section{Configuration record and acceptance basis}\label{configuration-record}
 \begingroup\small
 The configuration record supplies the measured inputs and uncertainties needed to compare an experiment with a model. Record what changed, which evidence applies, and what error is acceptable for the stated comparison. Do not replace an unknown with a nominal value to complete the document.
@@ -71,7 +358,7 @@ The configuration record supplies the measured inputs and uncertainties needed t
 \textbf{Plan approval:} Unconfirmed\par
 \subsection*{Complete a dated package}
 \small\setlength{\tabcolsep}{4pt}
-\begin{longtable}{p{0.21\textwidth}p{0.28\textwidth}p{0.43\textwidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.21\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}>{\raggedright\arraybackslash}p{0.43\textwidth}}
 \toprule
 \textbf{Package item} & \textbf{Workbook record} & \textbf{Evidence to retain} \\\midrule\endhead
 Identity and changes & Start; Requirements C01--C04 & Effective date, configuration ID, change history, reviewer and approved use. \\[3pt]
@@ -664,7 +951,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} M15; M25; M30-M31; P4 Section 2 flow inference; Section 3 Required Outputs\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\clearpage\section{Issues to resolve together}
+\clearpage\section{Issues to resolve together}\label{issues-detail}
 All issues below are open. The suggested owners help route a question; they do not imply an assigned or approved responsibility.
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{I01 | Hardware / plan mismatch}
@@ -738,8 +1025,8 @@ All issues below are open. The suggested owners help route a question; they do n
 \textbf{Source / locator:} MAT lines 35-40; STEEL lines 3-21; PG figures\par
 \textbf{Affected fields:} M12-M19\par
 \end{minipage}\par\vspace{8pt}
-\clearpage\section{Rev9 geometry and drawing conventions}
-Only the qualified Rev9 structured geometry seeds the CAD candidate. Original source rows are retained in reference/rev9\_extraction.json. Installed measurements, reported nominal sizes and selected model geometry remain separate records.
+\clearpage\section{Rev9 geometry and drawing conventions}\label{geometry-detail}
+Only the qualified Rev9 structured geometry seeds the CAD candidate. Original source rows are retained in support/reference/rev9\_extraction.json. Installed measurements, reported nominal sizes and selected model geometry remain separate records.
 \begin{itemize}
 \item Main-loop bore remains unknown in the CAD baseline. Local spool bores cannot supply the missing loop-wide value.
 \item Heater pieces overlap by about 7.202 mm and their axes differ by about 0.152 mm. The displayed heater length is a projected span, not an exact continuous hydraulic length.
@@ -762,188 +1049,7 @@ Both radius and angle are required for a full point. A blank is unknown, not zer
 \item JTC-A/B, branch pipes, tank and coolant plumbing are retained as outstanding scope, not drawn.
 \item Model input draft only: missing bore, property selections, calibrations and approved boundary conditions.
 \end{itemize}
-\clearpage\thispagestyle{empty}
-\begin{center}\resizebox{\textwidth}{!}{%
-\begin{tikzpicture}[x=0.01cm,y=-0.01cm]
-\path[use as bounding box] (0,0) rectangle (1400,1500);
-\definecolor{c263D4B}{HTML}{263D4B}
-\definecolor{c576976}{HTML}{576976}
-\definecolor{c5D9DC3}{HTML}{5D9DC3}
-\definecolor{cA3B0B9}{HTML}{A3B0B9}
-\definecolor{cCFD9DF}{HTML}{CFD9DF}
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{8.40}{10.20}\selectfont\bfseries] at (70.000,65.000) {VCU / GEOMETRY AND THERMAL COVERAGE};
-\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-001 | generated from the editable workbook};
-\draw[draw=cCFD9DF,line width=0.520pt] (70.000,125.000) -- (1330.000,125.000);
-\draw[draw=c263D4B,line width=1.300pt] (370.000,973.358) -- (370.000,415.678);
-\draw[draw=c263D4B,line width=1.300pt,dashed] (370.000,415.678) -- (401.040,390.000);
-\draw[draw=c263D4B,line width=1.300pt] (401.040,390.000) -- (1008.757,505.928);
-\draw[draw=c263D4B,line width=1.300pt,dashed] (1008.757,505.928) -- (1030.000,531.607);
-\draw[draw=c263D4B,line width=1.300pt] (1030.000,531.607) -- (1030.000,1093.617);
-\draw[draw=c263D4B,line width=1.300pt,dashed] (1030.000,1093.617) -- (996.253,1114.378);
-\draw[draw=c263D4B,line width=1.300pt] (996.253,1114.378) -- (391.243,999.036);
-\draw[draw=c263D4B,line width=1.300pt,dashed] (391.243,999.036) -- (370.000,973.358);
-\draw[draw=c5D9DC3,line width=3.640pt] (458.355,400.933) -- (921.276,489.240);
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (355.000,959.358) {B};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (355.000,401.678) {C};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (386.040,376.000) {D};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (993.757,491.928) {E};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1015.000,517.607) {F};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1015.000,1079.617) {G};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (981.253,1100.378) {H};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (376.243,985.036) {A};
-\node[anchor=base,inner sep=0pt,text=cA3B0B9,font=\sffamily\fontsize{15.12}{18.36}\selectfont] at (700.000,770.000) {VCU};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.16}{7.48}\selectfont\bfseries] at (80.000,700.000) {UPCOMER};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont] at (80.000,730.000) {1219.200 mm};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (80.000,757.000) {phi = 0.000 deg};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.16}{7.48}\selectfont\bfseries] at (700.000,265.000) {COOLER};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont] at (700.000,295.000) {1352.550 mm};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (700.000,322.000) {phi = 100.800 deg};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.16}{7.48}\selectfont\bfseries] at (1100.000,800.000) {DOWNCOMER};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont] at (1100.000,830.000) {1228.669 mm};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (1100.000,857.000) {phi = 180.000 deg};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.16}{7.48}\selectfont\bfseries] at (700.000,1250.000) {HEATER};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont] at (700.000,1280.000) {1346.496 mm};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (700.000,1307.000) {phi = 280.794 deg};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.04}{6.12}\selectfont] at (70.000,180.000) {Blue: jacket envelope. Red appears only for entered active heater spans.};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,1370.000) {Lengths are axis-end spans. Heater span is projected; it is not an exact joined path.};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,1400.000) {Dashed corners are schematic endpoint connectors, not hydraulic arc geometry.};
-\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (70.000,1445.000) {VCU Rev9 CAD candidate | installed geometry and sensing locations require confirmation};
-\end{tikzpicture}
-}\end{center}
-\clearpage\thispagestyle{empty}
-\begin{center}\resizebox{\textwidth}{!}{%
-\begin{tikzpicture}[x=0.01cm,y=-0.01cm]
-\path[use as bounding box] (0,0) rectangle (1400,1500);
-\definecolor{c263D4B}{HTML}{263D4B}
-\definecolor{c286AA6}{HTML}{286AA6}
-\definecolor{c388452}{HTML}{388452}
-\definecolor{c576976}{HTML}{576976}
-\definecolor{c5D9DC3}{HTML}{5D9DC3}
-\definecolor{c8B9AA5}{HTML}{8B9AA5}
-\definecolor{cA3B0B9}{HTML}{A3B0B9}
-\definecolor{cCFD9DF}{HTML}{CFD9DF}
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{8.40}{10.20}\selectfont\bfseries] at (70.000,65.000) {VCU / SENSOR LOCATIONS};
-\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-001 | generated from the editable workbook};
-\draw[draw=cCFD9DF,line width=0.520pt] (70.000,125.000) -- (1330.000,125.000);
-\draw[draw=c263D4B,line width=1.300pt] (370.000,973.358) -- (370.000,415.678);
-\draw[draw=c263D4B,line width=1.300pt,dashed] (370.000,415.678) -- (401.040,390.000);
-\draw[draw=c263D4B,line width=1.300pt] (401.040,390.000) -- (1008.757,505.928);
-\draw[draw=c263D4B,line width=1.300pt,dashed] (1008.757,505.928) -- (1030.000,531.607);
-\draw[draw=c263D4B,line width=1.300pt] (1030.000,531.607) -- (1030.000,1093.617);
-\draw[draw=c263D4B,line width=1.300pt,dashed] (1030.000,1093.617) -- (996.253,1114.378);
-\draw[draw=c263D4B,line width=1.300pt] (996.253,1114.378) -- (391.243,999.036);
-\draw[draw=c263D4B,line width=1.300pt,dashed] (391.243,999.036) -- (370.000,973.358);
-\draw[draw=c5D9DC3,line width=3.640pt] (458.355,400.933) -- (921.276,489.240);
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (355.000,959.358) {B};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (355.000,401.678) {C};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (386.040,376.000) {D};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (993.757,491.928) {E};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1015.000,517.607) {F};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1015.000,1079.617) {G};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (981.253,1100.378) {H};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (376.243,985.036) {A};
-\node[anchor=base,inner sep=0pt,text=cA3B0B9,font=\sffamily\fontsize{15.12}{18.36}\selectfont] at (700.000,770.000) {VCU};
-\draw[fill=white,draw=c286AA6,line width=0.5pt] (370.000,443.633) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (370.000,443.633) -- (320.000,470.000);
-\draw[draw=c8B9AA5,line width=0.260pt] (320.000,470.000) -- (265.000,470.000);
-\node[anchor=base west,inner sep=0pt,text=c286AA6,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,470.000) {LF-01};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,495.000) {C + 61.1 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (370.000,542.388) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (370.000,542.388) -- (320.000,575.000);
-\draw[draw=c8B9AA5,line width=0.260pt] (320.000,575.000) -- (265.000,575.000);
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,575.000) {STC-05};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,600.000) {C + 277.0 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (370.000,641.144) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (370.000,641.144) -- (320.000,680.000);
-\draw[draw=c8B9AA5,line width=0.260pt] (320.000,680.000) -- (265.000,680.000);
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,680.000) {STC-04};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,705.000) {C + 492.9 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (370.000,768.946) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (370.000,768.946) -- (320.000,785.000);
-\draw[draw=c8B9AA5,line width=0.260pt] (320.000,785.000) -- (265.000,785.000);
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,785.000) {STC-03};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,810.000) {B + 446.9 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (370.000,919.984) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (370.000,919.984) -- (320.000,890.000);
-\draw[draw=c8B9AA5,line width=0.260pt] (320.000,890.000) -- (265.000,890.000);
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,890.000) {STC-02};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,915.000) {B + 116.7 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (432.106,395.926) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (432.106,395.926) -- (150.000,260.000);
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (150.000,205.000) {STC-06};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (150.000,230.000) {D + 69.1 mm};
-\draw[fill=white,draw=c388452,line width=0.5pt] (444.659,398.321) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (444.659,398.321) -- (425.000,260.000);
-\node[anchor=base,inner sep=0pt,text=c388452,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (425.000,205.000) {PTC-01};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (425.000,230.000) {D + 97.1 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (938.965,492.615) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (938.965,492.615) -- (700.000,260.000);
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (700.000,205.000) {STC-07};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (700.000,230.000) {E + 155.3 mm};
-\draw[fill=white,draw=c286AA6,line width=0.5pt] (970.350,498.602) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (970.350,498.602) -- (975.000,260.000);
-\node[anchor=base,inner sep=0pt,text=c286AA6,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (975.000,205.000) {LF-03};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (975.000,230.000) {E + 85.5 mm};
-\draw[fill=white,draw=c388452,line width=0.5pt] (970.350,498.602) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (970.350,498.602) -- (1250.000,260.000);
-\node[anchor=base,inner sep=0pt,text=c388452,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1250.000,205.000) {PTC-03};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1250.000,230.000) {E + 85.5 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (1030.000,615.361) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,615.361) -- (1065.000,470.000);
-\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,470.000) -- (1102.000,470.000);
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,470.000) {STC-08};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,495.000) {F + 183.1 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (1030.000,719.926) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,719.926) -- (1065.000,575.000);
-\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,575.000) -- (1102.000,575.000);
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,575.000) {STC-09};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,600.000) {F + 411.7 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (1030.000,847.728) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,847.728) -- (1065.000,680.000);
-\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,680.000) -- (1102.000,680.000);
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,680.000) {STC-10};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,705.000) {G + 537.6 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (1030.000,963.911) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,963.911) -- (1065.000,785.000);
-\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,785.000) -- (1102.000,785.000);
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,785.000) {STC-11};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,810.000) {G + 283.6 mm};
-\draw[fill=white,draw=c286AA6,line width=0.5pt] (1030.000,1070.381) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,1070.381) -- (1065.000,890.000);
-\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,890.000) -- (1102.000,890.000);
-\node[anchor=base west,inner sep=0pt,text=c286AA6,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,890.000) {LF-04};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,915.000) {G + 50.8 mm};
-\draw[fill=white,draw=c388452,line width=0.5pt] (1030.000,1070.381) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (1030.000,1070.381) -- (1065.000,995.000);
-\draw[draw=c8B9AA5,line width=0.260pt] (1065.000,995.000) -- (1102.000,995.000);
-\node[anchor=base west,inner sep=0pt,text=c388452,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,995.000) {PTC-X};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,1020.000) {G + 50.8 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (413.452,1003.270) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (413.452,1003.270) -- (150.000,1220.000);
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (150.000,1245.000) {STC-01};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (150.000,1270.000) {A + 49.4 mm};
-\draw[fill=white,draw=c286AA6,line width=0.5pt] (428.714,1006.180) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (428.714,1006.180) -- (425.000,1220.000);
-\node[anchor=base,inner sep=0pt,text=c286AA6,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (425.000,1245.000) {LF-02};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (425.000,1270.000) {A + 83.4 mm};
-\draw[fill=white,draw=c388452,line width=0.5pt] (428.714,1006.180) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (428.714,1006.180) -- (700.000,1220.000);
-\node[anchor=base,inner sep=0pt,text=c388452,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (700.000,1245.000) {PTC-02};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (700.000,1270.000) {A + 83.4 mm};
-\draw[fill=white,draw=c263D4B,line width=0.5pt] (965.118,1108.442) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (965.118,1108.442) -- (975.000,1220.000);
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (975.000,1245.000) {STC-12};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (975.000,1270.000) {H + 69.3 mm};
-\draw[fill=white,draw=c388452,line width=0.5pt] (967.624,1108.920) circle (7);
-\draw[draw=c8B9AA5,line width=0.260pt] (967.624,1108.920) -- (1250.000,1220.000);
-\node[anchor=base,inner sep=0pt,text=c388452,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1250.000,1245.000) {PTC-04};
-\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1250.000,1270.000) {H + 63.7 mm};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,1370.000) {Markers show axial stations; circumferential positions are recorded separately.};
-\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,1400.000) {STC = wall reference | PTC = penetrating TC reference | LF = fiber reference};
-\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (70.000,1445.000) {VCU Rev9 CAD candidate | installed geometry and sensing locations require confirmation};
-\end{tikzpicture}
-}\end{center}
-\clearpage\thispagestyle{empty}
+\clearpage
 \begin{center}\resizebox{\textwidth}{!}{%
 \begin{tikzpicture}[x=0.01cm,y=-0.01cm]
 \path[use as bounding box] (0,0) rectangle (1400,950);
@@ -974,10 +1080,10 @@ Both radius and angle are required for a full point. A blank is unknown, not zer
 \node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont] at (70.000,860.000) {A blank angle or radius leaves the exported 3-D sensor point unresolved.};
 \end{tikzpicture}
 }\end{center}
-\clearpage\section{Current candidate input tables}
+\clearpage\section{Current candidate input tables}\label{baseline-tables}
 \subsection*{Main-loop geometry}
 \small\setlength{\tabcolsep}{4pt}
-\begin{longtable}{p{0.23\textwidth}p{0.12\textwidth}p{0.16\textwidth}p{0.14\textwidth}p{0.22\textwidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.23\textwidth}>{\raggedright\arraybackslash}p{0.12\textwidth}>{\raggedright\arraybackslash}p{0.16\textwidth}>{\raggedright\arraybackslash}p{0.14\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}}
 \toprule
 \textbf{Segment} & \textbf{Endpoints} & \textbf{Length mm} & \textbf{Phi deg} & \textbf{Evidence} \\\midrule\endhead
 upcomer & B to C & 1219.200 & 0.000 & CAD-derived \\[3pt]
@@ -992,7 +1098,7 @@ lower\_left\_bend & A to B & \textit{Unknown} & \textit{Unknown} & CAD-derived \
 Bends use offsets, not straight-length inputs. See the editable Geometry sheet and source length basis. The example forms do not populate these baseline cells.
 \subsection*{Main-loop geometric sensor references}
 \small\setlength{\tabcolsep}{4pt}
-\begin{longtable}{p{0.17\textwidth}p{0.25\textwidth}p{0.1\textwidth}p{0.17\textwidth}p{0.17\textwidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.1\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}}
 \toprule
 \textbf{Sensor} & \textbf{Segment} & \textbf{From} & \textbf{Distance mm} & \textbf{Angle deg} \\\midrule\endhead
 STC-02 & upcomer & B & 116.686 & \textit{Unknown} \\[3pt]
@@ -1021,14 +1127,13 @@ JTC-A/B are retained in Calibration, but jacket-port positions are not yet drawn
 \subsection*{VCU fluid choices}
 Prop-30, air and water are permitted candidate options from the user. A circuit/run assignment is still required. The supplied draft phase campaign is Prop-30-specific.
 \small\setlength{\tabcolsep}{4pt}
-\begin{longtable}{p{0.15\textwidth}p{0.3\textwidth}p{0.22\textwidth}p{0.2\textwidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.3\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.2\textwidth}}
 \toprule
 \textbf{Fluid} & \textbf{Product} & \textbf{Circuit} & \textbf{Range C} \\\midrule\endhead
 PROP30 & Propylene glycol / water & \textit{Unknown} & \textit{Unknown} \\[3pt]
 AIR & Air & \textit{Unknown} & \textit{Unknown} \\[3pt]
 WATER & Water & \textit{Unknown} & \textit{Unknown} \\[3pt]
 \bottomrule\end{longtable}\normalsize
-\appendix
 \clearpage\section{Complete requirements and evidence register}\label{requirements}
 The Requirements workbook tab is the editable master. Each record states why the field is needed, who should supply it, where the requirement and evidence came from, what uses it supports, and what remains unresolved. Requirement provenance is distinct from evidence for a value.
 \textbf{Review rule:} the records below describe candidate evidence. Approved choices require a recorded decision, scope and effective configuration; none has been established in this seed package.
@@ -2124,7 +2229,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Preapprove response set, equivalence limits and practical-significance threshold.\par
 \end{minipage}\par\vspace{5pt}
-\clearpage\section{Current model and material input records}
+\clearpage\section{Current model and material input records}\label{model-records}
 These records reproduce the existing Model choices and Materials worksheets. Unknown inputs remain visible. New answers in the three prototype forms are evidence for review; they do not automatically populate these records.
 \subsection{Model choices}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
@@ -2296,10 +2401,10 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Status:} Unknown\par
 \textbf{Source:} User fluid scope\par
 \end{minipage}\par\vspace{5pt}
-\clearpage\subsection{Calibration summary}
+\clearpage\subsection{Calibration summary}\label{calibration-detail}
 Complete certificates, corrections and acquisition details remain on Calibration and in the resolved input export.
 \small\setlength{\tabcolsep}{4pt}
-\begin{longtable}{p{0.15\textwidth}p{0.22\textwidth}p{0.24\textwidth}p{0.26\textwidth}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.26\textwidth}}
 \toprule
 \textbf{Sensor} & \textbf{Last calibration} & \textbf{Uncertainty} & \textbf{Model mapping} \\\midrule\endhead
 STC-02 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
@@ -2326,8 +2431,8 @@ STC-01 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
 JTC-A & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
 JTC-B & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
 \bottomrule\end{longtable}\normalsize
-\clearpage\section{Source catalog and limits of use}
-Use the source ID with the row/page/section locator. Source files are not operating instructions. Exact local paths and read-time file hashes are recorded in reference/source\_manifest.json. Files remain at their supplied locations; they are not all duplicated into this repository.
+\clearpage\section{Source catalog and limits of use}\label{sources-detail}
+Use the source ID with the row/page/section locator. Source files are not operating instructions. Exact local paths and read-time file hashes are recorded in support/reference/source\_manifest.json. Files remain at their supplied locations; they are not all duplicated into this repository.
 \par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{R9 | VCU\_\allowbreak{}Rev9\_\allowbreak{}CAD\_\allowbreak{}Engineering\_\allowbreak{}Drawings.pdf}
 \textbf{Revision / context:} 2026-10-08; VCU-R9-E01\par
@@ -2438,5 +2543,5 @@ Use the source ID with the row/page/section locator. Source files are not operat
 ACU general-arrangement drawings, ANEC-000126 sensor labels, ACU sensor naming notes and ACU images belong to ACU. They supply no VCU values or channel mappings here. The supplied VCU overview PNGs identify Rev8 as their source and are visual-format references only. Mixed geometry archives and note links require member-level facility/revision checks; their contents are not imported wholesale.
 \subsection*{Generated record identity}
 \textbf{Workbook SHA-256 (spaces only for wrapping):} a2ccee57e3746824 de7e11d668f4b269 eabfa5a15c16215b eb01692c58587baa\par
-All form answers, source rows and requirement fields are exported to generated/resolved\_inputs.json. The readable register is also available in generated/requirements\_and\_evidence.md. A successful build verifies the input structure and drawing geometry, not experimental or modeling readiness.
+All form answers, source rows and requirement fields are exported to support/generated/resolved\_inputs.json. The readable register is also available in support/generated/requirements\_and\_evidence.md. A successful build verifies the input structure and drawing geometry, not experimental or modeling readiness.
 \end{document}

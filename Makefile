@@ -3,10 +3,10 @@
 all: pdf
 
 pdf:
-	python3 scripts/build.py
+	python3 support/scripts/build.py
 
 generate:
-	python3 scripts/generate.py
+	python3 support/scripts/generate.py
 
 test:
-	python3 -m unittest discover -s tests -v
+	python3 -m unittest discover -s support/tests -v

@@ -4,11 +4,11 @@ An editable workbook generates labeled vector drawings, a standalone LaTeX docum
 
 ## Start here
 
-Read **[START_HERE.md](../START_HERE.md)** for the five-step form workflow. Experimental contributors fill the three Form tabs and return evidence; they do not need to run software. The [maintainer guide](MAINTAINER_START.md) explains review and regeneration. The [modeling guide](MODELING_START.md) covers shared properties, boundaries and validation.
+Read **[START_HERE.md](START_HERE.md)** for the five-step form workflow. Experimental contributors fill the three Form tabs and return evidence; they do not need to run software. The [maintainer guide](MAINTAINER_START.md) explains review and regeneration. The [modeling guide](MODELING_START.md) covers shared properties, boundaries and validation.
 
 This increment adds **78 field requirements**, **17 phase information requests**, **nine review issues**, and **17 source records**. The three sample forms separate reference evidence, new responses and review. All physical/model choices remain draft.
 
-From the repository folder, run `python3 scripts/build.py` to regenerate and compile the PDF, or `python3 scripts/generate.py` to regenerate outputs only. The root `main.tex` includes the generated standalone document. Review `generated/validation.json` before using any output. A failed build leaves prior figures in place and marks them stale. A successful build records the workbook hash. This prototype always marks modeling readiness false.
+From the repository folder, run `python3 support/scripts/build.py` to regenerate and compile the PDF, or `python3 support/scripts/generate.py` to regenerate outputs only. The root `main.tex` includes the generated standalone document. Review `support/generated/validation.json` before using any output. A failed build leaves prior figures in place and marks them stale. A successful build records the workbook hash. This prototype always marks modeling readiness false.
 
 The generator needs Python 3.9+ and no third-party Python packages. The LaTeX document uses common packages including TikZ, longtable and booktabs. XLSX inputs must be literal values; formulas are rejected rather than relying on possibly stale cached values. The workbook itself has no macros and does not refresh drawings until the generator runs.
 
@@ -60,7 +60,7 @@ The full-loop diagram shows axial stations. Entered angles also create per-senso
 
 ## Evidence and facility separation
 
-The starting geometry and sensor stationing come from the supplied VCU Rev9 CAD extraction, drawing issue 2026-10-08. Original imported segment/sensor rows are preserved in `reference/rev9_extraction.json`; initial workbook values are preserved in `reference/initial_tables.json`, with the added control records in `reference/initial_control_tables.json`. They are audit references, not alternate editable inputs. See `reference/SOURCES.md` and `reference/source_manifest.json` for source identity, exact supplied paths and read-time file hashes.
+The starting geometry and sensor stationing come from the supplied VCU Rev9 CAD extraction, drawing issue 2026-10-08. Original imported segment/sensor rows are preserved in `support/reference/rev9_extraction.json`; initial workbook values are preserved in `support/reference/initial_tables.json`, with the added control records in `support/reference/initial_control_tables.json`. They are audit references, not alternate editable inputs. See `support/reference/SOURCES.md` and `support/reference/source_manifest.json` for source identity, exact supplied paths and read-time file hashes.
 
 CAD sensor IDs are not confirmed DAQ names. The model contains PTC-X, while a supplied note calls it a fluke. The record remains visible with that conflict until the installed hardware is checked. JTC-A/B remain on the Calibration sheet; coolant-port geometry is not included in this main-loop drawing version.
 
@@ -76,7 +76,7 @@ Material entries are reported candidates. No correlations have been independentl
 - `sensors.svg`: automatic sensor labels and leader lines.
 - `angle_convention.svg`: coordinate guide.
 - `sensor_angles_*.svg`: added when circumferential angles are supplied.
-- `VCU_control_package.tex`: standalone document with friendly guides, three sample forms, phase requests, issues, embedded TikZ figures, full requirements/evidence register, and model/material input appendices.
+- `VCU_control_package.tex`: standalone configuration record with six technical pages, internal navigation, embedded TikZ figures, and linked appendices containing contributor guides, forms, review issues, requirements, model/material records and sources.
 - `requirements_and_evidence.md`: searchable, readable export of the full requirements, phase requests, issues and source catalog.
 - `resolved_inputs.json`: every input row in readable form for review and version comparison.
 - `geometry_and_sensors.json`: endpoint coordinates, axial sensor stations, optional 3-D points, mapping fields and qualifications.
@@ -87,10 +87,10 @@ The document summarizes selected calibration and geometry fields; the workbook a
 ## Verification
 
 ```sh
-python3 -m unittest discover -s tests -v
+python3 -m unittest discover -s support/tests -v
 ```
 
-All 14 behavior checks pass. They cover loop closure, endpoint reversal, coordinate/angle transforms, unknown versus zero, geometry changes, impossible distances, duplicate IDs, VCU/ACU separation, full workbook regeneration, source references, complete review decisions, and form responses reaching the document without changing baseline geometry. The seven original data sheets were also compared with the pre-edit workbook and remain unchanged.
+All 15 behavior checks pass. They cover loop closure, endpoint reversal, coordinate/angle transforms, unknown versus zero, geometry changes, impossible distances, duplicate IDs, VCU/ACU separation, full workbook regeneration, source references, complete review decisions, form responses reaching the document without changing baseline geometry, and configuration-first ordering with valid navigation targets. The seven original data sheets were also compared with the pre-edit workbook and remain unchanged.
 
 The repository PDF build compiles the root entry point with repeated passes for contents and cross-references. The reorganized document has been rendered for page-layout review. These checks do not verify installed hardware or simulation validity; there are no spreadsheet formulas or macros.
 

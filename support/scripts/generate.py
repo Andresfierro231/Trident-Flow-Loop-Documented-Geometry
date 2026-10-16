@@ -368,7 +368,7 @@ def diagrams(model):
 
 
 def latex_table(rows, headers, keys, widths):
-    spec=''.join(f'p{{{w}\\textwidth}}' for w in widths)
+    spec=''.join(r'>{\raggedright\arraybackslash}' + f'p{{{w}\\textwidth}}' for w in widths)
     out=[r'\small\setlength{\tabcolsep}{4pt}',r'\begin{longtable}{'+spec+'}',r'\toprule',
          ' & '.join(r'\textbf{'+tex(h)+'}' for h in headers)+r' \\\midrule\endhead']
     for row in rows:
@@ -411,7 +411,7 @@ def generate(filename, outdir):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--input',type=Path,default=ROOT/'inputs/VCU_inputs.xlsx')
+    parser.add_argument('--input',type=Path,default=ROOT.parent/'VCU_inputs.xlsx')
     parser.add_argument('--out',type=Path,default=ROOT/'generated')
     args=parser.parse_args()
     try:

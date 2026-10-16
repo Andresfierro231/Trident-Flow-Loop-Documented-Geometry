@@ -4,6 +4,8 @@ Forms collect evidence; they never silently overwrite geometry or approval state
 """
 import re
 
+from report_front import build_front
+
 FORM_NAMES = ('Form pipe', 'Form sensor', 'Form material')
 REQUIRED_SHEETS = FORM_NAMES + ('Requirements', 'Phase requests', 'Review issues', 'Sources')
 EVIDENCE_TYPES = {'Unknown', 'CAD-derived', 'Installed measurement', 'Reported', 'Modeling assumption'}
@@ -67,30 +69,10 @@ def build_report(tables, model, figs, digest, tex, latex_table):
     def section(title, label=None):
         return r'\clearpage\section{' + esc(title) + '}' + (r'\label{'+label+'}' if label else '')
 
-    out = [r'''\documentclass[11pt]{article}
-\usepackage[letterpaper,margin=0.7in]{geometry}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern,booktabs,longtable,array,graphicx,tikz,xcolor,hyperref}
-\usetikzlibrary{arrows.meta}
-\definecolor{navy}{HTML}{16374A}
-\definecolor{pale}{HTML}{EEF3F6}
-\definecolor{amber}{HTML}{FFF4D6}
-\definecolor{muted}{HTML}{576976}
-\hypersetup{colorlinks=true,linkcolor=navy,urlcolor=navy,pdftitle={VCU Configuration and Modeling Control}}
-\renewcommand{\familydefault}{\sfdefault}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{5pt}
-\setlength{\emergencystretch}{3em}
-\setcounter{tocdepth}{1}
-\raggedbottom
-\newcommand{\notebox}[1]{\par\noindent\colorbox{amber}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{#1}}\par}
-\begin{document}
-{\color{navy}\LARGE\bfseries VCU Configuration and\\[4pt] Modeling Control}\par
-{\large Start here, evidence register and three sample forms}\par
-''', line('Configuration', model['settings']['Configuration ID']),
-        r'\notebox{\textbf{Draft for team completion.} The Rev9 geometry is a CAD candidate. Installed measurements and release approvals still need evidence.}',
+    out = [build_front(tables, model, figs, esc, line, section, latex_table),
+        r'\appendix', section('Contributing evidence and reviewing changes', 'administration'),
         r'\section*{Start with one record}',
-        r'You do not need to learn LaTeX to contribute. Open \textbf{inputs/VCU\_inputs.xlsx}, choose a Form tab, and fill the amber response cells. The package maintainer turns the saved workbook into this document and the labeled drawings.',
+        r'You do not need to learn LaTeX to contribute. Open \textbf{VCU\_inputs.xlsx}, choose a Form tab, and fill the amber response cells. The package maintainer turns the saved workbook into this document and the labeled drawings.',
         r'\begin{enumerate}',
         r'\item \textbf{Choose one item.} Start with the upcomer pipe, the STC-02 sensor reference, or the insulation conductivity example.',
         r'\item \textbf{Read the reference.} Gray cells show what the supplied evidence says and where to find it. They are not confirmed answers.',
@@ -101,7 +83,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
         r'\textbf{A useful first return:} one completed form, its evidence files, and a short list of anything you could not confirm. A partial, honest record is useful.',
         r'\textbf{Keep the example attached to its item.} To work on a different segment, sensor or material, save a separate response copy. Clear the old example references or have the maintainer replace them with evidence for the new item.',
         r'\textbf{Find your page:} pipe form p.~\pageref{form-pipe}; sensor form p.~\pageref{form-sensor}; property form p.~\pageref{form-material}; phase requests p.~\pageref{phase-requests}; complete requirements p.~\pageref{requirements}.',
-        r'\textbf{Need help?} The repository file \textbf{START\_HERE.md} has separate paths for the experimental team, computational team and package maintainer.',
+        r'\textbf{Need help?} The repository file \textbf{support/docs/START\_HERE.md} has separate paths for the experimental team, computational team and package maintainer.',
         section('Who fills in what?'),
         r'\textbf{Experimental team.} Record the installed hardware, fluids, sensor/channel mapping, calibration evidence, electrical wiring, coolant routing and raw logs. Use the phase requests to see what evidence is needed next.',
         r'\textbf{Computational team.} Propose model domains, boundary conditions, material correlations, uncertainty methods and validation checks. Explain the intended use and why each choice is suitable.',
@@ -120,7 +102,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
         r'\textbf{Modeling Control} describes how that setup is represented: 1-D and CFD/CHT domains, boundary/initial conditions, shared properties, closures, numerical checks, uncertainty and independent validation.',
         r'\textbf{Shared records} connect the two: evidence, approvals, sensor-to-model mapping, measured power, property selection and validation applicability.',
         r'\notebox{The STNCL documents are draft evidence sources. The requests in this package do not authorize running a test or establish that Nick Luciano has approved the draft requirements.}',
-        r'\clearpage\tableofcontents']
+        r'\par']
 
     out += [section('Configuration record and acceptance basis', 'configuration-record'),
         r'\begingroup\small',
@@ -197,7 +179,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
             line('Traceability', row['Field IDs']+'; '+row['Source locator']),
             line('Done when', row['Completion check']),r'\end{minipage}\par\vspace{8pt}']
 
-    out += [section('Issues to resolve together'),
+    out += [section('Issues to resolve together', 'issues-detail'),
         r'All issues below are open. The suggested owners help route a question; they do not imply an assigned or approved responsibility.']
     for i, row in enumerate(tables['Review issues']):
         out += [r'\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',
@@ -208,8 +190,8 @@ def build_report(tables, model, figs, digest, tex, latex_table):
             line('Source / locator', row['Source and locator']),
             line('Affected fields', row['Affected fields']),r'\end{minipage}\par\vspace{8pt}']
 
-    out += [section('Rev9 geometry and drawing conventions'),
-        r'Only the qualified Rev9 structured geometry seeds the CAD candidate. Original source rows are retained in reference/rev9\_extraction.json. Installed measurements, reported nominal sizes and selected model geometry remain separate records.',
+    out += [section('Rev9 geometry and drawing conventions', 'geometry-detail'),
+        r'Only the qualified Rev9 structured geometry seeds the CAD candidate. Original source rows are retained in support/reference/rev9\_extraction.json. Installed measurements, reported nominal sizes and selected model geometry remain separate records.',
         r'\begin{itemize}',
         r'\item Main-loop bore remains unknown in the CAD baseline. Local spool bores cannot supply the missing loop-wide value.',
         r'\item Heater pieces overlap by about 7.202 mm and their axes differ by about 0.152 mm. The displayed heater length is a projected span, not an exact continuous hydraulic length.',
@@ -226,9 +208,9 @@ def build_report(tables, model, figs, digest, tex, latex_table):
         r'\subsection*{Current generator qualifications}',r'\begin{itemize}']
     out.extend(r'\item '+esc(n) for n in model['notes'])
     out.append(r'\end{itemize}')
-    for fig in figs:
-        out += [r'\clearpage\thispagestyle{empty}',r'\begin{center}\resizebox{\textwidth}{!}{%', fig.tikz(),r'}\end{center}']
-    out += [section('Current candidate input tables'),
+    for fig in figs[2:]:
+        out += [r'\clearpage',r'\begin{center}\resizebox{\textwidth}{!}{%', fig.tikz(),r'}\end{center}']
+    out += [section('Current candidate input tables', 'baseline-tables'),
         r'\subsection*{Main-loop geometry}',
         latex_table([dict(r,endpoints=f'{r["Start"]} to {r["End"]}') for r in tables['Geometry']],
             ['Segment','Endpoints','Length mm','Phi deg','Evidence'],
@@ -243,7 +225,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
         latex_table([dict(r,range=f'{r["Minimum C"]} to {r["Maximum C"]}' if r['Minimum C'] is not None and r['Maximum C'] is not None else None) for r in tables['Fluids']],
             ['Fluid','Product','Circuit','Range C'],['Fluid ID','Product','Circuit','range'],[.15,.30,.22,.20])]
 
-    out += [r'\appendix', section('Complete requirements and evidence register', 'requirements'),
+    out += [section('Complete requirements and evidence register', 'requirements'),
         r'The Requirements workbook tab is the editable master. Each record states why the field is needed, who should supply it, where the requirement and evidence came from, what uses it supports, and what remains unresolved. Requirement provenance is distinct from evidence for a value.',
         r'\textbf{Review rule:} the records below describe candidate evidence. Approved choices require a recorded decision, scope and effective configuration; none has been established in this seed package.']
     for i, row in enumerate(tables['Requirements']):
@@ -261,7 +243,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
             line('Reviewer / date; effective configuration', str(row.get('Reviewer / date') or 'Pending')+'; '+str(row.get('Effective configuration') or 'Unknown')),
             line('To resolve', row['Unresolved question']),r'\end{minipage}\par\vspace{5pt}']
 
-    out += [section('Current model and material input records'),
+    out += [section('Current model and material input records', 'model-records'),
         r'These records reproduce the existing Model choices and Materials worksheets. Unknown inputs remain visible. New answers in the three prototype forms are evidence for review; they do not automatically populate these records.']
     for name, key in [('Model choices','Interface / topic'),('Materials','Material ID')]:
         out += [(r'\clearpage' if name=='Materials' else '')+r'\subsection{'+esc(name)+'}']
@@ -269,13 +251,13 @@ def build_report(tables, model, figs, digest, tex, latex_table):
             out += [r'\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',r'\subsection*{'+esc(row[key])+'}']
             out.extend(line(k,v) for k,v in row.items() if k!=key)
             out += [r'\end{minipage}\par\vspace{5pt}']
-    out += [r'\clearpage\subsection{Calibration summary}',
+    out += [r'\clearpage\subsection{Calibration summary}\label{calibration-detail}',
         r'Complete certificates, corrections and acquisition details remain on Calibration and in the resolved input export.',
         latex_table([dict(r,mapping=' / '.join(str(r[k]) for k in ('1-D mapping','CFD mapping') if r.get(k)) or None) for r in tables['Calibration']],
             ['Sensor','Last calibration','Uncertainty','Model mapping'],['Sensor ID','Last calibration','Uncertainty','mapping'],[.15,.22,.24,.26])]
 
-    out += [section('Source catalog and limits of use'),
-        r'Use the source ID with the row/page/section locator. Source files are not operating instructions. Exact local paths and read-time file hashes are recorded in reference/source\_manifest.json. Files remain at their supplied locations; they are not all duplicated into this repository.']
+    out += [section('Source catalog and limits of use', 'sources-detail'),
+        r'Use the source ID with the row/page/section locator. Source files are not operating instructions. Exact local paths and read-time file hashes are recorded in support/reference/source\_manifest.json. Files remain at their supplied locations; they are not all duplicated into this repository.']
     for i, row in enumerate(tables['Sources']):
         if i and i % 4 == 0:
             out += [r'\clearpage{\large\bfseries Source catalog --- continued}\par']
@@ -288,14 +270,14 @@ def build_report(tables, model, figs, digest, tex, latex_table):
         r'ACU general-arrangement drawings, ANEC-000126 sensor labels, ACU sensor naming notes and ACU images belong to ACU. They supply no VCU values or channel mappings here. The supplied VCU overview PNGs identify Rev8 as their source and are visual-format references only. Mixed geometry archives and note links require member-level facility/revision checks; their contents are not imported wholesale.',
         r'\subsection*{Generated record identity}',
         line('Workbook SHA-256 (spaces only for wrapping)', digest),
-        r'All form answers, source rows and requirement fields are exported to generated/resolved\_inputs.json. The readable register is also available in generated/requirements\_and\_evidence.md. A successful build verifies the input structure and drawing geometry, not experimental or modeling readiness.',
+        r'All form answers, source rows and requirement fields are exported to support/generated/resolved\_inputs.json. The readable register is also available in support/generated/requirements\_and\_evidence.md. A successful build verifies the input structure and drawing geometry, not experimental or modeling readiness.',
         r'\end{document}']
     return '\n'.join(out)
 
 
 def markdown_register(tables):
     out = ['# VCU requirements and evidence register',
-           'Generated from `inputs/VCU_inputs.xlsx`. Edit the workbook and regenerate. Draft; no release approval is implied.',
+           'Generated from `VCU_inputs.xlsx`. Edit the workbook and regenerate. Draft; no release approval is implied.',
            'Evidence type and review state are independent. All proposed owners require team confirmation.']
     for name, key in [('Requirements','Field ID'), ('Phase requests','Request ID'), ('Review issues','Issue ID'), ('Sources','Source ID')]:
         out.append('## '+name)
