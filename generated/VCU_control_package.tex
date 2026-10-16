@@ -57,11 +57,41 @@ Unknown & No supported value is available yet. \\[3pt]
 \textbf{Shared records} connect the two: evidence, approvals, sensor-to-model mapping, measured power, property selection and validation applicability.
 \notebox{The STNCL documents are draft evidence sources. The requests in this package do not authorize running a test or establish that Nick Luciano has approved the draft requirements.}
 \clearpage\tableofcontents
+\clearpage\section{Configuration record and acceptance basis}\label{configuration-record}
+\begingroup\small
+The configuration record supplies the measured inputs and uncertainties needed to compare an experiment with a model. Record what changed, which evidence applies, and what error is acceptable for the stated comparison. Do not replace an unknown with a nominal value to complete the document.
+\subsection*{Record identity}
+\textbf{Facility:} VCU\par
+\textbf{Configuration ID:} VCU-REV9-DRAFT-001\par
+\textbf{Status:} Draft\par
+\textbf{Scope:} Main-loop geometry and sensor-position prototype\par
+\textbf{Geometry source:} VCU-R9-E01 (2026-10-08)\par
+\textbf{Prepared by:} \textit{Unknown}\par
+\textbf{Checked by:} \textit{Unknown}\par
+\textbf{Plan approval:} Unconfirmed\par
+\subsection*{Complete a dated package}
+\small\setlength{\tabcolsep}{4pt}
+\begin{longtable}{p{0.21\textwidth}p{0.28\textwidth}p{0.43\textwidth}}
+\toprule
+\textbf{Package item} & \textbf{Workbook record} & \textbf{Evidence to retain} \\\midrule\endhead
+Identity and changes & Start; Requirements C01--C04 & Effective date, configuration ID, change history, reviewer and approved use. \\[3pt]
+Geometry and insulation & Geometry; Form pipe; C05--C16 & Lengths, diameters, sensor datum, layer coverage, material certificates and measurement uncertainty. \\[3pt]
+Photographs & Requirements C17 & Dated overview and detail files linked to the configuration, component and viewpoint. \\[3pt]
+Fluids and properties & Fluids; Materials; Form material; C18--C20; M12--M19 & Product/composition, circuit, property source, equation, units, applicability and uncertainty. \\[3pt]
+Instrumentation and calibration & Sensors; Calibration; Form sensor; C21--C33 & All instruments including fiber sensors: position, channel, certificate, correction, validity and uncertainty. \\[3pt]
+Heater and cooler & Thermal spans; C34--C41 & Active boundaries, circuits, measured power/flow, calibration, feedback and setpoint history. \\[3pt]
+Run and boundary state & Model choices; C42--C46 & Branches, tank/valve states, ambient conditions, operating limits, run ID and raw files. \\[3pt]
+Model and acceptable error & Model choices; Requirements M01--M32 & Model revision, prediction targets, uncertainty method, conservation/convergence checks and quantitative acceptance limits. \\[3pt]
+\bottomrule\end{longtable}\normalsize
+\subsection*{Define what is good enough before comparison}
+For each prediction target, record the quantity and units, applicable run/configuration, comparison interval, error metric, quantitative acceptance limit and uncertainty coverage. Explain how measurement and model uncertainty enter the decision. Use Requirements M01, M17 and M22--M32 for the selected choices and review scope; no numerical acceptance limits are supplied by this template.
+\textbf{Where to enter evidence:} keep file/page/photo locators in the corresponding Requirements evidence fields. Use the selected choice, decision scope, reviewer/date and effective configuration fields for review decisions. The checklist above is a navigation aid, not a second editable record.
+\par\endgroup
 \clearpage\section{Pipe and insulation segment}\label{form-pipe}
 Example: VCU upcomer B-C. Confirm the actual section before using the reported pipe or insulation details.
 \par\textbf{Workbook tab:} Form pipe. Fill columns F--I. Every unanswered line below remains \textbf{TO CONFIRM}.
 \textbf{Record context:} configuration / item / date / completed by: \hrulefill\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Record identity}\hfill C01\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (CAD-derived):} VCU / upcomer / B-C\par
@@ -70,7 +100,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Axis-end length (mm)}\hfill C06\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (CAD-derived):} 1219.200 mm\par
@@ -79,7 +109,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Installed direction / tilt}\hfill C07\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (CAD-derived):} Vertical in CAD; phi = 0 deg from +y\par
@@ -88,7 +118,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Inside diameter (mm)}\hfill C09\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Reported):} CAD unknown. Notes: nominal 1.049 in (26.64 mm)\par
@@ -97,7 +127,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Outside diameter (mm)}\hfill C10\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (CAD-derived):} 33.401 mm\par
@@ -109,7 +139,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 \clearpage
 {\large\bfseries Pipe and insulation segment --- continued}\par
 \textbf{Record context:} configuration / item / date: \hrulefill\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Pipe grade / specification}\hfill C11\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Reported):} 316L, nominal 1-inch schedule 40 reported\par
@@ -118,7 +148,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries How measured / uncertainty}\hfill C12\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} No installed measurement uncertainty supplied\par
@@ -127,7 +157,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Insulation product and layer order}\hfill C13\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Reported):} Most piping: fiberglass, reported 5556K73\par
@@ -136,7 +166,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Thickness of each layer (mm)}\hfill C14\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Reported):} About 2 in for most main piping; this segment unverified\par
@@ -145,7 +175,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Coverage, gaps and condition}\hfill C15\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown for this exact segment\par
@@ -157,7 +187,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 \clearpage
 {\large\bfseries Pipe and insulation segment --- continued}\par
 \textbf{Record context:} configuration / item / date: \hrulefill\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Contacts, supports and outer covering}\hfill C16\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Modeling assumption):} Firm contact is an assumption, not an installed observation\par
@@ -166,7 +196,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Photo, measurement date and measurer}\hfill C17\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Attach a photo with B and C marked\par
@@ -175,7 +205,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Review decision and approved scope}\hfill C03\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Needs review; include configuration ID and effective date\par
@@ -188,7 +218,7 @@ Example: VCU upcomer B-C. Confirm the actual section before using the reported p
 Example: drawing reference STC-02. Identify the actual hardware and channel independently; a drawing label is not a DAQ mapping.
 \par\textbf{Workbook tab:} Form sensor. Fill columns F--I. Every unanswered line below remains \textbf{TO CONFIRM}.
 \textbf{Record context:} configuration / item / date / completed by: \hrulefill\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Drawing reference / installed hardware ID}\hfill C21\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (CAD-derived):} STC-02; CAD surface-thermocouple reference\par
@@ -197,7 +227,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Manufacturer, model and serial}\hfill C22\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown\par
@@ -206,7 +236,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Exact DAQ channel / units}\hfill C23\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown; do not enter STC-02 as channel without checking\par
@@ -215,7 +245,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Segment, endpoint and distance (mm)}\hfill C24\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (CAD-derived):} Upcomer; B + 116.686 mm\par
@@ -224,7 +254,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries What point did you measure?}\hfill C26\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (CAD-derived):} Selected nearest pipe-surface point; not a verified junction\par
@@ -236,7 +266,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 \clearpage
 {\large\bfseries Sensor, channel and calibration --- continued}\par
 \textbf{Record context:} configuration / item / date: \hrulefill\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Circumferential angle (deg)}\hfill C25\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Modeling assumption):} Unknown. Vertical-pipe zero is proposed drawing +x\par
@@ -245,7 +275,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Radius / insertion / active extent (mm)}\hfill C26\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown for actual sensing point\par
@@ -254,7 +284,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Attachment / insulation position / response}\hfill C27\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown installed coupling\par
@@ -263,7 +293,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Last calibration date and certificate}\hfill C28\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown; prior bath claim is not an instrument certificate\par
@@ -272,7 +302,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Calibration range, correction and residual}\hfill C29\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown\par
@@ -284,7 +314,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 \clearpage
 {\large\bfseries Sensor, channel and calibration --- continued}\par
 \textbf{Record context:} configuration / item / date: \hrulefill\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Uncertainty, units and coverage factor}\hfill C30\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown\par
@@ -293,7 +323,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Sample rate, filtering and time response}\hfill C31\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown\par
@@ -302,7 +332,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Clock / synchronized event evidence}\hfill C32\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown\par
@@ -311,7 +341,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Mandatory, alternate or diagnostic use}\hfill C33\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Not assigned; requires intended-use review\par
@@ -320,7 +350,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries 1-D cell and CFD region / observed quantity}\hfill M04\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unmapped\par
@@ -332,7 +362,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 \clearpage
 {\large\bfseries Sensor, channel and calibration --- continued}\par
 \textbf{Record context:} configuration / item / date: \hrulefill\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Next calibration / recheck trigger}\hfill C28\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown; include validity at the date of the experiment\par
@@ -341,7 +371,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Review decision and approved scope}\hfill C03\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Needs review; include configuration ID and effective date\par
@@ -354,7 +384,7 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 Example: thermal conductivity of reported main-pipe fiberglass insulation. The equation is a candidate from notes, not a selected correlation.
 \par\textbf{Workbook tab:} Form material. Fill columns F--I. Every unanswered line below remains \textbf{TO CONFIRM}.
 \textbf{Record context:} configuration / item / date / completed by: \hrulefill\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Material and component}\hfill M12\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Reported):} Main-pipe fiberglass insulation; product 5556K73 reported\par
@@ -363,7 +393,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Property to select}\hfill M13\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Reported):} Thermal conductivity k(T)\par
@@ -372,7 +402,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Candidate equation / table}\hfill M13\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Reported):} k = 5.84142e-7*T\textasciicircum{}2 - 2.89613e-4*T + 6.78938e-2\par
@@ -381,7 +411,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Input variable and output units}\hfill M14\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Reported):} Output W/(m K) reported; confirm T convention against original fit\par
@@ -390,7 +420,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Source-supported domain}\hfill M15\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Reported):} Notes report 297-533 K; original data/domain unverified\par
@@ -402,7 +432,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 \clearpage
 {\large\bfseries Material-property selection appendix --- continued}\par
 \textbf{Record context:} configuration / item / date: \hrulefill\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Actual use range / margin to source domain}\hfill C45\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} VCU experiment and insulation-temperature ranges unknown\par
@@ -411,7 +441,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Original source / edition / table or equation}\hfill M13\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Reported):} Product link in notes; original fit data not yet retained here\par
@@ -420,7 +450,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Evidence this product is installed}\hfill M12\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Unknown for the selected segment and layer\par
@@ -429,7 +459,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Source uncertainty versus fit residual}\hfill M17\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Both unknown; do not treat fit precision as uncertainty\par
@@ -438,7 +468,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Interpolation and outside-domain policy}\hfill M16\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Not selected\par
@@ -450,7 +480,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 \clearpage
 {\large\bfseries Material-property selection appendix --- continued}\par
 \textbf{Record context:} configuration / item / date: \hrulefill\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Why this source; alternatives considered}\hfill M18\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Not selected; compare product data and conditions\par
@@ -459,7 +489,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Check values, implementation and version}\hfill M19\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} Not implemented or independently checked\par
@@ -468,7 +498,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
 }\end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Approved use, reviewer and date}\hfill C03\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
 \textbf{Reference only (Unknown):} No approved property choice established\par
@@ -481,7 +511,7 @@ Example: thermal conductivity of reported main-pipe fiberglass insulation. The e
 \clearpage\section{What the draft phases ask the team to return}\label{phase-requests}
 These are concrete information requests extracted from draft STNCL Phases 0--4. Values and test conditions in those plans remain draft. The electrical-heater cautions below must be resolved for VCU.
 \textbf{How to use:} pick a request, gather the listed files, and return them with the configuration/run ID. The computational team supplies the analysis where indicated. Mark completion only after the review partner has assessed the evidence.
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P0-01 | Identify the physical setup}
 \textbf{Please do:} Photograph the whole VCU loop; name the revision, date and changed components.\par
 \textbf{Return:} Configuration ID, change list and labeled photos\par
@@ -490,7 +520,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C01-C17; P0 Section 3 Method: configuration and geometry\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P0-02 | Trace every channel}
 \textbf{Please do:} Match each installed sensor to its cable/DAQ channel and actual sensing point.\par
 \textbf{Return:} Channel crosswalk, position survey, calibration certificates and uncertainties\par
@@ -499,7 +529,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C21-C33; M04; P0 Method: instrumentation\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P0-03 | Document heater and cooler measurement boundaries}
 \textbf{Please do:} Supply the actual circuit/plumbing and feedback sketches, meter positions and logged signals.\par
 \textbf{Return:} Electrical wiring/power record; coolant routing, flow and temperature planes\par
@@ -508,7 +538,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C34-C41; M08-M09; P0 Section 2 duties; Section 3 secondary-side boundaries\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P0-04 | Document fluid, branches and operating limits}
 \textbf{Please do:} Identify each circuit fluid, batch, fill level, valves, vent/pressure and approved limits.\par
 \textbf{Return:} Fluid/inventory record, branch state sheet and limit references\par
@@ -517,7 +547,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C18-C20; C42-C45; M07; P0 Method: facility/fluid configuration and operating limits\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P0-05 | Demonstrate logging and synchronization}
 \textbf{Please do:} Provide a checkout record showing required signals and a common timed event.\par
 \textbf{Return:} Raw checkout file, channel units/rates, clock offsets and event log\par
@@ -526,7 +556,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C31-C33; C44; C46; P0 Method: environment, synchronization and coordinated checkout\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P1-01 | Supply a qualified ambient baseline}
 \textbf{Please do:} Under the approved procedure, record the passive baseline and room/control history.\par
 \textbf{Return:} At least 6 h after ambient equilibrium plus a relevant HVAC cycle, as requested by draft\par
@@ -535,7 +565,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C44; C46; M22-M24; P1 Section 3 Method, Record the baseline\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P1-02 | Explain channel quality and substitutions}
 \textbf{Please do:} Identify bad channels; provide real TC/Luna pairs and note spatial offsets.\par
 \textbf{Return:} Quality/exclusion list, pairing map, noise/drift/covariance summary\par
@@ -544,7 +574,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C23-C33; M21; M24; P1 Section 3 Required Outputs\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P1-03 | Agree on measurable acceptance criteria}
 \textbf{Please do:} Review whether proposed limits can be resolved by the baseline measurements.\par
 \textbf{Return:} Approved channel roles, block/window rules and resolution evidence\par
@@ -553,7 +583,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C33; M22-M24; P1 Section 2 and Section 3 Required Outputs\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P2-01 | Agree on the conditioning procedure}
 \textbf{Please do:} Confirm how VCU is filled, circulated, isolated and judged near-isothermal.\par
 \textbf{Return:} Reviewed procedure, fill/inventory/valve history and initial temperature map\par
@@ -562,7 +592,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C20; C43; M20; P2 Section 3 Method and Required Outputs step 1\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P2-02 | Preserve warm and cold relaxation records}
 \textbf{Please do:} Provide full conditioning, shutdown and relaxation histories with room/event data.\par
 \textbf{Return:} Two warm and two cold runs requested by draft; calibration/withheld roles assigned in advance\par
@@ -571,7 +601,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C46; M20; M25; P2 Section 3 Run IDs and Method\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P2-03 | Demonstrate the passive boundary}
 \textbf{Please do:} Show actual electrical input and residual cooler/attached-hardware heat exchange after shutdown.\par
 \textbf{Return:} Residual-duty evidence, isolation timing and initial-state uncertainty\par
@@ -580,7 +610,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C36; C40; M06; M08; M20; P2 Method initial condition and Required Outputs qualification\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P2-04 | Review the fitted model before later tests}
 \textbf{Please do:} Confirm the sensor-to-zone map and explain structured residuals with experimental context.\par
 \textbf{Return:} Frozen model/property/mapping versions, withheld comparisons, parameter uncertainty and settling bound\par
@@ -589,7 +619,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} M21; M25-M27; P2 Section 3 Required Outputs / Disposition\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P3-01 | Provide low-duty accepted-state records}
 \textbf{Please do:} Return heater-only and cooler-only histories, inactive-system evidence and accepted intervals.\par
 \textbf{Return:} HTR-LOW-01 / CLR-LOW-01 records, ambient exchange and uncertainty inputs\par
@@ -598,7 +628,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C36; C40; C44; M22-M24; P3 Section 3 Method / Required Outputs\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P3-02 | Keep blind comparisons independent}
 \textbf{Please do:} Review discrepancies before any fitted parameter is changed.\par
 \textbf{Return:} Dated blind comparison, residuals, condensation class and disposition\par
@@ -607,7 +637,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} M25; M31; P3 Section 2 Blind validation; Section 3 Disposition\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P4-01 | Agree on attainable target bands}
 \textbf{Please do:} Confirm instrumentation and controls can resolve the proposed mean-temperature and duty targets.\par
 \textbf{Return:} Approved target coordinates/bands and actual achieved conditions\par
@@ -616,7 +646,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C36; C41; M22-M23; P4 Section 3 Method: select matrix coordinates\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P4-02 | Return complete matrix and transition histories}
 \textbf{Please do:} Preserve OP-A/B/C/D/E and B-R records, approach paths, events and failed attempts.\par
 \textbf{Return:} Five unique states plus repeat; accepted spans, reporting intervals and transition times\par
@@ -625,7 +655,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \textbf{Traceability:} C46; M23; M32; P4 Section 3 Run IDs / Required Outputs\par
 \textbf{Done when:} Evidence supplied and reviewed; open limitations recorded.\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{P4-03 | Qualify inference and applicability}
 \textbf{Please do:} Provide usable exchanger-temperature differences and uncertainty inputs; identify a withheld applicability state.\par
 \textbf{Return:} Flow/Reynolds conditioning evidence, independent estimates and applicability comparison\par
@@ -636,7 +666,7 @@ These are concrete information requests extracted from draft STNCL Phases 0--4. 
 \end{minipage}\par\vspace{8pt}
 \clearpage\section{Issues to resolve together}
 All issues below are open. The suggested owners help route a question; they do not imply an assigned or approved responsibility.
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{I01 | Hardware / plan mismatch}
 \textbf{Finding:} Plans use heater secondary enthalpy flow; VCU notes report electrical mat/band heaters.\par
 \textbf{Next decision:} Define electrical measurement boundary, real power, heater/structure storage and external losses; revise Phase 0-4 references.\par
@@ -644,7 +674,7 @@ All issues below are open. The suggested owners help route a question; they do n
 \textbf{Source / locator:} P0 Section 2 duties; P3 energy balance versus HEAT VCU Heater\par
 \textbf{Affected fields:} C34-C37; M08; M30\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{I02 | Internal procedure inconsistency}
 \textbf{Finding:} In-loop recirculation is specified, but qualification still refers to tank uniformity before each fill.\par
 \textbf{Next decision:} Choose the actual conditioning method and align initial-condition, timing and acceptance wording.\par
@@ -652,7 +682,7 @@ All issues below are open. The suggested owners help route a question; they do n
 \textbf{Source / locator:} P2 Section 3 Method vs Required Outputs step 1\par
 \textbf{Affected fields:} C20; M20\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{I03 | Conditional measurement assumption}
 \textbf{Finding:} P0 states not all sensors are co-located; P1 requests each TC compared with its co-located Luna measurement.\par
 \textbf{Next decision:} Identify actual pairs and offsets; define how non-coincident pairs may be used.\par
@@ -660,7 +690,7 @@ All issues below are open. The suggested owners help route a question; they do n
 \textbf{Source / locator:} P0 apparatus/channel table vs P1 Required Outputs TC-Luna comparison\par
 \textbf{Affected fields:} C24-C27; C33; M21\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{I04 | Conflicting sensor evidence}
 \textbf{Finding:} CAD extraction includes PTC-X; note calls PTCX a fluke.\par
 \textbf{Next decision:} Check installed hardware and source labeling; keep unresolved reference until dispositioned.\par
@@ -668,7 +698,7 @@ All issues below are open. The suggested owners help route a question; they do n
 \textbf{Source / locator:} R9 sheets 5-6; SNOTE VCU Rev9 PTCX note\par
 \textbf{Affected fields:} C21; C23\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{I05 | Unqualified geometry interpretation}
 \textbf{Finding:} Heater pieces overlap/offset; lower-right bend is reconstructed; clamp spans are mechanical only.\par
 \textbf{Next decision:} Survey geometry; document any model healing and active heater boundaries separately.\par
@@ -676,7 +706,7 @@ All issues below are open. The suggested owners help route a question; they do n
 \textbf{Source / locator:} R9 sheets 2-4 and SEG\par
 \textbf{Affected fields:} C06-C08; C34; M03\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{I06 | Cross-facility / revision contamination}
 \textbf{Finding:} Some VCU note links target ACU or Rev8; supplied VCU overview illustrations identify Rev8.\par
 \textbf{Next decision:} Keep references for context only; use Rev9 rows as CAD candidate and new installed evidence for verification.\par
@@ -684,7 +714,7 @@ All issues below are open. The suggested owners help route a question; they do n
 \textbf{Source / locator:} SNOTE VCU sections; supplied VCU illustration captions\par
 \textbf{Affected fields:} C04; C23\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{I07 | Applicability gap}
 \textbf{Finding:} Draft campaign is Prop-30-specific; user also lists air/water VCU experiments.\par
 \textbf{Next decision:} Keep plan thresholds and fluid correlations scoped to the documented fluid/circuit and requalify other uses.\par
@@ -692,7 +722,7 @@ All issues below are open. The suggested owners help route a question; they do n
 \textbf{Source / locator:} P0 Purpose/Required scope; USER fluid clarification\par
 \textbf{Affected fields:} C18-C19; C45; M15\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{I08 | Approval status missing}
 \textbf{Finding:} Documents are marked draft; no Nick-approved requirement status is established here.\par
 \textbf{Next decision:} Confirm approved revision and record which requirements remain proposed.\par
@@ -700,7 +730,7 @@ All issues below are open. The suggested owners help route a question; they do n
 \textbf{Source / locator:} P0-P4 title/status and approval records\par
 \textbf{Affected fields:} C03; M22\par
 \end{minipage}\par\vspace{8pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{I09 | Property-source qualification gap}
 \textbf{Finding:} Notes contain candidate fits/mixed-source choices; original validity and uncertainty are not yet verified.\par
 \textbf{Next decision:} Check original sources and installed identity before approving equations; keep source domain separate from operating limits.\par
@@ -1002,7 +1032,7 @@ WATER & Water & \textit{Unknown} & \textit{Unknown} \\[3pt]
 \clearpage\section{Complete requirements and evidence register}\label{requirements}
 The Requirements workbook tab is the editable master. Each record states why the field is needed, who should supply it, where the requirement and evidence came from, what uses it supports, and what remains unresolved. Requirement provenance is distinct from evidence for a value.
 \textbf{Review rule:} the records below describe candidate evidence. Approved choices require a recorded decision, scope and effective configuration; none has been established in this seed package.
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C01 | Facility and configuration ID}
 \textbf{Purpose:} Tie measurements to one physical setup.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1016,7 +1046,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Which installed configuration and effective date does this identify?\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C02 | Effective date and change history}
 \textbf{Purpose:} Explain what changed between datasets.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1030,7 +1060,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record effective date, author, changed item, reason, previous/new evidence, affected runs and whether recalibration or model revalidation is needed.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C03 | Reviewer, date and approved use}
 \textbf{Purpose:} Record an actual release decision separately from evidence type.\par
 \textbf{Package / responsible team:} Shared / Facility lead / package reviewer\par
@@ -1044,7 +1074,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Who may release the package, and for which experiment/model use?\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C04 | Source revision and file hash}
 \textbf{Purpose:} Make the geometry baseline reproducible.\par
 \textbf{Package / responsible team:} Shared / Experimental + computational\par
@@ -1058,7 +1088,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Does this source match installed VCU hardware?\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C05 | Coordinate datum and axes}
 \textbf{Purpose:} Give every location the same reference.\par
 \textbf{Package / responsible team:} Configuration / Experimental + computational\par
@@ -1072,7 +1102,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Identify these points on a dated hardware photo.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C06 | Segment endpoints and straight length}
 \textbf{Purpose:} Define the length being measured.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1086,7 +1116,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Measure axis-end span; do not substitute virtual-corner length.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C07 | Installed inclination and gravity direction}
 \textbf{Purpose:} Determine elevation changes and buoyancy orientation.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1100,7 +1130,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} What is the measured installed tilt and uncertainty?\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C08 | Bend geometry and length basis}
 \textbf{Purpose:} Avoid replacing a chord with an arc.\par
 \textbf{Package / responsible team:} Configuration / Experimental + computational\par
@@ -1114,7 +1144,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} How will the physical bend be measured and represented?\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C09 | Pipe inside diameter}
 \textbf{Purpose:} Set fluid area, inventory and hydraulic dimension.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1128,7 +1158,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Confirm actual bore/specification and local restrictions; keep CAD null.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C10 | Pipe outside diameter}
 \textbf{Purpose:} Set wall and external thermal geometry.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1142,7 +1172,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Confirm installed OD and measurement uncertainty.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C11 | Pipe material grade and certificate}
 \textbf{Purpose:} Identify the solid whose properties will be used.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1156,7 +1186,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Provide purchase/specification or material certificate.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C12 | Dimension uncertainty and method}
 \textbf{Purpose:} Propagate measurement uncertainty without using CAD print precision.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1170,7 +1200,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record method, instrument, repeatability and uncertainty units for each dimension.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C13 | Insulation product and layer order}
 \textbf{Purpose:} Identify the actual thermal stack.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1184,7 +1214,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Which product and layers are installed on this exact segment?\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C14 | Insulation thickness by section}
 \textbf{Purpose:} Set the thermal resistance geometry.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1198,7 +1228,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Measure each layer; do not apply either value everywhere.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C15 | Coverage start/end, gaps and condition}
 \textbf{Purpose:} Capture uninsulated heat-loss paths.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1212,7 +1242,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Supply evidence and request review.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C16 | Insulation contact and support details}
 \textbf{Purpose:} Represent contact resistance and support heat paths.\par
 \textbf{Package / responsible team:} Shared / Experimental + computational\par
@@ -1226,7 +1256,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Is there evidence of contact, compression, gaps or support conduction?\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C17 | Dated overview and detail photos}
 \textbf{Purpose:} Make the configuration recognizable and auditable.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1240,7 +1270,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Attach photos showing endpoints, insulation and sensors with scale.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C18 | Fluid identity and circuit assignment}
 \textbf{Purpose:} Avoid confusing working fluid, coolant and room air.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1254,7 +1284,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Which fluid occupies each circuit in this run?\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C19 | Composition and concentration basis}
 \textbf{Purpose:} Select the correct property family.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1268,7 +1298,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Identify formulation, preparation and concentration verification.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C20 | Batch, fill inventory and condition}
 \textbf{Purpose:} Reproduce thermal capacity and hydraulic state.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1282,7 +1312,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record batch, fill date, mass/level, contamination and trapped-gas evidence.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C21 | Sensor hardware ID and type}
 \textbf{Purpose:} Identify the installed instrument independently of a CAD label.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1296,7 +1326,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Confirm installed count and resolve PTC-X; no channel identity inferred.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C22 | Sensor model and serial number}
 \textbf{Purpose:} Connect the device to its calibration evidence.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1310,7 +1340,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Supply evidence and request review.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C23 | DAQ channel crosswalk}
 \textbf{Purpose:} Connect a physical sensor to the recorded signal.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1324,7 +1354,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Trace cable/DAQ configuration and verify the mapping with a recorded check.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C24 | Sensor segment, endpoint and axial distance}
 \textbf{Purpose:} Locate the sensor without scaling an image.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1338,7 +1368,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Measure the actual sensing/contact reference and identify the point basis.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C25 | Circumferential angle and zero reference}
 \textbf{Purpose:} Locate a sensor around the pipe circumference.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1352,7 +1382,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Confirm convention; measure angle. No sensor angles have been supplied.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C26 | Radius, insertion depth and sensing extent}
 \textbf{Purpose:} Distinguish mount, sheath, junction and fiber active region.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1366,7 +1396,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record physical junction or fiber extent; a mount centroid is not a tip.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C27 | Attachment and thermal coupling}
 \textbf{Purpose:} Interpret what temperature a sensor measures.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1380,7 +1410,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Describe attachment, contact, insulation position and time response.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C28 | Calibration date, certificate and validity}
 \textbf{Purpose:} Establish calibration provenance.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1394,7 +1424,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Provide instrument-specific date, certificate, traceability, next-due or recheck trigger, and validity at the run date.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C29 | Calibration range and correction}
 \textbf{Purpose:} Apply corrections only where supported.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1408,7 +1438,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Supply calibration points, applied correction and residuals with units.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C30 | Measurement uncertainty and coverage}
 \textbf{Purpose:} Combine uncertainties on a consistent basis.\par
 \textbf{Package / responsible team:} Shared / Experimental + computational\par
@@ -1422,7 +1452,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} State standard/expanded uncertainty, coverage factor, confidence and shared error sources.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C31 | Sampling, scaling, filtering and response}
 \textbf{Purpose:} Reproduce recorded signals and temporal response.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1436,7 +1466,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Supply evidence and request review.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C32 | Clock synchronization and common-event check}
 \textbf{Purpose:} Align measurements, commands and events.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1450,7 +1480,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Supply evidence and request review.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C33 | Mandatory / alternate / diagnostic role}
 \textbf{Purpose:} Define usable channels before selecting results.\par
 \textbf{Package / responsible team:} Shared / Experimental + computational\par
@@ -1464,7 +1494,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Which channels are mandatory, and which alternates are approved with evidence?\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C34 | Heater element identity and active spans}
 \textbf{Purpose:} Map where electrical heat is generated.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1478,7 +1508,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Survey each energized element; clamp edges and reported total coverage are not active boundaries.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C35 | Heater supply and circuit diagram}
 \textbf{Purpose:} Establish the electrical measurement boundary.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1492,7 +1522,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Provide rated elements, wiring, series/parallel layout, switching and measurement points.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C36 | Measured heater power and uncertainty}
 \textbf{Purpose:} Distinguish input power, controller command and heat entering the loop.\par
 \textbf{Package / responsible team:} Shared / Experimental + computational\par
@@ -1506,7 +1536,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Provide time-resolved real electrical power, meter/waveform basis, losses and storage accounting.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C37 | Heater control and monitor signals}
 \textbf{Purpose:} Explain controller actions and protect measurement interpretation.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1520,7 +1550,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record feedback sensor, setpoint, output, on/off state, alarms and wiring reference.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C38 | Cooler jacket and active cooling boundaries}
 \textbf{Purpose:} Separate mechanical geometry from effective heat transfer.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1534,7 +1564,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Measure active span and preserve shell versus complete-envelope definitions.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C39 | Coolant routing and measurement planes}
 \textbf{Purpose:} Bound the measured cooler energy balance.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1548,7 +1578,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Confirm actual inlet/outlet, intervening hoses, bypasses, heat leaks and sensor planes.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C40 | Coolant flow and inlet/outlet measurements}
 \textbf{Purpose:} Compute duty with calibrated signals and correct coolant properties.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1562,7 +1592,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Supply flow-meter basis, calibration, fluid properties, temperatures and signs.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C41 | Cooler feedback and setpoint history}
 \textbf{Purpose:} Distinguish an imposed model condition from actual control behavior.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1576,7 +1606,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Supply evidence and request review.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C42 | TLEP/BREP connections and termination}
 \textbf{Purpose:} Locate branch interfaces and attached hardware.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1590,7 +1620,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Confirm valve/tank connectivity, actual cut plane and installed branch geometry.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C43 | Tank level, vent/pressure and valve states}
 \textbf{Purpose:} Define hydraulic and thermal branch conditions.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1604,7 +1634,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record fill level, gas/vent pressure, valve/bypass state and changes during the run.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C44 | Ambient temperature/RH and outer-surface locations}
 \textbf{Purpose:} Resolve room gradients and condensation conditions.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1618,7 +1648,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Are these channels installed? Under-insulation wall TCs are not exposed-surface measurements.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C45 | Operating limits and alarm/interlock basis}
 \textbf{Purpose:} Reference facility-approved limits for this setup.\par
 \textbf{Package / responsible team:} Configuration / Facility lead / package reviewer\par
@@ -1632,7 +1662,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Provide approved limits and source; do not infer them from property-fit ranges.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C46 | Run ID, raw files and event log}
 \textbf{Purpose:} Tie data, changes and analysis intervals to the configuration.\par
 \textbf{Package / responsible team:} Configuration / Experimental team\par
@@ -1646,7 +1676,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Supply evidence and request review.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M01 | Intended use and prediction targets}
 \textbf{Purpose:} Define what comparison would be useful.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1660,7 +1690,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Identify outputs, required accuracy and excluded uses for each model.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M02 | Model/software/input revision}
 \textbf{Purpose:} Reproduce an analysis with the same inputs.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1674,7 +1704,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record solver/code revision, resolved configuration and property version.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M03 | Model domain and geometry simplifications}
 \textbf{Purpose:} Make excluded branches and healed geometry visible.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1688,7 +1718,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Which simplifications are accepted and what sensitivity supports them?\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M04 | 1-D cell and CFD region mapping}
 \textbf{Purpose:} Compare the right model quantity with each sensor.\par
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
@@ -1702,7 +1732,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Map physical sensing points or averages to cells/regions; include non-coincident offsets.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M05 | Flow mode and governing equations}
 \textbf{Purpose:} Identify zero-flow, prescribed-flow or buoyancy-coupled assumptions.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1716,7 +1746,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Select governing equations, gravity/pressure reference, compressibility or Boussinesq approximation, and laminar/turbulent treatment with validity; identify any effective-zone assumptions.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M06 | Storage, conjugate heat transfer and contact model}
 \textbf{Purpose:} Represent fluid, wall, insulation and interface physics.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1730,7 +1760,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Which layers, axial paths, capacitances and contacts are included?\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M07 | TLEP/BREP mathematical boundary conditions}
 \textbf{Purpose:} Translate documented branch hardware into equations.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1744,7 +1774,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Specify termination plane, mass/pressure and thermal conditions; no throughflow does not imply adiabatic.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M08 | Heater source distribution and power balance}
 \textbf{Purpose:} Refer electrical measurements to the modeled control volume.\par
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
@@ -1758,7 +1788,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Specify spatial source, meter boundary, external losses and storage without double counting.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M09 | Cooler mathematical boundary and feedback}
 \textbf{Purpose:} Match model inputs to measured coolant/control conditions.\par
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
@@ -1772,7 +1802,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Choose measured inlet/flow, imposed wall temperature or coefficient model with rationale.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M10 | External convection and radiation model}
 \textbf{Purpose:} Represent exchange with room and surfaces.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1786,7 +1816,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record ambient assignment, emissivity, surface state, correlations and validity.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M11 | Hydraulic friction and local losses}
 \textbf{Purpose:} Compute resistance and uncertainty consistently.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1800,7 +1830,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record roughness, K values, correlation versions, reference diameters and regime limits.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M12 | Material/product-to-property link}
 \textbf{Purpose:} Use properties for the actual material or fluid.\par
 \textbf{Package / responsible team:} Shared / Experimental + computational\par
@@ -1814,7 +1844,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Confirm installed identity; list needed fluid density/cp/enthalpy/viscosity/k/expansion and solid density/cp/k by model, plus relevant surface/contact properties.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M13 | Property source and exact equation/table}
 \textbf{Purpose:} Make every numerical property reproducible.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1828,7 +1858,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Retain original publication/product table and exact coefficients, edition and locator.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M14 | Input/output units and concentration basis}
 \textbf{Purpose:} Prevent temperature and mixture-basis conversion errors.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1842,7 +1872,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record K versus deg C, pressure units, mass/volume fraction and output units for each function.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M15 | Applicability domain}
 \textbf{Purpose:} Prevent unsupported extrapolation across fluids or regimes.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1856,7 +1886,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Verify property-specific T/p/composition/phase domain from original sources.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M16 | Interpolation and out-of-range behavior}
 \textbf{Purpose:} Make tables and correlations behave consistently.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1870,7 +1900,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Specify interpolation; reject/flag extrapolation explicitly rather than silently clipping.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M17 | Property uncertainty and fit residuals}
 \textbf{Purpose:} Separate source uncertainty from fitting accuracy.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1884,7 +1914,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Quantify source, composition, fit and implementation uncertainty separately.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M18 | Selection rationale and alternatives}
 \textbf{Purpose:} Explain why both teams use this property model.\par
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
@@ -1898,7 +1928,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Compare candidate sources and explain selection or any deliberate mixed-source set.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M19 | Implementation reference checks}
 \textbf{Purpose:} Check equation transcription and thermodynamic consistency.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1912,7 +1942,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Store reference values; check cp/enthalpy and density/expansion consistency where used.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M20 | Initial temperature, flow and inventory state}
 \textbf{Purpose:} Initialize transient models from evidence.\par
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
@@ -1926,7 +1956,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record fluid/wall distribution, initial flow, fill history and unresolved state uncertainty.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M21 | Observation averaging and sensor response}
 \textbf{Purpose:} Compare like quantities rather than convenient nodes.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1940,7 +1970,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Define spatial/time averaging, lag and fluid-wall weighting.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M22 | Steady-state class and acceptance limits}
 \textbf{Purpose:} Fix data-quality criteria before selecting windows.\par
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
@@ -1954,7 +1984,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Approve intended-use limits and demonstrate resolvability; do not loosen them to fit noise.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M23 | Accepted interval and target-attainment result}
 \textbf{Purpose:} Keep constancy separate from reaching the requested target.\par
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
@@ -1968,7 +1998,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Record acceptance time, confirmed span, reporting interval and target-band result separately.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M24 | Covariance and autocorrelation method}
 \textbf{Purpose:} Report uncertainty using independent information.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1982,7 +2012,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Freeze block/window rules, Type A/B and shared-error covariance with evidence.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M25 | Calibration/withheld split and model freeze}
 \textbf{Purpose:} Keep validation independent of parameter fitting.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -1996,7 +2026,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Declare run roles before fitting; record model/property/mapping versions and any reassignment.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M26 | Parameter identifiability and sensitivities}
 \textbf{Purpose:} Avoid fitting unsupported model complexity.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -2010,7 +2040,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Report parameter covariance, residual structure, start-time and initial-state sensitivity.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M27 | Settling time and supported domain}
 \textbf{Purpose:} Use a supported operational settling value.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -2024,7 +2054,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Report uncertainty and conservative supported bound; do not use an archived plateau fit.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M28 | Mass/energy conservation and solution convergence}
 \textbf{Purpose:} Check that the numerical solution is credible.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -2038,7 +2068,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Define residual/closure criteria and failure handling for each solver.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M29 | Spatial/time resolution sensitivity}
 \textbf{Purpose:} Separate discretization error from experimental discrepancy.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -2052,7 +2082,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Report mesh/cell/time refinement and tolerance sensitivity relevant to predictions.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M30 | Flow inference and conditioning gates}
 \textbf{Purpose:} Avoid reporting flow from unresolved enthalpy differences.\par
 \textbf{Package / responsible team:} Modeling / Computational team\par
@@ -2066,7 +2096,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Use validated loss corrections, covariance-aware consistency and defined uncertainty gates.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M31 | Validation metrics, discrepancy and applicability}
 \textbf{Purpose:} Bound what has actually been demonstrated.\par
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
@@ -2080,7 +2110,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
 \textbf{To resolve:} Define metrics and acceptance basis; preserve blind comparisons and model limitations.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M32 | Repeatability and path-dependence criteria}
 \textbf{Purpose:} Distinguish significant history effects from measurement scatter.\par
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
@@ -2097,7 +2127,7 @@ The Requirements workbook tab is the editable master. Each record states why the
 \clearpage\section{Current model and material input records}
 These records reproduce the existing Model choices and Materials worksheets. Unknown inputs remain visible. New answers in the three prototype forms are evidence for review; they do not automatically populate these records.
 \subsection{Model choices}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{TLEP and expansion tank}
 \textbf{Observed state:} \textit{Unknown}\par
 \textbf{1-D choice:} \textit{Unknown}\par
@@ -2107,7 +2137,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Owner:} \textit{Unknown}\par
 \textbf{Status:} Unknown\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{BREP and drain}
 \textbf{Observed state:} \textit{Unknown}\par
 \textbf{1-D choice:} \textit{Unknown}\par
@@ -2117,7 +2147,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Owner:} \textit{Unknown}\par
 \textbf{Status:} Unknown\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{Heater power}
 \textbf{Observed state:} \textit{Unknown}\par
 \textbf{1-D choice:} \textit{Unknown}\par
@@ -2127,7 +2157,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Owner:} \textit{Unknown}\par
 \textbf{Status:} Unknown\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{Cooler control}
 \textbf{Observed state:} \textit{Unknown}\par
 \textbf{1-D choice:} \textit{Unknown}\par
@@ -2137,7 +2167,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Owner:} \textit{Unknown}\par
 \textbf{Status:} Unknown\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{External convection / radiation}
 \textbf{Observed state:} \textit{Unknown}\par
 \textbf{1-D choice:} \textit{Unknown}\par
@@ -2147,7 +2177,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Owner:} \textit{Unknown}\par
 \textbf{Status:} Unknown\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{Initial conditions}
 \textbf{Observed state:} \textit{Unknown}\par
 \textbf{1-D choice:} \textit{Unknown}\par
@@ -2157,7 +2187,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Owner:} \textit{Unknown}\par
 \textbf{Status:} Unknown\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{Flow / heat-transfer closures}
 \textbf{Observed state:} \textit{Unknown}\par
 \textbf{1-D choice:} \textit{Unknown}\par
@@ -2167,7 +2197,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Owner:} \textit{Unknown}\par
 \textbf{Status:} Unknown\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{Verification and validation}
 \textbf{Observed state:} \textit{Unknown}\par
 \textbf{1-D choice:} \textit{Unknown}\par
@@ -2177,7 +2207,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Owner:} \textit{Unknown}\par
 \textbf{Status:} Unknown\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{Plan approval}
 \textbf{Observed state:} \textit{Unknown}\par
 \textbf{1-D choice:} \textit{Unknown}\par
@@ -2188,7 +2218,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Status:} Unknown\par
 \end{minipage}\par\vspace{5pt}
 \clearpage\subsection{Materials}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{PIPE}
 \textbf{Identity / product:} 316L stainless steel\par
 \textbf{Property:} rho, cp, k\par
@@ -2201,7 +2231,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Status:} Reported\par
 \textbf{Source:} 1.2 Main Material Props.md; 1.2.2 Steel Pipe Properties.md\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{MAIN-INS}
 \textbf{Identity / product:} Fiberglass / reported McMaster 5556K73\par
 \textbf{Property:} rho, cp, k\par
@@ -2214,7 +2244,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Status:} Reported\par
 \textbf{Source:} 1.2 Main Material Props.md\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{HEATER-INS}
 \textbf{Identity / product:} Calcium aluminum silicate / reported 4057K14\par
 \textbf{Property:} rho, cp, k\par
@@ -2227,7 +2257,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Status:} Reported\par
 \textbf{Source:} 1.2 Main Material Props.md\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{PROP30}
 \textbf{Identity / product:} Product/formulation unresolved\par
 \textbf{Property:} rho, cp, h, mu, k, beta\par
@@ -2240,7 +2270,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Status:} Reported\par
 \textbf{Source:} 1.2.1 Prop 30 ThermoPhys Props.md\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{AIR}
 \textbf{Identity / product:} Air\par
 \textbf{Property:} rho, cp, h, mu, k\par
@@ -2253,7 +2283,7 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Status:} Unknown\par
 \textbf{Source:} User fluid scope\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{WATER}
 \textbf{Identity / product:} Water\par
 \textbf{Property:} rho, cp, h, mu, k, beta\par
@@ -2298,107 +2328,107 @@ JTC-B & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
 \bottomrule\end{longtable}\normalsize
 \clearpage\section{Source catalog and limits of use}
 Use the source ID with the row/page/section locator. Source files are not operating instructions. Exact local paths and read-time file hashes are recorded in reference/source\_manifest.json. Files remain at their supplied locations; they are not all duplicated into this repository.
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{R9 | VCU\_\allowbreak{}Rev9\_\allowbreak{}CAD\_\allowbreak{}Engineering\_\allowbreak{}Drawings.pdf}
 \textbf{Revision / context:} 2026-10-08; VCU-R9-E01\par
 \textbf{Find it:} Sheets 1-8\par
 \textbf{Qualification:} VCU CAD candidate. Printed precision is not tolerance; geometry is not installed verification.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{SEG | VCU\_\allowbreak{}Rev9\_\allowbreak{}Segments.csv}
 \textbf{Revision / context:} Companion Rev9 structured package\par
 \textbf{Find it:} Rows keyed by segment; length\_\allowbreak{}basis, dx\_\allowbreak{}mm, dy\_\allowbreak{}mm, centerline\_\allowbreak{}length\_\allowbreak{}mm\par
 \textbf{Qualification:} Preserve blanks, projected spans and qualified spline lengths.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{SNS | VCU\_\allowbreak{}Rev9\_\allowbreak{}Sensor\_\allowbreak{}Stations.csv}
 \textbf{Revision / context:} Companion Rev9 structured package\par
 \textbf{Find it:} Rows keyed by sensor\_\allowbreak{}id; reference\_\allowbreak{}basis, nearest\_\allowbreak{}endpoint, nearest\_\allowbreak{}distance\_\allowbreak{}mm\par
 \textbf{Qualification:} Geometric references, not verified sensing tips or DAQ names.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{DIA | VCU\_\allowbreak{}Rev9\_\allowbreak{}Diameters.csv}
 \textbf{Revision / context:} Companion Rev9 structured package\par
 \textbf{Find it:} Rows keyed by item\par
 \textbf{Qualification:} Main swept-loop bore is absent; local spool bores are not loop-wide IDs.\par
 \end{minipage}\par\vspace{5pt}
 \clearpage{\large\bfseries Source catalog --- continued}\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{MAT | 1.2 Main Material Props.md}
 \textbf{Revision / context:} Supplied notes; VCU section cites 2026-09-16 report\par
 \textbf{Find it:} VCU section only; lines 17-44\par
 \textbf{Qualification:} Reported materials/composition and proposed insulation fit; original sources not verified.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{PG | 1.2.1 Prop 30 ThermoPhys Props.md}
 \textbf{Revision / context:} Supplied notes\par
 \textbf{Find it:} 30 wt\% heading and linked property figures\par
 \textbf{Qualification:} Property-source leads; do not transfer image/table values without source and units.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{STEEL | 1.2.2 Steel Pipe Properties.md}
 \textbf{Revision / context:} Supplied notes\par
 \textbf{Find it:} Lines 3-21; Suggested you use\par
 \textbf{Qualification:} Mixed candidate correlations. A range beside MOOSE items does not qualify the whole selection.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{HEAT | 1.1.0 Heaters and coolers.md}
 \textbf{Revision / context:} Supplied notes; 2026-10-07 reported heater message\par
 \textbf{Find it:} VCU / Insulation / Heater; lines 5-23\par
 \textbf{Qualification:} Electrical mat/band heaters reported. Wiring, active boundaries and net duty unverified.\par
 \end{minipage}\par\vspace{5pt}
 \clearpage{\large\bfseries Source catalog --- continued}\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{SNOTE | 1.1.2 Sensors.md}
 \textbf{Revision / context:} Supplied notes\par
 \textbf{Find it:} VCU / Rev9; PTCX note\par
 \textbf{Qualification:} PTCX called a fluke; some links in this section point to ACU/Rev8. Keep conflict visible.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{MODEL | 0.0 Intro to Model.md}
 \textbf{Revision / context:} Supplied model overview\par
 \textbf{Find it:} The four physical-model stages; reduced-zone paragraph\par
 \textbf{Qualification:} Supports proposed model scope; not verification that any facility run is validated.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{P0 | STNCL\_\allowbreak{}Phase0\_\allowbreak{}System\_\allowbreak{}Checkout.tex}
 \textbf{Revision / context:} Revision 0.1; 2026-08-17; draft\par
 \textbf{Find it:} Section 2 Technical Basis; Section 3 Method / Required Outputs\par
 \textbf{Qualification:} Draft requirements for facility-specific completion; approval not supplied.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{P1 | STNCL\_\allowbreak{}Phase1\_\allowbreak{}Ambient\_\allowbreak{}Equilibrium\_\allowbreak{}Baseline.tex}
 \textbf{Revision / context:} Revision 0.1; draft\par
 \textbf{Find it:} Section 2 Data Acceptance and Uncertainty; Section 3 Method / Required Outputs\par
 \textbf{Qualification:} Prop-30 plan; thresholds and noise examples are not universal operating limits.\par
 \end{minipage}\par\vspace{5pt}
 \clearpage{\large\bfseries Source catalog --- continued}\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{P2 | STNCL\_\allowbreak{}Phase2\_\allowbreak{}Thermal\_\allowbreak{}Relaxation\_\allowbreak{}Tests.tex}
 \textbf{Revision / context:} Revision 0.1; draft\par
 \textbf{Find it:} Section 2 Thermal Model and Heat Loss; Section 3 Method / Required Outputs\par
 \textbf{Qualification:} Prop-30 plan; conditioning and tank qualification wording need reconciliation.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{P3 | STNCL\_\allowbreak{}Phase3\_\allowbreak{}Low\_\allowbreak{}Duty\_\allowbreak{}Steady\_\allowbreak{}Heat\_\allowbreak{}Loss\_\allowbreak{}Tests.tex}
 \textbf{Revision / context:} Revision 0.1; draft\par
 \textbf{Find it:} Section 2 Blind validation; Section 3 Method / Required Outputs / Disposition\par
 \textbf{Qualification:} Heater-side duty definition requires electrical adaptation for VCU.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{P4 | STNCL\_\allowbreak{}Phase4\_\allowbreak{}Initial\_\allowbreak{}Test\_\allowbreak{}Matrix\_\allowbreak{}and\_\allowbreak{}Transition\_\allowbreak{}Characterization.tex}
 \textbf{Revision / context:} Revision 0.1; draft\par
 \textbf{Find it:} Section 2 Primary-flow inference; Section 3 Method / Required Outputs\par
 \textbf{Qualification:} Five unique states plus repeat; applicability and uncertainty gates are draft requirements.\par
 \end{minipage}\par\vspace{5pt}
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{USER | User decisions in this chat}
 \textbf{Revision / context:} 2026-10-15\par
 \textbf{Find it:} Editable forms; VCU fluid scope; both models; circumferential sensor position\par
 \textbf{Qualification:} VCU Prop-30/air/water; circuit and run assignment still required. ACU excluded.\par
 \end{minipage}\par\vspace{5pt}
 \clearpage{\large\bfseries Source catalog --- continued}\par
-\begin{minipage}{\textwidth}\small
+\par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{DESIGN | Proposed package design}
 \textbf{Revision / context:} 2026-10-15\par
 \textbf{Find it:} This requirements register and coordinate convention\par

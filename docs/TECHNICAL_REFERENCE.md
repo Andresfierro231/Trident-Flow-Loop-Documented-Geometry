@@ -4,11 +4,11 @@ An editable workbook generates labeled vector drawings, a standalone LaTeX docum
 
 ## Start here
 
-Read **[START_HERE.md](START_HERE.md)** for the five-step form workflow. Experimental contributors fill the three Form tabs and return evidence; they do not need to run software. The [maintainer guide](docs/MAINTAINER_START.md) explains review and regeneration. The [modeling guide](docs/MODELING_START.md) covers shared properties, boundaries and validation.
+Read **[START_HERE.md](../START_HERE.md)** for the five-step form workflow. Experimental contributors fill the three Form tabs and return evidence; they do not need to run software. The [maintainer guide](MAINTAINER_START.md) explains review and regeneration. The [modeling guide](MODELING_START.md) covers shared properties, boundaries and validation.
 
 This increment adds **78 field requirements**, **17 phase information requests**, **nine review issues**, and **17 source records**. The three sample forms separate reference evidence, new responses and review. All physical/model choices remain draft.
 
-From the repository folder, the maintainer regenerates the existing document with `python3 scripts/generate.py`. Review `generated/validation.json` before using any output. A failed build leaves prior figures in place and marks them stale. A successful build records the workbook hash. This prototype always marks modeling readiness false.
+From the repository folder, run `python3 scripts/build.py` to regenerate and compile the PDF, or `python3 scripts/generate.py` to regenerate outputs only. The root `main.tex` includes the generated standalone document. Review `generated/validation.json` before using any output. A failed build leaves prior figures in place and marks them stale. A successful build records the workbook hash. This prototype always marks modeling readiness false.
 
 The generator needs Python 3.9+ and no third-party Python packages. The LaTeX document uses common packages including TikZ, longtable and booktabs. XLSX inputs must be literal values; formulas are rejected rather than relying on possibly stale cached values. The workbook itself has no macros and does not refresh drawings until the generator runs.
 
@@ -92,7 +92,7 @@ python3 -m unittest discover -s tests -v
 
 All 14 behavior checks pass. They cover loop closure, endpoint reversal, coordinate/angle transforms, unknown versus zero, geometry changes, impossible distances, duplicate IDs, VCU/ACU separation, full workbook regeneration, source references, complete review decisions, and form responses reaching the document without changing baseline geometry. The seven original data sheets were also compared with the pre-edit workbook and remain unchanged.
 
-The current standalone document compiled successfully with the desktop LaTeX compiler. Workbook sheets and vector-scene previews were visually checked. Access to the app's PDF preview was unavailable for this update, so the current compiled page layout has not been visually inspected. These checks do not verify installed hardware or simulation validity; there are no spreadsheet formulas or macros.
+The repository PDF build compiles the root entry point with repeated passes for contents and cross-references. The reorganized document has been rendered for page-layout review. These checks do not verify installed hardware or simulation validity; there are no spreadsheet formulas or macros.
 
 ## Next development increment
 

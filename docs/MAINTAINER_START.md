@@ -34,12 +34,12 @@ The prototype has an overall **Draft** status and always reports modeling readin
 Save and close the workbook’s editing session. Open a terminal in the repository folder and run:
 
 ```sh
-python3 scripts/generate.py
+python3 scripts/build.py
 ```
 
 The generator needs Python 3.9 or later, with no extra Python packages. It refreshes the existing LaTeX file, labeled figures, readable evidence register and input exports. Form responses appear in the document, while baseline diagrams use the separate baseline tables.
 
-Open `generated/VCU_control_package.tex` in the LaTeX editor. If it is already open, leave it open; it refreshes automatically when the file changes. The standalone document includes its drawing code. The workbook itself has no macros and does not refresh figures when saved.
+The command validates and regenerates the inputs, then compiles `output/pdf/VCU_control_package.pdf`. It requires `latexmk` or `pdflatex`. To generate without compiling, use `python3 scripts/generate.py`. Open the root `main.tex` in your LaTeX editor or choose it as the Overleaf main document; it includes `generated/VCU_control_package.tex`. The standalone generated document includes its drawing code. The workbook itself has no macros and does not refresh figures when saved.
 
 ## 5. Check the result before sharing
 
@@ -65,4 +65,4 @@ Then compile the existing LaTeX source and inspect the pages affected by the cha
 | The picture did not change | Save the intended workbook, regenerate and check validation. Form responses do not change baseline geometry automatically. |
 | The build fails | Earlier generated pictures may be stale. Fix the named input and regenerate before sharing them. |
 
-The full technical conventions and output inventory are in [README.md](../README.md). The remaining development work is in [NEXT_STEPS.md](NEXT_STEPS.md).
+The full technical conventions and output inventory are in [technical reference](TECHNICAL_REFERENCE.md). The remaining development work is in [NEXT_STEPS.md](NEXT_STEPS.md).

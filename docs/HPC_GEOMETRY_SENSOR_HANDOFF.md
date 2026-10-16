@@ -6,7 +6,7 @@ Prepared 2026-10-15. **Working draft, not an approved installed configuration.**
 
 The goal is to resolve what the **Rev9 CAD actually supports**, then give the experimental team a short list of measurements and records that CAD cannot supply. Support both the 1-D system model and CFD/conjugate heat-transfer model. Keep the same definitions in both.
 
-1. Transfer the `vcu-control-template` folder to HPC. Keep its directory structure.
+1. Transfer this repository folder to HPC. Keep its directory structure.
 2. Unzip `reference/VCU_Rev9_CAD_Model_Package.zip` into a separate working directory. The archive contains the supplied package unchanged, including its source STEP, tables, scripts and qualifications. Its Rev8 comparison files are historical context only.
 3. Give Codex this document and the prompt below. Tell it where the extracted Rev9 package and template folder are located.
 4. Ask it to return a CAD findings report and the remaining experimental questions. Review those before changing the workbook or baseline.

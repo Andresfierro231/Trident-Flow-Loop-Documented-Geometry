@@ -122,6 +122,38 @@ def build_report(tables, model, figs, digest, tex, latex_table):
         r'\notebox{The STNCL documents are draft evidence sources. The requests in this package do not authorize running a test or establish that Nick Luciano has approved the draft requirements.}',
         r'\clearpage\tableofcontents']
 
+    out += [section('Configuration record and acceptance basis', 'configuration-record'),
+        r'\begingroup\small',
+        r'The configuration record supplies the measured inputs and uncertainties needed to compare an experiment with a model. Record what changed, which evidence applies, and what error is acceptable for the stated comparison. Do not replace an unknown with a nominal value to complete the document.',
+        r'\subsection*{Record identity}',
+        *[line(key, model['settings'].get(key)) for key in
+          ('Facility', 'Configuration ID', 'Status', 'Scope', 'Geometry source',
+           'Prepared by', 'Checked by', 'Plan approval')],
+        r'\subsection*{Complete a dated package}',
+        latex_table([
+            {'item':'Identity and changes', 'record':'Start; Requirements C01--C04',
+             'evidence':'Effective date, configuration ID, change history, reviewer and approved use.'},
+            {'item':'Geometry and insulation', 'record':'Geometry; Form pipe; C05--C16',
+             'evidence':'Lengths, diameters, sensor datum, layer coverage, material certificates and measurement uncertainty.'},
+            {'item':'Photographs', 'record':'Requirements C17',
+             'evidence':'Dated overview and detail files linked to the configuration, component and viewpoint.'},
+            {'item':'Fluids and properties', 'record':'Fluids; Materials; Form material; C18--C20; M12--M19',
+             'evidence':'Product/composition, circuit, property source, equation, units, applicability and uncertainty.'},
+            {'item':'Instrumentation and calibration', 'record':'Sensors; Calibration; Form sensor; C21--C33',
+             'evidence':'All instruments including fiber sensors: position, channel, certificate, correction, validity and uncertainty.'},
+            {'item':'Heater and cooler', 'record':'Thermal spans; C34--C41',
+             'evidence':'Active boundaries, circuits, measured power/flow, calibration, feedback and setpoint history.'},
+            {'item':'Run and boundary state', 'record':'Model choices; C42--C46',
+             'evidence':'Branches, tank/valve states, ambient conditions, operating limits, run ID and raw files.'},
+            {'item':'Model and acceptable error', 'record':'Model choices; Requirements M01--M32',
+             'evidence':'Model revision, prediction targets, uncertainty method, conservation/convergence checks and quantitative acceptance limits.'}
+        ], ['Package item', 'Workbook record', 'Evidence to retain'],
+           ['item', 'record', 'evidence'], [.21, .28, .43]),
+        r'\subsection*{Define what is good enough before comparison}',
+        r'For each prediction target, record the quantity and units, applicable run/configuration, comparison interval, error metric, quantitative acceptance limit and uncertainty coverage. Explain how measurement and model uncertainty enter the decision. Use Requirements M01, M17 and M22--M32 for the selected choices and review scope; no numerical acceptance limits are supplied by this template.',
+        r'\textbf{Where to enter evidence:} keep file/page/photo locators in the corresponding Requirements evidence fields. Use the selected choice, decision scope, reviewer/date and effective configuration fields for review decisions. The checklist above is a navigation aid, not a second editable record.',
+        r'\par\endgroup']
+
     details = {
         'Form pipe': ('Pipe and insulation segment', 'form-pipe',
             'Example: VCU upcomer B-C. Confirm the actual section before using the reported pipe or insulation details.'),
@@ -140,7 +172,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
                 out += [r'\clearpage', r'{\large\bfseries '+esc(title)+r' --- continued}\par',
                         r'\textbf{Record context:} configuration / item / date: \hrulefill\par']
             entry = row.get('Your entry')
-            out += [r'\begin{minipage}{\textwidth}\small',
+            out += [r'\par\noindent\begin{minipage}{\textwidth}\small',
                 r'{\color{navy}\bfseries '+esc(row['What to record'])+r'}\hfill '+esc(row['Field ID'])+r'\par',
                 r'\colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{',
                 r'\textbf{Reference only ('+esc(row['Reference basis'])+'):} '+esc(row['Reference only'])+r'\par',
@@ -156,7 +188,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
         r'These are concrete information requests extracted from draft STNCL Phases 0--4. Values and test conditions in those plans remain draft. The electrical-heater cautions below must be resolved for VCU.',
         r'\textbf{How to use:} pick a request, gather the listed files, and return them with the configuration/run ID. The computational team supplies the analysis where indicated. Mark completion only after the review partner has assessed the evidence.']
     for i, row in enumerate(tables['Phase requests']):
-        out += [r'\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',
+        out += [r'\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',
             r'\subsection*{'+esc(row['Request ID'])+' | '+esc(row['Request'])+'}',
             line('Please do', row['Experimental-team action']),
             line('Return', row['Return this evidence']),
@@ -168,7 +200,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
     out += [section('Issues to resolve together'),
         r'All issues below are open. The suggested owners help route a question; they do not imply an assigned or approved responsibility.']
     for i, row in enumerate(tables['Review issues']):
-        out += [r'\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',
+        out += [r'\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',
             r'\subsection*{'+esc(row['Issue ID'])+' | '+esc(row['Kind'])+'}',
             line('Finding', row['What conflicts / is missing']),
             line('Next decision', row['Resolution needed']),
@@ -215,7 +247,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
         r'The Requirements workbook tab is the editable master. Each record states why the field is needed, who should supply it, where the requirement and evidence came from, what uses it supports, and what remains unresolved. Requirement provenance is distinct from evidence for a value.',
         r'\textbf{Review rule:} the records below describe candidate evidence. Approved choices require a recorded decision, scope and effective configuration; none has been established in this seed package.']
     for i, row in enumerate(tables['Requirements']):
-        out += [r'\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',
+        out += [r'\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',
             r'\subsection*{'+esc(row['Field ID'])+' | '+esc(row['Field'])+'}',
             line('Purpose', row['Purpose']),
             line('Package / responsible team', row['Package']+' / '+row['Responsible team']),
@@ -234,7 +266,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
     for name, key in [('Model choices','Interface / topic'),('Materials','Material ID')]:
         out += [(r'\clearpage' if name=='Materials' else '')+r'\subsection{'+esc(name)+'}']
         for i,row in enumerate(tables[name]):
-            out += [r'\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',r'\subsection*{'+esc(row[key])+'}']
+            out += [r'\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',r'\subsection*{'+esc(row[key])+'}']
             out.extend(line(k,v) for k,v in row.items() if k!=key)
             out += [r'\end{minipage}\par\vspace{5pt}']
     out += [r'\clearpage\subsection{Calibration summary}',
@@ -247,7 +279,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
     for i, row in enumerate(tables['Sources']):
         if i and i % 4 == 0:
             out += [r'\clearpage{\large\bfseries Source catalog --- continued}\par']
-        out += [r'\begin{minipage}{\textwidth}\small',
+        out += [r'\par\noindent\begin{minipage}{\textwidth}\small',
             r'\subsection*{'+esc(row['Source ID'])+' | '+esc(row['File / record'])+'}',
             line('Revision / context', row['Revision / context']),
             line('Find it', row['Locator guide']),
