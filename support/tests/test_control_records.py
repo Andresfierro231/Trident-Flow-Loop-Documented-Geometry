@@ -45,11 +45,11 @@ class ControlRecordsTests(unittest.TestCase):
         model = g.solve(self.tables)
         report = g.report(self.tables, model, g.diagrams(model), 'test-workbook')
         appendix = report.index(r'\appendix')
-        for target in ('overview', 'geometry-main', 'instruments-main',
+        for target in ('overview', 'geometry-main', 'insulation-main', 'instruments-main',
                        'thermal-main', 'materials-main', 'uncertainty-main'):
             self.assertLess(report.index(r'\label{' + target + '}'), appendix)
         for target in ('administration', 'form-pipe', 'form-sensor',
-                       'form-material', 'requirements', 'sources-detail'):
+                       'form-material', 'insulation-detail', 'requirements', 'sources-detail'):
             self.assertGreater(report.index(r'\label{' + target + '}'), appendix)
         labels = re.findall(r'\\label\{([^}]+)\}', report)
         self.assertEqual(len(labels), len(set(labels)))

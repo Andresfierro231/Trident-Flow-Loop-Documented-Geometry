@@ -21,13 +21,13 @@
 \renewcommand{\footrulewidth}{0pt}
 \newcommand{\notebox}[1]{\par\noindent\colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{#1}}\par}
 
-\fancyfoot[L]{\footnotesize\color{muted}VCU-REV9-DRAFT-002 / Draft}
+\fancyfoot[L]{\footnotesize\color{muted}VCU-REV9-DRAFT-003 / Draft}
 \fancyfoot[R]{\footnotesize\thepage}
 \begin{document}
 {\color{navy}\LARGE\bfseries VCU configuration record}\par
-\refstepcounter{section}\label{overview}\addcontentsline{toc}{section}{1\quad Configuration overview}
+\refstepcounter{section}\label{overview}\addcontentsline{toc}{section}{\protect\numberline{1}Configuration overview}
 {\color{muted}Flow-loop setup, instruments and supporting evidence}\par\vspace{8pt}
-\textbf{Configuration:} VCU-REV9-DRAFT-002\par
+\textbf{Configuration:} VCU-REV9-DRAFT-003\par
 \textbf{Effective date:} 2026-10-16\par
 \textbf{Status:} Draft\par
 \textbf{Basis:} Rev9 CAD candidate. The installed configuration has not yet been verified.\par
@@ -48,8 +48,9 @@
 \node[text=muted,font=\small] at (3,3) {Main loop};
 \end{tikzpicture}\par{\footnotesize\color{muted}CAD overview. Dashed corners are schematic.}\end{center}
 \vspace{4pt}{\large\bfseries Read the configuration}\par
-\hyperref[geometry-main]{Geometry}\quad / \quad\hyperref[instruments-main]{Instruments}\quad / \quad\hyperref[thermal-main]{Heating and cooling}\par
-\hyperref[materials-main]{Materials and fluids}\quad / \quad\hyperref[uncertainty-main]{Uncertainty and limitations}\par
+\hyperref[geometry-main]{Geometry}\quad / \quad\hyperref[insulation-main]{Insulation}\quad / \quad\hyperref[instruments-main]{Instruments}\par
+\hyperref[thermal-main]{Heating and cooling}\quad / \quad\hyperref[materials-main]{Materials and fluids}\par
+\hyperref[uncertainty-main]{Uncertainty and limitations}\par
 \vspace{8pt}\textbf{Adding information?} Open \texttt{VCU\_inputs.xlsx} and start with one Form tab. \hyperref[administration]{Contributor instructions} and \hyperref[appendices]{supporting records} are in the appendices.\par
 {\footnotesize\color{muted}Unknown values remain open. This draft records available evidence; it is not a released facility description.}\par
 \clearpage\section{Geometry}\label{geometry-main}
@@ -63,7 +64,7 @@ Axis-end dimensions and the recorded jacket envelope. Bore and insulation measur
 \definecolor{cA3B0B9}{HTML}{A3B0B9}
 \definecolor{cCFD9DF}{HTML}{CFD9DF}
 \node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{8.40}{10.20}\selectfont\bfseries] at (70.000,65.000) {VCU / GEOMETRY AND THERMAL COVERAGE};
-\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-002 | generated from the editable workbook};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-003 | generated from the editable workbook};
 \draw[draw=cCFD9DF,line width=0.520pt] (70.000,125.000) -- (1330.000,125.000);
 \draw[draw=c263D4B,line width=1.300pt] (370.000,973.358) -- (370.000,415.678);
 \draw[draw=c263D4B,line width=1.300pt,dashed] (370.000,415.678) -- (401.040,390.000);
@@ -102,6 +103,86 @@ Axis-end dimensions and the recorded jacket envelope. Bore and insulation measur
 \end{tikzpicture}
 }\end{center}
 {\small Details: \hyperref[geometry-detail]{coordinate conventions and CAD qualifications}; \hyperref[baseline-tables]{dimension tables}.}\par
+\clearpage\section{Insulation}\label{insulation-main}
+Use the workbook\textquotesingle s \textbf{Insulation regions} tab. Every coverage dropdown describes the whole named region.
+\begin{center}\resizebox{0.93\textwidth}{!}{%
+\begin{tikzpicture}[x=0.01cm,y=-0.01cm]
+\path[use as bounding box] (0,0) rectangle (1400,1500);
+\definecolor{c263D4B}{HTML}{263D4B}
+\definecolor{c287FA3}{HTML}{287FA3}
+\definecolor{c576976}{HTML}{576976}
+\definecolor{c7B8992}{HTML}{7B8992}
+\definecolor{c98A7B1}{HTML}{98A7B1}
+\definecolor{cCFD9DF}{HTML}{CFD9DF}
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{8.40}{10.20}\selectfont\bfseries] at (70.000,65.000) {INSULATION COVERAGE};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-003 | recorded regional coverage};
+\draw[draw=cCFD9DF,line width=0.520pt] (70.000,125.000) -- (1330.000,125.000);
+\draw[draw=c287FA3,line width=7.800pt,draw opacity=0.28] (80.000,185.000) -- (150.000,185.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.44}{7.82}\selectfont] at (170.000,192.000) {Insulated};
+\draw[draw=c263D4B,line width=1.040pt] (480.000,185.000) -- (550.000,185.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.44}{7.82}\selectfont] at (570.000,192.000) {Bare};
+\draw[draw=c7B8992,line width=5.720pt,dashed,draw opacity=0.35] (820.000,185.000) -- (890.000,185.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.44}{7.82}\selectfont] at (910.000,192.000) {Unknown (?)};
+\draw[draw=c7B8992,line width=5.720pt,dashed,draw opacity=0.35] (370.000,973.358) -- (370.000,415.678);
+\draw[draw=c7B8992,line width=5.720pt,dashed,draw opacity=0.35] (370.000,415.678) -- (401.040,390.000);
+\draw[draw=c7B8992,line width=5.720pt,dashed,draw opacity=0.35] (401.040,390.000) -- (458.355,400.933);
+\draw[draw=c7B8992,line width=5.720pt,dashed,draw opacity=0.35] (458.355,400.933) -- (921.276,489.240);
+\draw[draw=c7B8992,line width=5.720pt,dashed,draw opacity=0.35] (921.276,489.240) -- (1008.757,505.928);
+\draw[draw=c7B8992,line width=5.720pt,dashed,draw opacity=0.35] (1008.757,505.928) -- (1030.000,531.607);
+\draw[draw=c7B8992,line width=5.720pt,dashed,draw opacity=0.35] (1030.000,531.607) -- (1030.000,1093.617);
+\draw[draw=c7B8992,line width=5.720pt,dashed,draw opacity=0.35] (1030.000,1093.617) -- (996.253,1114.378);
+\draw[draw=c7B8992,line width=5.720pt,dashed,draw opacity=0.35] (996.253,1114.378) -- (391.243,999.036);
+\draw[draw=c7B8992,line width=5.720pt,dashed,draw opacity=0.35] (391.243,999.036) -- (370.000,973.358);
+\draw[draw=c263D4B,line width=0.780pt] (370.000,973.358) -- (370.000,415.678);
+\draw[draw=c263D4B,line width=0.780pt,dashed] (370.000,415.678) -- (401.040,390.000);
+\draw[draw=c263D4B,line width=0.780pt] (401.040,390.000) -- (1008.757,505.928);
+\draw[draw=c263D4B,line width=0.780pt,dashed] (1008.757,505.928) -- (1030.000,531.607);
+\draw[draw=c263D4B,line width=0.780pt] (1030.000,531.607) -- (1030.000,1093.617);
+\draw[draw=c263D4B,line width=0.780pt,dashed] (1030.000,1093.617) -- (996.253,1114.378);
+\draw[draw=c263D4B,line width=0.780pt] (996.253,1114.378) -- (391.243,999.036);
+\draw[draw=c263D4B,line width=0.780pt,dashed] (391.243,999.036) -- (370.000,973.358);
+\draw[draw=c98A7B1,line width=0.260pt] (370.000,694.518) -- (260.000,758.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,700.000) {INS-01 / Upcomer};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{5.32}{6.46}\selectfont] at (75.000,728.000) {Unknown (?)};
+\draw[draw=c98A7B1,line width=0.260pt] (385.520,402.839) -- (260.000,398.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,340.000) {INS-02 / Top-left corner};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{5.32}{6.46}\selectfont] at (75.000,368.000) {Unknown (?)};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,391.000) {Schematic corner};
+\draw[draw=c98A7B1,line width=0.260pt] (429.697,395.467) -- (300.000,318.000);
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (300.000,260.000) {INS-03 / Pre-cooler};
+\node[anchor=base,inner sep=0pt,text=c576976,font=\sffamily\fontsize{5.32}{6.46}\selectfont] at (300.000,288.000) {Unknown (?)};
+\draw[draw=c98A7B1,line width=0.260pt] (689.815,445.087) -- (700.000,318.000);
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (700.000,260.000) {INS-04 / Cooler};
+\node[anchor=base,inner sep=0pt,text=c576976,font=\sffamily\fontsize{5.32}{6.46}\selectfont] at (700.000,288.000) {Unknown (?)};
+\draw[draw=c98A7B1,line width=0.260pt] (965.016,497.584) -- (1090.000,318.000);
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1090.000,260.000) {INS-05 / Post-cooler};
+\node[anchor=base,inner sep=0pt,text=c576976,font=\sffamily\fontsize{5.32}{6.46}\selectfont] at (1090.000,288.000) {Unknown (?)};
+\draw[draw=c98A7B1,line width=0.260pt] (1019.379,518.767) -- (1100.000,498.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,440.000) {INS-06 / Top-right corner};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{5.32}{6.46}\selectfont] at (1110.000,468.000) {Unknown (?)};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,491.000) {Schematic corner};
+\draw[draw=c98A7B1,line width=0.260pt] (1030.000,812.612) -- (1100.000,848.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,790.000) {INS-07 / Downcomer};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{5.32}{6.46}\selectfont] at (1110.000,818.000) {Unknown (?)};
+\draw[draw=c98A7B1,line width=0.260pt] (1013.127,1103.997) -- (1100.000,1208.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (1110.000,1150.000) {INS-08 / Bottom-right corner};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{5.32}{6.46}\selectfont] at (1110.000,1178.000) {Unknown (?)};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (1110.000,1201.000) {Schematic corner};
+\draw[draw=c98A7B1,line width=0.260pt] (693.748,1056.707) -- (700.000,1318.000);
+\node[anchor=base,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (700.000,1260.000) {INS-09 / Heater};
+\node[anchor=base,inner sep=0pt,text=c576976,font=\sffamily\fontsize{5.32}{6.46}\selectfont] at (700.000,1288.000) {Unknown (?)};
+\draw[draw=c98A7B1,line width=0.260pt] (380.621,986.197) -- (260.000,1208.000);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.60}{6.80}\selectfont\bfseries] at (75.000,1150.000) {INS-10 / Bottom-left corner};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{5.32}{6.46}\selectfont] at (75.000,1178.000) {Unknown (?)};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.48}{5.44}\selectfont] at (75.000,1201.000) {Schematic corner};
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (458.355,400.933) circle (5);
+\draw[fill=white,draw=c263D4B,line width=0.5pt] (921.276,489.240) circle (5);
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.04}{6.12}\selectfont] at (70.000,1370.000) {Coverage bands are illustrative; their width does not represent physical thickness.};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.04}{6.12}\selectfont] at (70.000,1403.000) {Top regions use provisional jacket boundaries. Pre/post follow the drawing traversal.};
+\node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{5.04}{6.12}\selectfont] at (70.000,1436.000) {Corner connectors are schematic; no elbow length or thermal resistance is inferred.};
+\end{tikzpicture}
+}\end{center}
+{\small Details: \hyperref[insulation-detail]{materials, thickness and evidence by region}. No resistance factors or boundary conditions are calculated.}\par
 \clearpage\section{Instruments}\label{instruments-main}
 Geometric sensor references on the main loop. Drawing IDs are not confirmed DAQ channel names.
 \begin{center}\resizebox{0.93\textwidth}{!}{%
@@ -116,7 +197,7 @@ Geometric sensor references on the main loop. Drawing IDs are not confirmed DAQ 
 \definecolor{cA3B0B9}{HTML}{A3B0B9}
 \definecolor{cCFD9DF}{HTML}{CFD9DF}
 \node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{8.40}{10.20}\selectfont\bfseries] at (70.000,65.000) {VCU / SENSOR LOCATIONS};
-\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-002 | generated from the editable workbook};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-003 | generated from the editable workbook};
 \draw[draw=cCFD9DF,line width=0.520pt] (70.000,125.000) -- (1330.000,125.000);
 \draw[draw=c263D4B,line width=1.300pt] (370.000,973.358) -- (370.000,415.678);
 \draw[draw=c263D4B,line width=1.300pt,dashed] (370.000,415.678) -- (401.040,390.000);
@@ -345,7 +426,7 @@ Unknown & No supported value is available yet. \\[3pt]
 The configuration record supplies the measured inputs and uncertainties needed to compare an experiment with a model. Record what changed, which evidence applies, and what error is acceptable for the stated comparison. Do not replace an unknown with a nominal value to complete the document.
 \subsection*{Record identity}
 \textbf{Facility:} VCU\par
-\textbf{Configuration ID:} VCU-REV9-DRAFT-002\par
+\textbf{Configuration ID:} VCU-REV9-DRAFT-003\par
 \textbf{Status:} Draft\par
 \textbf{Scope:} Main-loop geometry and sensor-position prototype\par
 \textbf{Geometry source:} VCU-R9-E01 (2026-10-08)\par
@@ -1129,6 +1210,121 @@ PROP30 & Propylene glycol / water & \textit{Unknown} & \textit{Unknown} \\[3pt]
 AIR & Air & \textit{Unknown} & \textit{Unknown} \\[3pt]
 WATER & Water & \textit{Unknown} & \textit{Unknown} \\[3pt]
 \bottomrule\end{longtable}\normalsize
+\clearpage\section{Insulation region records}\label{insulation-detail}
+The Insulation regions workbook tab is the regional coverage record. Each state applies to the whole named region. Unknown coverage is distinct from confirmed bare pipe. Material and thickness are optional recorded inputs; no thermal resistance is calculated.
+For the cooler, identify whether insulation covers the jacket exterior or another surface in Notes. Jacket-based partitions describe mechanical extents and do not establish active cooling boundaries. The older Geometry insulation field is retained for compatibility; it does not populate or override this register.
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+{\bfseries INS-01 | Upcomer}\par
+\textbf{Coverage:} Unknown\par
+\textbf{Segment / boundary reference:} upcomer / Full segment\par
+\textbf{Boundary basis / source:} CAD-derived / VCU-R9-E01 (2026-10-08) sheets 1-3\par
+\textbf{Stations:} 0.000 to 1219.200 mm from segment Start\par
+\textbf{Insulated surface / notes:} \textit{Unknown}\par
+\textbf{Material ID / thickness mm:} Unknown / Unknown\par
+\textbf{Evidence type:} Unknown\par
+\textbf{Evidence file / location:} \textit{Unknown}\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+{\bfseries INS-02 | Top-left corner}\par
+\textbf{Coverage:} Unknown\par
+\textbf{Segment / boundary reference:} upper\_\allowbreak{}left\_\allowbreak{}bend / Full schematic corner\par
+\textbf{Boundary basis / source:} CAD-derived / VCU-R9-E01 (2026-10-08) sheets 1-3\par
+\textbf{Stations:} No qualified station interval; see geometry qualification\par
+\textbf{Insulated surface / notes:} \textit{Unknown}\par
+\textbf{Material ID / thickness mm:} Unknown / Unknown\par
+\textbf{Evidence type:} Unknown\par
+\textbf{Evidence file / location:} \textit{Unknown}\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+{\bfseries INS-03 | Pre-cooler}\par
+\textbf{Coverage:} Unknown\par
+\textbf{Segment / boundary reference:} cooler / Segment start to Complete jacket start\par
+\textbf{Boundary basis / source:} CAD-derived; mechanical jacket envelope; provisional insulation partition / VCU-R9-E01 (2026-10-08) sheet 3\par
+\textbf{Stations:} 0.000 to 127.562 mm from segment Start\par
+\textbf{Insulated surface / notes:} \textit{Unknown}\par
+\textbf{Material ID / thickness mm:} Unknown / Unknown\par
+\textbf{Evidence type:} Unknown\par
+\textbf{Evidence file / location:} \textit{Unknown}\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+{\bfseries INS-04 | Cooler}\par
+\textbf{Coverage:} Unknown\par
+\textbf{Segment / boundary reference:} cooler / Complete jacket start to Complete jacket end\par
+\textbf{Boundary basis / source:} CAD-derived; mechanical jacket envelope; provisional insulation partition / VCU-R9-E01 (2026-10-08) sheet 3\par
+\textbf{Stations:} 127.562 to 1157.849 mm from segment Start\par
+\textbf{Insulated surface / notes:} Identify the insulated surface, especially jacket exterior versus pipe.\par
+\textbf{Material ID / thickness mm:} Unknown / Unknown\par
+\textbf{Evidence type:} Unknown\par
+\textbf{Evidence file / location:} \textit{Unknown}\par
+\end{minipage}\par\vspace{5pt}
+\clearpage{\large\bfseries Insulation region records --- continued}\par
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+{\bfseries INS-05 | Post-cooler}\par
+\textbf{Coverage:} Unknown\par
+\textbf{Segment / boundary reference:} cooler / Complete jacket end to segment end\par
+\textbf{Boundary basis / source:} CAD-derived; mechanical jacket envelope; provisional insulation partition / VCU-R9-E01 (2026-10-08) sheet 3\par
+\textbf{Stations:} 1157.849 to 1352.550 mm from segment Start\par
+\textbf{Insulated surface / notes:} \textit{Unknown}\par
+\textbf{Material ID / thickness mm:} Unknown / Unknown\par
+\textbf{Evidence type:} Unknown\par
+\textbf{Evidence file / location:} \textit{Unknown}\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+{\bfseries INS-06 | Top-right corner}\par
+\textbf{Coverage:} Unknown\par
+\textbf{Segment / boundary reference:} upper\_\allowbreak{}right\_\allowbreak{}bend / Full schematic corner\par
+\textbf{Boundary basis / source:} CAD-derived / VCU-R9-E01 (2026-10-08) sheets 1-3\par
+\textbf{Stations:} No qualified station interval; see geometry qualification\par
+\textbf{Insulated surface / notes:} \textit{Unknown}\par
+\textbf{Material ID / thickness mm:} Unknown / Unknown\par
+\textbf{Evidence type:} Unknown\par
+\textbf{Evidence file / location:} \textit{Unknown}\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+{\bfseries INS-07 | Downcomer}\par
+\textbf{Coverage:} Unknown\par
+\textbf{Segment / boundary reference:} downcomer / Full segment\par
+\textbf{Boundary basis / source:} CAD-derived / VCU-R9-E01 (2026-10-08) sheets 1-3\par
+\textbf{Stations:} 0.000 to 1228.669 mm from segment Start\par
+\textbf{Insulated surface / notes:} \textit{Unknown}\par
+\textbf{Material ID / thickness mm:} Unknown / Unknown\par
+\textbf{Evidence type:} Unknown\par
+\textbf{Evidence file / location:} \textit{Unknown}\par
+\end{minipage}\par\vspace{5pt}
+\clearpage{\large\bfseries Insulation region records --- continued}\par
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+{\bfseries INS-08 | Bottom-right corner}\par
+\textbf{Coverage:} Unknown\par
+\textbf{Segment / boundary reference:} lower\_\allowbreak{}right\_\allowbreak{}bend / Full schematic corner\par
+\textbf{Boundary basis / source:} CAD-derived / VCU-R9-E01 (2026-10-08) sheets 1-3\par
+\textbf{Stations:} No qualified station interval; see geometry qualification\par
+\textbf{Insulated surface / notes:} \textit{Unknown}\par
+\textbf{Material ID / thickness mm:} Unknown / Unknown\par
+\textbf{Evidence type:} Unknown\par
+\textbf{Evidence file / location:} \textit{Unknown}\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+{\bfseries INS-09 | Heater}\par
+\textbf{Coverage:} Unknown\par
+\textbf{Segment / boundary reference:} heater / Full segment\par
+\textbf{Boundary basis / source:} CAD-derived / VCU-R9-E01 (2026-10-08) sheets 1-3\par
+\textbf{Stations:} 0.000 to 1346.496 mm from segment Start\par
+\textbf{Insulated surface / notes:} \textit{Unknown}\par
+\textbf{Material ID / thickness mm:} Unknown / Unknown\par
+\textbf{Evidence type:} Unknown\par
+\textbf{Evidence file / location:} \textit{Unknown}\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+{\bfseries INS-10 | Bottom-left corner}\par
+\textbf{Coverage:} Unknown\par
+\textbf{Segment / boundary reference:} lower\_\allowbreak{}left\_\allowbreak{}bend / Full schematic corner\par
+\textbf{Boundary basis / source:} CAD-derived / VCU-R9-E01 (2026-10-08) sheets 1-3\par
+\textbf{Stations:} No qualified station interval; see geometry qualification\par
+\textbf{Insulated surface / notes:} \textit{Unknown}\par
+\textbf{Material ID / thickness mm:} Unknown / Unknown\par
+\textbf{Evidence type:} Unknown\par
+\textbf{Evidence file / location:} \textit{Unknown}\par
+\end{minipage}\par\vspace{5pt}
 \clearpage\section{Complete requirements and evidence register}\label{requirements}
 The Requirements workbook tab is the editable master. Each record states why the field is needed, who should supply it, where the requirement and evidence came from, what uses it supports, and what remains unresolved. Requirement provenance is distinct from evidence for a value.
 \textbf{Review rule:} the records below describe candidate evidence. Approved choices require a recorded decision, scope and effective configuration; none has been established in this seed package.
@@ -1152,8 +1348,8 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; every configuration and affected run\par
 \textbf{Requirement source / locator:} P0; DESIGN; Campaign execution conventions; proposed revision log\par
-\textbf{Current evidence [Reported]:} 2026-10-16 / VCU-REV9-DRAFT-002: PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted.\par
-\textbf{Evidence source / locator:} USER; Repository owner request in the Codex session, 2026-10-16; Start effective date and change summary.\par
+\textbf{Current evidence [Reported]:} 2026-10-16 / VCU-REV9-DRAFT-002: PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted. 2026-10-16 / VCU-REV9-DRAFT-003: added ten insulation coverage regions and the diagram; all coverage Unknown pending evidence.\par
+\textbf{Evidence source / locator:} USER; Start effective date and change summary; previous record saved at support/checkpoints/2026-10-16\_\allowbreak{}VCU-REV9-DRAFT-002/. Owner-approved insulation feature plan in the Codex session, 2026-10-16; installed coverage remains unconfirmed.\par
 \textbf{Review state:} Needs review\par
 \textbf{Selected choice:} None selected\par
 \textbf{Decision scope / rationale:} \textit{Unknown}\par
@@ -2536,6 +2732,6 @@ Use the source ID with the row/page/section locator. Source files are not operat
 \subsection*{Context retained outside the VCU baseline}
 ACU general-arrangement drawings, ANEC-000126 sensor labels, ACU sensor naming notes and ACU images belong to ACU. They supply no VCU values or channel mappings here. The supplied VCU overview PNGs identify Rev8 as their source and are visual-format references only. Mixed geometry archives and note links require member-level facility/revision checks; their contents are not imported wholesale.
 \subsection*{Generated record identity}
-\textbf{Workbook SHA-256 (spaces only for wrapping):} 146dbd5127c4c68d e94917b5e921df48 36e4b7dd2c24c7e5 32c70d40f2c32322\par
+\textbf{Workbook SHA-256 (spaces only for wrapping):} f1dbe66ee81a6f93 f49104f976b6edc2 a48efb418bd708dd 882b565d0faa6d4a\par
 All form answers, source rows and requirement fields are exported to support/generated/resolved\_inputs.json. The readable register is also available in support/generated/requirements\_and\_evidence.md. A successful build verifies the input structure and drawing geometry, not experimental or modeling readiness.
 \end{document}

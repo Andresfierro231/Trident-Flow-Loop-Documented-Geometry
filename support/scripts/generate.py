@@ -17,6 +17,7 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from control_content import build_report, markdown_register, validate as validate_control
+from insulation import resolve_regions, export_regions, insulation_diagram
 NS = {'s': 'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
 REL = '{http://schemas.openxmlformats.org/officeDocument/2006/relationships}id'
 
@@ -218,7 +219,8 @@ def solve(tables):
               'Bends are schematic connectors. No continuous hydraulic length is inferred.',
               'JTC-A/B, branch pipes, tank and coolant plumbing are retained as outstanding scope, not drawn.',
               'Model input draft only: missing bore, property selections, calibrations and approved boundary conditions.']
-    return dict(settings=settings,segments=segments,points=points,sensors=coords,thermal_spans=spans,
+    insulation = resolve_regions(tables, segments, notes)
+    return dict(settings=settings,segments=segments,points=points,sensors=coords,thermal_spans=spans,insulation_regions=insulation,
                 closure_gap_mm=gap,model_ready=False,notes=notes)
 
 
@@ -230,8 +232,8 @@ class Drawing:
         self.text(70,65,title,30,bold=True)
         self.text(70,102,subtitle,17,color='#576976')
         self.line((70,125),(width-70,125),'#CFD9DF',2)
-    def line(self,a,b,color='#263D4B',width=2,dash=False):
-        self.items.append(('line',a,b,color,width,dash))
+    def line(self,a,b,color='#263D4B',width=2,dash=False,opacity=1):
+        self.items.append(('line',a,b,color,width,dash,opacity))
     def text(self,x,y,value,size=18,color='#263D4B',anchor='start',bold=False):
         self.items.append(('text',x,y,str(value),size,color,anchor,bold))
     def circle(self,x,y,r=7,color='#263D4B'):
@@ -240,8 +242,8 @@ class Drawing:
         out=[f'<svg xmlns="http://www.w3.org/2000/svg" width="{self.width}" height="{self.height}" viewBox="0 0 {self.width} {self.height}"><rect width="100%" height="100%" fill="white"/>']
         for item in self.items:
             if item[0]=='line':
-                _,a,b,c,w,dash=item
-                out.append(f'<line x1="{a[0]:.3f}" y1="{a[1]:.3f}" x2="{b[0]:.3f}" y2="{b[1]:.3f}" stroke="{c}" stroke-width="{w}"'+(' stroke-dasharray="6 5"' if dash else '')+'/>')
+                _,a,b,c,w,dash,opacity=item
+                out.append(f'<line x1="{a[0]:.3f}" y1="{a[1]:.3f}" x2="{b[0]:.3f}" y2="{b[1]:.3f}" stroke="{c}" stroke-width="{w}"'+(' stroke-dasharray="6 5"' if dash else '')+(f' stroke-opacity="{opacity}"' if opacity!=1 else '')+'/>')
             elif item[0]=='circle':
                 _,x,y,r,c=item
                 out.append(f'<circle cx="{x:.3f}" cy="{y:.3f}" r="{r}" fill="white" stroke="{c}" stroke-width="2"/>')
@@ -255,8 +257,8 @@ class Drawing:
         out.extend(f'\\definecolor{{c{c[1:]}}}{{HTML}}{{{c[1:]}}}' for c in sorted(colors))
         for i in self.items:
             if i[0]=='line':
-                _,a,b,c,w,dash=i
-                out.append(f'\\draw[draw=c{c[1:]},line width={w*.26:.3f}pt'+(',dashed' if dash else '')+f'] ({a[0]:.3f},{a[1]:.3f}) -- ({b[0]:.3f},{b[1]:.3f});')
+                _,a,b,c,w,dash,opacity=i
+                out.append(f'\\draw[draw=c{c[1:]},line width={w*.26:.3f}pt'+(',dashed' if dash else '')+(f',draw opacity={opacity}' if opacity!=1 else '')+f'] ({a[0]:.3f},{a[1]:.3f}) -- ({b[0]:.3f},{b[1]:.3f});')
             elif i[0]=='circle':
                 _,x,y,r,c=i
                 out.append(f'\\draw[fill=white,draw=c{c[1:]},line width=0.5pt] ({x:.3f},{y:.3f}) circle ({r});')
@@ -377,7 +379,7 @@ def latex_table(rows, headers, keys, widths):
 
 
 def report(tables, model, figs, digest):
-    return build_report(tables, model, figs, digest, tex, latex_table)
+    return build_report(tables, model, figs, digest, tex, latex_table, insulation_diagram(model, Drawing))
 
 
 def generate(filename, outdir):
@@ -399,6 +401,8 @@ def generate(filename, outdir):
     names=['geometry','sensors','angle_convention']+[f'sensor_angles_{i+1}' for i in range(max(0,len(figs)-3))]
     for name,fig in zip(names,figs):
         (out/(name+'.svg')).write_text(fig.svg())
+    (out/'insulation.svg').write_text(insulation_diagram(model, Drawing).svg())
+    (out/'insulation_regions.json').write_text(json.dumps(export_regions(tables,model,digest),indent=2,ensure_ascii=False))
     for old in out.glob('sensor_angles_*.svg'):
         if old.stem not in names: old.unlink()
     (out/'VCU_control_package.tex').write_text(report(tables,model,figs,digest))

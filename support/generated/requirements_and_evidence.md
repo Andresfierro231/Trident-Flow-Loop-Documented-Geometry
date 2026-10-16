@@ -82,7 +82,7 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Campaign execution conventions; proposed revision log
 
 
-**Current evidence:** 2026-10-16 / VCU-REV9-DRAFT-002: PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted.
+**Current evidence:** 2026-10-16 / VCU-REV9-DRAFT-002: PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted. 2026-10-16 / VCU-REV9-DRAFT-003: added ten insulation coverage regions and the diagram; all coverage Unknown pending evidence.
 
 
 **Evidence type:** Reported
@@ -91,7 +91,7 @@ Evidence type and review state are independent. All proposed owners require team
 **Evidence source:** USER
 
 
-**Evidence locator:** Repository owner request in the Codex session, 2026-10-16; Start effective date and change summary.
+**Evidence locator:** Start effective date and change summary; previous record saved at support/checkpoints/2026-10-16_VCU-REV9-DRAFT-002/. Owner-approved insulation feature plan in the Codex session, 2026-10-16; installed coverage remains unconfirmed.
 
 
 **Review state:** Needs review

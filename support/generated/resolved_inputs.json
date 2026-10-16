@@ -7,7 +7,7 @@
     },
     {
       "Field": "Configuration ID",
-      "Value": "VCU-REV9-DRAFT-002",
+      "Value": "VCU-REV9-DRAFT-003",
       "Guidance": "Change after physical configuration changes."
     },
     {
@@ -62,7 +62,7 @@
     },
     {
       "Field": "Editing sequence",
-      "Value": "Start with Form pipe, Form sensor and Form material",
+      "Value": "Start with Form tabs, or Insulation regions for whole-region coverage.",
       "Guidance": "Read the reference; enter new evidence in amber cells; send for review."
     },
     {
@@ -87,7 +87,7 @@
     },
     {
       "Field": "Change summary",
-      "Value": "PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted.",
+      "Value": "Added ten insulation regions, coverage dropdowns and a separate diagram. All coverage starts Unknown pending evidence. PTC-X remains excluded from the active register.",
       "Guidance": "Describe changes since the preceding configuration and identify evidence or the request."
     }
   ],
@@ -1567,10 +1567,10 @@
       "Applicability": "VCU; every configuration and affected run",
       "Requirement source": "P0; DESIGN",
       "Requirement locator": "Campaign execution conventions; proposed revision log",
-      "Current evidence": "2026-10-16 / VCU-REV9-DRAFT-002: PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted.",
+      "Current evidence": "2026-10-16 / VCU-REV9-DRAFT-002: PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted. 2026-10-16 / VCU-REV9-DRAFT-003: added ten insulation coverage regions and the diagram; all coverage Unknown pending evidence.",
       "Evidence type": "Reported",
       "Evidence source": "USER",
-      "Evidence locator": "Repository owner request in the Codex session, 2026-10-16; Start effective date and change summary.",
+      "Evidence locator": "Start effective date and change summary; previous record saved at support/checkpoints/2026-10-16_VCU-REV9-DRAFT-002/. Owner-approved insulation feature plan in the Codex session, 2026-10-16; installed coverage remains unconfirmed.",
       "Review state": "Needs review",
       "Unresolved question": "Record effective date, author, changed item, reason, previous/new evidence, affected runs and whether recalibration or model revalidation is needed.",
       "Selected choice": null,
@@ -3507,6 +3507,118 @@
       "Revision / context": "2026-10-15",
       "Locator guide": "This requirements register and coordinate convention",
       "Qualification": "Assistant-proposed documentation field/convention, not an approved physical fact."
+    }
+  ],
+  "Insulation regions": [
+    {
+      "Region ID": "INS-01",
+      "Region": "Upcomer",
+      "Boundary reference": "Full segment",
+      "Coverage": "Unknown",
+      "Material ID": null,
+      "Thickness mm": null,
+      "Evidence type": "Unknown",
+      "Evidence file / location": null,
+      "Notes": null
+    },
+    {
+      "Region ID": "INS-02",
+      "Region": "Top-left corner",
+      "Boundary reference": "Full schematic corner",
+      "Coverage": "Unknown",
+      "Material ID": null,
+      "Thickness mm": null,
+      "Evidence type": "Unknown",
+      "Evidence file / location": null,
+      "Notes": null
+    },
+    {
+      "Region ID": "INS-03",
+      "Region": "Pre-cooler",
+      "Boundary reference": "Segment start to Complete jacket start",
+      "Coverage": "Unknown",
+      "Material ID": null,
+      "Thickness mm": null,
+      "Evidence type": "Unknown",
+      "Evidence file / location": null,
+      "Notes": null
+    },
+    {
+      "Region ID": "INS-04",
+      "Region": "Cooler",
+      "Boundary reference": "Complete jacket start to Complete jacket end",
+      "Coverage": "Unknown",
+      "Material ID": null,
+      "Thickness mm": null,
+      "Evidence type": "Unknown",
+      "Evidence file / location": null,
+      "Notes": "Identify the insulated surface, especially jacket exterior versus pipe."
+    },
+    {
+      "Region ID": "INS-05",
+      "Region": "Post-cooler",
+      "Boundary reference": "Complete jacket end to segment end",
+      "Coverage": "Unknown",
+      "Material ID": null,
+      "Thickness mm": null,
+      "Evidence type": "Unknown",
+      "Evidence file / location": null,
+      "Notes": null
+    },
+    {
+      "Region ID": "INS-06",
+      "Region": "Top-right corner",
+      "Boundary reference": "Full schematic corner",
+      "Coverage": "Unknown",
+      "Material ID": null,
+      "Thickness mm": null,
+      "Evidence type": "Unknown",
+      "Evidence file / location": null,
+      "Notes": null
+    },
+    {
+      "Region ID": "INS-07",
+      "Region": "Downcomer",
+      "Boundary reference": "Full segment",
+      "Coverage": "Unknown",
+      "Material ID": null,
+      "Thickness mm": null,
+      "Evidence type": "Unknown",
+      "Evidence file / location": null,
+      "Notes": null
+    },
+    {
+      "Region ID": "INS-08",
+      "Region": "Bottom-right corner",
+      "Boundary reference": "Full schematic corner",
+      "Coverage": "Unknown",
+      "Material ID": null,
+      "Thickness mm": null,
+      "Evidence type": "Unknown",
+      "Evidence file / location": null,
+      "Notes": null
+    },
+    {
+      "Region ID": "INS-09",
+      "Region": "Heater",
+      "Boundary reference": "Full segment",
+      "Coverage": "Unknown",
+      "Material ID": null,
+      "Thickness mm": null,
+      "Evidence type": "Unknown",
+      "Evidence file / location": null,
+      "Notes": null
+    },
+    {
+      "Region ID": "INS-10",
+      "Region": "Bottom-left corner",
+      "Boundary reference": "Full schematic corner",
+      "Coverage": "Unknown",
+      "Material ID": null,
+      "Thickness mm": null,
+      "Evidence type": "Unknown",
+      "Evidence file / location": null,
+      "Notes": null
     }
   ]
 }

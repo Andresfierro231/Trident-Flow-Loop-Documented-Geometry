@@ -55,7 +55,7 @@ def validate(tables):
         raise ValueError('Phase requests: duplicate Request ID.')
 
 
-def build_report(tables, model, figs, digest, tex, latex_table):
+def build_report(tables, model, figs, digest, tex, latex_table, insulation_figure):
     """Keep the front easy to use; put the complete traceable register in appendices."""
     def esc(value):
         if isinstance(value, str):
@@ -69,7 +69,7 @@ def build_report(tables, model, figs, digest, tex, latex_table):
     def section(title, label=None):
         return r'\clearpage\section{' + esc(title) + '}' + (r'\label{'+label+'}' if label else '')
 
-    out = [build_front(tables, model, figs, esc, line, section, latex_table),
+    out = [build_front(tables, model, figs, esc, line, section, latex_table, insulation_figure),
         r'\appendix', section('Contributing evidence and reviewing changes', 'administration'),
         r'\section*{Start with one record}',
         r'You do not need to learn LaTeX to contribute. Open \textbf{VCU\_inputs.xlsx}, choose a Form tab, and fill the amber response cells. The package maintainer turns the saved workbook into this document and the labeled drawings.',
@@ -224,6 +224,24 @@ def build_report(tables, model, figs, digest, tex, latex_table):
         r'Prop-30, air and water are permitted candidate options from the user. A circuit/run assignment is still required. The supplied draft phase campaign is Prop-30-specific.',
         latex_table([dict(r,range=f'{r["Minimum C"]} to {r["Maximum C"]}' if r['Minimum C'] is not None and r['Maximum C'] is not None else None) for r in tables['Fluids']],
             ['Fluid','Product','Circuit','Range C'],['Fluid ID','Product','Circuit','range'],[.15,.30,.22,.20])]
+
+    out += [section('Insulation region records', 'insulation-detail'),
+        r'The Insulation regions workbook tab is the regional coverage record. Each state applies to the whole named region. Unknown coverage is distinct from confirmed bare pipe. Material and thickness are optional recorded inputs; no thermal resistance is calculated.',
+        r'For the cooler, identify whether insulation covers the jacket exterior or another surface in Notes. Jacket-based partitions describe mechanical extents and do not establish active cooling boundaries. The older Geometry insulation field is retained for compatibility; it does not populate or override this register.']
+    for index, row in enumerate(model['insulation_regions']):
+        if index in (4, 7):
+            out += [r'\clearpage{\large\bfseries Insulation region records --- continued}\par']
+        stations = (f'{row["start_station_mm"]:.3f} to {row["end_station_mm"]:.3f} mm from segment Start'
+                    if row['start_station_mm'] is not None else 'No qualified station interval; see geometry qualification')
+        out += [r'\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',
+            r'{\bfseries '+esc(row['region_id']+' | '+row['name'])+r'}\par',
+            line('Coverage', row['coverage']),
+            line('Segment / boundary reference', row['segment']+' / '+row['boundary_reference']),
+            line('Boundary basis / source', row['boundary_basis']+' / '+str(row['boundary_source'] or 'Unknown')),
+            line('Stations', stations), line('Insulated surface / notes', row['notes']),
+            line('Material ID / thickness mm', str(row['material_id'] or 'Unknown')+' / '+str(row['thickness_mm'] if row['thickness_mm'] is not None else 'Unknown')),
+            line('Evidence type', row['evidence_type']), line('Evidence file / location', row['evidence_file_location']),
+            r'\end{minipage}\par\vspace{5pt}']
 
     out += [section('Complete requirements and evidence register', 'requirements'),
         r'The Requirements workbook tab is the editable master. Each record states why the field is needed, who should supply it, where the requirement and evidence came from, what uses it supports, and what remains unresolved. Requirement provenance is distinct from evidence for a value.',

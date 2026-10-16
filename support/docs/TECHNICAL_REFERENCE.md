@@ -22,6 +22,7 @@ The generator needs Python 3.9+ and no third-party Python packages. The LaTeX do
 | Phase requests | Concrete information returns from draft STNCL Phases 0–4, including electrical-heater adaptations |
 | Review issues | Open conflicts, proposed owner, affected fields and needed resolution |
 | Sources | Source IDs, revision/context, locator guidance and qualifications |
+| Insulation regions | Ten whole-region coverage dropdowns, material/thickness and evidence; see [insulation guide](INSULATION.md) |
 | Geometry | Segment lengths/directions, bend offsets, pipe bore/OD and insulation thickness |
 | Sensors | Sensor type, segment, endpoint, distance along the pipe, circumferential angle, radius, DAQ identity and point meaning |
 | Calibration | Instrument identity, calibration date/certificate, corrections, uncertainty, acquisition behavior and 1-D/CFD mapping |
@@ -72,11 +73,13 @@ Material entries are reported candidates. No correlations have been independentl
 
 ## Generated outputs
 
+- `insulation.svg`: regional coverage diagram, with schematic bands and a three-state legend.
+- `insulation_regions.json`: versioned computational export of coverage, boundaries, geometry qualifications and evidence.
 - `geometry.svg`: dimensions and entered thermal spans.
 - `sensors.svg`: automatic sensor labels and leader lines.
 - `angle_convention.svg`: coordinate guide.
 - `sensor_angles_*.svg`: added when circumferential angles are supplied.
-- `VCU_control_package.tex`: standalone configuration record with six technical pages, internal navigation, embedded TikZ figures, and linked appendices containing contributor guides, forms, review issues, requirements, model/material records and sources.
+- `VCU_control_package.tex`: standalone configuration record with seven technical pages, internal navigation, embedded TikZ figures, and linked appendices containing contributor guides, forms, review issues, requirements, model/material records and sources.
 - `requirements_and_evidence.md`: searchable, readable export of the full requirements, phase requests, issues and source catalog.
 - `resolved_inputs.json`: every input row in readable form for review and version comparison.
 - `geometry_and_sensors.json`: endpoint coordinates, axial sensor stations, optional 3-D points, mapping fields and qualifications.
@@ -90,7 +93,7 @@ The document summarizes selected calibration and geometry fields; the workbook a
 python3 -m unittest discover -s support/tests -v
 ```
 
-All 19 behavior checks pass. Behavior tests use the saved workbook under `support/tests/fixtures/` so contributors can change the working workbook without invalidating seed-specific checks; the build validates the actual working workbook separately. They cover loop closure, endpoint reversal, coordinate/angle transforms, unknown versus zero, geometry changes, impossible distances, duplicate IDs, VCU/ACU separation, full workbook regeneration, source references, complete review decisions, form responses reaching the document without changing baseline geometry, and configuration-first ordering with valid navigation targets. The seven original data sheets were also compared with the pre-edit workbook and remain unchanged.
+All 30 behavior checks pass. Behavior tests use the saved workbook under `support/tests/fixtures/` so contributors can change the working workbook without invalidating seed-specific checks; the build validates the actual working workbook separately. They cover loop closure, endpoint reversal, coordinate/angle transforms, unknown versus zero, geometry changes, impossible distances, duplicate IDs, VCU/ACU separation, full workbook regeneration, source references, complete review decisions, form responses reaching the document without changing baseline geometry, and configuration-first ordering with valid navigation targets. The seven original data sheets were also compared with the pre-edit workbook and remain unchanged.
 
 The repository PDF build compiles the root entry point with repeated passes for contents and cross-references. The reorganized document has been rendered for page-layout review. These checks do not verify installed hardware or simulation validity; there are no spreadsheet formulas or macros.
 

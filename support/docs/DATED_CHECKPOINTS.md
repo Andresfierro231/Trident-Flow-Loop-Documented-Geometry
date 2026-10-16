@@ -11,7 +11,7 @@ Download the current `VCU_inputs.xlsx` from GitHub before editing.
 | Where | What to update |
 |---|---|
 | **Start** | New Configuration ID, Effective date as `YYYY-MM-DD` text, Prepared by and Change summary. Keep Status and Checked by consistent with actual review. |
-| Affected baseline tabs | Geometry/insulation, Sensors, Calibration, Thermal spans, Fluids, Materials or Model choices, as applicable. Sensor removal affects both Sensors and Calibration. |
+| Affected baseline tabs | Geometry, Insulation regions, Sensors, Calibration, Thermal spans, Fluids, Materials or Model choices, as applicable. Sensor removal affects both Sensors and Calibration. |
 | **Requirements** | Supporting file/page/photo locators, evidence type, open questions, and actual review decisions. C02 records change history. |
 | **Review issues / Phase requests** | Update questions affected by the change. Retain the reason for a removal or other disposition. |
 

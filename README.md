@@ -6,6 +6,9 @@ Record the flow-loop setup, measurements and supporting evidence in
 New here? Follow the [contributor guide](support/docs/START_HERE.md).
 Start with one item you can verify; leave unknown values blank.
 
+For insulation coverage, use the workbook's **Insulation regions** dropdowns.
+See the [short insulation guide](support/docs/INSULATION.md).
+
 For each dated configuration:
 
 1. On **Start**, set a new **Configuration ID**, **Effective date**, your name

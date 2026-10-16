@@ -10,6 +10,7 @@ Upload the saved workbook to GitHub to build the PDF; contributors do not need t
 | I want to document… | Open this tab | Example already supplied |
 |---|---|---|
 | A pipe and its insulation | **Form pipe** | VCU upcomer, B–C |
+| Which loop regions are insulated | **Insulation regions** | Ten named regions, initially Unknown |
 | A sensor, its channel and calibration | **Form sensor** | Drawing reference STC-02 |
 | A material-property choice | **Form material** | Reported fiberglass insulation conductivity |
 
@@ -36,6 +37,6 @@ For a different segment, sensor or material, save a separate response copy. Ask 
 
 **Phase requests** lists 17 specific returns requested by the draft STNCL plans. **Requirements** contains 78 field records; filter by responsible team or package. **Review issues** lists nine unresolved conflicts or qualification gaps. **Sources** explains the short source IDs, such as SEG, MAT and P0.
 
-The PDF opens with six pages describing the configuration. Contributor guides, forms and administrative records are in linked appendices. Form responses appear when the maintainer regenerates it. They **do not automatically change geometry, channel mappings or selected properties**.
+The PDF opens with seven pages describing the configuration. Contributor guides, forms and administrative records are in linked appendices. Form responses appear when the maintainer regenerates it. They **do not automatically change geometry, channel mappings or selected properties**.
 
 This is a VCU draft. Rev9 supplies the candidate CAD geometry. Installed measurements, modeling assumptions and approved choices remain separate. ACU documents and the Rev8 overview images do not supply VCU baseline values. The STNCL requests are documentation requests; the supplied drafts do not establish permission to operate or Nick Luciano’s approval.

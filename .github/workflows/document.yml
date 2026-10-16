@@ -64,6 +64,16 @@ jobs:
           path: ${{ steps.checkpoint.outputs.path }}
           if-no-files-found: error
           retention-days: 90
+      - name: Downloadable insulation data
+        id: insulation
+        uses: actions/upload-artifact@v4
+        with:
+          name: VCU-insulation-data
+          path: |
+            support/generated/insulation.svg
+            support/generated/insulation_regions.json
+          if-no-files-found: error
+          retention-days: 90
       - name: Save generated files for Overleaf and retain checkpoints
         run: |
           git config user.name 'github-actions[bot]'
@@ -77,9 +87,11 @@ jobs:
       - name: Show the download link
         env:
           PDF_URL: ${{ steps.pdf.outputs.artifact-url }}
+          INSULATION_URL: ${{ steps.insulation.outputs.artifact-url }}
           CHECKPOINT_PATH: ${{ steps.checkpoint.outputs.path }}
         run: |
           echo "[Download the configuration PDF]($PDF_URL)" >> "$GITHUB_STEP_SUMMARY"
+          echo "[Download the insulation diagram and JSON]($INSULATION_URL)" >> "$GITHUB_STEP_SUMMARY"
           if [ -n "$CHECKPOINT_PATH" ]; then
             echo "Dated checkpoint saved in: $CHECKPOINT_PATH" >> "$GITHUB_STEP_SUMMARY"
           fi

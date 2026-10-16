@@ -1,7 +1,7 @@
 """A short configuration record, with links into the supporting appendices."""
 
 
-def build_front(tables, model, figs, esc, line, section, table):
+def build_front(tables, model, figs, esc, line, section, table, insulation_figure):
     settings = model['settings']
     requirements = {r['Field ID']: r for r in tables['Requirements']}
 
@@ -41,7 +41,7 @@ def build_front(tables, model, figs, esc, line, section, table):
 ''', r'\fancyfoot[L]{\footnotesize\color{muted}' + esc(settings['Configuration ID']) + ' / ' + esc(settings.get('Status')) + '}',
         r'\fancyfoot[R]{\footnotesize\thepage}', r'\begin{document}',
         r'{\color{navy}\LARGE\bfseries VCU configuration record}\par',
-        r'\refstepcounter{section}\label{overview}\addcontentsline{toc}{section}{1\quad Configuration overview}',
+        r'\refstepcounter{section}\label{overview}\addcontentsline{toc}{section}{\protect\numberline{1}Configuration overview}',
         r'{\color{muted}Flow-loop setup, instruments and supporting evidence}\par\vspace{8pt}',
         line('Configuration', settings['Configuration ID']),
         line('Effective date', settings.get('Effective date')),
@@ -74,14 +74,19 @@ def build_front(tables, model, figs, esc, line, section, table):
     out += [r'\node[text=muted,font=\small] at (3,3) {Main loop};',
         r'\end{tikzpicture}\par{\footnotesize\color{muted}CAD overview. Dashed corners are schematic.}\end{center}',
         r'\vspace{4pt}{\large\bfseries Read the configuration}\par',
-        link('geometry-main', 'Geometry') + r'\quad / \quad' + link('instruments-main', 'Instruments') + r'\quad / \quad' + link('thermal-main', 'Heating and cooling') + r'\par',
-        link('materials-main', 'Materials and fluids') + r'\quad / \quad' + link('uncertainty-main', 'Uncertainty and limitations') + r'\par',
+        link('geometry-main', 'Geometry') + r'\quad / \quad' + link('insulation-main', 'Insulation') + r'\quad / \quad' + link('instruments-main', 'Instruments') + r'\par',
+        link('thermal-main', 'Heating and cooling') + r'\quad / \quad' + link('materials-main', 'Materials and fluids') + r'\par',
+        link('uncertainty-main', 'Uncertainty and limitations') + r'\par',
         r'\vspace{8pt}\textbf{Adding information?} Open \texttt{VCU\_inputs.xlsx} and start with one Form tab. ' + link('administration', 'Contributor instructions') + r' and ' + link('appendices', 'supporting records') + r' are in the appendices.\par',
         r'{\footnotesize\color{muted}Unknown values remain open. This draft records available evidence; it is not a released facility description.}\par',
         section('Geometry', 'geometry-main'),
         r'Axis-end dimensions and the recorded jacket envelope. Bore and insulation measurements remain open.',
         figure(figs[0]),
         r'{\small Details: ' + link('geometry-detail', 'coordinate conventions and CAD qualifications') + r'; ' + link('baseline-tables', 'dimension tables') + r'.}\par',
+        section('Insulation', 'insulation-main'),
+        r'Use the workbook\textquotesingle s \textbf{Insulation regions} tab. Every coverage dropdown describes the whole named region.',
+        figure(insulation_figure),
+        r'{\small Details: ' + link('insulation-detail', 'materials, thickness and evidence by region') + r'. No resistance factors or boundary conditions are calculated.}\par',
         section('Instruments', 'instruments-main'),
         r'Geometric sensor references on the main loop. Drawing IDs are not confirmed DAQ channel names.',
         figure(figs[1]),
