@@ -1,0 +1,1000 @@
+{
+  "settings": {
+    "Facility": "VCU",
+    "Configuration ID": "VCU-REV9-DRAFT-002",
+    "Status": "Draft",
+    "Geometry source": "VCU-R9-E01 (2026-10-08)",
+    "Model support": "1-D and CFD / conjugate heat transfer",
+    "Origin": "B",
+    "Phi convention": "Clockwise from +y",
+    "Circumference convention": "Top = 0; right-hand about segment direction",
+    "Closure tolerance mm": 0.1,
+    "Plan approval": "Unconfirmed",
+    "Prepared by": null,
+    "Checked by": null,
+    "Editing sequence": "Start with Form pipe, Form sensor and Form material",
+    "Output refresh": "Upload to GitHub; Actions builds the PDF. See support/docs/DATED_CHECKPOINTS.md.",
+    "Scope": "Main-loop geometry and sensor-position prototype",
+    "Fluid scope": "VCU: Prop-30, air, water",
+    "Effective date": "2026-10-16",
+    "Change summary": "PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted."
+  },
+  "segments": {
+    "upcomer": {
+      "Segment": "upcomer",
+      "Kind": "straight",
+      "Start": "B",
+      "End": "C",
+      "Length mm": 1219.2000000000003,
+      "Phi deg": 0.0,
+      "Bend dx mm": null,
+      "Bend dy mm": null,
+      "ID mm": null,
+      "OD mm": 33.401,
+      "Insulation mm": null,
+      "Status": "CAD-derived",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+      "Notes": "Continuous straight axis",
+      "start_xyz_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "end_xyz_mm": [
+        0.0,
+        1219.2000000000003,
+        0.0
+      ],
+      "axial_length_mm": 1219.2000000000003
+    },
+    "upper_left_bend": {
+      "Segment": "upper_left_bend",
+      "Kind": "bend",
+      "Start": "C",
+      "End": "D",
+      "Length mm": null,
+      "Phi deg": null,
+      "Bend dx mm": 67.85884212857286,
+      "Bend dy mm": 56.13771637914306,
+      "ID mm": null,
+      "OD mm": 33.401,
+      "Insulation mm": null,
+      "Status": "CAD-derived",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+      "Notes": "Exact analytical torus centerline arc",
+      "start_xyz_mm": [
+        0.0,
+        1219.2000000000003,
+        0.0
+      ],
+      "end_xyz_mm": [
+        67.85884212857286,
+        1275.3377163791433,
+        0.0
+      ],
+      "axial_length_mm": null
+    },
+    "cooler": {
+      "Segment": "cooler",
+      "Kind": "straight",
+      "Start": "D",
+      "End": "E",
+      "Length mm": 1352.5500000000059,
+      "Phi deg": 100.7999999999995,
+      "Bend dx mm": null,
+      "Bend dy mm": null,
+      "ID mm": null,
+      "OD mm": 33.401,
+      "Insulation mm": null,
+      "Status": "CAD-derived",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+      "Notes": "Continuous straight axis",
+      "start_xyz_mm": [
+        67.85884212857286,
+        1275.3377163791433,
+        0.0
+      ],
+      "end_xyz_mm": [
+        1396.4514631016687,
+        1021.8951193362319,
+        0.0
+      ],
+      "axial_length_mm": 1352.5500000000059
+    },
+    "upper_right_bend": {
+      "Segment": "upper_right_bend",
+      "Kind": "bend",
+      "Start": "E",
+      "End": "F",
+      "Length mm": null,
+      "Phi deg": null,
+      "Bend dx mm": 46.44115787142641,
+      "Bend dy mm": -56.13771637914488,
+      "ID mm": null,
+      "OD mm": 33.401,
+      "Insulation mm": null,
+      "Status": "CAD-derived",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+      "Notes": "Exact analytical torus centerline arc",
+      "start_xyz_mm": [
+        1396.4514631016687,
+        1021.8951193362319,
+        0.0
+      ],
+      "end_xyz_mm": [
+        1442.892620973095,
+        965.757402957087,
+        0.0
+      ],
+      "axial_length_mm": null
+    },
+    "downcomer": {
+      "Segment": "downcomer",
+      "Kind": "straight",
+      "Start": "F",
+      "End": "G",
+      "Length mm": 1228.6685597466649,
+      "Phi deg": 179.99999999999943,
+      "Bend dx mm": null,
+      "Bend dy mm": null,
+      "ID mm": null,
+      "OD mm": 33.401,
+      "Insulation mm": null,
+      "Status": "CAD-derived",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+      "Notes": "Continuous straight axis",
+      "start_xyz_mm": [
+        1442.892620973095,
+        965.757402957087,
+        0.0
+      ],
+      "end_xyz_mm": [
+        1442.8926209731071,
+        -262.91115678957783,
+        0.0
+      ],
+      "axial_length_mm": 1228.6685597466649
+    },
+    "lower_right_bend": {
+      "Segment": "lower_right_bend",
+      "Kind": "bend",
+      "Start": "G",
+      "End": "H",
+      "Length mm": null,
+      "Phi deg": null,
+      "Bend dx mm": -73.7770002557279,
+      "Bend dy mm": -45.38592370913557,
+      "ID mm": null,
+      "OD mm": 33.401,
+      "Insulation mm": null,
+      "Status": "CAD-derived",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+      "Notes": "Endpoint chord exact; recovered spline spine qualified by endpoint residuals",
+      "start_xyz_mm": [
+        1442.8926209731071,
+        -262.91115678957783,
+        0.0
+      ],
+      "end_xyz_mm": [
+        1369.1156207173792,
+        -308.2970804987134,
+        0.0
+      ],
+      "axial_length_mm": null
+    },
+    "heater": {
+      "Segment": "heater",
+      "Kind": "straight",
+      "Start": "H",
+      "End": "A",
+      "Length mm": 1346.4962148518246,
+      "Phi deg": 280.79355123487477,
+      "Bend dx mm": null,
+      "Bend dy mm": null,
+      "ID mm": null,
+      "OD mm": 33.401,
+      "Insulation mm": null,
+      "Status": "CAD-derived",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+      "Notes": "Projected endpoint-to-endpoint axial span; overlapping offset pieces retained, no healed centerline",
+      "start_xyz_mm": [
+        1369.1156207173792,
+        -308.2970804987134,
+        0.0
+      ],
+      "end_xyz_mm": [
+        46.441166249239586,
+        -56.13771797631978,
+        0.0
+      ],
+      "axial_length_mm": 1346.4962148518246
+    },
+    "lower_left_bend": {
+      "Segment": "lower_left_bend",
+      "Kind": "bend",
+      "Start": "A",
+      "End": "B",
+      "Length mm": null,
+      "Phi deg": null,
+      "Bend dx mm": -46.44115787142391,
+      "Bend dy mm": 56.13771637914306,
+      "ID mm": null,
+      "OD mm": 33.401,
+      "Insulation mm": null,
+      "Status": "CAD-derived",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+      "Notes": "Exact analytical torus centerline arc",
+      "start_xyz_mm": [
+        46.441166249239586,
+        -56.13771797631978,
+        0.0
+      ],
+      "end_xyz_mm": [
+        8.377815674975864e-06,
+        -1.5971767197697773e-06,
+        0.0
+      ],
+      "axial_length_mm": null
+    }
+  },
+  "points": {
+    "B": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "C": [
+      0.0,
+      1219.2000000000003,
+      0.0
+    ],
+    "D": [
+      67.85884212857286,
+      1275.3377163791433,
+      0.0
+    ],
+    "E": [
+      1396.4514631016687,
+      1021.8951193362319,
+      0.0
+    ],
+    "F": [
+      1442.892620973095,
+      965.757402957087,
+      0.0
+    ],
+    "G": [
+      1442.8926209731071,
+      -262.91115678957783,
+      0.0
+    ],
+    "H": [
+      1369.1156207173792,
+      -308.2970804987134,
+      0.0
+    ],
+    "A": [
+      46.441166249239586,
+      -56.13771797631978,
+      0.0
+    ]
+  },
+  "sensors": [
+    {
+      "Sensor ID": "STC-02",
+      "Type": "STC",
+      "Segment": "upcomer",
+      "From endpoint": "B",
+      "Distance mm": 116.68608092269051,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 116.68608092269051,
+      "axis_xyz_mm": [
+        0.0,
+        116.68608092269051,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "positive_90_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "zero_reference": "Drawing +x (vertical pipe)",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "STC-03",
+      "Type": "STC",
+      "Segment": "upcomer",
+      "From endpoint": "B",
+      "Distance mm": 446.8860809226908,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 446.8860809226908,
+      "axis_xyz_mm": [
+        0.0,
+        446.8860809226908,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "positive_90_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "zero_reference": "Drawing +x (vertical pipe)",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "STC-04",
+      "Type": "STC",
+      "Segment": "upcomer",
+      "From endpoint": "C",
+      "Distance mm": 492.9139190773103,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 726.28608092269,
+      "axis_xyz_mm": [
+        0.0,
+        726.28608092269,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "positive_90_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "zero_reference": "Drawing +x (vertical pipe)",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "STC-05",
+      "Type": "STC",
+      "Segment": "upcomer",
+      "From endpoint": "C",
+      "Distance mm": 277.01391907730977,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 942.1860809226905,
+      "axis_xyz_mm": [
+        0.0,
+        942.1860809226905,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "positive_90_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "zero_reference": "Drawing +x (vertical pipe)",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "LF-01",
+      "Type": "LF",
+      "Segment": "upcomer",
+      "From endpoint": "C",
+      "Distance mm": 61.11391907730831,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Mount reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 1158.086080922692,
+      "axis_xyz_mm": [
+        0.0,
+        1158.086080922692,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "positive_90_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "zero_reference": "Drawing +x (vertical pipe)",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "STC-06",
+      "Type": "STC",
+      "Segment": "cooler",
+      "From endpoint": "D",
+      "Distance mm": 69.14180941010166,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "CAD body-to-pipe gap 0.0000 mm; contact unverified.",
+      "station_from_start_mm": 69.14180941010166,
+      "axis_xyz_mm": [
+        135.7759600044287,
+        1262.3818332390435,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        0.1873813145857161,
+        0.9822872507286904,
+        0.0
+      ],
+      "positive_90_direction": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "zero_reference": "Projected upward vertical",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "PTC-01",
+      "Type": "PTC",
+      "Segment": "cooler",
+      "From endpoint": "D",
+      "Distance mm": 97.07953205569167,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Mount reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 97.07953205569167,
+      "axis_xyz_mm": [
+        163.21882877358598,
+        1257.1468260431816,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        0.1873813145857161,
+        0.9822872507286904,
+        0.0
+      ],
+      "positive_90_direction": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "zero_reference": "Projected upward vertical",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "STC-07",
+      "Type": "STC",
+      "Segment": "cooler",
+      "From endpoint": "E",
+      "Distance mm": 155.33069058990282,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "CAD body-to-pipe gap 0.0000 mm; contact unverified.",
+      "station_from_start_mm": 1197.219309410103,
+      "axis_xyz_mm": [
+        1243.8721060883242,
+        1051.001188334475,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        0.1873813145857161,
+        0.9822872507286904,
+        0.0
+      ],
+      "positive_90_direction": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "zero_reference": "Projected upward vertical",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "LF-03",
+      "Type": "LF",
+      "Segment": "cooler",
+      "From endpoint": "E",
+      "Distance mm": 85.48068924237009,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Mount reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 1267.0693107576358,
+      "axis_xyz_mm": [
+        1312.4848718753874,
+        1037.9126032581603,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        0.1873813145857161,
+        0.9822872507286904,
+        0.0
+      ],
+      "positive_90_direction": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "zero_reference": "Projected upward vertical",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "PTC-03",
+      "Type": "PTC",
+      "Segment": "cooler",
+      "From endpoint": "E",
+      "Distance mm": 85.48068924237009,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Mount reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 1267.0693107576358,
+      "axis_xyz_mm": [
+        1312.4848718753874,
+        1037.9126032581603,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        0.1873813145857161,
+        0.9822872507286904,
+        0.0
+      ],
+      "positive_90_direction": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "zero_reference": "Projected upward vertical",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "STC-08",
+      "Type": "STC",
+      "Segment": "downcomer",
+      "From endpoint": "F",
+      "Distance mm": 183.10450241506305,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 183.10450241506305,
+      "axis_xyz_mm": [
+        1442.8926209730969,
+        782.652900542024,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "positive_90_direction": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "zero_reference": "Drawing +x (vertical pipe)",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "STC-09",
+      "Type": "STC",
+      "Segment": "downcomer",
+      "From endpoint": "F",
+      "Distance mm": 411.70450241506296,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 411.70450241506296,
+      "axis_xyz_mm": [
+        1442.8926209730992,
+        554.0529005420241,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "positive_90_direction": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "zero_reference": "Drawing +x (vertical pipe)",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "STC-10",
+      "Type": "STC",
+      "Segment": "downcomer",
+      "From endpoint": "G",
+      "Distance mm": 537.5640573316018,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 691.104502415063,
+      "axis_xyz_mm": [
+        1442.8926209731019,
+        274.652900542024,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "positive_90_direction": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "zero_reference": "Drawing +x (vertical pipe)",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "STC-11",
+      "Type": "STC",
+      "Segment": "downcomer",
+      "From endpoint": "G",
+      "Distance mm": 283.56405733160227,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 945.1045024150626,
+      "axis_xyz_mm": [
+        1442.8926209731044,
+        20.65290054202444,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "positive_90_direction": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "zero_reference": "Drawing +x (vertical pipe)",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "LF-04",
+      "Type": "LF",
+      "Segment": "downcomer",
+      "From endpoint": "G",
+      "Distance mm": 50.799998652460545,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Mount reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 1177.8685610942043,
+      "axis_xyz_mm": [
+        1442.8926209731067,
+        -212.1111581371173,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "positive_90_direction": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "zero_reference": "Drawing +x (vertical pipe)",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "PTC-04",
+      "Type": "PTC",
+      "Segment": "heater",
+      "From endpoint": "H",
+      "Distance mm": 63.71613723891599,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Mount reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 63.71613723891599,
+      "axis_xyz_mm": [
+        1306.5267280537823,
+        -296.3649113835388,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        0.18727075482357933,
+        0.9823083346830602,
+        0.0
+      ],
+      "positive_90_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "zero_reference": "Projected upward vertical",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "STC-12",
+      "Type": "STC",
+      "Segment": "heater",
+      "From endpoint": "H",
+      "Distance mm": 69.29306137124466,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Multiple closest-point solutions; not a verified sensing junction.",
+      "station_from_start_mm": 69.29306137124466,
+      "axis_xyz_mm": [
+        1301.0484689967009,
+        -295.3205165916838,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        0.18727075482357933,
+        0.9823083346830602,
+        0.0
+      ],
+      "positive_90_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "zero_reference": "Projected upward vertical",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "LF-02",
+      "Type": "LF",
+      "Segment": "heater",
+      "From endpoint": "A",
+      "Distance mm": 83.39435631483525,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Mount reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 1263.1018585369893,
+      "axis_xyz_mm": [
+        128.3601375228311,
+        -71.75504203142549,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        0.18727075482357933,
+        0.9823083346830602,
+        0.0
+      ],
+      "positive_90_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "zero_reference": "Projected upward vertical",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "PTC-02",
+      "Type": "PTC",
+      "Segment": "heater",
+      "From endpoint": "A",
+      "Distance mm": 83.39435631483525,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Mount reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "Actual sensing location and channel mapping unverified.",
+      "station_from_start_mm": 1263.1018585369893,
+      "axis_xyz_mm": [
+        128.3601375228311,
+        -71.75504203142549,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        0.18727075482357933,
+        0.9823083346830602,
+        0.0
+      ],
+      "positive_90_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "zero_reference": "Projected upward vertical",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    },
+    {
+      "Sensor ID": "STC-01",
+      "Type": "STC",
+      "Segment": "heater",
+      "From endpoint": "A",
+      "Distance mm": 49.42799112307716,
+      "Circumference deg": null,
+      "Radius mm": null,
+      "DAQ channel": null,
+      "Status": "CAD-derived",
+      "Point basis": "Pipe reference",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
+      "Notes": "CAD body-to-pipe gap 1.0455 mm; contact unverified.",
+      "station_from_start_mm": 1297.0682237287474,
+      "axis_xyz_mm": [
+        94.99469389607862,
+        -65.39413518335161,
+        0.0
+      ],
+      "sensor_xyz_mm": null,
+      "zero_direction": [
+        0.18727075482357933,
+        0.9823083346830602,
+        0.0
+      ],
+      "positive_90_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "zero_reference": "Projected upward vertical",
+      "one_d_mapping": null,
+      "cfd_mapping": null
+    }
+  ],
+  "thermal_spans": [
+    {
+      "Feature": "Complete jacket",
+      "Segment": "cooler",
+      "From endpoint": "D",
+      "Start mm": 127.561809,
+      "End mm": 1157.849309,
+      "Role": "Jacket envelope",
+      "Status": "CAD-derived",
+      "Source": "VCU-R9-E01 (2026-10-08) sheet 3",
+      "Notes": "Mechanical envelope only; does not establish active cooling.",
+      "ends_xyz_mm": [
+        [
+          193.16118078916116,
+          1251.4350169177912,
+          0.0
+        ],
+        [
+          1205.1994566242965,
+          1058.3783907665604,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "closure_gap_mm": 8.528702653865114e-06,
+  "model_ready": false,
+  "notes": [
+    "Active heater: boundaries unknown; not drawn.",
+    "Active cooling: boundaries unknown; not drawn.",
+    "CAD references are not verified sensing junctions or acquisition-channel names.",
+    "Bends are schematic connectors. No continuous hydraulic length is inferred.",
+    "JTC-A/B, branch pipes, tank and coolant plumbing are retained as outstanding scope, not drawn.",
+    "Model input draft only: missing bore, property selections, calibrations and approved boundary conditions."
+  ],
+  "input_sha256": "146dbd5127c4c68de94917b5e921df4836e4b7dd2c24c7e532c70d40f2c32322"
+}

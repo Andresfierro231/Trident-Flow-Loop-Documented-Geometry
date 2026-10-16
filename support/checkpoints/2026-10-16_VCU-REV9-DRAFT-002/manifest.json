@@ -1,0 +1,25 @@
+{
+  "configuration_id": "VCU-REV9-DRAFT-002",
+  "effective_date": "2026-10-16",
+  "status": "Draft",
+  "change_summary": "PTC-X removed from active sensor and calibration records at the repository owner's request. Documentation change only; no physical removal or installed-hardware verification is asserted.",
+  "prepared_by": null,
+  "checked_by": null,
+  "checkpoint_saved_by": "Codex",
+  "source_commit": "c10eaafbf1e58a88f64e108a7ba1b32d82bc6220",
+  "created_utc": "2026-10-16T15:10:21.771587+00:00",
+  "input_sha256": "146dbd5127c4c68de94917b5e921df4836e4b7dd2c24c7e532c70d40f2c32322",
+  "files": {
+    "VCU_control_package.pdf": "77dedc0744fd4f512e51589853dc1897f36940f61a68a7444bd52eddfb17bcf1",
+    "VCU_inputs.xlsx": "146dbd5127c4c68de94917b5e921df4836e4b7dd2c24c7e532c70d40f2c32322",
+    "evidence/README.md": "5bede8a40430493176b1b799e211f2f8d60b83c49b8a173b5bbde99548c72537",
+    "generated/VCU_control_package.tex": "4348560aff434942e03d4b08923af500f3cae7d4d5b0f75d521b267aa9279cc3",
+    "generated/angle_convention.svg": "6284041cd7d6d24590d5d54c855667e797de47d8150d056793b004d761f6b117",
+    "generated/geometry.svg": "f3fe2bf93db1641299cade9d8fd7580db379a554071bc8142832536beb088af9",
+    "generated/geometry_and_sensors.json": "f5bdbd153b4ed430d5708937e824a57d9ac3c53a73d39c6e5833c2133bd206ed",
+    "generated/requirements_and_evidence.md": "c4e193804cbdd6e58518524143e957c9cf2b83e9c0591c1efdc1aa651d7c1bda",
+    "generated/resolved_inputs.json": "1a4a45c0d8fef860ed58800f2cedb704bd2ca0b13478a923a4f91dba63a250b0",
+    "generated/sensors.svg": "87088a12998a0d2bc6d3c9b7c2907c0d9a2c91a875ce6e97bc43bedaab2b144b",
+    "generated/validation.json": "bbc65aea6827cee6b54eabe6c15bd832be584961c6819ceee344fd2c2d70b3c4"
+  }
+}
