@@ -1,0 +1,249 @@
+{
+  "source_directory": "/Users/andres/Library/CloudStorage/Box-Box/Andres_Obsidian_Notes_Box/Trident_FlowLoop_Notes/1. Setup and Geometry/attachments/VCU_Rev9_CAD_Model_Package",
+  "archive": "VCU_Rev9_CAD_Model_Package.zip",
+  "archive_sha256": "a21bfff7f6ac9ca0098a54d10d3b69162b76754fcbd620204fca5f9534b46867",
+  "file_count": 48,
+  "qualification": "Unmodified source files; Rev8 references/comparisons remain comparison-only. No geometry or sensing junction is approved by inclusion.",
+  "files": [
+    {
+      "path": "MANIFEST.json",
+      "size_bytes": 7713,
+      "sha256": "9f4d9b3773e25933899f1072aafdb5b3c886045ec1d7f0bd7e249703bdba250d"
+    },
+    {
+      "path": "README.txt",
+      "size_bytes": 11405,
+      "sha256": "e97a863f482927daaa8c8afd331c093e977255e96b261dde643057a052309d7c"
+    },
+    {
+      "path": "VCU_Rev9_CAD_Engineering_Drawings.pdf",
+      "size_bytes": 328199,
+      "sha256": "c7078accde01cc9f6ab3ab6c8ff6a509a2b73ef64b8ac9f92db28357772d4963"
+    },
+    {
+      "path": "data/VCU_Rev8_to_Rev9_Dimension_Changes.csv",
+      "size_bytes": 1086,
+      "sha256": "1a5c3281d52e4452021fe71aedba83e10a5ca56fb11b58435a627597aab2bc5f"
+    },
+    {
+      "path": "data/VCU_Rev8_to_Rev9_Sensor_Changes.csv",
+      "size_bytes": 8474,
+      "sha256": "1cf711b9121a873d9e964bd229996f237aafa98fea2c20125d66d390be5dd773"
+    },
+    {
+      "path": "data/VCU_Rev9_All_Cylindrical_Faces.csv",
+      "size_bytes": 457734,
+      "sha256": "e96057cb22d6a79ab3b70cb17ccb03937fb7d8e2186b115db4ea14dc5d97bcd2"
+    },
+    {
+      "path": "data/VCU_Rev9_Branch_Connections.csv",
+      "size_bytes": 1123,
+      "sha256": "0557ae71ec61a6ae23b14e8cdc1e8d8a0c88b090b407e45cd3106e4f603596de"
+    },
+    {
+      "path": "data/VCU_Rev9_Contact_Solutions.csv",
+      "size_bytes": 5434,
+      "sha256": "785ecadf96b4fd0889504252dc88cc87d6f8a9cbabc6d0e904e638b04aee4cee"
+    },
+    {
+      "path": "data/VCU_Rev9_Coordinates.csv",
+      "size_bytes": 14205,
+      "sha256": "391fa473e51f9bbd75eff8e04c2cc584eca28bf9c8b5bd571161f813a80af381"
+    },
+    {
+      "path": "data/VCU_Rev9_Data_Dictionary.json",
+      "size_bytes": 49164,
+      "sha256": "b1f77780a6c37b340eedbd573dc40b6adc319afaebf60e1ed2373da6689f73e0"
+    },
+    {
+      "path": "data/VCU_Rev9_Diameters.csv",
+      "size_bytes": 2563,
+      "sha256": "a88686538e5f21ce98ea3bbe8ddd65f3f863753f96610043a272f988d4bda88c"
+    },
+    {
+      "path": "data/VCU_Rev9_Dimensions.csv",
+      "size_bytes": 42501,
+      "sha256": "247297d201ded23e712a92687e0e85cfb84b8bbeb96c46d569ffad4c44233882"
+    },
+    {
+      "path": "data/VCU_Rev9_Engineering_Data.json",
+      "size_bytes": 275746,
+      "sha256": "559be6084e75b7811bf0c017c03f6fdda800163d880b1951cafb113cea8ceade"
+    },
+    {
+      "path": "data/VCU_Rev9_Heater_Clamps.csv",
+      "size_bytes": 1918,
+      "sha256": "2d5c020b68557fd34c3028752c6fbb986771ef084d472d8ae1bff324501883c2"
+    },
+    {
+      "path": "data/VCU_Rev9_Pipe_Axes.csv",
+      "size_bytes": 8553,
+      "sha256": "3418e4d2be4ddb4ab0c00ba2aa1032a7b88a28e8d9a32554f8dc37c9ae85e98c"
+    },
+    {
+      "path": "data/VCU_Rev9_Probe_Shafts.csv",
+      "size_bytes": 2358,
+      "sha256": "9b897b7aac4997b04d015b48bd2558fe44c9aa545645ab73ed4355d3756edbe1"
+    },
+    {
+      "path": "data/VCU_Rev9_Segments.csv",
+      "size_bytes": 4414,
+      "sha256": "e9cd8f4bd40d1d1fbd97d89a4452d2ba31312cd4d53db4e3a3c1a87c1c483022"
+    },
+    {
+      "path": "data/VCU_Rev9_Sensor_Stations.csv",
+      "size_bytes": 20255,
+      "sha256": "70c53f4920252a2c63c64bac303c150b84ec8094b7fd7060f4933d9aa97c03df"
+    },
+    {
+      "path": "data/deliverable_validation.json",
+      "size_bytes": 1435,
+      "sha256": "b0f50cd605680e517f03b3b2cbd6c1410a9fd0ed0f3572d847896f1ebb85fb9f"
+    },
+    {
+      "path": "data/geometry.json",
+      "size_bytes": 65193,
+      "sha256": "44b5ffe88ab65f510ee1693c00351d371559eceaa4826153209b930e8e391836"
+    },
+    {
+      "path": "data/reconstructed_bends.json",
+      "size_bytes": 30309,
+      "sha256": "1811ca42f05cac76c6f9648e7f52cd1665ac840c686b869e171679924995b3be"
+    },
+    {
+      "path": "raw/bend_reconstruction.log",
+      "size_bytes": 622,
+      "sha256": "1d94ca38923bafbcfde365447a4040a8f361908bfd1e13089738e3dce226e3c8"
+    },
+    {
+      "path": "raw/cad_projection.json",
+      "size_bytes": 436431,
+      "sha256": "7f99b789c757a355d922c120e65535a3629403d9f9035598e8242bf74535f925"
+    },
+    {
+      "path": "raw/contacts.log",
+      "size_bytes": 1487,
+      "sha256": "a5e225e9882aca6d801c62a7ef7c4e0923cb1a2c49655660a0c093c76de74c35"
+    },
+    {
+      "path": "raw/derived_summary.txt",
+      "size_bytes": 2190,
+      "sha256": "0781dd22e5bb85ee7518b67560a32b04c9b4e5ae6eb21503e9aae36e662a0417"
+    },
+    {
+      "path": "raw/inventory.log",
+      "size_bytes": 8434,
+      "sha256": "306d2bd3b65958313d156b54292fdb0c08e0811f4072794d50aca2ade12a0779"
+    },
+    {
+      "path": "raw/projection.log",
+      "size_bytes": 872,
+      "sha256": "a800963dbb8a9ac0fa1b66e1e507aae1f7b38c330b056c84aa73f9e28671e169"
+    },
+    {
+      "path": "raw/rev9.json",
+      "size_bytes": 2215168,
+      "sha256": "5a4c8731af50f52bc8e2d43aeafc17a869f599d0cb0b6ed302521e141fa7891e"
+    },
+    {
+      "path": "raw/rev9_inventory.json",
+      "size_bytes": 2196613,
+      "sha256": "8eb7481e55df4ac0f041f1ccb4301205cbd34652b15d745a6b07583474a9d113"
+    },
+    {
+      "path": "raw/rev9_verification.json",
+      "size_bytes": 2239,
+      "sha256": "d33bc01b33b28d954bb1a7576b0fda26861e9df50a4d521067e407bf977c8841"
+    },
+    {
+      "path": "reference/README.txt",
+      "size_bytes": 243,
+      "sha256": "e1cf4990abdf3b8008ac8ed26cb7efaa1c18fcbf29946c89c021f3ceaceefbf3"
+    },
+    {
+      "path": "reference/VCU_Rev8_Engineering_Data.json",
+      "size_bytes": 165212,
+      "sha256": "66aa8e58e6fdad8370d41c1b9f0da022ad0ae1d968c1b1c8e155e1eb82278605"
+    },
+    {
+      "path": "scripts/build_model_data.py",
+      "size_bytes": 25077,
+      "sha256": "2e347fcc4154dc62b6fefcd70f13e07ffed6aa54aff31bfaca63e1a270607527"
+    },
+    {
+      "path": "scripts/cad_model.py",
+      "size_bytes": 1657,
+      "sha256": "aa1bfda670f62d91ee0574224f2058453c119a32bda4416529a72094d612ac83"
+    },
+    {
+      "path": "scripts/derive_geometry.py",
+      "size_bytes": 6028,
+      "sha256": "47e22272b144011bffc1b72b814a9bb4cce8120f75c5b29987cb737604fc499c"
+    },
+    {
+      "path": "scripts/draw_engineering.py",
+      "size_bytes": 32748,
+      "sha256": "06a381f27e7035438f4897cbfd1c526fd080b8d38faa7acb16721e42f31f1dd9"
+    },
+    {
+      "path": "scripts/enrich_data.py",
+      "size_bytes": 7655,
+      "sha256": "23f8c44fd16802906da42cd953fb2f007ab925dab162ef8a6ac43b42b2cac77f"
+    },
+    {
+      "path": "scripts/environment_versions.json",
+      "size_bytes": 212,
+      "sha256": "364da25daed7a814e5199a4330c6fd3e62eb82289af383d661af03355aa919d4"
+    },
+    {
+      "path": "scripts/extract_contacts.py",
+      "size_bytes": 1894,
+      "sha256": "2baf41cf1bc33cc174f7b76eefc6d7b6888ea5d91e1cce8ab72d53770249ec70"
+    },
+    {
+      "path": "scripts/extract_inventory.py",
+      "size_bytes": 4459,
+      "sha256": "b37601f929ddd63427bb6c762fed26c650e170e5aca65ea1888e69f7b1b3510a"
+    },
+    {
+      "path": "scripts/inspect_step.py",
+      "size_bytes": 5140,
+      "sha256": "fa431e31ba62e7dd6bcc2ac60c007adc2a31876fd30ed52e8d0b8e247c0cce20"
+    },
+    {
+      "path": "scripts/load_vcu_rev9.py",
+      "size_bytes": 1640,
+      "sha256": "9922f388aa88ea39f1afcabd026247cba0b86c2a7d59028197fcb3c1a8b44af3"
+    },
+    {
+      "path": "scripts/project_cad.py",
+      "size_bytes": 1243,
+      "sha256": "f3bbbe7ae1668cc67c02cae7f1d19b0c97981f1c0a2decab0c5421ffaaaedef9"
+    },
+    {
+      "path": "scripts/rebuild.py",
+      "size_bytes": 922,
+      "sha256": "2c1adef2b6ac3b5dadf7a8ca19b21ef87f441a75bb06cc7bc3d45742da38373c"
+    },
+    {
+      "path": "scripts/reconstruct_bends.py",
+      "size_bytes": 1987,
+      "sha256": "6b3dd5e30e2ef34fd505eb24875279ca7f844d86763995f6272c86c1673b55d2"
+    },
+    {
+      "path": "scripts/validate_deliverable.py",
+      "size_bytes": 6179,
+      "sha256": "3a1c7b8b44186cf66336c9a4fa2bf02942e83aa2849c837f0d353a926775b171"
+    },
+    {
+      "path": "scripts/verify_rev9.py",
+      "size_bytes": 2582,
+      "sha256": "482a0e2fda8034216e87de729e1742521fb7ffb4001e7a903f6076583eebef02"
+    },
+    {
+      "path": "source/_STEPFILE_UTDTloopWithOpticsAndHXRev9_9_18_26.step",
+      "size_bytes": 4259443,
+      "sha256": "78c6ae52bf39084fbd9b1306d28dcbe2c1c4d5fccd334b0e68c861022a1bfbcf"
+    }
+  ]
+}

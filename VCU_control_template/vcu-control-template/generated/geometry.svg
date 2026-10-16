@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1500" viewBox="0 0 1400 1500"><rect width="100%" height="100%" fill="white"/>
+<text x="70.000" y="65.000" font-family="Arial, sans-serif" font-size="30" fill="#263D4B" text-anchor="start" font-weight="bold">VCU / GEOMETRY AND THERMAL COVERAGE</text>
+<text x="70.000" y="102.000" font-family="Arial, sans-serif" font-size="17" fill="#576976" text-anchor="start">VCU-REV9-DRAFT-001 | generated from the editable workbook</text>
+<line x1="70.000" y1="125.000" x2="1330.000" y2="125.000" stroke="#CFD9DF" stroke-width="2"/>
+<line x1="370.000" y1="973.358" x2="370.000" y2="415.678" stroke="#263D4B" stroke-width="5"/>
+<line x1="370.000" y1="415.678" x2="401.040" y2="390.000" stroke="#263D4B" stroke-width="5" stroke-dasharray="6 5"/>
+<line x1="401.040" y1="390.000" x2="1008.757" y2="505.928" stroke="#263D4B" stroke-width="5"/>
+<line x1="1008.757" y1="505.928" x2="1030.000" y2="531.607" stroke="#263D4B" stroke-width="5" stroke-dasharray="6 5"/>
+<line x1="1030.000" y1="531.607" x2="1030.000" y2="1093.617" stroke="#263D4B" stroke-width="5"/>
+<line x1="1030.000" y1="1093.617" x2="996.253" y2="1114.378" stroke="#263D4B" stroke-width="5" stroke-dasharray="6 5"/>
+<line x1="996.253" y1="1114.378" x2="391.243" y2="999.036" stroke="#263D4B" stroke-width="5"/>
+<line x1="391.243" y1="999.036" x2="370.000" y2="973.358" stroke="#263D4B" stroke-width="5" stroke-dasharray="6 5"/>
+<line x1="458.355" y1="400.933" x2="921.276" y2="489.240" stroke="#5D9DC3" stroke-width="14"/>
+<text x="355.000" y="959.358" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">B</text>
+<text x="355.000" y="401.678" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">C</text>
+<text x="386.040" y="376.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">D</text>
+<text x="993.757" y="491.928" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">E</text>
+<text x="1015.000" y="517.607" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">F</text>
+<text x="1015.000" y="1079.617" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">G</text>
+<text x="981.253" y="1100.378" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">H</text>
+<text x="376.243" y="985.036" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">A</text>
+<text x="700.000" y="770.000" font-family="Arial, sans-serif" font-size="54" fill="#A3B0B9" text-anchor="middle">VCU</text>
+<text x="80.000" y="700.000" font-family="Arial, sans-serif" font-size="22" fill="#263D4B" text-anchor="start" font-weight="bold">UPCOMER</text>
+<text x="80.000" y="730.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start">1219.200 mm</text>
+<text x="80.000" y="757.000" font-family="Arial, sans-serif" font-size="17" fill="#263D4B" text-anchor="start">phi = 0.000 deg</text>
+<text x="700.000" y="265.000" font-family="Arial, sans-serif" font-size="22" fill="#263D4B" text-anchor="middle" font-weight="bold">COOLER</text>
+<text x="700.000" y="295.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="middle">1352.550 mm</text>
+<text x="700.000" y="322.000" font-family="Arial, sans-serif" font-size="17" fill="#263D4B" text-anchor="middle">phi = 100.800 deg</text>
+<text x="1100.000" y="800.000" font-family="Arial, sans-serif" font-size="22" fill="#263D4B" text-anchor="start" font-weight="bold">DOWNCOMER</text>
+<text x="1100.000" y="830.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start">1228.669 mm</text>
+<text x="1100.000" y="857.000" font-family="Arial, sans-serif" font-size="17" fill="#263D4B" text-anchor="start">phi = 180.000 deg</text>
+<text x="700.000" y="1250.000" font-family="Arial, sans-serif" font-size="22" fill="#263D4B" text-anchor="middle" font-weight="bold">HEATER</text>
+<text x="700.000" y="1280.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="middle">1346.496 mm</text>
+<text x="700.000" y="1307.000" font-family="Arial, sans-serif" font-size="17" fill="#263D4B" text-anchor="middle">phi = 280.794 deg</text>
+<text x="70.000" y="180.000" font-family="Arial, sans-serif" font-size="18" fill="#263D4B" text-anchor="start">Blue: jacket envelope. Red appears only for entered active heater spans.</text>
+<text x="70.000" y="1370.000" font-family="Arial, sans-serif" font-size="17" fill="#263D4B" text-anchor="start">Lengths are axis-end spans. Heater span is projected; it is not an exact joined path.</text>
+<text x="70.000" y="1400.000" font-family="Arial, sans-serif" font-size="17" fill="#263D4B" text-anchor="start">Dashed corners are schematic endpoint connectors, not hydraulic arc geometry.</text>
+<text x="70.000" y="1445.000" font-family="Arial, sans-serif" font-size="16" fill="#576976" text-anchor="start">VCU Rev9 CAD candidate | installed geometry and sensing locations require confirmation</text>
+</svg>

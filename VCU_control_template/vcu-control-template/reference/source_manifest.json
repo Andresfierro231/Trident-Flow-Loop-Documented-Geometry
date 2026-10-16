@@ -1,0 +1,157 @@
+{
+  "review_date": "2026-10-15",
+  "scope": "Supplied sources read for VCU candidate evidence; hashes identify these bytes, not approval.",
+  "sources": [
+    {
+      "source_id": "R9",
+      "file": "VCU_Rev9_CAD_Engineering_Drawings.pdf",
+      "revision": "2026-10-08; VCU-R9-E01",
+      "locator": "Sheets 1-8",
+      "qualification": "VCU CAD candidate. Printed precision is not tolerance; geometry is not installed verification.",
+      "local_path": "/Users/andres/Library/CloudStorage/Box-Box/Andres_Obsidian_Notes_Box/Trident_FlowLoop_Notes/1. Setup and Geometry/attachments/VCU_Rev9_CAD_Model_Package/VCU_Rev9_CAD_Engineering_Drawings.pdf",
+      "sha256_at_review": "c7078accde01cc9f6ab3ab6c8ff6a509a2b73ef64b8ac9f92db28357772d4963"
+    },
+    {
+      "source_id": "SEG",
+      "file": "VCU_Rev9_Segments.csv",
+      "revision": "Companion Rev9 structured package",
+      "locator": "Rows keyed by segment; length_basis, dx_mm, dy_mm, centerline_length_mm",
+      "qualification": "Preserve blanks, projected spans and qualified spline lengths.",
+      "local_path": "/Users/andres/Library/CloudStorage/Box-Box/Andres_Obsidian_Notes_Box/Trident_FlowLoop_Notes/1. Setup and Geometry/attachments/VCU_Rev9_CAD_Model_Package/data/VCU_Rev9_Segments.csv",
+      "sha256_at_review": "e9cd8f4bd40d1d1fbd97d89a4452d2ba31312cd4d53db4e3a3c1a87c1c483022"
+    },
+    {
+      "source_id": "SNS",
+      "file": "VCU_Rev9_Sensor_Stations.csv",
+      "revision": "Companion Rev9 structured package",
+      "locator": "Rows keyed by sensor_id; reference_basis, nearest_endpoint, nearest_distance_mm",
+      "qualification": "Geometric references, not verified sensing tips or DAQ names.",
+      "local_path": "/Users/andres/Library/CloudStorage/Box-Box/Andres_Obsidian_Notes_Box/Trident_FlowLoop_Notes/1. Setup and Geometry/attachments/VCU_Rev9_CAD_Model_Package/data/VCU_Rev9_Sensor_Stations.csv",
+      "sha256_at_review": "70c53f4920252a2c63c64bac303c150b84ec8094b7fd7060f4933d9aa97c03df"
+    },
+    {
+      "source_id": "DIA",
+      "file": "VCU_Rev9_Diameters.csv",
+      "revision": "Companion Rev9 structured package",
+      "locator": "Rows keyed by item",
+      "qualification": "Main swept-loop bore is absent; local spool bores are not loop-wide IDs.",
+      "local_path": "/Users/andres/Library/CloudStorage/Box-Box/Andres_Obsidian_Notes_Box/Trident_FlowLoop_Notes/1. Setup and Geometry/attachments/VCU_Rev9_CAD_Model_Package/data/VCU_Rev9_Diameters.csv",
+      "sha256_at_review": "a88686538e5f21ce98ea3bbe8ddd65f3f863753f96610043a272f988d4bda88c"
+    },
+    {
+      "source_id": "MAT",
+      "file": "1.2 Main Material Props.md",
+      "revision": "Supplied notes; VCU section cites 2026-09-16 report",
+      "locator": "VCU section only; lines 17-44",
+      "qualification": "Reported materials/composition and proposed insulation fit; original sources not verified.",
+      "local_path": "/Users/andres/Library/CloudStorage/Box-Box/Andres_Obsidian_Notes_Box/Trident_FlowLoop_Notes/1. Setup and Geometry/1.2 Main Material Props.md",
+      "sha256_at_review": "9bbfeb6527fd3787b05f28ecb8c0654deeb89b0252889d73429cfb0bc1c5ae18"
+    },
+    {
+      "source_id": "PG",
+      "file": "1.2.1 Prop 30 ThermoPhys Props.md",
+      "revision": "Supplied notes",
+      "locator": "30 wt% heading and linked property figures",
+      "qualification": "Property-source leads; do not transfer image/table values without source and units.",
+      "local_path": "/Users/andres/Library/CloudStorage/Box-Box/Andres_Obsidian_Notes_Box/Trident_FlowLoop_Notes/1. Setup and Geometry/1.2.1 Prop 30 ThermoPhys Props.md",
+      "sha256_at_review": "95532e4fd96351d882b17632200c05ea533981d280ff58df43beccaaa5ee25db"
+    },
+    {
+      "source_id": "STEEL",
+      "file": "1.2.2 Steel Pipe Properties.md",
+      "revision": "Supplied notes",
+      "locator": "Lines 3-21; Suggested you use",
+      "qualification": "Mixed candidate correlations. A range beside MOOSE items does not qualify the whole selection.",
+      "local_path": "/Users/andres/Library/CloudStorage/Box-Box/Andres_Obsidian_Notes_Box/Trident_FlowLoop_Notes/1. Setup and Geometry/1.2.2 Steel Pipe Properties.md",
+      "sha256_at_review": "e700df5bea4486003f76b1a8759f2c1c3d985da70ca0011963dbd99ac4e8ebf2"
+    },
+    {
+      "source_id": "HEAT",
+      "file": "1.1.0 Heaters and coolers.md",
+      "revision": "Supplied notes; 2026-10-07 reported heater message",
+      "locator": "VCU / Insulation / Heater; lines 5-23",
+      "qualification": "Electrical mat/band heaters reported. Wiring, active boundaries and net duty unverified.",
+      "local_path": "/Users/andres/Library/CloudStorage/Box-Box/Andres_Obsidian_Notes_Box/Trident_FlowLoop_Notes/1. Setup and Geometry/1.1.0 Heaters and coolers.md",
+      "sha256_at_review": "4abf5ca2c924aea9b63ffb8dd4b31831a6e652e2cb3c6df36174fb353927c33a"
+    },
+    {
+      "source_id": "SNOTE",
+      "file": "1.1.2 Sensors.md",
+      "revision": "Supplied notes",
+      "locator": "VCU / Rev9; PTCX note",
+      "qualification": "PTCX called a fluke; some links in this section point to ACU/Rev8. Keep conflict visible.",
+      "local_path": "/Users/andres/Library/CloudStorage/Box-Box/Andres_Obsidian_Notes_Box/Trident_FlowLoop_Notes/1. Setup and Geometry/1.1.2 Sensors.md",
+      "sha256_at_review": "49f882e979b7451699dc3de77c40a7dfb6fff059e0fbcac161e7080020aae59f"
+    },
+    {
+      "source_id": "MODEL",
+      "file": "0.0 Intro to Model.md",
+      "revision": "Supplied model overview",
+      "locator": "The four physical-model stages; reduced-zone paragraph",
+      "qualification": "Supports proposed model scope; not verification that any facility run is validated.",
+      "local_path": "/Users/andres/Library/CloudStorage/Box-Box/Andres_Obsidian_Notes_Box/Trident_FlowLoop_Notes/2. Model Notes/0.0 Intro to Model.md",
+      "sha256_at_review": "6ddfd46ad8e783bd186729f3daadeaa050009ed8f4e122e437990225c9b86aa9"
+    },
+    {
+      "source_id": "P0",
+      "file": "STNCL_Phase0_System_Checkout.tex",
+      "revision": "Revision 0.1; 2026-08-17; draft",
+      "locator": "Section 2 Technical Basis; Section 3 Method / Required Outputs",
+      "qualification": "Draft requirements for facility-specific completion; approval not supplied.",
+      "local_path": "/Users/andres/projects/research/Trident/latex_Luciano_stncl_initial_plan/STNCL_Phase0_System_Checkout.tex",
+      "sha256_at_review": "5d4a379917db52bda92f673f5c6bda718ab9301ca8a3ed4b120c6ff013911c40"
+    },
+    {
+      "source_id": "P1",
+      "file": "STNCL_Phase1_Ambient_Equilibrium_Baseline.tex",
+      "revision": "Revision 0.1; draft",
+      "locator": "Section 2 Data Acceptance and Uncertainty; Section 3 Method / Required Outputs",
+      "qualification": "Prop-30 plan; thresholds and noise examples are not universal operating limits.",
+      "local_path": "/Users/andres/projects/research/Trident/latex_Luciano_stncl_initial_plan/STNCL_Phase1_Ambient_Equilibrium_Baseline.tex",
+      "sha256_at_review": "d3d1a357269e293fea1917a5ec66c8a6de8341d32066de1f56b108b363f80f11"
+    },
+    {
+      "source_id": "P2",
+      "file": "STNCL_Phase2_Thermal_Relaxation_Tests.tex",
+      "revision": "Revision 0.1; draft",
+      "locator": "Section 2 Thermal Model and Heat Loss; Section 3 Method / Required Outputs",
+      "qualification": "Prop-30 plan; conditioning and tank qualification wording need reconciliation.",
+      "local_path": "/Users/andres/projects/research/Trident/latex_Luciano_stncl_initial_plan/STNCL_Phase2_Thermal_Relaxation_Tests.tex",
+      "sha256_at_review": "96cb2ca6a5b0c32de9f424ea86e1b6f930f5140f63f2819328a3264d3093158e"
+    },
+    {
+      "source_id": "P3",
+      "file": "STNCL_Phase3_Low_Duty_Steady_Heat_Loss_Tests.tex",
+      "revision": "Revision 0.1; draft",
+      "locator": "Section 2 Blind validation; Section 3 Method / Required Outputs / Disposition",
+      "qualification": "Heater-side duty definition requires electrical adaptation for VCU.",
+      "local_path": "/Users/andres/projects/research/Trident/latex_Luciano_stncl_initial_plan/STNCL_Phase3_Low_Duty_Steady_Heat_Loss_Tests.tex",
+      "sha256_at_review": "f092c17b82e132d3c8266549d9c460846afd920a6685151a51dd93271dfa4f7c"
+    },
+    {
+      "source_id": "P4",
+      "file": "STNCL_Phase4_Initial_Test_Matrix_and_Transition_Characterization.tex",
+      "revision": "Revision 0.1; draft",
+      "locator": "Section 2 Primary-flow inference; Section 3 Method / Required Outputs",
+      "qualification": "Five unique states plus repeat; applicability and uncertainty gates are draft requirements.",
+      "local_path": "/Users/andres/projects/research/Trident/latex_Luciano_stncl_initial_plan/STNCL_Phase4_Initial_Test_Matrix_and_Transition_Characterization.tex",
+      "sha256_at_review": "de9c97b2bad2a9e4c20ec2a6692b69d7736eeebce63eabf5cf82d14bde320c63"
+    },
+    {
+      "source_id": "USER",
+      "file": "User decisions in this chat",
+      "revision": "2026-10-15",
+      "locator": "Editable forms; VCU fluid scope; both models; circumferential sensor position",
+      "qualification": "VCU Prop-30/air/water; circuit and run assignment still required. ACU excluded.",
+      "local_path": null
+    },
+    {
+      "source_id": "DESIGN",
+      "file": "Proposed package design",
+      "revision": "2026-10-15",
+      "locator": "This requirements register and coordinate convention",
+      "qualification": "Assistant-proposed documentation field/convention, not an approved physical fact.",
+      "local_path": null
+    }
+  ]
+}

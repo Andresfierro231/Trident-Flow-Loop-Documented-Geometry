@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950"><rect width="100%" height="100%" fill="white"/>
+<text x="70.000" y="65.000" font-family="Arial, sans-serif" font-size="30" fill="#263D4B" text-anchor="start" font-weight="bold">SENSOR POSITION / ANGLE CONVENTION</text>
+<text x="70.000" y="102.000" font-family="Arial, sans-serif" font-size="17" fill="#576976" text-anchor="start">Circumferential angle is separate from segment inclination.</text>
+<line x1="70.000" y1="125.000" x2="1330.000" y2="125.000" stroke="#CFD9DF" stroke-width="2"/>
+<circle cx="320.000" cy="430.000" r="180" fill="white" stroke="#263D4B" stroke-width="2"/>
+<line x1="320.000" y1="430.000" x2="320.000" y2="250.000" stroke="#263D4B" stroke-width="2"/>
+<line x1="320.000" y1="430.000" x2="500.000" y2="430.000" stroke="#263D4B" stroke-width="2"/>
+<text x="320.000" y="230.000" font-family="Arial, sans-serif" font-size="21" fill="#263D4B" text-anchor="middle">0 deg: top / e0</text>
+<text x="520.000" y="430.000" font-family="Arial, sans-serif" font-size="21" fill="#263D4B" text-anchor="start">90 deg / e90</text>
+<text x="320.000" y="650.000" font-family="Arial, sans-serif" font-size="21" fill="#263D4B" text-anchor="middle">180 deg</text>
+<text x="120.000" y="430.000" font-family="Arial, sans-serif" font-size="21" fill="#263D4B" text-anchor="end">270 deg</text>
+<circle cx="447.279" cy="302.721" r="9" fill="white" stroke="#286AA6" stroke-width="2"/>
+<text x="650.000" y="280.000" font-family="Arial, sans-serif" font-size="24" fill="#263D4B" text-anchor="start" font-weight="bold">HOW TO RECORD A SENSOR</text>
+<text x="650.000" y="330.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start">1. Pick a segment and one of its endpoints.</text>
+<text x="650.000" y="375.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start">2. Measure distance along that segment.</text>
+<text x="650.000" y="420.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start">3. Enter angle around the pipe, if known.</text>
+<text x="650.000" y="465.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start">4. Enter radius from the axis for a 3-D point.</text>
+<text x="650.000" y="510.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start">5. Identify mount, contact or sensing junction.</text>
+<text x="70.000" y="740.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start">Positive rotation is right-hand about the directed segment (+s). e90 = tangent x e0.</text>
+<text x="70.000" y="780.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start">For vertical pipes, e0 is drawing +x. For other pipes, e0 is projected upward vertical.</text>
+<text x="70.000" y="820.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start">The 45-degree dot is illustrative. No VCU sensor angle has been assumed.</text>
+<text x="70.000" y="860.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start">A blank angle or radius leaves the exported 3-D sensor point unresolved.</text>
+</svg>
