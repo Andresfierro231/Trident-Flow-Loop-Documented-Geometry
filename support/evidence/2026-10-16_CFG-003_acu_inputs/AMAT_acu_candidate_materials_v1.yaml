@@ -1,0 +1,227 @@
+schema_version: 1
+library_revision: acu_candidate_materials_v2_jin_working_default
+materials:
+  hitec_jin_ethan_case_config_v1:
+    kind: fluid
+    calibration_eligible: false
+    provenance:
+      source_id: ethan_salt2_jin_case_config
+      source_path: ethan_runs/jadyn_runs/salt2/val_salt_test_2_coarse_mesh_laminar/case_config.yaml
+      source_revision: sha256:c928bb96dd6ab3388b7ce0f8966965cb11d85bff8ed94ef227878aa9d10a92fc
+      evidence_status: provisional_working_tree_case_configuration
+      notes: User-selected working ACU HITEC branch; exact composition, primary citations, ranges, and uncertainty remain unverified.
+    properties:
+      density:
+        model: polynomial
+        units: kg/m^3
+        coefficients: [2293.6, -0.7497]
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      heat_capacity:
+        model: constant
+        units: J/(kg*K)
+        value: 1423.47
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      conductivity:
+        model: polynomial
+        units: W/(m*K)
+        coefficients: [0.78, -0.00125, 1.6e-06]
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      viscosity:
+        model: exponential_inverse_temperature
+        units: Pa*s
+        coefficients: [0.001149, -810.896, 780600.0]
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+  hitec_kirst_ethan_report_v1:
+    kind: fluid
+    calibration_eligible: false
+    provenance:
+      source_id: ethan_1d_model_discrepancy_report_kirst
+      source_path: ethan_runs/reports/2026-06/2026-06-02/2026-06-02_ethan_1d_model_discrepancy_report/README.md
+      source_revision: 449e9a61c97f8ddbab14a8f1b5ab0b2a6192dfa8
+      evidence_status: provisional_implementation_history
+      notes: Kirst-aligned comparison branch; shares rho/cp/k with Jin and differs in viscosity only.
+    properties:
+      density:
+        model: polynomial
+        units: kg/m^3
+        coefficients: [2293.6, -0.7497]
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      heat_capacity:
+        model: constant
+        units: J/(kg*K)
+        value: 1423.47
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      conductivity:
+        model: polynomial
+        units: W/(m*K)
+        coefficients: [0.78, -0.00125, 1.6e-06]
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      viscosity:
+        model: exponential_inverse_temperature
+        units: Pa*s
+        coefficients: [6.757e-05, 2247.11]
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+  hitec_tamu_conversation_table_v1:
+    kind: fluid
+    calibration_eligible: false
+    provenance:
+      source_id: tamu_1d_materials_salt_rows
+      source_path: tamu_first_order_model/Fluid/tamu_loop_model_v2/materials.py:273
+      source_revision: 34af0397beadcd00e7d1f6520f01ff3946209aa9
+      evidence_status: provisional_user_supplied_table
+      notes: Copied locally from SALT_ROWS; exact composition and primary citation remain unverified.
+    properties:
+      density:
+        model: tabulated
+        units: kg/m^3
+        table_file: hitec_tamu_conversation_table_v1.csv
+        column: density_kg_m3
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      heat_capacity:
+        model: tabulated
+        units: J/(kg*K)
+        table_file: hitec_tamu_conversation_table_v1.csv
+        column: heat_capacity_J_kgK
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      conductivity:
+        model: tabulated
+        units: W/(m*K)
+        table_file: hitec_tamu_conversation_table_v1.csv
+        column: conductivity_W_mK
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      viscosity:
+        model: tabulated
+        units: Pa*s
+        table_file: hitec_tamu_conversation_table_v1.csv
+        column: viscosity_Pa_s
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      surface_tension:
+        model: tabulated
+        units: N/m
+        table_file: hitec_tamu_conversation_table_v1.csv
+        column: surface_tension_N_m
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+  stainless_316l_tamu_polynomial_v1:
+    kind: solid
+    calibration_eligible: false
+    provenance:
+      source_id: tamu_1d_materials_ss316
+      source_path: tamu_first_order_model/Fluid/tamu_loop_model_v2/materials.py:211
+      source_revision: 34af0397beadcd00e7d1f6520f01ff3946209aa9
+      evidence_status: provisional_legacy_correlation
+      notes: Copied from the earlier TAMU 1-D model; primary sources and applicability remain open.
+    properties:
+      density:
+        model: polynomial
+        units: kg/m^3
+        coefficients: [8084.2, -0.42086, -3.8942e-05]
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      heat_capacity:
+        model: polynomial
+        units: J/(kg*K)
+        coefficients: [458.98, 0.1328]
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      conductivity:
+        model: polynomial
+        units: W/(m*K)
+        coefficients: [9.248, 0.01571]
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      emissivity:
+        model: constant
+        units: '1'
+        value: 0.25
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+  ceramic_insulation_tamu_polynomial_v1:
+    kind: insulation
+    calibration_eligible: false
+    provenance:
+      source_id: tamu_1d_materials_salt_insulation
+      source_path: tamu_first_order_model/Fluid/tamu_loop_model_v2/materials.py:219
+      source_revision: 34af0397beadcd00e7d1f6520f01ff3946209aa9
+      evidence_status: provisional_legacy_correlation
+      notes: Candidate salt-loop insulation; product identity and primary source remain unverified.
+    properties:
+      density:
+        model: constant
+        units: kg/m^3
+        value: 128.0
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      heat_capacity:
+        model: constant
+        units: J/(kg*K)
+        value: 1000.0
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      conductivity:
+        model: polynomial
+        units: W/(m*K)
+        coefficients: [0.036056549855, -6.2436910698e-05, 1.9275102287e-07]
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      emissivity:
+        model: constant
+        units: '1'
+        value: 0.85
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+  fiberglass_insulation_tamu_polynomial_v1:
+    kind: insulation
+    calibration_eligible: false
+    provenance:
+      source_id: tamu_1d_materials_water_insulation
+      source_path: tamu_first_order_model/Fluid/tamu_loop_model_v2/materials.py:369
+      source_revision: 34af0397beadcd00e7d1f6520f01ff3946209aa9
+      evidence_status: provisional_legacy_correlation
+      notes: Alternate legacy fiberglass candidate; product identity and primary source remain unverified.
+    properties:
+      density:
+        model: constant
+        units: kg/m^3
+        value: 64.0
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      heat_capacity:
+        model: constant
+        units: J/(kg*K)
+        value: 840.0
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      conductivity:
+        model: polynomial
+        units: W/(m*K)
+        coefficients: [0.06407, -0.0001945, 3.917e-07]
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error
+      emissivity:
+        model: constant
+        units: '1'
+        value: 0.90
+        valid_temperature_K: [400.0, 605.0]
+        out_of_range: error

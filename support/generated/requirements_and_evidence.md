@@ -188,34 +188,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Sheet 8 source identity
 
 
-**Current evidence:** Rev9 STEP SHA-256 78c6ae52bf39084fbd9b1306d28dcbe2c1c4d5fccd334b0e68c861022a1bfbcf
+**Current evidence:** Rev9 is user-selected best current geometry for new work; existing solver/results remain versioned Rev8.
 
 
-**Evidence type:** CAD-derived
+**Evidence type:** Reported
 
 
-**Evidence source:** R9
+**Evidence source:** VSEL; WORK
 
 
-**Evidence locator:** Sheet 8
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
 **Review state:** Needs review
 
 
-**Unresolved question:** Does this source match installed VCU hardware?
+**Unresolved question:** Confirm installed configuration and dates; no physical release implied.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Rev9 for new configuration documentation; no historical run migration
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C05
@@ -347,34 +347,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Method geometry map; sheets 1-2
 
 
-**Current evidence:** Inclined CAD cylinder axes 10.800 deg to horizontal
+**Current evidence:** Geometry-derived inclined axes about 10.8 deg; working local gravity (0,-1,0). Installed gravity survey absent.
 
 
-**Evidence type:** CAD-derived
+**Evidence type:** Modeling assumption
 
 
-**Evidence source:** R9
+**Evidence source:** VSEL; WORK
 
 
-**Evidence locator:** Sheets 1-2
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
 **Review state:** Needs review
 
 
-**Unresolved question:** What is the measured installed tilt and uncertainty?
+**Unresolved question:** Installed tilt/gravity and uncertainty still need survey.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Use current local drawing frame and geometry-derived inclination provisionally
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C08
@@ -930,34 +930,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Fluid scope; facility/fluid configuration
 
 
-**Current evidence:** VCU options: Prop-30, air, water; no circuit assignment established
+**Current evidence:** VCU options Prop-30/air/water; primary fill selected per run. Jacket water reported; ambient air role distinct.
 
 
 **Evidence type:** Reported
 
 
-**Evidence source:** USER
+**Evidence source:** USER; FLUIDCFG; XWALK; WORK
 
 
-**Evidence locator:** Fluid clarification in chat
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
 **Review state:** Needs review
 
 
-**Unresolved question:** Which fluid occupies each circuit in this run?
+**Unresolved question:** Confirm fluid/batch in each acquisition; ambient filename alone is insufficient.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Run-specific primary fill; reported water jacket coolant
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C19
@@ -1089,34 +1089,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Instrumentation documentation; sensor rows
 
 
-**Current evidence:** 12 STC, 4 LF, 5 loop PTC and 2 JTC geometric references
+**Current evidence:** Active geometry: 12 STC, 4 main PTC, 4 LF and 2 JTC = 22 references; 20 main-loop references. Original extraction has 23 including excluded PTC-X. Native core inventory has 20 channels incl. Amb/Tank; LF is not mapped.
 
 
-**Evidence type:** CAD-derived
+**Evidence type:** Reported
 
 
-**Evidence source:** R9
+**Evidence source:** VSEL; WORK; XWALK
 
 
-**Evidence locator:** Sheet 5 inventory
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
 **Review state:** Needs review
 
 
-**Unresolved question:** Verify installed hardware count and channel identities for remaining sensors. PTC-X was removed from the active register at the repository owner's request on 2026-10-16; no physical removal is asserted.
+**Unresolved question:** Installed inventory, serials and fiber channels still need evidence.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Exclude PTC-X from active register; preserve original reference
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C22
@@ -1195,34 +1195,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Method instrumentation documentation
 
 
-**Current evidence:** Unverified; STEP does not encode acquisition-channel labels
+**Current evidence:** User-selected STC1-12/PTC1-4 matching Rev9 references; JTC-B=PTC5 inlet and JTC-A=PTC6 outlet. Amb/Tank native names have no accepted XYZ.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** SNS
+**Evidence source:** VSEL; WORK; XWALK
 
 
-**Evidence locator:** channel_label_in_CAD blank; label_basis
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Trace cable/DAQ configuration and verify the mapping with a recorded check.
+**Unresolved question:** Verify cable/DAQ identity and historical run applicability; do not map by name alone.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Use Native channels working register; LF remains unbound
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C24
@@ -1248,34 +1248,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** nearest_endpoint, nearest_distance_mm
 
 
-**Current evidence:** STC-02: upcomer, B + 116.686 mm geometric reference
+**Current evidence:** Rev9 axial references preserved; STC5 is B+942.186081 mm, PTC4 H+63.716137 mm. User selects these for new work.
 
 
 **Evidence type:** CAD-derived
 
 
-**Evidence source:** SNS
+**Evidence source:** VSEL; WORK
 
 
-**Evidence locator:** sensor_id=STC-02
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
 **Review state:** Needs review
 
 
-**Unresolved question:** Measure the actual sensing/contact reference and identify the point basis.
+**Unresolved question:** Survey actual sensing/contact point and historical installation dates.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Use Rev9 axial references; physical sensing tips remain unknown
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C25
@@ -1407,34 +1407,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Method instrumentation documentation
 
 
-**Current evidence:** Unknown
+**Current evidence:** All STCs contact bare pipe locally per user; insulated parent regions remain per CURRENT. LF-01 locally covered. Actual attachment details unknown.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** VSEL; VTOP; CURRENT
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Describe attachment, contact, insulation position and time response.
+**Unresolved question:** Attachment, window width, junction footprint, response and local contact resistance unknown.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Bare local STC contact; do not infer whole parent leg bare
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C28
@@ -1619,34 +1619,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Instrumentation documentation and logging
 
 
-**Current evidence:** Unknown
+**Current evidence:** Approximately 30 Hz native sampling documented for Sep2/4 only. Filtering/scaling and lag remain run-specific and unqualified.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** DIAG; FOLLOW
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Supply evidence and request review.
+**Unresolved question:** Need instrument response, scaling/filtering and status-code evidence.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Use native timebase and per-run metadata; no universal sample-rate assignment
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C32
@@ -1725,34 +1725,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** P0 acceptance-channel matrix; P1 TC-Luna comparison
 
 
-**Current evidence:** Unknown
+**Current evidence:** Main-loop observations STC1-12/PTC1-4; jacket PTC5/6; Amb/Tank auxiliary; LF geometric only. No blanket mandatory-channel acceptance rule selected.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** WORK; XWALK
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Which channels are mandatory, and which alternates are approved with evidence?
+**Unresolved question:** Preapprove mandatory/alternate roles for each intended use.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Working roles in Native channels
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C34
@@ -2043,34 +2043,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Method secondary-side energy-balance boundaries
 
 
-**Current evidence:** Unknown
+**Current evidence:** Working jacket inlet JTC-B/PTC5, outlet JTC-A/PTC6; detailed internal routing and wetted sensing planes unverified.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** VSEL; WORK
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Confirm actual inlet/outlet, intervening hoses, bypasses, heat leaks and sensor planes.
+**Unresolved question:** Confirm run-specific hoses, bypasses and physical sensing planes.
 
 
-**Selected choice:** Unknown
+**Selected choice:** JTC-B/PTC5 inlet; JTC-A/PTC6 outlet
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C40
@@ -2096,34 +2096,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Secondary-side boundaries
 
 
-**Current evidence:** Unknown
+**Current evidence:** PTC5/6 provide working inlet/outlet temperatures; coolant flow calibration and physical planes are unknown.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** VSEL; WORK; FOLLOW
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Supply flow-meter basis, calibration, fluid properties, temperatures and signs.
+**Unresolved question:** Obtain measured coolant flow, units, calibration, properties and timing.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Use temperature roles provisionally; do not invent flow or measured duty
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C41
@@ -2149,34 +2149,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Method logging and time synchronization
 
 
-**Current evidence:** Unknown
+**Current evidence:** Chiller on/off contributes to hot-plateau oscillations per user. CAL-004 finds provisional temperature associations, not control causality.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** OPCYCLE; FOLLOW
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Supply evidence and request review.
+**Unresolved question:** Need controller sensor, setpoint/deadband, switching and exact intervals.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Treat oscillatory plateaus as potentially cyclic operation
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C42
@@ -2308,34 +2308,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Method environmental and condensation measurements
 
 
-**Current evidence:** Draft calls for two room T/RH stations and cold exposed-surface measurements
+**Current evidence:** Amb is a native ambient reference with unaccepted coordinates; room RH/two-station installation unverified. Bare STC contact does not establish an exposed ambient-surface measurement.
 
 
 **Evidence type:** Reported
 
 
-**Evidence source:** P0
+**Evidence source:** XWALK; VSEL; FOLLOW
 
 
-**Evidence locator:** Method environmental measurements
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
 **Review state:** Needs review
 
 
-**Unresolved question:** Are these channels installed? Under-insulation wall TCs are not exposed-surface measurements.
+**Unresolved question:** Identify room sensor placement and actual exposed surface channels.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Retain Amb role without inventing XYZ or RH channels
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### C45
@@ -2414,34 +2414,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Campaign execution conventions; Phase 4 records
 
 
-**Current evidence:** Unknown
+**Current evidence:** VCU inventory: 23 native sources, 22 readable; 19 CSVs are supplementary, not independent experiments. July29 unreadable; preserve hashes and run/event records.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** DIAG; TRIAGE; FOLLOW
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Supply evidence and request review.
+**Unresolved question:** No universal experiment/fluid assignment; July15 ambient-named file may be liquid continuation.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Use source/run hashes and run-specific event logs
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M01
@@ -2520,34 +2520,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Run outputs; model freeze
 
 
-**Current evidence:** Unknown
+**Current evidence:** This documentation uses WORK v3 / regional v7 / material v3. Historical numerical studies keep original Rev8/insulation-v5 inputs.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** WORK; CURRENT; FOLLOW
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Record solver/code revision, resolved configuration and property version.
+**Unresolved question:** Record actual solver/input/property versions separately in every run.
 
 
-**Selected choice:** Unknown
+**Selected choice:** VCU-REV9-DRAFT-007 for current documentation only
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M03
@@ -2626,34 +2626,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Method geometry/model map
 
 
-**Current evidence:** Unknown
+**Current evidence:** STCs observe outside wall locally on bare pipe; PTC1-4 treated as centerline fluid; JTC/PTC5/6 are jacket boundaries, not main-loop nodes.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Modeling assumption
 
 
-**Evidence source:** None supplied
+**Evidence source:** VSEL; WORK; XWALK
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Map physical sensing points or averages to cells/regions; include non-coincident offsets.
+**Unresolved question:** Actual junction depths, response, finite footprints and mesh interpolation unknown.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Working observation operators in Calibration and Native channels
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M05
@@ -2732,34 +2732,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Model stages; reduced-zone thermal model
 
 
-**Current evidence:** Unknown
+**Current evidence:** Perfect insulation contact is a user-directed modeling assumption; local bare STCs and distinct fiberglass/ceramic regions retained.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Modeling assumption
 
 
-**Evidence source:** None supplied
+**Evidence source:** VINS; VSEL; CURRENT; ASSUME
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Which layers, axial paths, capacitances and contacts are included?
+**Unresolved question:** Model-specific storage, axial paths and contact sensitivity require review.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Keep separate fluid/wall/insulation paths and declared contact assumption
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M07
@@ -2785,34 +2785,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Exit-pipe alignment request; configuration record
 
 
-**Current evidence:** Unknown
+**Current evidence:** Shared default omits BREP (ASM-020) and retains TLEP with experiment-specific temperature/pressure (ASM-021). No installed VCU boundary values are known.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Modeling assumption
 
 
-**Evidence source:** None supplied
+**Evidence source:** ASSUME
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Specify termination plane, mass/pressure and thermal conditions; no throughflow does not imply adiabatic.
+**Unresolved question:** Select exact VCU termination planes and measured states before use; no-throughflow is not adiabatic.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Provisional model-domain defaults only
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M08
@@ -2891,34 +2891,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Secondary boundaries; cooler forms
 
 
-**Current evidence:** Unknown
+**Current evidence:** Working PTC5 inlet/PTC6 outlet; measured cooler forcing varies; user reports chiller cycling. Coefficient/flow and active-span choices unresolved.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** VSEL; WORK; OPCYCLE; FOLLOW
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Choose measured inlet/flow, imposed wall temperature or coefficient model with rationale.
+**Unresolved question:** Need flow, routing, controller logs and qualified boundary/model choice.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Run-specific cooler input; compare cyclic mean/amplitude separately
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M10
@@ -2944,34 +2944,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Reduced-zone heat loss; thermal network
 
 
-**Current evidence:** Unknown
+**Current evidence:** Reported insulated regions and bare D-E are known; jacket heat exchange is with water where present. Ambient coupling/emissivity unresolved.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** CURRENT; VSEL; WORK
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Record ambient assignment, emissivity, surface state, correlations and validity.
+**Unresolved question:** Select qualified correlations, surface states, supports and ambient assignment.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Separate room-air loss from coolant exchange
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M11
@@ -3527,34 +3527,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Model map; effective initial states
 
 
-**Current evidence:** Reduced-zone temperature is an effective state, not automatically fluid/wall temperature
+**Current evidence:** STC wall and assumed PTC centerline operators are explicit. Distributed optical extent and sensor lag unknown; reduced-zone states need their own averaging rule.
 
 
-**Evidence type:** Reported
+**Evidence type:** Modeling assumption
 
 
-**Evidence source:** P2; MODEL
+**Evidence source:** XWALK; VSEL; WORK
 
 
-**Evidence locator:** Reduced-zone model; reduced-zone paragraph
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
 **Review state:** Needs review
 
 
-**Unresolved question:** Define spatial/time averaging, lag and fluid-wall weighting.
+**Unresolved question:** Qualify lag/spatial/time averaging and noncoincident comparisons.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Do not equate effective-zone temperature with fluid or wall automatically
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M22
@@ -3580,34 +3580,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Section 2 Data Acceptance and Uncertainty
 
 
-**Current evidence:** Unknown
+**Current evidence:** Sep2/4 are provisional ambient baseline candidates; stable mean cyclic operation differs from instantaneous equilibrium. No accepted comparison tolerances established.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** DIAG; FOLLOW; OPCYCLE
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Approve intended-use limits and demonstrate resolvability; do not loosen them to fit noise.
+**Unresolved question:** Approve intended-use tolerances and qualify run-specific intervals.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Keep exploratory classifications separate from accepted steady-state limits
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M23
@@ -3686,34 +3686,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Required Outputs: correlation structure and uncertainty
 
 
-**Current evidence:** Unknown
+**Current evidence:** Slow correlated variation persists after averaging; ten-second block means are not independent. CAL-004 temporal-block analyses address serial dependence; Type B calibration unknown.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** DIAG; FOLLOW
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Freeze block/window rules, Type A/B and shared-error covariance with evidence.
+**Unresolved question:** No universal validated block length, intrinsic noise floor or absolute accuracy supplied.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Use temporal correlation and joint-channel covariance; report block sensitivity
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M25
@@ -3739,34 +3739,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** P2 runs/freeze; P3 blind validation; P4 applicability case
 
 
-**Current evidence:** Unknown
+**Current evidence:** Existing acquisitions have working calibration roles, not independent validation; no blind Rev9 split established. Historical model/configurations remain frozen to their own inputs.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** FOLLOW; WORK
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Declare run roles before fitting; record model/property/mapping versions and any reassignment.
+**Unresolved question:** Finalize scientific calibration/validation roles; empirical interval holdout is not facility validation.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Declare held-out intervals/runs and model freeze before scoring
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M26
@@ -3792,34 +3792,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Required Outputs steps 5-7
 
 
-**Current evidence:** Unknown
+**Current evidence:** Passive relaxation constrains time constants and parameter ratios; absolute conductance/capacitance scales need a fixed or measured-power anchor.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Modeling assumption
 
 
-**Evidence source:** None supplied
+**Evidence source:** MODEL; FOLLOW
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Report parameter covariance, residual structure, start-time and initial-state sensitivity.
+**Unresolved question:** No validated all-layer parameter identification or fitted properties imported.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Require identifiability and boundary/initial-state sensitivity before interpreting fitted material constants
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M27
@@ -3845,34 +3845,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Slowest loop time constant; Required Outputs
 
 
-**Current evidence:** Unknown
+**Current evidence:** Response/settling estimates are conditional on boundary, interval and model. Oscillating hot plateaus need cycle metrics rather than assumed instantaneous settling.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** FOLLOW; OPCYCLE
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Report uncertainty and conservative supported bound; do not use an archived plateau fit.
+**Unresolved question:** Qualify confidence, start-time, boundary variability and supported domain.
 
 
-**Selected choice:** Unknown
+**Selected choice:** No universal settling time selected
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M28
@@ -4057,34 +4057,34 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Validation and disposition sections
 
 
-**Current evidence:** Unknown
+**Current evidence:** Historical forward/boundary studies remain conditional; neither successful computation nor an empirical holdout validates the Rev9 facility model.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** FOLLOW; WORK
 
 
-**Evidence locator:** Not available
+**Evidence locator:** See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
-**Unresolved question:** Define metrics and acceptance basis; preserve blind comparisons and model limitations.
+**Unresolved question:** No validated facility accuracy or release criterion supplied.
 
 
-**Selected choice:** Unknown
+**Selected choice:** Retain conservation/uncertainty checks and predeclared unseen assessment
 
 
-**Decision scope / rationale:** Unknown
+**Decision scope / rationale:** Transferred documented working understanding; provisional use only; no installed or package release approval.
 
 
 **Reviewer / date:** Unknown
 
 
-**Effective configuration:** Unknown
+**Effective configuration:** VCU-REV9-DRAFT-007
 
 
 ### M32
@@ -4817,6 +4817,66 @@ Evidence type and review state are independent. All proposed owners require team
 **Affected fields:** M12-M19
 
 
+### I10
+
+**Kind:** Historical applicability
+
+
+**Source and locator:** VSEL; WORK; FOLLOW; DAQISS; OPCYCLE
+
+
+**What conflicts / is missing:** STC5 changed location; Rev9 working map and historical Rev8 records have no installation date crosswalk.
+
+
+**Suggested owner:** Experimental + computational
+
+
+**Resolution needed:** Provide dated sensor/geometry applicability per run; retain original model versions.
+
+
+**Affected fields:** C04; C23-C24; C46; M02
+
+
+### I11
+
+**Kind:** Data validity and calibration
+
+
+**Source and locator:** VSEL; WORK; FOLLOW; DAQISS; OPCYCLE
+
+
+**What conflicts / is missing:** June12 nonphysical readings; Type B accuracy and status/scaling unqualified; slow temporal covariance matters.
+
+
+**Suggested owner:** Experimental + computational
+
+
+**Resolution needed:** Resolve DAQ status; version masks and correlation-aware uncertainty; retain raw.
+
+
+**Affected fields:** C28-C32; M22-M24
+
+
+### I12
+
+**Kind:** Boundary-control qualification
+
+
+**Source and locator:** VSEL; WORK; FOLLOW; DAQISS; OPCYCLE
+
+
+**What conflicts / is missing:** Chiller contribution reported; internal jacket route, flow, controller identity and switching logs absent.
+
+
+**Suggested owner:** Experimental + computational
+
+
+**Resolution needed:** Confirm PTC5/6 run-specific planes and controller/flow logs before causal or duty claims.
+
+
+**Affected fields:** C39-C41; M09; M27
+
+
 ## Sources
 
 ### R9
@@ -5110,7 +5170,7 @@ Evidence type and review state are independent. All proposed owners require team
 **Locator guide:** coverage; contact; regions
 
 
-**Qualification:** Regional thickness estimates/contact assumption; exact transitions and installed construction unverified. VSEL is later controlling top-leg evidence.
+**Qualification:** Historical regional v5. Current coverage is VREG/CURRENT and WORK v3; all STC contacts bare per VSEL. Preserve v5 as provenance only.
 
 
 ### VTOP
@@ -5139,4 +5199,792 @@ Evidence type and review state are independent. All proposed owners require team
 
 
 **Qualification:** Reported coverage and approximate thickness estimates; product/fit validation, installed surveys and historical applicability remain separate.
+
+
+### WORK
+
+**File / record:** support/evidence/2026-10-16_CFG-002_vcu_current_understanding/WORK_rev9_working_selection_v3.json
+
+
+**Revision / context:** Rev9 working selection v3; GEO-010 2026-10-16
+
+
+**Locator guide:** sensors, heater, jacket, insulation; historical_run_applicability
+
+
+**Qualification:** Working choices; not installed survey, calibration or historical run migration.
+
+
+### XWALK
+
+**File / record:** support/evidence/2026-10-16_CFG-002_vcu_current_understanding/XWALK_2026-10-05_VCU_WORKING_SENSOR_CROSSWALK.md
+
+
+**Revision / context:** 2026-10-05 historical Rev8 crosswalk
+
+
+**Locator guide:** Working measurement operators and native channel roles
+
+
+**Qualification:** Use radial operators/native roles only; Rev8 stations, old insulation and unpaired JTC wording superseded by VSEL/VREG/WORK.
+
+
+### DIAG
+
+**File / record:** support/evidence/2026-10-16_CFG-002_vcu_current_understanding/DIAG_README.md
+
+
+**Revision / context:** CAL-003 2026-10-08
+
+
+**Locator guide:** Quality issues; ambient correlation; chiller operator report
+
+
+**Qualification:** Installed-system diagnostics, not sensor accuracy; compact ten-second blocks remain correlated. CAL-004 follow-up supersedes initial masks/method limitations.
+
+
+### FOLLOW
+
+**File / record:** support/evidence/2026-10-16_CFG-002_vcu_current_understanding/FOLLOW_README.md
+
+
+**Revision / context:** CAL-004 2026-10-08 follow-up
+
+
+**Locator guide:** Native validity; temporal uncertainty; heated associations; forward comparisons
+
+
+**Qualification:** Conditional historical Rev8/insulation-v5 analysis. Numerical correlations do not prove controller causality or validate Rev9.
+
+
+### DAQISS
+
+**File / record:** support/evidence/2026-10-16_CFG-002_vcu_current_understanding/DAQISS_EXPERIMENTAL_TEAM_CLARIFICATION.md
+
+
+**Revision / context:** 2026-10-08 source-linked clarification draft
+
+
+**Locator guide:** June12 source hash and channel invalid counts; June17/23 events
+
+
+**Qualification:** Draft for user to send; not sent and not answered.
+
+
+### OPCYCLE
+
+**File / record:** support/evidence/2026-10-16_CFG-002_vcu_current_understanding/OPCYCLE_operator_update.json
+
+
+**Revision / context:** Direct user report 2026-10-08
+
+
+**Locator guide:** statements and unknown
+
+
+**Qualification:** Chiller on/off contributes to hot-plateau oscillation; exact intervals/control logs unknown.
+
+
+### TRIAGE
+
+**File / record:** support/evidence/2026-10-16_CFG-002_vcu_current_understanding/TRIAGE_README.md
+
+
+**Revision / context:** CAL-003 2026-10-07
+
+
+**Locator guide:** July15 identity/clock limits; July29 source
+
+
+**Qualification:** Short ambient-named July15 file may be same liquid experiment; not independently established air run.
+
+
+### FLUIDCFG
+
+**File / record:** support/evidence/2026-10-16_CFG-002_vcu_current_understanding/FLUIDCFG_fluid.yaml
+
+
+**Revision / context:** Provisional identity configuration
+
+
+**Locator guide:** identity, unresolved, runtime_property_selection
+
+
+**Qualification:** Prop-30 identity candidate; no selected numerical fluid property model. Later USER reports 30% mass basis.
+
+
+### ASSUME
+
+**File / record:** support/evidence/2026-10-16_CFG-002_vcu_current_understanding/ASSUME_ASSUMPTIONS.md
+
+
+**Revision / context:** Snapshot read 2026-10-16
+
+
+**Locator guide:** ASM-020/021/022/023/026/027; later VSEL/VREG overrides
+
+
+**Qualification:** Shared model defaults are modeling choices, not observed VCU valve states. Historical heater lengths/contact/ranges superseded by later dated decisions.
+
+
+### CURRENT
+
+**File / record:** support/evidence/2026-10-16_CFG-002_vcu_current_understanding/CURRENT_INSULATION_CURRENT.md
+
+
+**Revision / context:** GEO-010 2026-10-16
+
+
+**Locator guide:** Regional assignment table and qualifications
+
+
+**Qualification:** Current reported coverage; estimated thickness; not product confirmation.
+
+
+## Native channels
+
+### STC2
+
+**Reference / domain:** STC-02 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### STC3
+
+**Reference / domain:** STC-03 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### STC4
+
+**Reference / domain:** STC-04 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### STC5
+
+**Reference / domain:** STC-05 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### STC6
+
+**Reference / domain:** STC-06 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### PTC1
+
+**Reference / domain:** PTC-01 / main_loop
+
+
+**Working role / operator:** Primary fluid; centerline observation assumed
+
+
+**Basis / source:** VSEL; WORK; XWALK / ASM-023
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### STC7
+
+**Reference / domain:** STC-07 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### PTC3
+
+**Reference / domain:** PTC-03 / main_loop
+
+
+**Working role / operator:** Primary fluid; centerline observation assumed
+
+
+**Basis / source:** VSEL; WORK; XWALK / ASM-023
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### STC8
+
+**Reference / domain:** STC-08 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### STC9
+
+**Reference / domain:** STC-09 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### STC10
+
+**Reference / domain:** STC-10 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### STC11
+
+**Reference / domain:** STC-11 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### PTC4
+
+**Reference / domain:** PTC-04 / main_loop
+
+
+**Working role / operator:** Primary fluid; centerline observation assumed
+
+
+**Basis / source:** VSEL; WORK; XWALK / ASM-023
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### STC12
+
+**Reference / domain:** STC-12 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### PTC2
+
+**Reference / domain:** PTC-02 / main_loop
+
+
+**Working role / operator:** Primary fluid; centerline observation assumed
+
+
+**Basis / source:** VSEL; WORK; XWALK / ASM-023
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### STC1
+
+**Reference / domain:** STC-01 / main_loop
+
+
+**Working role / operator:** Outside pipe surface; local bare contact
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### PTC6
+
+**Reference / domain:** JTC-A / jacket_port
+
+
+**Working role / operator:** jacket outlet
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### PTC5
+
+**Reference / domain:** JTC-B / jacket_port
+
+
+**Working role / operator:** jacket inlet
+
+
+**Basis / source:** VSEL; WORK; XWALK
+
+
+**Limits / next evidence:** Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.
+
+
+### Amb
+
+**Reference / domain:** No accepted XYZ / auxiliary
+
+
+**Working role / operator:** Room ambient temperature reference
+
+
+**Basis / source:** XWALK; FOLLOW
+
+
+**Limits / next evidence:** Native name and candidate role; exact sensor placement, medium, calibration and run-specific use need confirmation.
+
+
+### Tank
+
+**Reference / domain:** No accepted XYZ / auxiliary
+
+
+**Working role / operator:** Tank / secondary-boundary temperature reference
+
+
+**Basis / source:** XWALK; FOLLOW
+
+
+**Limits / next evidence:** Native name and candidate role; exact sensor placement, medium, calibration and run-specific use need confirmation.
+
+
+## Current knowledge
+
+### K01
+
+**Topic:** Facility and configuration
+
+
+**Current understanding:** VCU only; Rev9 documentation DRAFT-007. Current geometry working v3, insulation v7, solid materials v3.
+
+
+**Basis / source:** WORK; CURRENT; VMAT
+
+
+**Limits / next evidence:** Draft, not an installed release or model-ready input; ACU evidence does not qualify VCU.
+
+
+### K02
+
+**Topic:** Coordinates and lengths
+
+
+**Current understanding:** B origin; x=B_CAD_Z-CAD_Z, y=CAD_Y-B_CAD_Y, n=CAD_X-B_CAD_X. Traverse B-C-D-E-F-G-H-A-B.
+
+
+**Basis / source:** VSEL; WORK; Geometry
+
+
+**Limits / next evidence:** A-H are axis endpoints, not virtual corners; lengths/projected spans and bend arcs have different bases.
+
+
+### K03
+
+**Topic:** Gravity and inclination
+
+
+**Current understanding:** Working gravity (0,-1,0); straight inclined axes about 10.8 deg; heater chord about 10.79355 deg.
+
+
+**Basis / source:** VSEL; WORK
+
+
+**Limits / next evidence:** Installed gravity survey absent; keep n and do not conflate circumferential angle with inclination.
+
+
+### K04
+
+**Topic:** Heater and lower-right geometry
+
+
+**Current understanding:** H-A projected union 1346.4962148518246 mm; pieces overlap 7.202344894878479 mm and are offset 0.1515510905213091 mm. G-H is reconstructed spine.
+
+
+**Basis / source:** VSEL; WORK; CAD dimensions
+
+
+**Limits / next evidence:** No exact connected hydraulic centerline or silent healing.
+
+
+### K05
+
+**Topic:** Pipe dimensions
+
+
+**Current understanding:** Main OD 33.401 mm CAD-derived. Working main ID 26.64 mm rounded nominal, separate from unknown CAD bore; component-specific bores in CAD dimensions.
+
+
+**Basis / source:** VSEL; DIA; Model choices
+
+
+**Limits / next evidence:** Main Geometry ID remains blank; do not fill from local spools.
+
+
+### K06
+
+**Topic:** Insulation
+
+
+**Current understanding:** Six ordinary-pipe regions fiberglass about 50.8 mm; straight heater ceramic strip only about 6.35 mm; three straight D-E regions bare. Both upper corners insulated; LF-01 locally covered.
+
+
+**Basis / source:** CURRENT; VREG; VTOP
+
+
+**Limits / next evidence:** Reported thickness estimates, not measured; local transition/contact surveys and product identity unknown.
+
+
+### K07
+
+**Topic:** STC contacts
+
+
+**Current understanding:** All 12 STCs contact bare pipe locally, including on insulated parent regions.
+
+
+**Basis / source:** VSEL; WORK
+
+
+**Limits / next evidence:** Do not turn local bare contact into whole-leg bare coverage. Footprints/windows/attachment response unknown.
+
+
+### K08
+
+**Topic:** Main sensor map
+
+
+**Current understanding:** 16 working numbered STC/PTC mappings populated in Sensors; STC5 B+942.186081 mm, PTC4 H+63.716137 mm.
+
+
+**Basis / source:** VSEL; WORK
+
+
+**Limits / next evidence:** Current working binding; physical tips, serials and historical change dates unknown.
+
+
+### K09
+
+**Topic:** Jacket map
+
+
+**Current understanding:** JTC-B = PTC5 inlet; JTC-A = PTC6 outlet. Port reference positions in WORK; no main-loop station invented.
+
+
+**Basis / source:** VSEL; WORK; Native channels
+
+
+**Limits / next evidence:** Internal flow routing and actual wetted measurement planes unverified.
+
+
+### K10
+
+**Topic:** Sensor inventory and exclusions
+
+
+**Current understanding:** 22 active geometric references: 12 STC + 4 main PTC + 4 LF + 2 JTC; 20 on main loop. Original 23 includes excluded PTC-X. Native core register has 20 channels incl. Amb/Tank.
+
+
+**Basis / source:** WORK; XWALK; Review issues I04
+
+
+**Limits / next evidence:** PTC-X excluded from active records, not asserted physically removed. LF mounts are not fiber active extents/channels.
+
+
+### K11
+
+**Topic:** Observation operators
+
+
+**Current understanding:** STC outside-wall surface; PTC1-4 centerline primary fluid is a working assumption. Amb/Tank lack accepted XYZ.
+
+
+**Basis / source:** XWALK; ASSUME ASM-023; VSEL
+
+
+**Limits / next evidence:** CAD references remain pipe points/mounts, never certified sensing junctions. Angles/radii remain blank.
+
+
+### K12
+
+**Topic:** Calibration and DAQ
+
+
+**Current understanding:** Instrument certificates, corrections, Type B uncertainties, coverage factors and response are unknown. Sep2/4 native sampling about 30 Hz, scoped to those runs.
+
+
+**Basis / source:** DIAG; FOLLOW; Calibration
+
+
+**Limits / next evidence:** Do not invent calibrations from noise statistics or assign one rate/clock/filter globally.
+
+
+### K13
+
+**Topic:** Heater source
+
+
+**Current understanding:** Electrical mat/band heaters reported; modeling extent full projected H-A. Real energized boundaries/power/efficiency/spatial split remain unknown.
+
+
+**Basis / source:** HEAT; VSEL; WORK
+
+
+**Limits / next evidence:** Measured Active heater span remains blank; voltage is not watts; clamp positions are mechanical only.
+
+
+### K14
+
+**Topic:** Cooler geometry and boundaries
+
+
+**Current understanding:** Shell 1017.5875 mm; complete jacket 1030.2875 mm; envelope starts D+127.56180941009107 mm. Bare pipe under jacket exchanges with coolant.
+
+
+**Basis / source:** WORK; CAD dimensions; CURRENT
+
+
+**Limits / next evidence:** Active cooling extent, coolant flow and contact/routing unresolved; envelope is not automatically active area.
+
+
+### K15
+
+**Topic:** Cooler cycling
+
+
+**Current understanding:** User reports on/off chiller contributes to heated-plateau oscillation; conditional CAL-004 associations exist.
+
+
+**Basis / source:** OPCYCLE; FOLLOW
+
+
+**Limits / next evidence:** No universal period/causality; need controller/switching logs. Separate settled cycle mean from instantaneous equilibrium.
+
+
+### K16
+
+**Topic:** Fluids
+
+
+**Current understanding:** VCU options Prop-30 (reported 30% PG by mass), air, water; reported jacket water; primary fill/circuit must be matched to run.
+
+
+**Basis / source:** USER; PG; FLUIDCFG; XWALK
+
+
+**Limits / next evidence:** Product/formulation/batch/property functions and operating limits unverified; air has both ambient and possible primary roles.
+
+
+### K17
+
+**Topic:** Solid properties
+
+
+**Current understanding:** Nine candidate rho/cp/k functions already in Materials: pipe, fiberglass, heater ceramic. T in K; explicit SI outputs; out-of-range error.
+
+
+**Basis / source:** VMAT; V5C
+
+
+**Limits / next evidence:** Working domains pipe 278.15-813 K, fiberglass 278.15-533 K, strip 278.15-1089 K. 5 C extension authorized; not validated, calibration-eligible or operating limits.
+
+
+### K18
+
+**Topic:** Topology and branches
+
+
+**Current understanding:** Each CAD exit tube 469.9 mm; top-exit/tank junction geometry does not certify hydraulics. Shared defaults omit BREP and retain TLEP with per-experiment temperature/pressure.
+
+
+**Basis / source:** CAD dimensions; ASSUME ASM-020/021
+
+
+**Limits / next evidence:** Installed valves, vents, fill level and actual boundaries unknown. No-throughflow is not adiabatic.
+
+
+### K19
+
+**Topic:** Model and property selection
+
+
+**Current understanding:** Physics model and effective reduced-zone model have separate observation/identification contracts; no fluid property model or facility closures approved here.
+
+
+**Basis / source:** MODEL; FLUIDCFG; Model choices
+
+
+**Limits / next evidence:** No fitted constants imported or solver migration activated; property candidates calibration-ineligible.
+
+
+### K20
+
+**Topic:** Historical applicability
+
+
+**Current understanding:** STC5 changed location; no change dates/run ranges. Earlier solver and diagnostic runs retain Rev8 and original insulation/material selections.
+
+
+**Basis / source:** VSEL; WORK; FOLLOW
+
+
+**Limits / next evidence:** Never relabel historical results Rev9 or retroactively relocate sensors without run-specific evidence.
+
+
+### K21
+
+**Topic:** Experiment inventory
+
+
+**Current understanding:** 23 native TDMS sources, 22 readable; 19 supplementary CSVs are not independent experiments. July29 waveform unreadable. Sep2/4 provisional ambient candidates.
+
+
+**Basis / source:** DIAG; TRIAGE
+
+
+**Limits / next evidence:** Shape labels are exploratory, not evidence of heater commands/fluid identity or accepted steady intervals.
+
+
+### K22
+
+**Topic:** Known data-quality failures
+
+
+**Current understanding:** June12 STC6/PTC2/PTC3 include nonphysical Celsius readings. Retain raw, quarantine affected channel intervals and propagate versioned masks; retain unaffected channels.
+
+
+**Basis / source:** DAQISS; FOLLOW
+
+
+**Limits / next evidence:** Cause/status/scaling unresolved. June17 auxiliary heater temperatures need separate screens; June17/23 transitions need event interpretation.
+
+
+### K23
+
+**Topic:** Noise and uncertainty
+
+
+**Current understanding:** Slow correlated temperature motion persists with averaging; compact ten-second block results are not valid independent-block accuracy bars. CAL-004 explores temporal correlation/covariance.
+
+
+**Basis / source:** DIAG; FOLLOW
+
+
+**Limits / next evidence:** No universal noise floor, absolute accuracy, optimal averaging or validated block length established; Type B absent.
+
+
+### K24
+
+**Topic:** Run identity and events
+
+
+**Current understanding:** Short July15 ambient-named acquisition may be same liquid experiment; clocks and media need confirmation. Chiller, heater and jolt events require run-specific logs.
+
+
+**Basis / source:** TRIAGE; FOLLOW
+
+
+**Limits / next evidence:** Do not call it an independent air-only test from filename or fit material constants without boundary/validity qualification.
+
+
+### K25
+
+**Topic:** Identification and validation
+
+
+**Current understanding:** Relaxation gives time constants/parameter ratios without an absolute power or fixed-capacitance anchor. Existing fits/holdouts are conditional studies, not facility validation.
+
+
+**Basis / source:** MODEL; FOLLOW
+
+
+**Limits / next evidence:** Approve intended-use tolerances, identifiability, calibration/withheld split and frozen model before accuracy claims.
+
+
+### K26
+
+**Topic:** Remaining experimental returns
+
+
+**Current understanding:** Need installed surveys and dated photos, sensor identities/depths, calibration/DAQ status, real heater power/wiring, coolant flow/route/control, fluid batch, boundary states and historical dates.
+
+
+**Basis / source:** Requirements; Review issues; Phase requests
+
+
+**Limits / next evidence:** Plans P0-P4 remain draft; records do not authorize operation or establish Nick approval.
 

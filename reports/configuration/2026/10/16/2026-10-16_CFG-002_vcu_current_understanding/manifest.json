@@ -1,0 +1,30 @@
+{
+  "task_id": "CFG-002",
+  "artifacts": [
+    {
+      "path": "README.md",
+      "bytes": 3556,
+      "sha256": "aea3a2f31813e838827a207307cf0a273e52d32e2bfc5e7aebd1006e51980a54"
+    },
+    {
+      "path": "build.log",
+      "bytes": 17310,
+      "sha256": "6c7e51215a8b53c026544f6671575b97b7eccb1daf85001ebcd690f4f7896065"
+    },
+    {
+      "path": "checks.json",
+      "bytes": 18422,
+      "sha256": "83245bf252a05468438cd44d04db15ef29c15b1bc70f7c1d82d8e9a9510abb0f"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 773,
+      "sha256": "8798f2b348bb1ab9aabaa12f50add5d9b76cf054d243c0898a266bd516d2f190"
+    },
+    {
+      "path": "tests.log",
+      "bytes": 2669,
+      "sha256": "002e99cda7c7db44b9f491cca61e5fe070ef285fec1e9ba84d4823369a761296"
+    }
+  ]
+}

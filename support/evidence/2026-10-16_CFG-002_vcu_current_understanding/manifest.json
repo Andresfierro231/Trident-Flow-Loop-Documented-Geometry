@@ -1,0 +1,75 @@
+{
+  "task_id": "CFG-002",
+  "artifacts": [
+    {
+      "path": "ASSUME_ASSUMPTIONS.md",
+      "bytes": 11830,
+      "sha256": "4ed49d3813b2fd57fbc37d3ddb585fb85fd3dc667c6ff2a918595234d20752c4"
+    },
+    {
+      "path": "CURRENT_INSULATION_CURRENT.md",
+      "bytes": 2954,
+      "sha256": "6ccf6dd5eee55d195e0aad52b8ec26cb2e1446f0c6a2d0215e62cb9bbe304fc8"
+    },
+    {
+      "path": "DAQISS_EXPERIMENTAL_TEAM_CLARIFICATION.md",
+      "bytes": 2483,
+      "sha256": "42c155c773b3e04870ee2e899faf1153af50f9c371a7fbd03fc2bb5e95ca4c0d"
+    },
+    {
+      "path": "DIAG_README.md",
+      "bytes": 12295,
+      "sha256": "9dd9d7fc8b24b3dcf3fb85a8bc6e6dd8653aa5b2b96f922a77e0a13de31d4513"
+    },
+    {
+      "path": "FLUIDCFG_fluid.yaml",
+      "bytes": 1026,
+      "sha256": "f96a6ac99c7dff17b6ff23bd938b7b94b8ea5867c761d4295b125275c9f20302"
+    },
+    {
+      "path": "FOLLOW_README.md",
+      "bytes": 17086,
+      "sha256": "70a568c1bcbd3124ad188fbf725071e6565707bc0f1311290d1bc1d1d38ef625"
+    },
+    {
+      "path": "OPCYCLE_operator_update.json",
+      "bytes": 709,
+      "sha256": "e34626ac038bbdb7d83e6c89f3849660d13692e4e4ccf5867dcd3957414b9aa8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 757,
+      "sha256": "cfd042cab28cedba8329e3cd30a9f4e5c4302f73e4998a51b88797046d6fbb80"
+    },
+    {
+      "path": "TRIAGE_README.md",
+      "bytes": 7264,
+      "sha256": "3e94b4c610e0c322405ed742691f942aa82b9edc811a616348cbfd34d34032fe"
+    },
+    {
+      "path": "VCU_inputs_before_CFG-002.xlsx",
+      "bytes": 63255,
+      "sha256": "9ab25c5064b10aa61ecb3a240808b611a7dfc7a5a1a0c56392b4f7835f831a27"
+    },
+    {
+      "path": "WORK_rev9_working_selection_v3.json",
+      "bytes": 31122,
+      "sha256": "cbffd0159d4ad0257223e89f25e80114f454f93cd34ad4e76f609e28400db2c1"
+    },
+    {
+      "path": "XWALK_2026-10-05_VCU_WORKING_SENSOR_CROSSWALK.md",
+      "bytes": 5061,
+      "sha256": "a839ed627737fea326d2efbd73293efe9007e543621fe2d2c93a66980a50bfc4"
+    },
+    {
+      "path": "inputs.json",
+      "bytes": 4419,
+      "sha256": "eafda85746f71a2d0e4a74b2c9af82c519c4e1f729710199a0ba3a9479f4295f"
+    },
+    {
+      "path": "workbook_changes.json",
+      "bytes": 123773,
+      "sha256": "da329465d5f279972252ec86291445e486810160a20564372d1b582b25b348d7"
+    }
+  ]
+}

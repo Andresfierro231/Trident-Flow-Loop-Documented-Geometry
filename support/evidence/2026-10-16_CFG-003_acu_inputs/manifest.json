@@ -1,0 +1,181 @@
+{
+  "task_id": "CFG-003",
+  "date": "2026-10-16",
+  "artifacts": [
+    {
+      "path": "ADR15_ADR-0015-selectable-cooler-and-controlled-countercurrent-jacket.md",
+      "bytes": 2481,
+      "sha256": "25498440d902e9987fb0ee0592ae01599e6e67885d75cf9215251929222ad4eb"
+    },
+    {
+      "path": "ADR22_ADR-0022-facility-bound-cooler-parameters.md",
+      "bytes": 3116,
+      "sha256": "f54b420b4a6fed984fe3710e5c01e20c0bbfca2d2c4a8f755ce309f2f2002a5d"
+    },
+    {
+      "path": "AMAT_acu_candidate_materials_v1.yaml",
+      "bytes": 8248,
+      "sha256": "2c96549a45afe1b595db101a9b914581d1553141f2676f7582725737efa687cf"
+    },
+    {
+      "path": "BC_boundaries.yaml",
+      "bytes": 1775,
+      "sha256": "9fc870ac9cde831da0eed1d69a0c303e18bd0b13135dd53d1d503932ea64a70c"
+    },
+    {
+      "path": "COOL_cooler_model.yaml",
+      "bytes": 986,
+      "sha256": "27421220df45936c7f0ca4c88e8499655d969448cceda3bcde23f24605bf9015"
+    },
+    {
+      "path": "DAQCHECK_ACU_DAQ_003_CONFIRMATION_CHECKLIST.md",
+      "bytes": 7960,
+      "sha256": "23c8ed7f59fa04b860fe0dafca5b052312e9ae267b56ff71cd9b68e09426d61d"
+    },
+    {
+      "path": "DAQHOLD_DAQ-004.md",
+      "bytes": 3760,
+      "sha256": "aa13e6e9de36ca00efc5234d50e3887c11637c8b51b55d1725e5f6be598e71a2"
+    },
+    {
+      "path": "GBEND_bends.csv",
+      "bytes": 1194,
+      "sha256": "9e2fcd944a0e6bd58a5de9a2af1cee274a9676325aa6a3d927aa7d0f497807e9"
+    },
+    {
+      "path": "GCMP_comparisons.csv",
+      "bytes": 4804,
+      "sha256": "fb48852fdc531a47a30740aff99e523858b56f662d71c34c8f09f5662ad90021"
+    },
+    {
+      "path": "GCOMP_components.csv",
+      "bytes": 713,
+      "sha256": "f3f58fe8e0643e93b86cd67eb9b3c15633216d07017060e098797d2f9fea611c"
+    },
+    {
+      "path": "GEXIT_exits.csv",
+      "bytes": 944,
+      "sha256": "721be5153bf448e8b50564da6c8315e0c14eaf0843a92af5e423e598f7c3de9d"
+    },
+    {
+      "path": "GISS_issues.csv",
+      "bytes": 2207,
+      "sha256": "e4fb0bab1bc4283382c4c6e9d2a28263a79b6f8f81b09a276bac4913b8d5e41d"
+    },
+    {
+      "path": "GNAMED_named_locations.csv",
+      "bytes": 4294,
+      "sha256": "29c0ae8e93479ce79ae7df799d637b811e0061ec00f734ea6cebf3c721c6b23c"
+    },
+    {
+      "path": "GPOINT_sensor_points.csv",
+      "bytes": 7196,
+      "sha256": "8ada7a808346d584444184ae6d2b9efe2ac4ddf7d4f49925a53944905446a5c2"
+    },
+    {
+      "path": "GREADME_README.md",
+      "bytes": 5035,
+      "sha256": "675d91977be05d8894637683f31c8bc501b38bdb58e9429df7e08713cd90d2a5"
+    },
+    {
+      "path": "GSEG_pipe_segments.csv",
+      "bytes": 3142,
+      "sha256": "af294e86bf788f212d989897c64a73963e4029227725ac4909d412c5fdd11347"
+    },
+    {
+      "path": "GSELECT_acu_revb_reviewed.yaml",
+      "bytes": 4838,
+      "sha256": "5992fbf26306c285e1b13cf9bb8c93e4053d0a7361d8b82491fd73ae4c2975ed"
+    },
+    {
+      "path": "GSENS_sensors.csv",
+      "bytes": 10435,
+      "sha256": "dcbf6de2f9a19188734fd23bef019f074c4ffbc6b0adc6b28ca5171156c9aae5"
+    },
+    {
+      "path": "GSRC_sources.csv",
+      "bytes": 571,
+      "sha256": "64c0fbddc86a344f0850fffb43394cc7f9811a37b6e3edc88c3e875a4f219886"
+    },
+    {
+      "path": "GSTATION_leg_stations.csv",
+      "bytes": 1311,
+      "sha256": "8e29c4adf17d13b592bc86581e11dc71d1cbef03f430b40af4eda6818773b693"
+    },
+    {
+      "path": "GZONE_thermal_zones.csv",
+      "bytes": 950,
+      "sha256": "2375427cd2fc1ca7ee2f2b8930b9d44abf855746ed3f92dac057c8fa58cbc9b4"
+    },
+    {
+      "path": "MASSIGN_material_assignments.yaml",
+      "bytes": 491,
+      "sha256": "5ad8f76ed2599976803002f7cedea7577e6c2a9af64ccd9fd774af27bc88f3dc"
+    },
+    {
+      "path": "MTABLE_hitec_tamu_conversation_table_v1.csv",
+      "bytes": 1907,
+      "sha256": "5faa5f1d79c73db2e79c86eaea5d246c17119bb245cf68ba07f537a306071b87"
+    },
+    {
+      "path": "PROPIMPL_properties.py",
+      "bytes": 16483,
+      "sha256": "989c74acce5b0f37858c1103ab6a6f669ee6275e0849156f3067b55220764546"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2227,
+      "sha256": "9c8c28eac19b5b5cf92ada27651e38e5aea3af3f5cd1a5950d6ea9b9f19f943a"
+    },
+    {
+      "path": "SITECH_acu_flowloop.toml",
+      "bytes": 11252,
+      "sha256": "6eb1e46674e2eae49286aed1224bb1bd5431aa20d293307a47f3aa640f06a693"
+    },
+    {
+      "path": "SITECSV_sensors.csv",
+      "bytes": 8454,
+      "sha256": "7da9f38cc755e772bcd8ced7c12afa8cb8b965c4a025d6d3f4ed05a31a66f7d8"
+    },
+    {
+      "path": "SITEGATE_DAQ-006.md",
+      "bytes": 1491,
+      "sha256": "e59b56d23ef5f3e91833a4a02327457ce66b906f64cd3a27f3d651ac5b34451d"
+    },
+    {
+      "path": "SITEINST_instruments.toml",
+      "bytes": 13553,
+      "sha256": "a08b1ea29deabfc308bd6bb42989bd319a72605439430a21060c3777cdea4f57"
+    },
+    {
+      "path": "SITEREAD_README.md",
+      "bytes": 4930,
+      "sha256": "710c6fc2cdb9171705eb1e143cda96f038c59d29b49636addf6f52dc3c211c24"
+    },
+    {
+      "path": "SITEXLSX_ACU-STNCL-sensors.xlsx",
+      "bytes": 18162,
+      "sha256": "481d24e331357b6123a11c2ffeb4ba39b38c53a21b977c717456e1957530b6e9"
+    },
+    {
+      "path": "STATUS_STATUS.md",
+      "bytes": 59124,
+      "sha256": "de933126046da6466af5da6e3c001d1e109ae70c5cb671c63b878a87b9a51f24"
+    },
+    {
+      "path": "inputs.json",
+      "bytes": 24036,
+      "sha256": "48abb8ab97e6f0caa8524c4c2aa21f5ee88d573aa9920cf7293854f2eb1f8c26"
+    },
+    {
+      "path": "tables.json",
+      "bytes": 2813707,
+      "sha256": "a521738abd007b17e6505cb36d37a48ab136714caf8817d949bd3e5a6f665467"
+    },
+    {
+      "path": "template_schema.json",
+      "bytes": 4648,
+      "sha256": "8b8fae6e4bffbf4a5754148065825d907610939b84281662ed46cd75dee805fd"
+    }
+  ]
+}

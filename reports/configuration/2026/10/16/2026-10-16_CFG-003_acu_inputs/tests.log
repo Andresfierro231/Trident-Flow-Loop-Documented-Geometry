@@ -1,0 +1,30 @@
+test_formula_is_rejected_even_with_cached_value (test_acu_workbook.ACUWorkbookChecks.test_formula_is_rejected_even_with_cached_value) ... ok
+test_inferred_sensor_native_binding_is_rejected (test_acu_workbook.ACUWorkbookChecks.test_inferred_sensor_native_binding_is_rejected) ... /tmp/2026-10-16_CFG-003_acu_workbook_stage/support/scripts/acu_workbook.py:119: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/evidence/2026-10-16_CFG-003_acu_inputs/GBEND_bends.csv' mode='r' encoding='UTF-8'>
+  def raw(sid):return list(csv.DictReader(paths[sid].open(newline='')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/scripts/acu_workbook.py:119: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/evidence/2026-10-16_CFG-003_acu_inputs/GSEG_pipe_segments.csv' mode='r' encoding='UTF-8'>
+  def raw(sid):return list(csv.DictReader(paths[sid].open(newline='')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/scripts/acu_workbook.py:119: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/evidence/2026-10-16_CFG-003_acu_inputs/GCOMP_components.csv' mode='r' encoding='UTF-8'>
+  def raw(sid):return list(csv.DictReader(paths[sid].open(newline='')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/scripts/acu_workbook.py:119: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/evidence/2026-10-16_CFG-003_acu_inputs/GSENS_sensors.csv' mode='r' encoding='UTF-8'>
+  def raw(sid):return list(csv.DictReader(paths[sid].open(newline='')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/scripts/acu_workbook.py:119: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/evidence/2026-10-16_CFG-003_acu_inputs/GPOINT_sensor_points.csv' mode='r' encoding='UTF-8'>
+  def raw(sid):return list(csv.DictReader(paths[sid].open(newline='')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/scripts/acu_workbook.py:119: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/evidence/2026-10-16_CFG-003_acu_inputs/GZONE_thermal_zones.csv' mode='r' encoding='UTF-8'>
+  def raw(sid):return list(csv.DictReader(paths[sid].open(newline='')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/scripts/acu_workbook.py:119: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/2026-10-16_CFG-003_acu_workbook_stage/support/evidence/2026-10-16_CFG-003_acu_inputs/MTABLE_hitec_tamu_conversation_table_v1.csv' mode='r' encoding='UTF-8'>
+  def raw(sid):return list(csv.DictReader(paths[sid].open(newline='')))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_other_facility_tag_fails (test_acu_workbook.ACUWorkbookChecks.test_other_facility_tag_fails) ... ok
+test_reproducible_build (test_acu_workbook.ACUWorkbookChecks.test_reproducible_build) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 1.954s
+
+OK

@@ -1,0 +1,29 @@
+schema_version: 1
+facility_id: VCU
+selection_id: vcu_prop30_glycol_identity_candidate_2026_09_14
+identity: Prop-30 glycol
+status: provisional_identity_not_property_model
+calibration_eligible: false
+source_evidence:
+  - path: reference/Nick_luciano_exp_plan/STNCL_Phase0_System_Checkout.tex
+    locator: 'Technical Basis / Experimental Apparatus and Phase 0 Method'
+    role: written_experiment_plan
+  - source: user_clarification
+    date: 2026-09-14
+    role: recalled_fluid_identity
+previous_interpretation:
+  identity: mineral oil
+  status: superseded_working_description
+  note: Earlier repository wording was not supported by Nick's plan and may have been mistaken.
+unresolved:
+  exact_product: null
+  concentration_or_mixture_definition: null
+  batch: null
+  supplier: null
+  property_correlation_revision: null
+  accepted_conductivity_W_m_K: null
+  accepted_density_kg_m3: null
+  accepted_heat_capacity_J_kg_K: null
+  accepted_viscosity_Pa_s: null
+  validated_temperature_range_K: null
+runtime_property_selection: null

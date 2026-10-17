@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "task_id": "CFG-002",
+  "date": "2026-10-16",
+  "configuration": "VCU-REV9-DRAFT-007",
+  "source_and_preservation_checks": 232,
+  "behavior_tests": 30,
+  "compiler": "pdfTeX 1.40.24 / TeX Live 2022 (TACC module texlive/2023)",
+  "pdf_log_warnings": [],
+  "visual_inspection": false,
+  "model_ready": false,
+  "workbook_sha256": "f973e12efea86364abeeaac16e16ff8cbf2d28a520667c61774685ebe55cfc03",
+  "build_manifest": {
+    "VCU_inputs.xlsx": "f973e12efea86364abeeaac16e16ff8cbf2d28a520667c61774685ebe55cfc03",
+    "support/generated/VCU_control_package.tex": "777c6c55afbb9bd15c465b9bf42d913fb1bfd0f0bcb75a4ea127716a220893e6",
+    "support/output/pdf/VCU_control_package.pdf": "ef2b12b1757395052b15c28a07ce242c8722c3664cfb7cecd081de51108569e4"
+  }
+}

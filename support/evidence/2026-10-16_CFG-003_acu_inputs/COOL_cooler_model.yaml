@@ -1,0 +1,30 @@
+schema_version: 1
+facility_id: ACU
+cooler_model_form_id: facility_secondary_jacket_boundary_v1
+coolant: air
+primary_contact: bare_pipe_inside_jacket
+insulation_under_cooler: false
+jacket_shell_room_path: required
+secondary_direction: counter_current
+parameter_contract:
+  binding: exact_facility_and_geometry
+  independently_trainable:
+  - pipe_total_UA_W_K
+  - shell_to_secondary_total_UA_W_K
+  run_specific_inputs:
+  - secondary_mass_flow_kg_s
+  - secondary_heat_capacity_J_kg_K
+  - secondary_inlet_temperature_K
+  - room_temperature_K
+  required_training_provenance:
+  - parameter_set_id
+  - training_facility_id
+  - training_geometry_id
+  - training_datasets_with_dataset_facility_and_geometry_ids
+evidence_status: provisional_interface_only
+unresolved:
+- exact run-specific air flow and reference basis
+- air inlet/outlet measurement planes
+- jacket pipe-contact and shell geometry
+- pipe-side and shell-side conductances
+- accepted ACU geometry revision for each training dataset

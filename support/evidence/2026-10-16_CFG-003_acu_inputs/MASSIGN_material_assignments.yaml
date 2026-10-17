@@ -1,0 +1,12 @@
+schema_version: 1
+facility_id: ACU_PROVISIONAL_FROM_SAM
+assignment_revision: acu_material_assignments_v2_jin_working_default
+assignments:
+  fluid: hitec_jin_ethan_case_config_v1
+  pipe: stainless_316l_tamu_polynomial_v1
+  insulation: ceramic_insulation_tamu_polynomial_v1
+insulation:
+  thickness_m: null
+  candidate_range_m: [0.0254, 0.0508]
+  evidence_status: user_estimated_range_unmeasured
+  action_required: Measure installed thickness or select and label a case-specific assumed value.

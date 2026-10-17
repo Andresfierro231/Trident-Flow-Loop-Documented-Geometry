@@ -1,0 +1,51 @@
+schema_version: 1
+facility_id: ACU_PROVISIONAL_FROM_SAM
+boundary_revision: acu_diagnostic_boundaries_v3_exit_and_cooler_policy
+heater:
+  distribution: uniform_axial
+  segment_ids: [Heater]
+  duty_source: experiment
+  efficiency_eta: 1.0
+cooler:
+  model: experiment_selected
+  segment_ids: [CoolingJacket]
+  selection_source: experiment
+  allowed_models:
+  - prescribed_total_duty
+  - prescribed_heat_flux
+  - fixed_external_temperature_and_UA
+  - ambient_convection_radiation
+  - secondary_stream_effectiveness_NTU
+  diagnostic_fallback:
+    model: prescribed_total_duty
+    duty_W: 90.0
+    evidence_status: provisional_sam_value
+    diagnostic_only: true
+ambient:
+  model: convection_radiation
+  temperature_source: experiment
+  spatial_mode: scalar
+  aggregation_rule: arithmetic_mean_of_assigned_stations
+exit_topology:
+  mode: branch_specific
+  top_left:
+    geometry_mode: retained_pipe
+    hydraulic_mode: pressure_boundary_allows_flow
+    thermal_mode: prescribed_temperature
+    pressure_source: experiment
+    temperature_source: experiment
+    flow_permitted: true
+    note: This boundary is primarily an experiment-specific pressure and temperature pin; it permits bidirectional flow when a flow-capable model is selected.
+  bottom_right:
+    geometry_mode: omitted_from_baseline
+    hydraulic_mode: absent
+    thermal_mode: none
+    temperature_source: not_applicable
+    note: Source geometry is preserved, but the baseline model behaves as if this exit does not exist.
+  sensitivity_alternatives:
+  - bottom_right_retained_no_flow_stub
+  - bottom_right_adiabatic_zero_flow_stub
+flow:
+  mode: none
+  prescribed_mass_flow_kg_s: null
+  note: Current thermal diagnostic has no primary flow; the top boundary remains flow-capable for later fixed/solved-flow forms.

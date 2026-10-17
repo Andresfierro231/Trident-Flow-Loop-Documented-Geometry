@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-08",
+  "facility": "VCU",
+  "evidence_status": "user-reported operational explanation; exact run-specific attribution pending",
+  "statements": [
+    "Oscillations at heated steady state are in part due to chiller turning on and off to reach a setpoint.",
+    "Applies to all the ones where high temperatures are allowed to oscillate."
+  ],
+  "unknown": [
+    "exact acquisition intervals",
+    "controller sensor/reference",
+    "switching timestamps",
+    "cycle period, deadband and duty fraction"
+  ],
+  "interpretation": "Analyze oscillating hot plateaus as potentially cooler-driven cyclic operation; do not explain every sensor fluctuation or all ambient motion by this report."
+}

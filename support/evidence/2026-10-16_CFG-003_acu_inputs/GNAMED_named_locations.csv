@@ -1,0 +1,21 @@
+location_id,label,x_mm,y_mm,z_mm,coordinate_frame,source_file,source_kind,source_locator
+HEATER_IN,Bottom_Leg_Start_Plane,-10.614071705436558,856.2707937853097,-5.061e-13,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Bottom_Leg_Start_Plane [DatumPlane]; support: Part__Feature140.Edge54
+HEATER_OUT,Bottom_Leg_End_Point,-1312.0860977046445,1029.447574207531,-1.7107e-12,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Bottom_Leg_End_Point [DatumPoint]; support: Part__Feature143.Edge39
+UPCOMER_IN,Up_Leg_Start_Plane,-1384.286780017969,1111.8506730622455,-1.7928e-12,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Up_Leg_Start_Plane [DatumPlane002]; support: Part__Feature143.Edge41
+UPCOMER_OUT,Up_Leg_End_Point,-1384.914601793123,2380.7287637697873,-2.126e-12,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Up_Leg_End_Point [DatumPoint001]; support: Part__Feature143.Edge44
+COOLER_IN,Top_Leg_Start_Plane,-1290.7734865059867,2463.214166041523,-2.0687e-12,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Top_Leg_Start_Plane [DatumPlane003]; support: Part__Feature143.Edge46
+COOLER_OUT,Top_Leg_End_Point,11.47159108363951,2289.9345216446213,-8.621e-13,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Top_Leg_End_Point [DatumPoint002]; support: Part__Feature140.Edge46
+DOWNCOMER_IN,Down_Leg_Start_Plane,84.15020000000051,2206.9445497050956,-7.75e-13,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Down_Leg_Start_Plane [DatumPlane004]; support: Part__Feature140.Edge48
+DOWNCOMER_OUT,Down_Leg_End_Point,84.15020000000126,939.2607657248359,-4.426e-13,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Down_Leg_End_Point [DatumPoint003]; support: Part__Feature140.Edge52
+JACKET_IN,Cooling_Jacket_Start_Point,-1077.480454361517,2434.832917843031,-1.5916e-12,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Cooling_Jacket_Start_Point [DatumPoint004]; support: Part__Feature182.Edge9
+JACKET_OUT,Cooling_Jacket_End_Point,-70.35717533714131,2300.8228404341025,-9.095e-13,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Cooling_Jacket_End_Point [DatumPoint005]; support: Part__Feature181.Edge10
+TAPE_IN,Heating_Tape_Start_Point,-53.18199892409095,861.9349774463689,-1.64562e-11,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Heating_Tape_Start_Point [DatumPoint006]; support: Part__Feature146.Edge6
+TAPE_OUT,Heating_Tape_End_Point,-1280.6134952350756,1025.2597592885013,-1.6769e-12,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_annotation,Heating_Tape_End_Point [DatumPoint007]; support: Part__Feature146.Edge7
+HEATER_LONG_FACE_END,HEATER_LONG_FACE_END,-1255.006059405739,1021.8523765686168,-1.66888e-12,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_extraction,Part__Feature140.Face18; cylinder axis_start
+HEATER_SHORT_FACE_START,HEATER_SHORT_FACE_START,-1255.4354132595113,1021.9095073532773,-1.660999499999991e-12,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_extraction,Part__Feature143.Face13; cylinder axis_end
+COOLER_SOLID_JOIN,COOLER_SOLID_JOIN,-45.179093361474116,2297.4725884988743,-9.8109e-13,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_extraction,Part__Feature143.Face17; cylinder axis_start
+TLEP_LOOP_SIDE,TLEP_LOOP_SIDE,-1301.7835719149793,2461.348089026713,2.119809998e-08,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_extraction,"Part__Feature141.Face6; cylinder axis_start; axial face boundary, not flow intersection"
+TLEP_REMOTE_SIDE,TLEP_REMOTE_SIDE,-1301.884112203309,2664.5480641538097,2.1198047148000003e-08,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_extraction,"Part__Feature141.Face6; cylinder axis_end; axial face boundary, not flow intersection"
+BREP_LOOP_SIDE,BREP_LOOP_SIDE,4.723e-14,850.8999999999975,-4.9518e-13,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_extraction,"Part__Feature142.Face96; cylinder axis_start; axial face boundary, not flow intersection"
+BREP_REMOTE_SIDE,BREP_REMOTE_SIDE,-7.760000000000173e-16,50.799999999997226,-2.8715399999999993e-13,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_extraction,"Part__Feature142.Face96; cylinder axis_end; axial face boundary, not flow intersection"
+S0_BEND_MIDPOINT,DOWN_BOTTOM analytic centerline midpoint,55.58652350468052,876.2774293683333,-4.5176638083578167e-13,CAD_GLOBAL_XYZ,Annotated_ACU(2).FCStd,cad_derived,Part__Feature140.Face17; half-sweep centerline point

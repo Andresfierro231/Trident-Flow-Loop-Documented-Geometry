@@ -1,0 +1,5 @@
+source_file,priority,role,sha256
+Annotated_ACU(2).FCStd,1,Primary geometry and named datums,4b1596fe8e5ed3ba906ee8cf7bfe63466e9c36b2531fd19e24a713276457d92d
+ExtractedMeasurements.txt,2,Legacy source offsets / semantic hints,cbdf672aab2bfadc7fc2903616acbac63fde72395f8071ce4ba7da5b3fba6ee7
+ACU_Detailed_General_Arrangement.pdf,3,Secondary drawing comparison,cad321c0a6fdca7e2968bfe59101bd0b990a12a42c529072ca0c0a13b52d510e
+ACU_Detailed_General_Arrangement 2.pdf,3,Secondary detailed drawing comparison,f3fb20c4ba4f981c1bc3d34c65e7fccd7318af749cebc6450d72a5c6b8917810
