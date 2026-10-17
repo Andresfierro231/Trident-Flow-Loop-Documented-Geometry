@@ -1,7 +1,7 @@
 {
   "settings": {
     "Facility": "VCU",
-    "Configuration ID": "VCU-REV9-DRAFT-004",
+    "Configuration ID": "VCU-REV9-DRAFT-005",
     "Status": "Draft",
     "Geometry source": "VCU-R9-E01 (2026-10-08)",
     "Model support": "1-D and CFD / conjugate heat transfer",
@@ -17,7 +17,7 @@
     "Scope": "Main-loop geometry and sensor-position prototype",
     "Fluid scope": "VCU: Prop-30, air, water",
     "Effective date": "2026-10-16",
-    "Change summary": "CFG-001: VCU Rev9 component dimensions; nine solid-property candidate functions with SI units and working domains; portable source copies; dated nominal-ID, insulation and heater assumptions in evidence records. Physical installation and approval remain open."
+    "Change summary": "GEO-009: entire covered top-left C-D and top-right E-F corners Insulated; LF-01 locally covered, per Andres Fierro 2026-10-16. Model regional insulation v6 and Rev9 working selection v2 agree. Other coverage, numerical geometry and historical evidence unchanged."
   },
   "segments": {
     "upcomer": {
@@ -428,7 +428,7 @@
       "Status": "CAD-derived",
       "Point basis": "Mount reference",
       "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Notes": "Actual sensing location and channel mapping unverified. User report 2026-10-16 (VTOP): LF-01 is covered locally. CAD mount reference lies on upcomer 61.113919 mm below C; covered extent, optical extent and DAQ mapping remain unknown.",
       "station_from_start_mm": 1158.086080922692,
       "axis_xyz_mm": [
         0.0,
@@ -1022,7 +1022,7 @@
     {
       "region_id": "INS-02",
       "name": "Top-left corner",
-      "coverage": "Unknown",
+      "coverage": "Insulated",
       "segment": "upper_left_bend",
       "segment_start_endpoint": "C",
       "segment_end_endpoint": "D",
@@ -1047,9 +1047,9 @@
       "length_mm": null,
       "material_id": null,
       "thickness_mm": null,
-      "evidence_type": "Unknown",
-      "evidence_file_location": null,
-      "notes": null
+      "evidence_type": "Reported",
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-009_covered_top_corners/USER_CLARIFICATION.md / entire covered top-left C-D and top-right E-F corners",
+      "notes": "Entire corner insulated per corrected Andres Fierro statement 2026-10-16. Installed product and thickness unmeasured; model fiberglass estimate remains provisional."
     },
     {
       "region_id": "INS-03",
@@ -1150,7 +1150,7 @@
     {
       "region_id": "INS-06",
       "name": "Top-right corner",
-      "coverage": "Unknown",
+      "coverage": "Insulated",
       "segment": "upper_right_bend",
       "segment_start_endpoint": "E",
       "segment_end_endpoint": "F",
@@ -1175,9 +1175,9 @@
       "length_mm": null,
       "material_id": null,
       "thickness_mm": null,
-      "evidence_type": "Unknown",
-      "evidence_file_location": null,
-      "notes": null
+      "evidence_type": "Reported",
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-009_covered_top_corners/USER_CLARIFICATION.md / entire covered top-left C-D and top-right E-F corners",
+      "notes": "Entire corner insulated per corrected Andres Fierro statement 2026-10-16. Installed product and thickness unmeasured; model fiberglass estimate remains provisional."
     },
     {
       "region_id": "INS-07",
@@ -1318,5 +1318,5 @@
     "JTC-A/B, branch pipes, tank and coolant plumbing are retained as outstanding scope, not drawn.",
     "Model input draft only: missing bore, property selections, calibrations and approved boundary conditions."
   ],
-  "input_sha256": "f6ac4e249024b6dd2e808e5399ad1ecc5887ea67eb38b76d530e2eb80c03f3f1"
+  "input_sha256": "4584f35dae67707ef479f3296b4eb2a2490c3480410906d9feaa8b05a4049865"
 }

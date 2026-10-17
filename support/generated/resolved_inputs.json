@@ -7,7 +7,7 @@
     },
     {
       "Field": "Configuration ID",
-      "Value": "VCU-REV9-DRAFT-004",
+      "Value": "VCU-REV9-DRAFT-005",
       "Guidance": "Change after physical configuration changes."
     },
     {
@@ -87,7 +87,7 @@
     },
     {
       "Field": "Change summary",
-      "Value": "CFG-001: VCU Rev9 component dimensions; nine solid-property candidate functions with SI units and working domains; portable source copies; dated nominal-ID, insulation and heater assumptions in evidence records. Physical installation and approval remain open.",
+      "Value": "GEO-009: entire covered top-left C-D and top-right E-F corners Insulated; LF-01 locally covered, per Andres Fierro 2026-10-16. Model regional insulation v6 and Rev9 working selection v2 agree. Other coverage, numerical geometry and historical evidence unchanged.",
       "Guidance": "Describe changes since the preceding configuration and identify evidence or the request."
     }
   ],
@@ -290,7 +290,7 @@
       "Status": "CAD-derived",
       "Point basis": "Mount reference",
       "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified."
+      "Notes": "Actual sensing location and channel mapping unverified. User report 2026-10-16 (VTOP): LF-01 is covered locally. CAD mount reference lies on upcomer 61.113919 mm below C; covered extent, optical extent and DAQ mapping remain unknown."
     },
     {
       "Sensor ID": "STC-06",
@@ -1847,10 +1847,10 @@
       "Applicability": "VCU; 1-D and CFD / CHT",
       "Requirement source": "P0",
       "Requirement locator": "Method: facility and fluid configuration; geometry map",
-      "Current evidence": "GEO-008 reports whole top D-E uninsulated; all STCs contact bare pipe locally. Remaining transition endpoints unknown. Older full-loop coverage text is superseded.",
+      "Current evidence": "User 2026-10-16: entire C-D/E-F upper corners insulated; LF-01 locally covered. Top D-E remains bare. Remaining vertical cutbacks and LF-01 coverage extent unknown.",
       "Evidence type": "Reported",
-      "Evidence source": "VSEL; VINS",
-      "Evidence locator": "GEO-008 User direction and interpretation; insulation.yaml coverage",
+      "Evidence source": "VSEL; VTOP",
+      "Evidence locator": "VTOP direct user clarification; Insulation regions INS-02/06; Sensors LF-01; regional model v6",
       "Review state": "Needs review",
       "Unresolved question": "Supply evidence and request review.",
       "Selected choice": null,
@@ -3555,6 +3555,13 @@
       "Revision / context": "v5 2026-10-07, amended by VSEL for Rev9",
       "Locator guide": "coverage; contact; regions",
       "Qualification": "Regional thickness estimates/contact assumption; exact transitions and installed construction unverified. VSEL is later controlling top-leg evidence."
+    },
+    {
+      "Source ID": "VTOP",
+      "File / record": "support/evidence/2026-10-16_GEO-009_covered_top_corners/USER_CLARIFICATION.md",
+      "Revision / context": "Direct user clarification 2026-10-16; model regional v6 / Rev9 working v2",
+      "Locator guide": "Whole C-D / E-F corners; LF-01 local exposure",
+      "Qualification": "Reported by user; no independent survey, optical extent, covered extent or historical run dates supplied."
     }
   ],
   "Insulation regions": [
@@ -3573,12 +3580,12 @@
       "Region ID": "INS-02",
       "Region": "Top-left corner",
       "Boundary reference": "Full schematic corner",
-      "Coverage": "Unknown",
+      "Coverage": "Insulated",
       "Material ID": null,
       "Thickness mm": null,
-      "Evidence type": "Unknown",
-      "Evidence file / location": null,
-      "Notes": null
+      "Evidence type": "Reported",
+      "Evidence file / location": "support/evidence/2026-10-16_GEO-009_covered_top_corners/USER_CLARIFICATION.md / entire covered top-left C-D and top-right E-F corners",
+      "Notes": "Entire corner insulated per corrected Andres Fierro statement 2026-10-16. Installed product and thickness unmeasured; model fiberglass estimate remains provisional."
     },
     {
       "Region ID": "INS-03",
@@ -3617,12 +3624,12 @@
       "Region ID": "INS-06",
       "Region": "Top-right corner",
       "Boundary reference": "Full schematic corner",
-      "Coverage": "Unknown",
+      "Coverage": "Insulated",
       "Material ID": null,
       "Thickness mm": null,
-      "Evidence type": "Unknown",
-      "Evidence file / location": null,
-      "Notes": null
+      "Evidence type": "Reported",
+      "Evidence file / location": "support/evidence/2026-10-16_GEO-009_covered_top_corners/USER_CLARIFICATION.md / entire covered top-left C-D and top-right E-F corners",
+      "Notes": "Entire corner insulated per corrected Andres Fierro statement 2026-10-16. Installed product and thickness unmeasured; model fiberglass estimate remains provisional."
     },
     {
       "Region ID": "INS-07",

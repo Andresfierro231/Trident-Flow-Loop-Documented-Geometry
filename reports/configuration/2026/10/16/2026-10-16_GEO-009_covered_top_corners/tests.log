@@ -1,0 +1,35 @@
+test_changed_pdf_is_rejected (test_checkpoints.CheckpointTests) ... ok
+test_changed_workbook_is_rejected (test_checkpoints.CheckpointTests) ... ok
+test_checkpoint_retains_evidence_and_file_hashes (test_checkpoints.CheckpointTests) ... ok
+test_existing_checkpoint_is_never_overwritten (test_checkpoints.CheckpointTests) ... ok
+test_approval_needs_a_scoped_decision (test_control_records.ControlRecordsTests) ... ok
+test_broken_evidence_reference_is_rejected (test_control_records.ControlRecordsTests) ... ok
+test_configuration_precedes_forms_and_all_navigation_targets_exist (test_control_records.ControlRecordsTests) ... ok
+test_form_response_reaches_document_without_changing_geometry (test_control_records.ControlRecordsTests) ... ok
+test_seed_evidence_is_complete_but_not_approved (test_control_records.ControlRecordsTests) ... ok
+test_actual_workbook_edit_regenerates_all_outputs (test_geometry.GeometryTests) ... ok
+test_acu_rejected (test_geometry.GeometryTests) ... ok
+test_baseline_closes_and_preserves_unknowns (test_geometry.GeometryTests) ... ok
+test_blank_is_not_zero (test_geometry.GeometryTests) ... ok
+test_circumference_rotation_and_vertical_reference (test_geometry.GeometryTests) ... ok
+test_duplicate_sensor_rejected (test_geometry.GeometryTests) ... ok
+test_end_referenced_distance (test_geometry.GeometryTests) ... ok
+test_inconsistent_loop_rejected (test_geometry.GeometryTests) ... ok
+test_length_edits_move_geometry_and_labels (test_geometry.GeometryTests) ... ok
+test_out_of_range_sensor_rejected (test_geometry.GeometryTests) ... ok
+test_all_insulated_bare_and_unknown_have_different_overlays (test_insulation.InsulationTests) ... ok
+test_corner_lengths_are_not_inferred (test_insulation.InsulationTests) ... ok
+test_independent_states_preserve_physical_geometry (test_insulation.InsulationTests) ... ok
+test_invalid_state_material_thickness_and_ids_are_rejected (test_insulation.InsulationTests) ... ok
+test_jacket_reference_can_use_other_endpoint (test_insulation.InsulationTests) ... ok
+test_missing_jacket_leaves_top_extents_unresolved (test_insulation.InsulationTests) ... ok
+test_old_workbook_remains_unknown_without_inference (test_insulation.InsulationTests) ... ok
+test_regional_thickness_wins_over_legacy_and_is_flagged (test_insulation.InsulationTests) ... ok
+test_reversed_or_ambiguous_jacket_is_rejected (test_insulation.InsulationTests) ... ok
+test_top_regions_partition_parent_segment (test_insulation.InsulationTests) ... ok
+test_workbook_edit_reaches_json_svg_pdf_source_and_checkpoint (test_insulation.InsulationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 1.428s
+
+OK

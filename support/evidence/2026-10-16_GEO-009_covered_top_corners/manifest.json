@@ -1,0 +1,41 @@
+{
+  "task": "GEO-009",
+  "date": "2026-10-16",
+  "artifacts": [
+    {
+      "path": "2026-10-16_GEO-009_covered_top_corners.md",
+      "bytes": 1584,
+      "sha256": "68a7bd0957f2e791079b4f660e54aaf79d7952c8ecffdaa630a8ade63ef90dd8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1277,
+      "sha256": "297da4cb560f2987a7de7cadd6e1189b5c653360e1d6f5eebd92cb1969b9425d"
+    },
+    {
+      "path": "USER_CLARIFICATION.md",
+      "bytes": 812,
+      "sha256": "cd22e0298aa825b5a6cf8e5348cf4feec9c30d5c3f754fa5ff6267385879451d"
+    },
+    {
+      "path": "VCU_inputs_before_GEO-009.xlsx",
+      "bytes": 62601,
+      "sha256": "f6ac4e249024b6dd2e808e5399ad1ecc5887ea67eb38b76d530e2eb80c03f3f1"
+    },
+    {
+      "path": "input_identity.json",
+      "bytes": 83,
+      "sha256": "e8a17e874ab7268f32607c1242409d1f97d12096a34e1fe2de1b1d0ab8c8fa8d"
+    },
+    {
+      "path": "insulation.yaml",
+      "bytes": 3475,
+      "sha256": "bc750a87cd5504496dd5fafbfca6ba34673219a400f87697db793b3a98cd84b2"
+    },
+    {
+      "path": "rev9_working_selection_v2.json",
+      "bytes": 27527,
+      "sha256": "0e2dcaf760c6d38f68edcc0fd292354b36d84a4ff60db29abe4ab5646e82adc6"
+    }
+  ]
+}

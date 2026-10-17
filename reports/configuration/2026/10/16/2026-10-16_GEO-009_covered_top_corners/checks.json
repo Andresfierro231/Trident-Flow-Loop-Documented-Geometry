@@ -1,0 +1,112 @@
+{
+  "task": "GEO-009",
+  "status": "passed",
+  "workbook_sha256": "4584f35dae67707ef479f3296b4eb2a2490c3480410906d9feaa8b05a4049865",
+  "checks": [
+    {
+      "check": "Unchanged Geometry",
+      "passed": true
+    },
+    {
+      "check": "Unchanged Calibration",
+      "passed": true
+    },
+    {
+      "check": "Unchanged Thermal spans",
+      "passed": true
+    },
+    {
+      "check": "Unchanged Fluids",
+      "passed": true
+    },
+    {
+      "check": "Unchanged Materials",
+      "passed": true
+    },
+    {
+      "check": "Unchanged Model choices",
+      "passed": true
+    },
+    {
+      "check": "Unchanged Form pipe",
+      "passed": true
+    },
+    {
+      "check": "Unchanged Form sensor",
+      "passed": true
+    },
+    {
+      "check": "Unchanged Form material",
+      "passed": true
+    },
+    {
+      "check": "Unchanged Phase requests",
+      "passed": true
+    },
+    {
+      "check": "Unchanged Review issues",
+      "passed": true
+    },
+    {
+      "check": "Unchanged CAD dimensions",
+      "passed": true
+    },
+    {
+      "check": "INS-02 entirely insulated",
+      "passed": true
+    },
+    {
+      "check": "INS-06 entirely insulated",
+      "passed": true
+    },
+    {
+      "check": "Other coverage unchanged",
+      "passed": true
+    },
+    {
+      "check": "LF01 note only; no DAQ/coordinate invention",
+      "passed": true
+    },
+    {
+      "check": "LF01 local covered statement",
+      "passed": true
+    },
+    {
+      "check": "Other sensor notes unchanged",
+      "passed": true
+    },
+    {
+      "check": "Approval fields unchanged",
+      "passed": true
+    },
+    {
+      "check": "INS-02 generated Insulated",
+      "passed": true
+    },
+    {
+      "check": "INS-06 generated Insulated",
+      "passed": true
+    },
+    {
+      "check": "Resolved export matches workbook",
+      "passed": true
+    },
+    {
+      "check": "Generator validity/hash",
+      "passed": true
+    },
+    {
+      "check": "Model full insulated corners",
+      "passed": true
+    },
+    {
+      "check": "Model LF01 covered locally",
+      "passed": true
+    },
+    {
+      "check": "XLSX ZIP integrity",
+      "passed": true
+    }
+  ],
+  "limitations": "Reported installation clarification; no visual inspection, optical extent inference or historical simulation rerun."
+}

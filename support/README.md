@@ -48,3 +48,5 @@ records exact inputs, patch parameters, expected outputs and the one-command
 migration invocation. `scripts/import_vcu_references.py` preserves XLSX
 formatting and dropdowns; `scripts/check_vcu_reference_import.py` checks
 transcription and preservation (optional PyYAML dependency).
+
+The later [GEO-009 evidence bundle](evidence/2026-10-16_GEO-009_covered_top_corners/README.md) documents the corrected covered-corner/LF-01 records. Use `scripts/check_covered_top_corners.py` for the live DRAFT-005 workbook; CFG-001 checks describe the earlier historical import.

@@ -771,16 +771,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Method: facility and fluid configuration; geometry map
 
 
-**Current evidence:** GEO-008 reports whole top D-E uninsulated; all STCs contact bare pipe locally. Remaining transition endpoints unknown. Older full-loop coverage text is superseded.
+**Current evidence:** User 2026-10-16: entire C-D/E-F upper corners insulated; LF-01 locally covered. Top D-E remains bare. Remaining vertical cutbacks and LF-01 coverage extent unknown.
 
 
 **Evidence type:** Reported
 
 
-**Evidence source:** VSEL; VINS
+**Evidence source:** VSEL; VTOP
 
 
-**Evidence locator:** GEO-008 User direction and interpretation; insulation.yaml coverage
+**Evidence locator:** VTOP direct user clarification; Insulation regions INS-02/06; Sensors LF-01; regional model v6
 
 
 **Review state:** Needs review
@@ -5111,4 +5111,18 @@ Evidence type and review state are independent. All proposed owners require team
 
 
 **Qualification:** Regional thickness estimates/contact assumption; exact transitions and installed construction unverified. VSEL is later controlling top-leg evidence.
+
+
+### VTOP
+
+**File / record:** support/evidence/2026-10-16_GEO-009_covered_top_corners/USER_CLARIFICATION.md
+
+
+**Revision / context:** Direct user clarification 2026-10-16; model regional v6 / Rev9 working v2
+
+
+**Locator guide:** Whole C-D / E-F corners; LF-01 local exposure
+
+
+**Qualification:** Reported by user; no independent survey, optical extent, covered extent or historical run dates supplied.
 

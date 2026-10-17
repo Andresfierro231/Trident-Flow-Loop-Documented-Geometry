@@ -1,0 +1,886 @@
+{
+  "schema": "trident.vcu.rev9_working_selection.v1",
+  "date": "2026-10-16",
+  "facility": "VCU",
+  "geometry_revision": "Rev9",
+  "status": "user_selected_provisional",
+  "decision": "docs/decisions/2026-10-16_GEO-009_covered_top_corners.md",
+  "model_frame": {
+    "origin_CAD_xyz_mm": [
+      580.490685642161,
+      -2830.921838891466,
+      1990.8865097103596
+    ],
+    "origin_tag": "B",
+    "x": "B_CAD_Z - CAD_Z",
+    "y": "CAD_Y - B_CAD_Y",
+    "n": "CAD_X - B_CAD_X"
+  },
+  "gravity_direction_local": [
+    0,
+    -1,
+    0
+  ],
+  "gravity_basis": "continued drawing-Y-up working convention; not an independent gravity survey",
+  "main_pipe_nominal_ID_mm": 26.64,
+  "main_pipe_OD_mm": 33.401,
+  "segments": [
+    {
+      "segment": "upcomer",
+      "from": "B",
+      "to": "C",
+      "start_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "end_mm": [
+        -2.2737367544323206e-13,
+        1219.2000000000003,
+        0.0
+      ],
+      "reference_length_mm": 1219.2000000000003,
+      "length_basis": "Continuous straight axis",
+      "inclination_deg": 89.99999999999999,
+      "display_basis": "endpoint axis span"
+    },
+    {
+      "segment": "upper_left_bend",
+      "from": "C",
+      "to": "D",
+      "start_mm": [
+        -2.2737367544323206e-13,
+        1219.2000000000003,
+        0.0
+      ],
+      "end_mm": [
+        67.85884212857263,
+        1275.3377163791433,
+        0.0
+      ],
+      "reference_length_mm": 100.54353128552934,
+      "length_basis": "Exact analytical torus centerline arc",
+      "inclination_deg": 39.59999999999979,
+      "display_basis": "endpoint chord"
+    },
+    {
+      "segment": "cooler",
+      "from": "D",
+      "to": "E",
+      "start_mm": [
+        67.85884212857263,
+        1275.3377163791433,
+        0.0
+      ],
+      "end_mm": [
+        1396.4514631016684,
+        1021.8951193362318,
+        0.0
+      ],
+      "reference_length_mm": 1352.5500000000059,
+      "length_basis": "Continuous straight axis",
+      "inclination_deg": 10.799999999999509,
+      "display_basis": "endpoint axis span"
+    },
+    {
+      "segment": "upper_right_bend",
+      "from": "E",
+      "to": "F",
+      "start_mm": [
+        1396.4514631016684,
+        1021.8951193362318,
+        0.0
+      ],
+      "end_mm": [
+        1442.8926209730948,
+        965.7574029570869,
+        0.0
+      ],
+      "reference_length_mm": 78.99848886717004,
+      "length_basis": "Exact analytical torus centerline arc",
+      "inclination_deg": 50.39999999999981,
+      "display_basis": "endpoint chord"
+    },
+    {
+      "segment": "downcomer",
+      "from": "F",
+      "to": "G",
+      "start_mm": [
+        1442.8926209730948,
+        965.7574029570869,
+        0.0
+      ],
+      "end_mm": [
+        1442.8926209731076,
+        -262.91115678957794,
+        7.958078640513122e-13
+      ],
+      "reference_length_mm": 1228.6685597466649,
+      "length_basis": "Continuous straight axis",
+      "inclination_deg": 89.99999999999942,
+      "display_basis": "endpoint axis span"
+    },
+    {
+      "segment": "lower_right_bend",
+      "from": "G",
+      "to": "H",
+      "start_mm": [
+        1442.8926209731076,
+        -262.91115678957794,
+        7.958078640513122e-13
+      ],
+      "end_mm": [
+        1369.1156207173797,
+        -308.2970804987135,
+        7.958078640513122e-13
+      ],
+      "reference_length_mm": null,
+      "length_basis": "Endpoint chord exact; recovered spline spine qualified by endpoint residuals",
+      "inclination_deg": 31.598879037624442,
+      "display_basis": "endpoint chord"
+    },
+    {
+      "segment": "heater",
+      "from": "H",
+      "to": "A",
+      "start_mm": [
+        1369.1156207173797,
+        -308.2970804987135,
+        7.958078640513122e-13
+      ],
+      "end_mm": [
+        46.44115787142391,
+        -56.13771637914306,
+        0.0
+      ],
+      "reference_length_mm": 1346.4962148518246,
+      "length_basis": "Projected endpoint-to-endpoint axial span; overlapping offset pieces retained, no healed centerline",
+      "inclination_deg": 10.79355123487476,
+      "display_basis": "endpoint axis span"
+    },
+    {
+      "segment": "lower_left_bend",
+      "from": "A",
+      "to": "B",
+      "start_mm": [
+        46.44115787142391,
+        -56.13771637914306,
+        0.0
+      ],
+      "end_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reference_length_mm": 78.9984888671677,
+      "length_basis": "Exact analytical torus centerline arc",
+      "inclination_deg": 50.40000000000042,
+      "display_basis": "endpoint chord"
+    }
+  ],
+  "sensors": [
+    {
+      "source_id": "STC-02",
+      "channel": "STC2",
+      "label": "STC2",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "upcomer",
+      "station_from_start_mm": 116.68608092269051,
+      "reference_local_mm": [
+        -5.796806986985757,
+        116.68608092269051,
+        15.39538011145487
+      ],
+      "reference_CAD_xyz_mm": [
+        595.8860657536159,
+        -2714.2357579687755,
+        1996.6833166973454
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "STC-03",
+      "channel": "STC3",
+      "label": "STC3",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "upcomer",
+      "station_from_start_mm": 446.8860809226908,
+      "reference_local_mm": [
+        -5.796806986974843,
+        446.8860809226908,
+        15.395380111503073
+      ],
+      "reference_CAD_xyz_mm": [
+        595.8860657536641,
+        -2384.035757968775,
+        1996.6833166973345
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "STC-04",
+      "channel": "STC4",
+      "label": "STC4",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "upcomer",
+      "station_from_start_mm": 726.28608092269,
+      "reference_local_mm": [
+        -5.796806986691763,
+        726.28608092269,
+        15.395380112425983
+      ],
+      "reference_CAD_xyz_mm": [
+        595.886065754587,
+        -2104.635757968776,
+        1996.6833166970514
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "STC-05",
+      "channel": "STC5",
+      "label": "STC5",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "upcomer",
+      "station_from_start_mm": 942.1860809226905,
+      "reference_local_mm": [
+        -5.7968069866938094,
+        942.1860809226905,
+        15.395380112425869
+      ],
+      "reference_CAD_xyz_mm": [
+        595.8860657545869,
+        -1888.7357579687755,
+        1996.6833166970534
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "LF-01",
+      "channel": null,
+      "label": "LF-01",
+      "type": "LF",
+      "domain": "main_loop",
+      "segment": "upcomer",
+      "station_from_start_mm": 1158.086080922692,
+      "reference_local_mm": [
+        6.821210263296962e-13,
+        1158.086080922692,
+        -1.0231815394945443e-12
+      ],
+      "reference_CAD_xyz_mm": [
+        580.49068564216,
+        -1672.835757968774,
+        1990.886509710359
+      ],
+      "reference_basis": "Centroid of the modeled local mounting-pipe body; no sensing junction or optical sensing extent encoded",
+      "role": "main_loop_reference",
+      "binding_status": "geometric_reference_only",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": null,
+      "historical_run_applicability": null,
+      "local_insulation_coverage": "covered",
+      "exposure_evidence": "corrected user report 2026-10-16",
+      "covered_extent_mm": null
+    },
+    {
+      "source_id": "STC-06",
+      "channel": "STC6",
+      "label": "STC6",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "cooler",
+      "station_from_start_mm": 69.14180941010166,
+      "reference_local_mm": [
+        134.72505615789555,
+        1256.872802349419,
+        15.730635079757917
+      ],
+      "reference_CAD_xyz_mm": [
+        596.2213207219189,
+        -1574.049036542047,
+        1856.161453552464
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "PTC-01",
+      "channel": "PTC1",
+      "label": "PTC1",
+      "type": "PTC",
+      "domain": "main_loop",
+      "segment": "cooler",
+      "station_from_start_mm": 97.07953205569167,
+      "reference_local_mm": [
+        163.20740942376233,
+        1257.0869637150302,
+        -0.02645818730195515
+      ],
+      "reference_CAD_xyz_mm": [
+        580.464227454859,
+        -1573.8348751764358,
+        1827.6791002865973
+      ],
+      "reference_basis": "Centroid of the modeled local mounting-pipe body; no sensing junction or optical sensing extent encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": null,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "STC-07",
+      "channel": "STC7",
+      "label": "STC7",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "cooler",
+      "station_from_start_mm": 1197.219309410103,
+      "reference_local_mm": [
+        1242.821202241791,
+        1045.4921574448506,
+        15.730635079757917
+      ],
+      "reference_CAD_xyz_mm": [
+        596.2213207219189,
+        -1785.4296814466154,
+        748.0653074685684
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "LF-03",
+      "channel": null,
+      "label": "LF-03",
+      "type": "LF",
+      "domain": "main_loop",
+      "segment": "cooler",
+      "station_from_start_mm": 1267.0693107576358,
+      "reference_local_mm": [
+        1312.4815712506997,
+        1037.8953007776163,
+        -0.04691233770483905
+      ],
+      "reference_CAD_xyz_mm": [
+        580.4437733044562,
+        -1793.0265381138497,
+        678.4049384596599
+      ],
+      "reference_basis": "Centroid of the modeled local mounting-pipe body; no sensing junction or optical sensing extent encoded",
+      "role": "main_loop_reference",
+      "binding_status": "geometric_reference_only",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": null,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "PTC-03",
+      "channel": "PTC3",
+      "label": "PTC3",
+      "type": "PTC",
+      "domain": "main_loop",
+      "segment": "cooler",
+      "station_from_start_mm": 1267.0693107576358,
+      "reference_local_mm": [
+        1312.4815712506997,
+        1037.8953007776163,
+        -0.04691233770483905
+      ],
+      "reference_CAD_xyz_mm": [
+        580.4437733044562,
+        -1793.0265381138497,
+        678.4049384596599
+      ],
+      "reference_basis": "Centroid of the modeled local mounting-pipe body; no sensing junction or optical sensing extent encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": null,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "STC-08",
+      "channel": "STC8",
+      "label": "STC8",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "downcomer",
+      "station_from_start_mm": 183.10450241506305,
+      "reference_local_mm": [
+        1436.44737407522,
+        782.6529005420239,
+        15.395380112425983
+      ],
+      "reference_CAD_xyz_mm": [
+        595.886065754587,
+        -2048.268938349442,
+        554.4391356351396
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "STC-09",
+      "channel": "STC9",
+      "label": "STC9",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "downcomer",
+      "station_from_start_mm": 411.70450241506296,
+      "reference_local_mm": [
+        1436.4473740752226,
+        554.052900542024,
+        15.395380112425983
+      ],
+      "reference_CAD_xyz_mm": [
+        595.886065754587,
+        -2276.868938349442,
+        554.4391356351371
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "STC-10",
+      "channel": "STC10",
+      "label": "STC10",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "downcomer",
+      "station_from_start_mm": 691.104502415063,
+      "reference_local_mm": [
+        1436.447374075225,
+        274.6529005420239,
+        15.395380112425983
+      ],
+      "reference_CAD_xyz_mm": [
+        595.886065754587,
+        -2556.268938349442,
+        554.4391356351346
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "STC-11",
+      "channel": "STC11",
+      "label": "STC11",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "downcomer",
+      "station_from_start_mm": 945.1045024150626,
+      "reference_local_mm": [
+        1436.4473740752278,
+        20.652900542024327,
+        15.395380112425983
+      ],
+      "reference_CAD_xyz_mm": [
+        595.886065754587,
+        -2810.2689383494417,
+        554.4391356351317
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "LF-04",
+      "channel": null,
+      "label": "LF-04",
+      "type": "LF",
+      "domain": "main_loop",
+      "segment": "downcomer",
+      "station_from_start_mm": 1177.8685610942043,
+      "reference_local_mm": [
+        1442.8794806388282,
+        -212.1111581371174,
+        -0.04835668511475433
+      ],
+      "reference_CAD_xyz_mm": [
+        580.4423289570462,
+        -3043.0329970285834,
+        548.0070290715314
+      ],
+      "reference_basis": "Centroid of the modeled local mounting-pipe body; no sensing junction or optical sensing extent encoded",
+      "role": "main_loop_reference",
+      "binding_status": "geometric_reference_only",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": null,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "PTC-04",
+      "channel": "PTC4",
+      "label": "PTC4",
+      "type": "PTC",
+      "domain": "main_loop",
+      "segment": "heater",
+      "station_from_start_mm": 63.71613723891599,
+      "reference_local_mm": [
+        1306.515622307537,
+        -296.42312759038623,
+        4.957979456321482e-05
+      ],
+      "reference_CAD_xyz_mm": [
+        580.4907352219556,
+        -3127.344966481852,
+        684.3708874028226
+      ],
+      "reference_basis": "Centroid of the modeled local mounting-pipe body; no sensing junction or optical sensing extent encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": null,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "STC-12",
+      "channel": "STC12",
+      "label": "STC12",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "heater",
+      "station_from_start_mm": 69.29306137124466,
+      "reference_local_mm": [
+        1299.300711806959,
+        -304.48257829322984,
+        13.847856195366262
+      ],
+      "reference_CAD_xyz_mm": [
+        594.3385418375273,
+        -3135.404417184696,
+        691.5857979034006
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "LF-02",
+      "channel": null,
+      "label": "LF-02",
+      "type": "LF",
+      "domain": "main_loop",
+      "segment": "heater",
+      "station_from_start_mm": 1263.1018585369893,
+      "reference_local_mm": [
+        128.3665082537898,
+        -71.7216027939262,
+        0.025002816470646394
+      ],
+      "reference_CAD_xyz_mm": [
+        580.5156884586316,
+        -2902.643441685392,
+        1862.5200014565698
+      ],
+      "reference_basis": "Centroid of the modeled local mounting-pipe body; no sensing junction or optical sensing extent encoded",
+      "role": "main_loop_reference",
+      "binding_status": "geometric_reference_only",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": null,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "PTC-02",
+      "channel": "PTC2",
+      "label": "PTC2",
+      "type": "PTC",
+      "domain": "main_loop",
+      "segment": "heater",
+      "station_from_start_mm": 1263.1018585369893,
+      "reference_local_mm": [
+        128.3665082537898,
+        -71.7216027939262,
+        0.025002816470646394
+      ],
+      "reference_CAD_xyz_mm": [
+        580.5156884586316,
+        -2902.643441685392,
+        1862.5200014565698
+      ],
+      "reference_basis": "Centroid of the modeled local mounting-pipe body; no sensing junction or optical sensing extent encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": null,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "STC-01",
+      "channel": "STC1",
+      "label": "STC1",
+      "type": "STC",
+      "domain": "main_loop",
+      "segment": "heater",
+      "station_from_start_mm": 1297.0682237287474,
+      "reference_local_mm": [
+        94.99364338075361,
+        -65.39959833311605,
+        16.700500000000147
+      ],
+      "reference_CAD_xyz_mm": [
+        597.1911856421611,
+        -2896.321437224582,
+        1895.892866329606
+      ],
+      "reference_basis": "Selected closest point on the main-pipe surface to the modeled STC body; no sensing junction encoded",
+      "role": "main_loop_reference",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": true,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "JTC-A",
+      "channel": "PTC6",
+      "label": "PTC6",
+      "type": "PTC",
+      "domain": "jacket_port",
+      "segment": "PORT-A",
+      "station_from_start_mm": 63.895977354420204,
+      "reference_local_mm": [
+        229.67318291985862,
+        1137.5340551419692,
+        6.244857381806355
+      ],
+      "reference_CAD_xyz_mm": [
+        586.7355430239674,
+        -1693.3877837494967,
+        1761.213326790501
+      ],
+      "reference_basis": "Centroid of the modeled local mounting-pipe body; no sensing junction or optical sensing extent encoded",
+      "role": "jacket_outlet",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": null,
+      "historical_run_applicability": null
+    },
+    {
+      "source_id": "JTC-B",
+      "channel": "PTC5",
+      "label": "PTC5",
+      "type": "PTC",
+      "domain": "jacket_port",
+      "segment": "PORT-B",
+      "station_from_start_mm": 63.89142264558628,
+      "reference_local_mm": [
+        1165.9022947367976,
+        1165.7885835795637,
+        -5.93063506925705
+      ],
+      "reference_CAD_xyz_mm": [
+        574.560050572904,
+        -1665.1332553119023,
+        824.9842149735622
+      ],
+      "reference_basis": "Centroid of the modeled local mounting-pipe body; no sensing junction or optical sensing extent encoded",
+      "role": "jacket_inlet",
+      "binding_status": "user_selected_working_2026-10-14",
+      "physical_junction_is_defined": false,
+      "bare_pipe_contact": null,
+      "historical_run_applicability": null
+    }
+  ],
+  "excluded_references": [
+    {
+      "source_id": "PTC-X",
+      "reason": "user suspects artifact; no channel"
+    }
+  ],
+  "heater": {
+    "segment": "heater",
+    "from": "H",
+    "to": "A",
+    "start_station_mm": 0,
+    "end_station_mm": 1346.4962148518246,
+    "coverage_basis": "user-assumed entire lower straight leg; not measured energized extent",
+    "inclination_deg": 10.79355123487476,
+    "axis_sum_mm": 1353.698559746703,
+    "projected_overlap_mm": 7.202344894878479,
+    "axis_offset_mm": 0.1515510905213091,
+    "exact_connected_centerline_length_mm": null,
+    "measured_powered_length_mm": null
+  },
+  "jacket": {
+    "source_path": "UTDTloopWithOpticsAndHXRev9_9_18_26/NAUO18/NAUO56",
+    "shell_start_xyz_mm": [
+      580.4906856421612,
+      -1580.6766933981282,
+      1791.4878044762431
+    ],
+    "shell_end_xyz_mm": [
+      580.4906856421612,
+      -1771.3535768541267,
+      791.9245767253635
+    ],
+    "outer_start_xyz_mm": [
+      580.4906856421612,
+      -1579.486822050509,
+      1797.7253285183697
+    ],
+    "outer_end_xyz_mm": [
+      580.4906856421612,
+      -1772.5434482017458,
+      785.687052683237
+    ],
+    "pre_mm": 127.56180941009107,
+    "shell_mm": 1017.5874999999996,
+    "complete_mm": 1030.2874999999983,
+    "post_mm": 194.70069058991646,
+    "shell_Ro_mm": 44.45000000000001,
+    "shell_Ri_mm": 38.9636,
+    "endplate_hole_radius_mm": 16.827499999999997,
+    "end_plates": [
+      {
+        "path": "UTDTloopWithOpticsAndHXRev9_9_18_26/NAUO18/NAUO57",
+        "min_mm": -6.349999999999417,
+        "max_mm": 8.323201975606641e-13,
+        "thickness_mm": 6.350000000000249
+      },
+      {
+        "path": "UTDTloopWithOpticsAndHXRev9_9_18_26/NAUO18/NAUO58",
+        "min_mm": 1017.587499999999,
+        "max_mm": 1023.937499999999,
+        "thickness_mm": 6.350000000000023
+      }
+    ],
+    "annular_hydraulic_diameter_mm": 44.526199999999996,
+    "annular_radial_gap_mm": 22.263099999999998,
+    "annulus_assumption": "Concentric unobstructed shell annulus, using main pipe OD; no main-pipe bore assumed",
+    "axis_offset_from_pipe_mm": 9.277849023011715e-12,
+    "source_geometric_axis_direction": [
+      0.0,
+      -0.18738131458572213,
+      -0.9822872507286892
+    ],
+    "flow_role_basis": "user: JTC-B/PTC5 inlet, JTC-A/PTC6 outlet; internal routing unverified"
+  },
+  "jacket_channel_mapping": {
+    "PTC5": {
+      "reference": "JTC-B",
+      "role": "inlet"
+    },
+    "PTC6": {
+      "reference": "JTC-A",
+      "role": "outlet"
+    }
+  },
+  "insulation": {
+    "whole_top_leg": "uninsulated",
+    "STC_contact": "bare pipe for all STCs",
+    "explicit_uninsulated_channels": [
+      "STC6",
+      "STC7",
+      "PTC1",
+      "PTC3"
+    ],
+    "remaining_transition_endpoints_mm": null,
+    "other_regions": "retain prior regional assumptions; LF-01 covered locally; optical extent and remaining transitions unknown",
+    "whole_upper_left_corner": "insulated C-D",
+    "whole_upper_right_corner": "insulated E-F",
+    "entire_bare_segments": [
+      "cooler"
+    ],
+    "entire_insulated_upper_corners": [
+      "upper_left_bend",
+      "upper_right_bend"
+    ],
+    "local_covered_references": [
+      "LF-01"
+    ],
+    "regional_configuration": "config/facilities/vcu_provisional/insulation.yaml"
+  },
+  "historical_run_applicability": null,
+  "solver_activation": "not activated by plotting task",
+  "inputs": [
+    {
+      "path": "docs/geometry/second_extraction/VCU_Rev9_CAD_Model_Package copy/data/VCU_Rev9_Segments.csv",
+      "sha256": "e9cd8f4bd40d1d1fbd97d89a4452d2ba31312cd4d53db4e3a3c1a87c1c483022",
+      "bytes": 4414
+    },
+    {
+      "path": "docs/geometry/second_extraction/VCU_Rev9_CAD_Model_Package copy/data/VCU_Rev9_Sensor_Stations.csv",
+      "sha256": "70c53f4920252a2c63c64bac303c150b84ec8094b7fd7060f4933d9aa97c03df",
+      "bytes": 20255
+    },
+    {
+      "path": "docs/geometry/second_extraction/VCU_Rev9_CAD_Model_Package copy/data/VCU_Rev9_Engineering_Data.json",
+      "sha256": "559be6084e75b7811bf0c017c03f6fdda800163d880b1951cafb113cea8ceade",
+      "bytes": 275746
+    },
+    {
+      "path": "reports/geometry/2026/09/25/workbook_csv_exports/2026-09-25_GEO-005_vcu_rev8_workbooks/vcu_rev7_rev8_cad_comparison__segments.csv",
+      "sha256": "25add24ecb3dd8fc36f60fc0d22b366407168f5db92734720d3e42feff00f239",
+      "bytes": 7922
+    },
+    {
+      "path": "docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/pipe_segments.csv",
+      "sha256": "af294e86bf788f212d989897c64a73963e4029227725ac4909d412c5fdd11347",
+      "bytes": 3142
+    },
+    {
+      "path": "tools/plot_rev9_comparisons.py",
+      "sha256": "025ac5953b576585321ee37f83c42fff8d551ed680459ec5f1635973cb2e7239",
+      "bytes": 1377
+    },
+    {
+      "path": "src/trident_thermal/reporting/revision_geometry.py",
+      "sha256": "dc7c401bf68f50a4ef2c51ccf9c0499d1cc9a47942db2ccda348c64b5183b4e0",
+      "bytes": 22663
+    }
+  ],
+  "revision": "v2_covered_top_corners",
+  "supersedes": "rev9_working_selection_v1.json"
+}
