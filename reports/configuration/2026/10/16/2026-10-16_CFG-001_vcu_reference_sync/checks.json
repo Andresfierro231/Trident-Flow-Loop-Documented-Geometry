@@ -1,0 +1,535 @@
+{
+  "task": "CFG-001",
+  "status": "passed",
+  "input_sha256": "f6ac4e249024b6dd2e808e5399ad1ecc5887ea67eb38b76d530e2eb80c03f3f1",
+  "checks": [
+    {
+      "check": "Source hash: vcu_candidate_materials_v3.yaml",
+      "passed": true
+    },
+    {
+      "check": "Source hash: insulation.yaml",
+      "passed": true
+    },
+    {
+      "check": "Source hash: rev9_working_selection_v1.json",
+      "passed": true
+    },
+    {
+      "check": "Source hash: ADR-0033-vcu-solid-properties-5c.md",
+      "passed": true
+    },
+    {
+      "check": "Source hash: 2026-10-14_GEO-008_rev9_working_selection.md",
+      "passed": true
+    },
+    {
+      "check": "Source hash: VCU_Rev9_Segments.csv",
+      "passed": true
+    },
+    {
+      "check": "Source hash: VCU_Rev9_Diameters.csv",
+      "passed": true
+    },
+    {
+      "check": "Preserved Sensors",
+      "passed": true
+    },
+    {
+      "check": "Preserved Calibration",
+      "passed": true
+    },
+    {
+      "check": "Preserved Thermal spans",
+      "passed": true
+    },
+    {
+      "check": "Preserved Fluids",
+      "passed": true
+    },
+    {
+      "check": "Preserved Phase requests",
+      "passed": true
+    },
+    {
+      "check": "Preserved Review issues",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form material / Your entry",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form pipe / Your entry",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form sensor / Your entry",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form material / Your evidence file / location",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form pipe / Your evidence file / location",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form sensor / Your evidence file / location",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form material / Entry evidence type",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form pipe / Entry evidence type",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form sensor / Entry evidence type",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form material / Reviewer / date",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form pipe / Reviewer / date",
+      "passed": true
+    },
+    {
+      "check": "Contributor cells Form sensor / Reviewer / date",
+      "passed": true
+    },
+    {
+      "check": "Approval fields unchanged",
+      "passed": true
+    },
+    {
+      "check": "Geometry inputs unchanged",
+      "passed": true
+    },
+    {
+      "check": "CAD main bores remain null",
+      "passed": true
+    },
+    {
+      "check": "Form pipe unchanged",
+      "passed": true
+    },
+    {
+      "check": "Form sensor unchanged",
+      "passed": true
+    },
+    {
+      "check": "ZIP integrity",
+      "passed": true
+    },
+    {
+      "check": "Original ZIP members retained",
+      "passed": true
+    },
+    {
+      "check": "Styles unchanged",
+      "passed": true
+    },
+    {
+      "check": "Dropdowns unchanged",
+      "passed": true
+    },
+    {
+      "check": "14 component records",
+      "passed": true
+    },
+    {
+      "check": "CAD dimension values and local qualifications",
+      "passed": true
+    },
+    {
+      "check": "PIPE density exact coefficients",
+      "passed": true
+    },
+    {
+      "check": "PIPE density domain",
+      "passed": true
+    },
+    {
+      "check": "PIPE density positive at 278.15 K",
+      "passed": true
+    },
+    {
+      "check": "PIPE density positive at 293.15 K",
+      "passed": true
+    },
+    {
+      "check": "PIPE density positive at 813.0 K",
+      "passed": true
+    },
+    {
+      "check": "PIPE heat_capacity exact coefficients",
+      "passed": true
+    },
+    {
+      "check": "PIPE heat_capacity domain",
+      "passed": true
+    },
+    {
+      "check": "PIPE heat_capacity positive at 278.15 K",
+      "passed": true
+    },
+    {
+      "check": "PIPE heat_capacity positive at 293.15 K",
+      "passed": true
+    },
+    {
+      "check": "PIPE heat_capacity positive at 813.0 K",
+      "passed": true
+    },
+    {
+      "check": "PIPE conductivity exact coefficients",
+      "passed": true
+    },
+    {
+      "check": "PIPE conductivity domain",
+      "passed": true
+    },
+    {
+      "check": "PIPE conductivity positive at 278.15 K",
+      "passed": true
+    },
+    {
+      "check": "PIPE conductivity positive at 293.15 K",
+      "passed": true
+    },
+    {
+      "check": "PIPE conductivity positive at 813.0 K",
+      "passed": true
+    },
+    {
+      "check": "PIPE provisional qualification",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS density exact coefficients",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS density domain",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS density positive at 278.15 K",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS density positive at 293.15 K",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS density positive at 533.0 K",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS heat_capacity exact coefficients",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS heat_capacity domain",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS heat_capacity positive at 278.15 K",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS heat_capacity positive at 293.15 K",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS heat_capacity positive at 533.0 K",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS conductivity exact coefficients",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS conductivity domain",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS conductivity positive at 278.15 K",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS conductivity positive at 293.15 K",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS conductivity positive at 533.0 K",
+      "passed": true
+    },
+    {
+      "check": "MAIN-INS provisional qualification",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS density exact coefficients",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS density domain",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS density positive at 278.15 K",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS density positive at 293.15 K",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS density positive at 1089.0 K",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS heat_capacity exact coefficients",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS heat_capacity domain",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS heat_capacity positive at 278.15 K",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS heat_capacity positive at 293.15 K",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS heat_capacity positive at 1089.0 K",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS conductivity exact coefficients",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS conductivity domain",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS conductivity positive at 278.15 K",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS conductivity positive at 293.15 K",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS conductivity positive at 1089.0 K",
+      "passed": true
+    },
+    {
+      "check": "HEATER-INS provisional qualification",
+      "passed": true
+    }
+  ],
+  "property_transcription_values": [
+    {
+      "material": "PIPE",
+      "property": "density",
+      "temperature_K": 278.15,
+      "value": 7955.90755005,
+      "units": "kg/m^3"
+    },
+    {
+      "material": "PIPE",
+      "property": "density",
+      "temperature_K": 293.15,
+      "value": 7949.93195505,
+      "units": "kg/m^3"
+    },
+    {
+      "material": "PIPE",
+      "property": "density",
+      "temperature_K": 813.0,
+      "value": 7742.837751,
+      "units": "kg/m^3"
+    },
+    {
+      "material": "PIPE",
+      "property": "heat_capacity",
+      "temperature_K": 278.15,
+      "value": 447.3847521788149,
+      "units": "J/(kg*K)"
+    },
+    {
+      "material": "PIPE",
+      "property": "heat_capacity",
+      "temperature_K": 293.15,
+      "value": 454.4325755318149,
+      "units": "J/(kg*K)"
+    },
+    {
+      "material": "PIPE",
+      "property": "heat_capacity",
+      "temperature_K": 813.0,
+      "value": 571.024872526,
+      "units": "J/(kg*K)"
+    },
+    {
+      "material": "PIPE",
+      "property": "conductivity",
+      "temperature_K": 278.15,
+      "value": 13.6177365,
+      "units": "W/(m*K)"
+    },
+    {
+      "material": "PIPE",
+      "property": "conductivity",
+      "temperature_K": 293.15,
+      "value": 13.8533865,
+      "units": "W/(m*K)"
+    },
+    {
+      "material": "PIPE",
+      "property": "conductivity",
+      "temperature_K": 813.0,
+      "value": 22.020229999999998,
+      "units": "W/(m*K)"
+    },
+    {
+      "material": "MAIN-INS",
+      "property": "density",
+      "temperature_K": 278.15,
+      "value": 72.08,
+      "units": "kg/m^3"
+    },
+    {
+      "material": "MAIN-INS",
+      "property": "density",
+      "temperature_K": 293.15,
+      "value": 72.08,
+      "units": "kg/m^3"
+    },
+    {
+      "material": "MAIN-INS",
+      "property": "density",
+      "temperature_K": 533.0,
+      "value": 72.08,
+      "units": "kg/m^3"
+    },
+    {
+      "material": "MAIN-INS",
+      "property": "heat_capacity",
+      "temperature_K": 278.15,
+      "value": 840.0,
+      "units": "J/(kg*K)"
+    },
+    {
+      "material": "MAIN-INS",
+      "property": "heat_capacity",
+      "temperature_K": 293.15,
+      "value": 840.0,
+      "units": "J/(kg*K)"
+    },
+    {
+      "material": "MAIN-INS",
+      "property": "heat_capacity",
+      "temperature_K": 533.0,
+      "value": 840.0,
+      "units": "J/(kg*K)"
+    },
+    {
+      "material": "MAIN-INS",
+      "property": "conductivity",
+      "temperature_K": 278.15,
+      "value": 0.03253150496399501,
+      "units": "W/(m*K)"
+    },
+    {
+      "material": "MAIN-INS",
+      "property": "conductivity",
+      "temperature_K": 293.15,
+      "value": 0.033193114832995016,
+      "units": "W/(m*K)"
+    },
+    {
+      "material": "MAIN-INS",
+      "property": "conductivity",
+      "temperature_K": 533.0,
+      "value": 0.07947838763800003,
+      "units": "W/(m*K)"
+    },
+    {
+      "material": "HEATER-INS",
+      "property": "density",
+      "temperature_K": 278.15,
+      "value": 560.65,
+      "units": "kg/m^3"
+    },
+    {
+      "material": "HEATER-INS",
+      "property": "density",
+      "temperature_K": 293.15,
+      "value": 560.65,
+      "units": "kg/m^3"
+    },
+    {
+      "material": "HEATER-INS",
+      "property": "density",
+      "temperature_K": 1089.0,
+      "value": 560.65,
+      "units": "kg/m^3"
+    },
+    {
+      "material": "HEATER-INS",
+      "property": "heat_capacity",
+      "temperature_K": 278.15,
+      "value": 795.381125,
+      "units": "J/(kg*K)"
+    },
+    {
+      "material": "HEATER-INS",
+      "property": "heat_capacity",
+      "temperature_K": 293.15,
+      "value": 799.9936250000001,
+      "units": "J/(kg*K)"
+    },
+    {
+      "material": "HEATER-INS",
+      "property": "heat_capacity",
+      "temperature_K": 1089.0,
+      "value": 1044.7175,
+      "units": "J/(kg*K)"
+    },
+    {
+      "material": "HEATER-INS",
+      "property": "conductivity",
+      "temperature_K": 278.15,
+      "value": 0.0706000397497375,
+      "units": "W/(m*K)"
+    },
+    {
+      "material": "HEATER-INS",
+      "property": "conductivity",
+      "temperature_K": 293.15,
+      "value": 0.0703348433722375,
+      "units": "W/(m*K)"
+    },
+    {
+      "material": "HEATER-INS",
+      "property": "conductivity",
+      "temperature_K": 1089.0,
+      "value": 0.263704132055,
+      "units": "W/(m*K)"
+    }
+  ],
+  "limitations": "Numerical transcription and file checks only; no product/source-fit/installation validation or visual review."
+}

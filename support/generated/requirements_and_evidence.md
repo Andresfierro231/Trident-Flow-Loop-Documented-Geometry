@@ -453,16 +453,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Geometry map; Main swept loop
 
 
-**Current evidence:** Main CAD bore absent; notes report nominal 1.049 in (26.64 mm)
+**Current evidence:** CAD main bore absent. GEO-008 retains 26.64 mm rounded nominal ID for provisional main piping; not a CAD-extracted bore or installed measurement. Local spool bores differ.
 
 
 **Evidence type:** Reported
 
 
-**Evidence source:** DIA; MAT
+**Evidence source:** DIA; VSEL
 
 
-**Evidence locator:** Main swept loop row; VCU Piping lines 23-27
+**Evidence locator:** Main swept loop; GEO-008 main nominal ID; CAD dimensions tab
 
 
 **Review state:** Needs review
@@ -665,16 +665,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Geometry map; VCU insulation
 
 
-**Current evidence:** Main: fiberglass 5556K73; heater: calcium aluminum silicate 4057K14 reported
+**Current evidence:** Reported fiberglass main insulation and calcium-aluminum-silicate heater strip. VINS v5 specifies regional candidates; product/installation evidence unresolved.
 
 
 **Evidence type:** Reported
 
 
-**Evidence source:** MAT
+**Evidence source:** MAT; VINS
 
 
-**Evidence locator:** Lines 29-44
+**Evidence locator:** Materials; insulation.yaml regions; source copies in support/evidence/2026-10-16_CFG-001_vcu_references
 
 
 **Review state:** Needs review
@@ -718,16 +718,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Geometry map; VCU insulation
 
 
-**Current evidence:** Most piping about 2 in; heater insulation 1/4 in reported
+**Current evidence:** Approximate regional estimates: ordinary insulated pipe 50.8 mm fiberglass; heater 6.35 mm strip only. Top D-E is bare per GEO-008. Not measured thicknesses.
 
 
 **Evidence type:** Reported
 
 
-**Evidence source:** MAT
+**Evidence source:** VINS; VSEL
 
 
-**Evidence locator:** Lines 29-44
+**Evidence locator:** insulation.yaml regions.non_heater_main_pipe and heater_leg; GEO-008 top-leg qualification
 
 
 **Review state:** Needs review
@@ -771,19 +771,19 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Method: facility and fluid configuration; geometry map
 
 
-**Current evidence:** Unknown
+**Current evidence:** GEO-008 reports whole top D-E uninsulated; all STCs contact bare pipe locally. Remaining transition endpoints unknown. Older full-loop coverage text is superseded.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** VSEL; VINS
 
 
-**Evidence locator:** Not available
+**Evidence locator:** GEO-008 User direction and interpretation; insulation.yaml coverage
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
 **Unresolved question:** Supply evidence and request review.
@@ -824,16 +824,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Geometry map; VCU Insulation
 
 
-**Current evidence:** Firm contact is explicitly an assumption in notes
+**Current evidence:** Perfect thermal contact is a user-directed model assumption (VINS), not a surveyed contact condition. Actual supports, gaps and layers remain open.
 
 
 **Evidence type:** Modeling assumption
 
 
-**Evidence source:** HEAT
+**Evidence source:** VINS
 
 
-**Evidence locator:** VCU Insulation lines 7-10
+**Evidence locator:** insulation.yaml contact
 
 
 **Review state:** Needs review
@@ -1778,16 +1778,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Geometry map; heater note; sheet 4
 
 
-**Current evidence:** Four clamps in CAD; notes report mat/band electrical heaters and intended 40-in coverage
+**Current evidence:** Electrical heater footprint remains unverified. GEO-008 assumes full projected H-A span 0-1346.496215 mm for modeling only; mechanical clamps do not establish active heating.
 
 
-**Evidence type:** Reported
+**Evidence type:** Modeling assumption
 
 
-**Evidence source:** HEAT; R9
+**Evidence source:** HEAT; VSEL
 
 
-**Evidence locator:** HEAT lines 16-23; R9 sheet 4
+**Evidence locator:** GEO-008 lower-leg assumption; original Active heater baseline remains null
 
 
 **Review state:** Needs review
@@ -2573,16 +2573,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Sheet 8 qualifications; model stages
 
 
-**Current evidence:** Heater overlap/offset and G-H path require an explicit interpretation
+**Current evidence:** Rev9 selected as provisional working geometry; main nominal ID 26.64 mm is separate from CAD null. H-A projected union is not an exact connected centerline; G-H reconstructed spline remains qualified.
 
 
-**Evidence type:** CAD-derived
+**Evidence type:** Modeling assumption
 
 
-**Evidence source:** R9
+**Evidence source:** VSEL; SEG
 
 
-**Evidence locator:** Sheets 2, 8
+**Evidence locator:** GEO-008 Why H-A has a qualification; Geometry notes; CAD dimensions tab
 
 
 **Review state:** Needs review
@@ -2838,19 +2838,19 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Duty definitions; VCU electrical adaptation
 
 
-**Current evidence:** Unknown
+**Current evidence:** GEO-008 assumes uniform extent over H-A projected span 1346.496215 mm. Real electrical power, spatial distribution, efficiency and heater/structure storage remain unresolved.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Modeling assumption
 
 
-**Evidence source:** None supplied
+**Evidence source:** VSEL; HEAT
 
 
-**Evidence locator:** Not available
+**Evidence locator:** GEO-008 lower-leg modeling assumption; Thermal spans keeps installed footprint unknown
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
 **Unresolved question:** Specify spatial source, meter boundary, external losses and storage without double counting.
@@ -3050,16 +3050,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Definitions: fixed property reference
 
 
-**Current evidence:** Reported 316L and insulation products; exact fluid formulation unresolved
+**Current evidence:** Reported 316L pipe, fiberglass candidate and calcium-aluminum-silicate strip; VMAT explicitly marks all three calibration-ineligible and unverified against installed products. Fluid formulation remains unresolved.
 
 
 **Evidence type:** Reported
 
 
-**Evidence source:** MAT
+**Evidence source:** VMAT; MAT
 
 
-**Evidence locator:** VCU section lines 17-44
+**Evidence locator:** VMAT materials.*.provenance and calibration_eligible; Materials tab
 
 
 **Review state:** Needs review
@@ -3103,16 +3103,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Definitions and Conventions
 
 
-**Current evidence:** Insulation k(T) candidate exists in notes; no correlation approved
+**Current evidence:** Nine explicit solid rho/cp/k functions transcribed from VMAT v3. Original derivations and installed-product source data remain unverified. No fluid functions imported.
 
 
 **Evidence type:** Reported
 
 
-**Evidence source:** MAT; STEEL; PG
+**Evidence source:** VMAT
 
 
-**Evidence locator:** MAT lines 35-40; STEEL Suggested you use; PG notes
+**Evidence locator:** vcu_candidate_materials_v3.yaml materials.*.properties; Materials equations
 
 
 **Review state:** Needs review
@@ -3156,19 +3156,19 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Definitions: property reference
 
 
-**Current evidence:** Unknown
+**Current evidence:** All imported solid functions take T in K; rho kg/m^3, cp J/(kg*K), k W/(m*K). Prop-30 mass fraction 0.30 is reported; formulation verification pending.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** VMAT; PG
 
 
-**Evidence locator:** Not available
+**Evidence locator:** VMAT properties units/coefficient_order; Fluids tab
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
 **Unresolved question:** Record K versus deg C, pressure units, mass/volume fraction and output units for each function.
@@ -3209,16 +3209,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Property reference; temperature/condensation applicability
 
 
-**Current evidence:** Insulation fit is reported valid 297-533 K; not an experiment operating range
+**Current evidence:** User-authorized working intervals: pipe 278.15-813 K; fiberglass 278.15-533 K; heater strip 278.15-1089 K. ADR-0033 extends all nine functions to 5 C; extrapolation is not product validation or an operating limit.
 
 
-**Evidence type:** Reported
+**Evidence type:** Modeling assumption
 
 
-**Evidence source:** MAT
+**Evidence source:** VMAT; V5C
 
 
-**Evidence locator:** Lines 38-40
+**Evidence locator:** VMAT valid_temperature_K; ADR-0033 Decision and authority
 
 
 **Review state:** Needs review
@@ -3262,19 +3262,19 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Proposed implementation control
 
 
-**Current evidence:** Unknown
+**Current evidence:** VMAT polynomial functions use ascending powers of T in K; density/cp constants as specified; all nine functions specify out_of_range: error. No fluid interpolation policy supplied.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** VMAT
 
 
-**Evidence locator:** Not available
+**Evidence locator:** VMAT materials.*.properties model/coefficient_order/out_of_range
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
 **Unresolved question:** Specify interpolation; reject/flag extrapolation explicitly rather than silently clipping.
@@ -3368,19 +3368,19 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Requested material-property justification
 
 
-**Current evidence:** Unknown
+**Current evidence:** Candidate working functions supplied by user; ADR-0033 authorizes low-temperature extrapolation. Reported independent pipe comparison has no retained comparison table; package transfer does not establish independent validation.
 
 
-**Evidence type:** Unknown
+**Evidence type:** Reported
 
 
-**Evidence source:** None supplied
+**Evidence source:** VMAT; V5C
 
 
-**Evidence locator:** Not available
+**Evidence locator:** VMAT provenance; ADR-0033 Evidence and limits
 
 
-**Review state:** Needs information
+**Review state:** Needs review
 
 
 **Unresolved question:** Compare candidate sources and explain selection or any deliberate mixed-source set.
@@ -5055,4 +5055,60 @@ Evidence type and review state are independent. All proposed owners require team
 
 
 **Qualification:** Assistant-proposed documentation field/convention, not an approved physical fact.
+
+
+### VMAT
+
+**File / record:** support/evidence/2026-10-16_CFG-001_vcu_references/vcu_candidate_materials_v3.yaml
+
+
+**Revision / context:** 2026-10-07 v3
+
+
+**Locator guide:** materials.*.properties; provenance
+
+
+**Qualification:** Nine user-supplied solid-property candidates; not product verified; calibration-ineligible. Coverage wording in older provenance is superseded by VSEL.
+
+
+### V5C
+
+**File / record:** support/evidence/2026-10-16_CFG-001_vcu_references/ADR-0033-vcu-solid-properties-5c.md
+
+
+**Revision / context:** 2026-10-07 accepted working-range decision
+
+
+**Locator guide:** Decision and authority; Evidence and limits
+
+
+**Qualification:** User authorizes working extrapolation to 5 C, not source/product validation or an operating limit.
+
+
+### VSEL
+
+**File / record:** support/evidence/2026-10-16_CFG-001_vcu_references/2026-10-14_GEO-008_rev9_working_selection.md
+
+
+**Revision / context:** 2026-10-14 provisional working selection
+
+
+**Locator guide:** User direction and interpretation; Why H-A has a qualification
+
+
+**Qualification:** Dated working geometry/installation choices; historical run dates, tips and electrical footprint unresolved.
+
+
+### VINS
+
+**File / record:** support/evidence/2026-10-16_CFG-001_vcu_references/insulation.yaml
+
+
+**Revision / context:** v5 2026-10-07, amended by VSEL for Rev9
+
+
+**Locator guide:** coverage; contact; regions
+
+
+**Qualification:** Regional thickness estimates/contact assumption; exact transitions and installed construction unverified. VSEL is later controlling top-leg evidence.
 

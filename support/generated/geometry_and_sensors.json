@@ -1,7 +1,7 @@
 {
   "settings": {
     "Facility": "VCU",
-    "Configuration ID": "VCU-REV9-DRAFT-003",
+    "Configuration ID": "VCU-REV9-DRAFT-004",
     "Status": "Draft",
     "Geometry source": "VCU-R9-E01 (2026-10-08)",
     "Model support": "1-D and CFD / conjugate heat transfer",
@@ -10,14 +10,14 @@
     "Circumference convention": "Top = 0; right-hand about segment direction",
     "Closure tolerance mm": 0.1,
     "Plan approval": "Unconfirmed",
-    "Prepared by": null,
+    "Prepared by": "Codex; VCU reference synchronization requested by Andres Fierro",
     "Checked by": null,
     "Editing sequence": "Start with Form tabs, or Insulation regions for whole-region coverage.",
     "Output refresh": "Upload to GitHub; Actions builds the PDF. See support/docs/DATED_CHECKPOINTS.md.",
     "Scope": "Main-loop geometry and sensor-position prototype",
     "Fluid scope": "VCU: Prop-30, air, water",
     "Effective date": "2026-10-16",
-    "Change summary": "Added ten insulation regions, coverage dropdowns and a separate diagram. All coverage starts Unknown pending evidence. PTC-X remains excluded from the active register."
+    "Change summary": "CFG-001: VCU Rev9 component dimensions; nine solid-property candidate functions with SI units and working domains; portable source copies; dated nominal-ID, insulation and heater assumptions in evidence records. Physical installation and approval remain open."
   },
   "segments": {
     "upcomer": {
@@ -34,7 +34,7 @@
       "Insulation mm": null,
       "Status": "CAD-derived",
       "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
-      "Notes": "Continuous straight axis",
+      "Notes": "Continuous straight axis; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "start_xyz_mm": [
         0.0,
         0.0,
@@ -61,7 +61,7 @@
       "Insulation mm": null,
       "Status": "CAD-derived",
       "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
-      "Notes": "Exact analytical torus centerline arc",
+      "Notes": "Exact analytical torus centerline arc; CAD torus radius 57.150000 mm, angle 100.800000 deg, arc 100.543531 mm. Diagram connector remains schematic.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "start_xyz_mm": [
         0.0,
         1219.2000000000003,
@@ -88,7 +88,7 @@
       "Insulation mm": null,
       "Status": "CAD-derived",
       "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
-      "Notes": "Continuous straight axis",
+      "Notes": "Continuous straight axis; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "start_xyz_mm": [
         67.85884212857286,
         1275.3377163791433,
@@ -115,7 +115,7 @@
       "Insulation mm": null,
       "Status": "CAD-derived",
       "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
-      "Notes": "Exact analytical torus centerline arc",
+      "Notes": "Exact analytical torus centerline arc; CAD torus radius 57.150000 mm, angle 79.200000 deg, arc 78.998489 mm. Diagram connector remains schematic.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "start_xyz_mm": [
         1396.4514631016687,
         1021.8951193362319,
@@ -142,7 +142,7 @@
       "Insulation mm": null,
       "Status": "CAD-derived",
       "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
-      "Notes": "Continuous straight axis",
+      "Notes": "Continuous straight axis; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "start_xyz_mm": [
         1442.892620973095,
         965.757402957087,
@@ -169,7 +169,7 @@
       "Insulation mm": null,
       "Status": "CAD-derived",
       "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
-      "Notes": "Endpoint chord exact; recovered spline spine qualified by endpoint residuals",
+      "Notes": "Endpoint chord exact; recovered spline spine qualified by endpoint residuals; recovered spine 98.265651493 mm is qualified; exact centerline length remains unknown.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "start_xyz_mm": [
         1442.8926209731071,
         -262.91115678957783,
@@ -196,7 +196,7 @@
       "Insulation mm": null,
       "Status": "CAD-derived",
       "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
-      "Notes": "Projected endpoint-to-endpoint axial span; overlapping offset pieces retained, no healed centerline",
+      "Notes": "Projected endpoint-to-endpoint axial span; overlapping offset pieces retained, no healed centerline; axis sum 1353.698559747 mm, projected overlap 7.202344895 mm, transverse offset 0.151551091 mm. VSEL full-span heating is a modeling assumption; installed footprint unknown.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "start_xyz_mm": [
         1369.1156207173792,
         -308.2970804987134,
@@ -223,7 +223,7 @@
       "Insulation mm": null,
       "Status": "CAD-derived",
       "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
-      "Notes": "Exact analytical torus centerline arc",
+      "Notes": "Exact analytical torus centerline arc; CAD torus radius 57.150000 mm, angle 79.200000 deg, arc 78.998489 mm. Diagram connector remains schematic.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "start_xyz_mm": [
         46.441166249239586,
         -56.13771797631978,
@@ -995,7 +995,7 @@
       "segment_start_endpoint": "B",
       "segment_end_endpoint": "C",
       "geometry_kind": "straight",
-      "geometry_qualification": "Continuous straight axis",
+      "geometry_qualification": "Continuous straight axis; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "boundary_reference": "Full segment",
       "boundary_basis": "CAD-derived",
       "boundary_source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
@@ -1016,8 +1016,8 @@
       "material_id": null,
       "thickness_mm": null,
       "evidence_type": "Unknown",
-      "evidence_file_location": null,
-      "notes": null
+      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/insulation.yaml / non_heater_main_pipe",
+      "notes": "Reported approximate 50.8 mm fiberglass candidate; exact transitions/gaps and bare STC contacts unresolved. Whole-region coverage remains Unknown."
     },
     {
       "region_id": "INS-02",
@@ -1027,7 +1027,7 @@
       "segment_start_endpoint": "C",
       "segment_end_endpoint": "D",
       "geometry_kind": "schematic_corner",
-      "geometry_qualification": "Exact analytical torus centerline arc",
+      "geometry_qualification": "Exact analytical torus centerline arc; CAD torus radius 57.150000 mm, angle 100.800000 deg, arc 100.543531 mm. Diagram connector remains schematic.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "boundary_reference": "Full schematic corner",
       "boundary_basis": "CAD-derived",
       "boundary_source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
@@ -1054,12 +1054,12 @@
     {
       "region_id": "INS-03",
       "name": "Pre-cooler",
-      "coverage": "Unknown",
+      "coverage": "Bare",
       "segment": "cooler",
       "segment_start_endpoint": "D",
       "segment_end_endpoint": "E",
       "geometry_kind": "straight",
-      "geometry_qualification": "Continuous straight axis",
+      "geometry_qualification": "Continuous straight axis; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "boundary_reference": "Segment start to Complete jacket start",
       "boundary_basis": "CAD-derived; mechanical jacket envelope; provisional insulation partition",
       "boundary_source": "VCU-R9-E01 (2026-10-08) sheet 3",
@@ -1079,19 +1079,19 @@
       "length_mm": 127.561809,
       "material_id": null,
       "thickness_mm": null,
-      "evidence_type": "Unknown",
-      "evidence_file_location": null,
-      "notes": null
+      "evidence_type": "Reported",
+      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/2026-10-14_GEO-008_rev9_working_selection.md / whole top D-E leg",
+      "notes": "October 14 user-reported working installation; not independently surveyed. Water jacket remains present; Bare does not imply room-air exposure beneath jacket."
     },
     {
       "region_id": "INS-04",
       "name": "Cooler",
-      "coverage": "Unknown",
+      "coverage": "Bare",
       "segment": "cooler",
       "segment_start_endpoint": "D",
       "segment_end_endpoint": "E",
       "geometry_kind": "straight",
-      "geometry_qualification": "Continuous straight axis",
+      "geometry_qualification": "Continuous straight axis; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "boundary_reference": "Complete jacket start to Complete jacket end",
       "boundary_basis": "CAD-derived; mechanical jacket envelope; provisional insulation partition",
       "boundary_source": "VCU-R9-E01 (2026-10-08) sheet 3",
@@ -1111,19 +1111,19 @@
       "length_mm": 1030.2875,
       "material_id": null,
       "thickness_mm": null,
-      "evidence_type": "Unknown",
-      "evidence_file_location": null,
-      "notes": "Identify the insulated surface, especially jacket exterior versus pipe."
+      "evidence_type": "Reported",
+      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/2026-10-14_GEO-008_rev9_working_selection.md / whole top D-E leg",
+      "notes": "October 14 user-reported working installation; not independently surveyed. Water jacket remains present; Bare does not imply room-air exposure beneath jacket."
     },
     {
       "region_id": "INS-05",
       "name": "Post-cooler",
-      "coverage": "Unknown",
+      "coverage": "Bare",
       "segment": "cooler",
       "segment_start_endpoint": "D",
       "segment_end_endpoint": "E",
       "geometry_kind": "straight",
-      "geometry_qualification": "Continuous straight axis",
+      "geometry_qualification": "Continuous straight axis; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "boundary_reference": "Complete jacket end to segment end",
       "boundary_basis": "CAD-derived; mechanical jacket envelope; provisional insulation partition",
       "boundary_source": "VCU-R9-E01 (2026-10-08) sheet 3",
@@ -1143,9 +1143,9 @@
       "length_mm": 194.70069100000592,
       "material_id": null,
       "thickness_mm": null,
-      "evidence_type": "Unknown",
-      "evidence_file_location": null,
-      "notes": null
+      "evidence_type": "Reported",
+      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/2026-10-14_GEO-008_rev9_working_selection.md / whole top D-E leg",
+      "notes": "October 14 user-reported working installation; not independently surveyed. Water jacket remains present; Bare does not imply room-air exposure beneath jacket."
     },
     {
       "region_id": "INS-06",
@@ -1155,7 +1155,7 @@
       "segment_start_endpoint": "E",
       "segment_end_endpoint": "F",
       "geometry_kind": "schematic_corner",
-      "geometry_qualification": "Exact analytical torus centerline arc",
+      "geometry_qualification": "Exact analytical torus centerline arc; CAD torus radius 57.150000 mm, angle 79.200000 deg, arc 78.998489 mm. Diagram connector remains schematic.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "boundary_reference": "Full schematic corner",
       "boundary_basis": "CAD-derived",
       "boundary_source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
@@ -1187,7 +1187,7 @@
       "segment_start_endpoint": "F",
       "segment_end_endpoint": "G",
       "geometry_kind": "straight",
-      "geometry_qualification": "Continuous straight axis",
+      "geometry_qualification": "Continuous straight axis; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "boundary_reference": "Full segment",
       "boundary_basis": "CAD-derived",
       "boundary_source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
@@ -1208,8 +1208,8 @@
       "material_id": null,
       "thickness_mm": null,
       "evidence_type": "Unknown",
-      "evidence_file_location": null,
-      "notes": null
+      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/insulation.yaml / non_heater_main_pipe",
+      "notes": "Reported approximate 50.8 mm fiberglass candidate; exact transitions/gaps and bare STC contacts unresolved. Whole-region coverage remains Unknown."
     },
     {
       "region_id": "INS-08",
@@ -1219,7 +1219,7 @@
       "segment_start_endpoint": "G",
       "segment_end_endpoint": "H",
       "geometry_kind": "schematic_corner",
-      "geometry_qualification": "Endpoint chord exact; recovered spline spine qualified by endpoint residuals",
+      "geometry_qualification": "Endpoint chord exact; recovered spline spine qualified by endpoint residuals; recovered spine 98.265651493 mm is qualified; exact centerline length remains unknown.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "boundary_reference": "Full schematic corner",
       "boundary_basis": "CAD-derived",
       "boundary_source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
@@ -1251,7 +1251,7 @@
       "segment_start_endpoint": "H",
       "segment_end_endpoint": "A",
       "geometry_kind": "straight",
-      "geometry_qualification": "Projected endpoint-to-endpoint axial span; overlapping offset pieces retained, no healed centerline",
+      "geometry_qualification": "Projected endpoint-to-endpoint axial span; overlapping offset pieces retained, no healed centerline; axis sum 1353.698559747 mm, projected overlap 7.202344895 mm, transverse offset 0.151551091 mm. VSEL full-span heating is a modeling assumption; installed footprint unknown.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "boundary_reference": "Full segment",
       "boundary_basis": "CAD-derived",
       "boundary_source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
@@ -1272,8 +1272,8 @@
       "material_id": null,
       "thickness_mm": null,
       "evidence_type": "Unknown",
-      "evidence_file_location": null,
-      "notes": null
+      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/insulation.yaml / heater_leg",
+      "notes": "Reported approximate 6.35 mm calcium-aluminum-silicate strip only; exact coverage and installed stack unverified. Whole-region coverage remains Unknown."
     },
     {
       "region_id": "INS-10",
@@ -1283,7 +1283,7 @@
       "segment_start_endpoint": "A",
       "segment_end_endpoint": "B",
       "geometry_kind": "schematic_corner",
-      "geometry_qualification": "Exact analytical torus centerline arc",
+      "geometry_qualification": "Exact analytical torus centerline arc; CAD torus radius 57.150000 mm, angle 79.200000 deg, arc 78.998489 mm. Diagram connector remains schematic.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv.",
       "boundary_reference": "Full schematic corner",
       "boundary_basis": "CAD-derived",
       "boundary_source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
@@ -1318,5 +1318,5 @@
     "JTC-A/B, branch pipes, tank and coolant plumbing are retained as outstanding scope, not drawn.",
     "Model input draft only: missing bore, property selections, calibrations and approved boundary conditions."
   ],
-  "input_sha256": "f1dbe66ee81a6f93f49104f976b6edc2a48efb418bd708dd882b565d0faa6d4a"
+  "input_sha256": "f6ac4e249024b6dd2e808e5399ad1ecc5887ea67eb38b76d530e2eb80c03f3f1"
 }

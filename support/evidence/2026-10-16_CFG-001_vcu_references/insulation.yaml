@@ -1,0 +1,61 @@
+schema_version: 1
+facility_id: VCU
+insulation_revision: vcu_regional_insulation_v5_5c_materials_2026-10-07
+evidence_status: provisional_user_estimate_and_candidate_properties
+calibration_eligible: false
+supersedes:
+  insulation_revision: vcu_regional_insulation_v4_bare_cooler_2026-10-06
+  sha256: bb7a53ddcf51a7ba2ce9adcb3574dd2622998233ec1bc37f33d238ebe22d3e77
+coverage:
+  axial: insulated_vertical_and_heater_with_bare_cooler_and_short_connections
+  circumferential: full_360_degrees_on_insulated_sections
+  evidence_status: user_clarification_2026-10-06
+  no_uninsulated_main_loop_gap: false
+  bare_section_endpoints: unknown
+contact:
+  model: perfect_thermal_contact
+  interfacial_resistance_m2_K_W: 0.0
+  applies_to: insulation_interfaces_with_underlying_pipe_or_heater_surface
+  evidence_status: user_directed_model_assumption_2026-09-26
+regions:
+  non_heater_main_pipe:
+    material_id: vcu_main_fiberglass_user_candidate_v1
+    source_segment_ids: [lower_left_bend, upcomer, upper_left_bend, upper_right_bend, downcomer, lower_right_bend]
+    partial_segment_coverage: [upper_left_bend, upper_right_bend]
+    thickness_m: 0.0508
+    source_value: 2.0
+    source_units: inch
+    relationship: outer_insulation_on_main_pipe_outside_heater_leg
+    includes_cooler_leg_under_water_jacket: false
+    thickness_status: approximate_user_estimate
+    material_status: user_supplied_fiberglass_candidate_product_unconfirmed
+  heater_leg:
+    material_id: vcu_heater_cas_strip_user_candidate_v1
+    source_segment_ids: [heater]
+    thickness_m: 0.00635
+    source_value: 0.25
+    source_units: inch
+    relationship: only_insulation_outside_pipe_on_straight_heater_leg
+    additional_two_inch_main_insulation: false
+    thickness_status: approximate_user_estimate
+    material_status: user_described_dense_flexible_calcium_aluminum_silicate_strip_product_unconfirmed
+  bare_cooler_and_connections:
+    material_id: none
+    source_segment_ids: [cooler]
+    bare_connection_parent_segment_ids: [upper_left_bend, upper_right_bend]
+    thickness_m: 0.0
+    relationship: bare_primary_pipe_under_jacket_and_short_links_to_insulated_vertical_legs
+    jacket_exterior_insulation: none
+    endpoint_status: unknown_user_description_2026-10-06
+superseded_estimate:
+  revision: vcu_regional_insulation_v1_user_estimate
+  thickness_m: 0.0762
+  source_value: 3.0
+  source_units: inch
+  reason: replaced_by_2026-09-26_user_regional_estimates
+material_library: ../../materials/vcu_candidate_materials_v3.yaml
+open_items:
+- actual product names or part numbers and installation records
+- measure bare-connection endpoints and insulation transition positions at both upper bends
+- verify real contact gaps, heater/strip layer order, cladding, and exposed outer-surface properties
+- primary property sources and uncertainty for the exact installed products

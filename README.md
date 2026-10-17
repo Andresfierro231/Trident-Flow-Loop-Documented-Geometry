@@ -27,3 +27,9 @@ Keep old checkpoints unchanged. No terminal or `make` command is needed.
 [Step-by-step checkpoint and Overleaf instructions](support/docs/DATED_CHECKPOINTS.md).
 
 Build instructions, references and tools live in [support/](support/README.md).
+
+VCU reference update (2026-10-16, DRAFT-004): **CAD dimensions** contains local
+Rev9 component sizes; **Materials** contains the nine reported solid-property
+functions and their qualified working domains. See the [change record and
+checks](reports/configuration/2026/10/16/2026-10-16_CFG-001_vcu_reference_sync/README.md)
+and [portable source bundle](support/evidence/2026-10-16_CFG-001_vcu_references/README.md).

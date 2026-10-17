@@ -1,0 +1,61 @@
+{
+  "task": "CFG-001",
+  "date": "2026-10-16",
+  "artifacts": [
+    {
+      "path": "2026-10-14_GEO-008_rev9_working_selection.md",
+      "bytes": 4556,
+      "sha256": "9d266e103f4bfc4cb8f1c99f6649a89dcf61863ecd9aafaccd934f0763a5f842"
+    },
+    {
+      "path": "ADR-0033-vcu-solid-properties-5c.md",
+      "bytes": 2111,
+      "sha256": "d20531c3fd12afe5a4a2b8ea7fa609e1a9ac47aa66554026a556ceba0345c5f2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1868,
+      "sha256": "75e579606d8416e6d002522f393d32bf9c60613af796673fd59def604f4425f0"
+    },
+    {
+      "path": "VCU_Rev9_Diameters.csv",
+      "bytes": 2563,
+      "sha256": "a88686538e5f21ce98ea3bbe8ddd65f3f863753f96610043a272f988d4bda88c"
+    },
+    {
+      "path": "VCU_Rev9_Segments.csv",
+      "bytes": 4414,
+      "sha256": "e9cd8f4bd40d1d1fbd97d89a4452d2ba31312cd4d53db4e3a3c1a87c1c483022"
+    },
+    {
+      "path": "VCU_inputs_before_CFG-001.xlsx",
+      "bytes": 55920,
+      "sha256": "f1dbe66ee81a6f93f49104f976b6edc2a48efb418bd708dd882b565d0faa6d4a"
+    },
+    {
+      "path": "insulation.yaml",
+      "bytes": 2840,
+      "sha256": "fcc69b5be8afdf4fdc68107b1eb5128461fca71d554221c8f0c15f0a5e2f9dd0"
+    },
+    {
+      "path": "origins.json",
+      "bytes": 2063,
+      "sha256": "802cf0209c5757e22da24c7745aa0e262e274c624579df9e3cd0b76def8adcb9"
+    },
+    {
+      "path": "rev9_working_selection_v1.json",
+      "bytes": 26914,
+      "sha256": "fad000a8670fb3ad74ed7ab6ef19aec18ee4a51bdc5b25f36600fe0732c6aef3"
+    },
+    {
+      "path": "vcu_candidate_materials_v3.yaml",
+      "bytes": 6116,
+      "sha256": "79fc1a00c9924904db996dfbd63100653ea8ae3a3ac7833d9fdf23998c0476d1"
+    },
+    {
+      "path": "workbook_changes.json",
+      "bytes": 49665,
+      "sha256": "84ec0cfb57431bb586ad9abd95169caf620cfa3e327e638c8440acf6a099d8c5"
+    }
+  ]
+}

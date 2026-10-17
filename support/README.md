@@ -42,3 +42,9 @@ The record remains a draft pending evidence and review.
 | `evidence/` | Photos, certificates and measurements for the working configuration |
 | `checkpoints/` | Permanent dated copies of the workbook, PDF, exports and evidence |
 | `output/`, `tmp/` | Local build files and layout previews; ignored by Git |
+
+The [CFG-001 source-import bundle](evidence/2026-10-16_CFG-001_vcu_references/README.md)
+records exact inputs, patch parameters, expected outputs and the one-command
+migration invocation. `scripts/import_vcu_references.py` preserves XLSX
+formatting and dropdowns; `scripts/check_vcu_reference_import.py` checks
+transcription and preservation (optional PyYAML dependency).

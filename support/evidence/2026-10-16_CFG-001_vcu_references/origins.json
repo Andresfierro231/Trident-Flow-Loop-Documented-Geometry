@@ -1,0 +1,37 @@
+[
+  {
+    "original": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/materials/vcu_candidate_materials_v3.yaml",
+    "copy": "vcu_candidate_materials_v3.yaml",
+    "sha256": "79fc1a00c9924904db996dfbd63100653ea8ae3a3ac7833d9fdf23998c0476d1"
+  },
+  {
+    "original": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/facilities/vcu_provisional/insulation.yaml",
+    "copy": "insulation.yaml",
+    "sha256": "fcc69b5be8afdf4fdc68107b1eb5128461fca71d554221c8f0c15f0a5e2f9dd0"
+  },
+  {
+    "original": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/facilities/vcu_provisional/rev9_working_selection_v1.json",
+    "copy": "rev9_working_selection_v1.json",
+    "sha256": "fad000a8670fb3ad74ed7ab6ef19aec18ee4a51bdc5b25f36600fe0732c6aef3"
+  },
+  {
+    "original": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/decisions/ADR-0033-vcu-solid-properties-5c.md",
+    "copy": "ADR-0033-vcu-solid-properties-5c.md",
+    "sha256": "d20531c3fd12afe5a4a2b8ea7fa609e1a9ac47aa66554026a556ceba0345c5f2"
+  },
+  {
+    "original": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/decisions/2026-10-14_GEO-008_rev9_working_selection.md",
+    "copy": "2026-10-14_GEO-008_rev9_working_selection.md",
+    "sha256": "9d266e103f4bfc4cb8f1c99f6649a89dcf61863ecd9aafaccd934f0763a5f842"
+  },
+  {
+    "original": "support/reference/VCU_Rev9_CAD_Model_Package.zip!VCU_Rev9_CAD_Model_Package/data/VCU_Rev9_Segments.csv",
+    "copy": "VCU_Rev9_Segments.csv",
+    "sha256": "e9cd8f4bd40d1d1fbd97d89a4452d2ba31312cd4d53db4e3a3c1a87c1c483022"
+  },
+  {
+    "original": "support/reference/VCU_Rev9_CAD_Model_Package.zip!VCU_Rev9_CAD_Model_Package/data/VCU_Rev9_Diameters.csv",
+    "copy": "VCU_Rev9_Diameters.csv",
+    "sha256": "a88686538e5f21ce98ea3bbe8ddd65f3f863753f96610043a272f988d4bda88c"
+  }
+]

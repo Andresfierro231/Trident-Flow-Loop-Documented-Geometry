@@ -1,0 +1,26 @@
+{
+  "task": "CFG-001",
+  "date": "2026-10-16",
+  "artifacts": [
+    {
+      "path": "README.md",
+      "bytes": 4355,
+      "sha256": "900711702f23a6957b8ff080aef061c3098c9a795850866659bef807b7f2e051"
+    },
+    {
+      "path": "build.log",
+      "bytes": 16556,
+      "sha256": "904b15a7e1f568f690e38735805ee793d3043e9fd7c85d2fb4da796901495cea"
+    },
+    {
+      "path": "checks.json",
+      "bytes": 12101,
+      "sha256": "7a9610e4774c3848e964969630d038ebe8c367a20f7e184ad23620123c5dae82"
+    },
+    {
+      "path": "tests.log",
+      "bytes": 2669,
+      "sha256": "ca8e745a25920a84e5834b6eaaa60a88787fb0051c86fe9c43f696b13db915f8"
+    }
+  ]
+}

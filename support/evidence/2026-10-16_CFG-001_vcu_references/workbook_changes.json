@@ -1,0 +1,1095 @@
+{
+  "task": "CFG-001",
+  "input_sha256": "f1dbe66ee81a6f93f49104f976b6edc2a48efb418bd708dd882b565d0faa6d4a",
+  "changes": [
+    {
+      "sheet": "Start",
+      "row": 7,
+      "expect": {
+        "Field": "Configuration ID",
+        "Value": "VCU-REV9-DRAFT-003",
+        "Guidance": "Change after physical configuration changes."
+      },
+      "fields": {
+        "Value": "VCU-REV9-DRAFT-004"
+      }
+    },
+    {
+      "sheet": "Start",
+      "row": 16,
+      "expect": {
+        "Field": "Prepared by",
+        "Value": null,
+        "Guidance": "Enter name."
+      },
+      "fields": {
+        "Value": "Codex; VCU reference synchronization requested by Andres Fierro"
+      }
+    },
+    {
+      "sheet": "Start",
+      "row": 23,
+      "expect": {
+        "Field": "Change summary",
+        "Value": "Added ten insulation regions, coverage dropdowns and a separate diagram. All coverage starts Unknown pending evidence. PTC-X remains excluded from the active register.",
+        "Guidance": "Describe changes since the preceding configuration and identify evidence or the request."
+      },
+      "fields": {
+        "Value": "CFG-001: VCU Rev9 component dimensions; nine solid-property candidate functions with SI units and working domains; portable source copies; dated nominal-ID, insulation and heater assumptions in evidence records. Physical installation and approval remain open."
+      }
+    },
+    {
+      "sheet": "Geometry",
+      "row": 6,
+      "expect": {
+        "Segment": "upcomer",
+        "Kind": "straight",
+        "Start": "B",
+        "End": "C",
+        "Length mm": 1219.2000000000003,
+        "Phi deg": 0.0,
+        "Bend dx mm": null,
+        "Bend dy mm": null,
+        "ID mm": null,
+        "OD mm": 33.401,
+        "Insulation mm": null,
+        "Status": "CAD-derived",
+        "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+        "Notes": "Continuous straight axis"
+      },
+      "fields": {
+        "Notes": "Continuous straight axis; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv."
+      }
+    },
+    {
+      "sheet": "Geometry",
+      "row": 7,
+      "expect": {
+        "Segment": "upper_left_bend",
+        "Kind": "bend",
+        "Start": "C",
+        "End": "D",
+        "Length mm": null,
+        "Phi deg": null,
+        "Bend dx mm": 67.85884212857286,
+        "Bend dy mm": 56.13771637914306,
+        "ID mm": null,
+        "OD mm": 33.401,
+        "Insulation mm": null,
+        "Status": "CAD-derived",
+        "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+        "Notes": "Exact analytical torus centerline arc"
+      },
+      "fields": {
+        "Notes": "Exact analytical torus centerline arc; CAD torus radius 57.150000 mm, angle 100.800000 deg, arc 100.543531 mm. Diagram connector remains schematic.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv."
+      }
+    },
+    {
+      "sheet": "Geometry",
+      "row": 8,
+      "expect": {
+        "Segment": "cooler",
+        "Kind": "straight",
+        "Start": "D",
+        "End": "E",
+        "Length mm": 1352.5500000000059,
+        "Phi deg": 100.7999999999995,
+        "Bend dx mm": null,
+        "Bend dy mm": null,
+        "ID mm": null,
+        "OD mm": 33.401,
+        "Insulation mm": null,
+        "Status": "CAD-derived",
+        "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+        "Notes": "Continuous straight axis"
+      },
+      "fields": {
+        "Notes": "Continuous straight axis; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv."
+      }
+    },
+    {
+      "sheet": "Geometry",
+      "row": 9,
+      "expect": {
+        "Segment": "upper_right_bend",
+        "Kind": "bend",
+        "Start": "E",
+        "End": "F",
+        "Length mm": null,
+        "Phi deg": null,
+        "Bend dx mm": 46.44115787142641,
+        "Bend dy mm": -56.13771637914488,
+        "ID mm": null,
+        "OD mm": 33.401,
+        "Insulation mm": null,
+        "Status": "CAD-derived",
+        "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+        "Notes": "Exact analytical torus centerline arc"
+      },
+      "fields": {
+        "Notes": "Exact analytical torus centerline arc; CAD torus radius 57.150000 mm, angle 79.200000 deg, arc 78.998489 mm. Diagram connector remains schematic.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv."
+      }
+    },
+    {
+      "sheet": "Geometry",
+      "row": 10,
+      "expect": {
+        "Segment": "downcomer",
+        "Kind": "straight",
+        "Start": "F",
+        "End": "G",
+        "Length mm": 1228.6685597466649,
+        "Phi deg": 179.99999999999943,
+        "Bend dx mm": null,
+        "Bend dy mm": null,
+        "ID mm": null,
+        "OD mm": 33.401,
+        "Insulation mm": null,
+        "Status": "CAD-derived",
+        "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+        "Notes": "Continuous straight axis"
+      },
+      "fields": {
+        "Notes": "Continuous straight axis; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv."
+      }
+    },
+    {
+      "sheet": "Geometry",
+      "row": 11,
+      "expect": {
+        "Segment": "lower_right_bend",
+        "Kind": "bend",
+        "Start": "G",
+        "End": "H",
+        "Length mm": null,
+        "Phi deg": null,
+        "Bend dx mm": -73.7770002557279,
+        "Bend dy mm": -45.38592370913557,
+        "ID mm": null,
+        "OD mm": 33.401,
+        "Insulation mm": null,
+        "Status": "CAD-derived",
+        "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+        "Notes": "Endpoint chord exact; recovered spline spine qualified by endpoint residuals"
+      },
+      "fields": {
+        "Notes": "Endpoint chord exact; recovered spline spine qualified by endpoint residuals; recovered spine 98.265651493 mm is qualified; exact centerline length remains unknown.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv."
+      }
+    },
+    {
+      "sheet": "Geometry",
+      "row": 12,
+      "expect": {
+        "Segment": "heater",
+        "Kind": "straight",
+        "Start": "H",
+        "End": "A",
+        "Length mm": 1346.4962148518246,
+        "Phi deg": 280.79355123487477,
+        "Bend dx mm": null,
+        "Bend dy mm": null,
+        "ID mm": null,
+        "OD mm": 33.401,
+        "Insulation mm": null,
+        "Status": "CAD-derived",
+        "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+        "Notes": "Projected endpoint-to-endpoint axial span; overlapping offset pieces retained, no healed centerline"
+      },
+      "fields": {
+        "Notes": "Projected endpoint-to-endpoint axial span; overlapping offset pieces retained, no healed centerline; axis sum 1353.698559747 mm, projected overlap 7.202344895 mm, transverse offset 0.151551091 mm. VSEL full-span heating is a modeling assumption; installed footprint unknown.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv."
+      }
+    },
+    {
+      "sheet": "Geometry",
+      "row": 13,
+      "expect": {
+        "Segment": "lower_left_bend",
+        "Kind": "bend",
+        "Start": "A",
+        "End": "B",
+        "Length mm": null,
+        "Phi deg": null,
+        "Bend dx mm": -46.44115787142391,
+        "Bend dy mm": 56.13771637914306,
+        "ID mm": null,
+        "OD mm": 33.401,
+        "Insulation mm": null,
+        "Status": "CAD-derived",
+        "Source": "VCU-R9-E01 (2026-10-08) sheets 1-3",
+        "Notes": "Exact analytical torus centerline arc"
+      },
+      "fields": {
+        "Notes": "Exact analytical torus centerline arc; CAD torus radius 57.150000 mm, angle 79.200000 deg, arc 78.998489 mm. Diagram connector remains schematic.; portable SEG CSV in support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Segments.csv."
+      }
+    },
+    {
+      "sheet": "Materials",
+      "row": 6,
+      "expect": {
+        "Material ID": "PIPE",
+        "Identity / product": "316L stainless steel",
+        "Property": "rho, cp, k",
+        "Equation / table": null,
+        "Input units": null,
+        "Output units": null,
+        "Valid domain": null,
+        "Uncertainty": null,
+        "Rationale": "Reconcile candidate correlations and installed specification.",
+        "Status": "Reported",
+        "Source": "1.2 Main Material Props.md; 1.2.2 Steel Pipe Properties.md"
+      },
+      "fields": {
+        "Equation / table": "rho(T) = (8066.715) + (-0.398373)*T; cp(T) = (279.256) + (0.732165)*T + (-0.000459146)*T^2; k(T) = (9.248) + (0.01571)*T",
+        "Input units": "T in kelvin (K)",
+        "Output units": "rho: kg/m^3; cp: J/(kg*K); k: W/(m*K)",
+        "Valid domain": "Working use only: 278.15-813 K; lower extension authorized 2026-10-07, not product validation. Pressure domain not supplied.",
+        "Rationale": "Reported user-supplied candidate; calibration_eligible=false. No original fit derivation, installed-product verification or uncertainty supplied. Below original lower bounds (pipe/strip 293 K, fiberglass k 297 K) is user-authorized extrapolation per ADR-0033; not a source-validated range. Outside working range: error.",
+        "Source": "VMAT; V5C; support/evidence/2026-10-16_CFG-001_vcu_references/vcu_candidate_materials_v3.yaml / materials.vcu_pipe_316l_user_candidate_v1.properties"
+      }
+    },
+    {
+      "sheet": "Materials",
+      "row": 7,
+      "expect": {
+        "Material ID": "MAIN-INS",
+        "Identity / product": "Fiberglass / reported McMaster 5556K73",
+        "Property": "rho, cp, k",
+        "Equation / table": null,
+        "Input units": null,
+        "Output units": null,
+        "Valid domain": null,
+        "Uncertainty": null,
+        "Rationale": "Confirm installed layers and original product evidence.",
+        "Status": "Reported",
+        "Source": "1.2 Main Material Props.md"
+      },
+      "fields": {
+        "Equation / table": "rho(T) = 72.08; cp(T) = 840.0; k(T) = (0.0678938) + (-0.000289613)*T + (5.84142e-07)*T^2",
+        "Input units": "T in kelvin (K)",
+        "Output units": "rho: kg/m^3; cp: J/(kg*K); k: W/(m*K)",
+        "Valid domain": "Working use only: 278.15-533 K; lower extension authorized 2026-10-07, not product validation. Pressure domain not supplied.",
+        "Rationale": "Reported user-supplied candidate; calibration_eligible=false. No original fit derivation, installed-product verification or uncertainty supplied. Below original lower bounds (pipe/strip 293 K, fiberglass k 297 K) is user-authorized extrapolation per ADR-0033; not a source-validated range. Outside working range: error. Approximate 50.8 mm thickness is a provisional regional estimate, not a measurement; old library coverage wording is superseded by GEO-008.",
+        "Source": "VMAT; V5C; support/evidence/2026-10-16_CFG-001_vcu_references/vcu_candidate_materials_v3.yaml / materials.vcu_main_fiberglass_user_candidate_v1.properties"
+      }
+    },
+    {
+      "sheet": "Materials",
+      "row": 8,
+      "expect": {
+        "Material ID": "HEATER-INS",
+        "Identity / product": "Calcium aluminum silicate / reported 4057K14",
+        "Property": "rho, cp, k",
+        "Equation / table": null,
+        "Input units": null,
+        "Output units": null,
+        "Valid domain": null,
+        "Uncertainty": null,
+        "Rationale": "Confirm installed stack and contacts.",
+        "Status": "Reported",
+        "Source": "1.2 Main Material Props.md"
+      },
+      "fields": {
+        "Equation / table": "rho(T) = 560.65; cp(T) = (709.85) + (0.3075)*T; k(T) = (0.101729) + (-0.000201327)*T + (3.21455e-07)*T^2",
+        "Input units": "T in kelvin (K)",
+        "Output units": "rho: kg/m^3; cp: J/(kg*K); k: W/(m*K)",
+        "Valid domain": "Working use only: 278.15-1089 K; lower extension authorized 2026-10-07, not product validation. Pressure domain not supplied.",
+        "Rationale": "Reported user-supplied candidate; calibration_eligible=false. No original fit derivation, installed-product verification or uncertainty supplied. Below original lower bounds (pipe/strip 293 K, fiberglass k 297 K) is user-authorized extrapolation per ADR-0033; not a source-validated range. Outside working range: error. Approximate 6.35 mm strip only on heater leg; installed layer order and contacts unverified.",
+        "Source": "VMAT; V5C; support/evidence/2026-10-16_CFG-001_vcu_references/vcu_candidate_materials_v3.yaml / materials.vcu_heater_cas_strip_user_candidate_v1.properties"
+      }
+    },
+    {
+      "sheet": "Model choices",
+      "append": {
+        "Interface / topic": "Main nominal bore",
+        "Observed state": "CAD bore absent",
+        "1-D choice": "Reference working nominal ID 26.64 mm",
+        "CFD / CHT choice": "Nominal ID 26.64 mm candidate; local restrictions need explicit treatment",
+        "Evidence / rationale": "VSEL; DIA. Rounded nominal selection; not a CAD bore or installed measurement. Geometry ID cells remain null.",
+        "Uncertainty / sensitivity": "Actual bore and local spool restrictions unresolved.",
+        "Owner": "Computational + experimental review",
+        "Status": "Modeling assumption"
+      }
+    },
+    {
+      "sheet": "Model choices",
+      "append": {
+        "Interface / topic": "Heater spatial extent",
+        "Observed state": "Electrical footprint unverified",
+        "1-D choice": "Reference assumption: H-A 0 to 1346.496215 mm",
+        "CFD / CHT choice": "Same projected-span candidate; connected geometry and heat source require review",
+        "Evidence / rationale": "VSEL. Full lower-leg heating assumption only; active baseline spans remain null.",
+        "Uncertainty / sensitivity": "Electrical power split, storage, losses and footprint unresolved.",
+        "Owner": "Computational + experimental review",
+        "Status": "Modeling assumption"
+      }
+    },
+    {
+      "sheet": "Form material",
+      "row": 9,
+      "expect": {
+        "Field ID": "M14",
+        "What to record": "Input variable and output units",
+        "Reference only": "Output W/(m K) reported; confirm T convention against original fit",
+        "Reference basis": "Reported",
+        "Reference source": "MAT lines 38-40",
+        "Your entry": null,
+        "Your evidence file / location": null,
+        "Entry evidence type": "Unknown",
+        "Reviewer / date": null
+      },
+      "fields": {
+        "Reference only": "VMAT candidate: T in K; k W/(m*K). Original fit temperature convention not independently verified.",
+        "Reference source": "VMAT; Materials MAIN-INS"
+      }
+    },
+    {
+      "sheet": "Form material",
+      "row": 10,
+      "expect": {
+        "Field ID": "M15",
+        "What to record": "Source-supported domain",
+        "Reference only": "Notes report 297-533 K; original data/domain unverified",
+        "Reference basis": "Reported",
+        "Reference source": "MAT line 40",
+        "Your entry": null,
+        "Your evidence file / location": null,
+        "Entry evidence type": "Unknown",
+        "Reviewer / date": null
+      },
+      "fields": {
+        "Reference only": "Original claimed k fit 297-533 K; user-authorized working extrapolation to 278.15 K (5 C), not product validation.",
+        "Reference source": "VMAT; V5C"
+      }
+    },
+    {
+      "sheet": "Form material",
+      "row": 15,
+      "expect": {
+        "Field ID": "M16",
+        "What to record": "Interpolation and outside-domain policy",
+        "Reference only": "Not selected",
+        "Reference basis": "Unknown",
+        "Reference source": "Proposed implementation record",
+        "Your entry": null,
+        "Your evidence file / location": null,
+        "Entry evidence type": "Unknown",
+        "Reviewer / date": null
+      },
+      "fields": {
+        "Reference only": "VMAT candidate: evaluate polynomial within working domain; error outside. No approved release implied.",
+        "Reference basis": "Reported",
+        "Reference source": "VMAT properties.conductivity"
+      }
+    },
+    {
+      "sheet": "Form material",
+      "row": 17,
+      "expect": {
+        "Field ID": "M19",
+        "What to record": "Check values, implementation and version",
+        "Reference only": "Not implemented or independently checked",
+        "Reference basis": "Unknown",
+        "Reference source": "Proposed property tests",
+        "Your entry": null,
+        "Your evidence file / location": null,
+        "Entry evidence type": "Unknown",
+        "Reviewer / date": null
+      },
+      "fields": {
+        "Reference only": "VMAT v3 implementation candidate retained; portable coefficient transcription checks in CFG-001 report. Original data comparison remains open.",
+        "Reference basis": "Reported",
+        "Reference source": "VMAT; CFG-001 report"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 14,
+      "expect": {
+        "Field ID": "C09",
+        "Package": "Configuration",
+        "Field": "Pipe inside diameter",
+        "Purpose": "Set fluid area, inventory and hydraulic dimension.",
+        "Responsible team": "Experimental team",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "P0; DIA",
+        "Requirement locator": "Geometry map; Main swept loop",
+        "Current evidence": "Main CAD bore absent; notes report nominal 1.049 in (26.64 mm)",
+        "Evidence type": "Reported",
+        "Evidence source": "DIA; MAT",
+        "Evidence locator": "Main swept loop row; VCU Piping lines 23-27",
+        "Review state": "Needs review",
+        "Unresolved question": "Confirm actual bore/specification and local restrictions; keep CAD null.",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "CAD main bore absent. GEO-008 retains 26.64 mm rounded nominal ID for provisional main piping; not a CAD-extracted bore or installed measurement. Local spool bores differ.",
+        "Evidence source": "DIA; VSEL",
+        "Evidence locator": "Main swept loop; GEO-008 main nominal ID; CAD dimensions tab"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 18,
+      "expect": {
+        "Field ID": "C13",
+        "Package": "Configuration",
+        "Field": "Insulation product and layer order",
+        "Purpose": "Identify the actual thermal stack.",
+        "Responsible team": "Experimental team",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "P0; MAT",
+        "Requirement locator": "Geometry map; VCU insulation",
+        "Current evidence": "Main: fiberglass 5556K73; heater: calcium aluminum silicate 4057K14 reported",
+        "Evidence type": "Reported",
+        "Evidence source": "MAT",
+        "Evidence locator": "Lines 29-44",
+        "Review state": "Needs review",
+        "Unresolved question": "Which product and layers are installed on this exact segment?",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "Reported fiberglass main insulation and calcium-aluminum-silicate heater strip. VINS v5 specifies regional candidates; product/installation evidence unresolved.",
+        "Evidence source": "MAT; VINS",
+        "Evidence locator": "Materials; insulation.yaml regions; source copies in support/evidence/2026-10-16_CFG-001_vcu_references"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 19,
+      "expect": {
+        "Field ID": "C14",
+        "Package": "Configuration",
+        "Field": "Insulation thickness by section",
+        "Purpose": "Set the thermal resistance geometry.",
+        "Responsible team": "Experimental team",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "P0; MAT",
+        "Requirement locator": "Geometry map; VCU insulation",
+        "Current evidence": "Most piping about 2 in; heater insulation 1/4 in reported",
+        "Evidence type": "Reported",
+        "Evidence source": "MAT",
+        "Evidence locator": "Lines 29-44",
+        "Review state": "Needs review",
+        "Unresolved question": "Measure each layer; do not apply either value everywhere.",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "Approximate regional estimates: ordinary insulated pipe 50.8 mm fiberglass; heater 6.35 mm strip only. Top D-E is bare per GEO-008. Not measured thicknesses.",
+        "Evidence source": "VINS; VSEL",
+        "Evidence locator": "insulation.yaml regions.non_heater_main_pipe and heater_leg; GEO-008 top-leg qualification"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 20,
+      "expect": {
+        "Field ID": "C15",
+        "Package": "Configuration",
+        "Field": "Coverage start/end, gaps and condition",
+        "Purpose": "Capture uninsulated heat-loss paths.",
+        "Responsible team": "Experimental team",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "P0",
+        "Requirement locator": "Method: facility and fluid configuration; geometry map",
+        "Current evidence": "Unknown",
+        "Evidence type": "Unknown",
+        "Evidence source": "None supplied",
+        "Evidence locator": "Not available",
+        "Review state": "Needs information",
+        "Unresolved question": "Supply evidence and request review.",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "GEO-008 reports whole top D-E uninsulated; all STCs contact bare pipe locally. Remaining transition endpoints unknown. Older full-loop coverage text is superseded.",
+        "Evidence type": "Reported",
+        "Evidence source": "VSEL; VINS",
+        "Evidence locator": "GEO-008 User direction and interpretation; insulation.yaml coverage",
+        "Review state": "Needs review"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 21,
+      "expect": {
+        "Field ID": "C16",
+        "Package": "Shared",
+        "Field": "Insulation contact and support details",
+        "Purpose": "Represent contact resistance and support heat paths.",
+        "Responsible team": "Experimental + computational",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "P0; HEAT",
+        "Requirement locator": "Geometry map; VCU Insulation",
+        "Current evidence": "Firm contact is explicitly an assumption in notes",
+        "Evidence type": "Modeling assumption",
+        "Evidence source": "HEAT",
+        "Evidence locator": "VCU Insulation lines 7-10",
+        "Review state": "Needs review",
+        "Unresolved question": "Is there evidence of contact, compression, gaps or support conduction?",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "Perfect thermal contact is a user-directed model assumption (VINS), not a surveyed contact condition. Actual supports, gaps and layers remain open.",
+        "Evidence source": "VINS",
+        "Evidence locator": "insulation.yaml contact"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 39,
+      "expect": {
+        "Field ID": "C34",
+        "Package": "Configuration",
+        "Field": "Heater element identity and active spans",
+        "Purpose": "Map where electrical heat is generated.",
+        "Responsible team": "Experimental team",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "P0; HEAT; R9",
+        "Requirement locator": "Geometry map; heater note; sheet 4",
+        "Current evidence": "Four clamps in CAD; notes report mat/band electrical heaters and intended 40-in coverage",
+        "Evidence type": "Reported",
+        "Evidence source": "HEAT; R9",
+        "Evidence locator": "HEAT lines 16-23; R9 sheet 4",
+        "Review state": "Needs review",
+        "Unresolved question": "Survey each energized element; clamp edges and reported total coverage are not active boundaries.",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "Electrical heater footprint remains unverified. GEO-008 assumes full projected H-A span 0-1346.496215 mm for modeling only; mechanical clamps do not establish active heating.",
+        "Evidence type": "Modeling assumption",
+        "Evidence source": "HEAT; VSEL",
+        "Evidence locator": "GEO-008 lower-leg assumption; original Active heater baseline remains null"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 54,
+      "expect": {
+        "Field ID": "M03",
+        "Package": "Modeling",
+        "Field": "Model domain and geometry simplifications",
+        "Purpose": "Make excluded branches and healed geometry visible.",
+        "Responsible team": "Computational team",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "R9; MODEL",
+        "Requirement locator": "Sheet 8 qualifications; model stages",
+        "Current evidence": "Heater overlap/offset and G-H path require an explicit interpretation",
+        "Evidence type": "CAD-derived",
+        "Evidence source": "R9",
+        "Evidence locator": "Sheets 2, 8",
+        "Review state": "Needs review",
+        "Unresolved question": "Which simplifications are accepted and what sensitivity supports them?",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "Rev9 selected as provisional working geometry; main nominal ID 26.64 mm is separate from CAD null. H-A projected union is not an exact connected centerline; G-H reconstructed spline remains qualified.",
+        "Evidence type": "Modeling assumption",
+        "Evidence source": "VSEL; SEG",
+        "Evidence locator": "GEO-008 Why H-A has a qualification; Geometry notes; CAD dimensions tab"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 59,
+      "expect": {
+        "Field ID": "M08",
+        "Package": "Modeling",
+        "Field": "Heater source distribution and power balance",
+        "Purpose": "Refer electrical measurements to the modeled control volume.",
+        "Responsible team": "Experimental + computational",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "P0; P3; DESIGN",
+        "Requirement locator": "Duty definitions; VCU electrical adaptation",
+        "Current evidence": "Unknown",
+        "Evidence type": "Unknown",
+        "Evidence source": "None supplied",
+        "Evidence locator": "Not available",
+        "Review state": "Needs information",
+        "Unresolved question": "Specify spatial source, meter boundary, external losses and storage without double counting.",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "GEO-008 assumes uniform extent over H-A projected span 1346.496215 mm. Real electrical power, spatial distribution, efficiency and heater/structure storage remain unresolved.",
+        "Evidence type": "Modeling assumption",
+        "Evidence source": "VSEL; HEAT",
+        "Evidence locator": "GEO-008 lower-leg modeling assumption; Thermal spans keeps installed footprint unknown",
+        "Review state": "Needs review"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 63,
+      "expect": {
+        "Field ID": "M12",
+        "Package": "Shared",
+        "Field": "Material/product-to-property link",
+        "Purpose": "Use properties for the actual material or fluid.",
+        "Responsible team": "Experimental + computational",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "P0",
+        "Requirement locator": "Definitions: fixed property reference",
+        "Current evidence": "Reported 316L and insulation products; exact fluid formulation unresolved",
+        "Evidence type": "Reported",
+        "Evidence source": "MAT",
+        "Evidence locator": "VCU section lines 17-44",
+        "Review state": "Needs review",
+        "Unresolved question": "Confirm installed identity; list needed fluid density/cp/enthalpy/viscosity/k/expansion and solid density/cp/k by model, plus relevant surface/contact properties.",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "Reported 316L pipe, fiberglass candidate and calcium-aluminum-silicate strip; VMAT explicitly marks all three calibration-ineligible and unverified against installed products. Fluid formulation remains unresolved.",
+        "Evidence source": "VMAT; MAT",
+        "Evidence locator": "VMAT materials.*.provenance and calibration_eligible; Materials tab"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 64,
+      "expect": {
+        "Field ID": "M13",
+        "Package": "Modeling",
+        "Field": "Property source and exact equation/table",
+        "Purpose": "Make every numerical property reproducible.",
+        "Responsible team": "Computational team",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "P0",
+        "Requirement locator": "Definitions and Conventions",
+        "Current evidence": "Insulation k(T) candidate exists in notes; no correlation approved",
+        "Evidence type": "Reported",
+        "Evidence source": "MAT; STEEL; PG",
+        "Evidence locator": "MAT lines 35-40; STEEL Suggested you use; PG notes",
+        "Review state": "Needs review",
+        "Unresolved question": "Retain original publication/product table and exact coefficients, edition and locator.",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "Nine explicit solid rho/cp/k functions transcribed from VMAT v3. Original derivations and installed-product source data remain unverified. No fluid functions imported.",
+        "Evidence source": "VMAT",
+        "Evidence locator": "vcu_candidate_materials_v3.yaml materials.*.properties; Materials equations"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 65,
+      "expect": {
+        "Field ID": "M14",
+        "Package": "Modeling",
+        "Field": "Input/output units and concentration basis",
+        "Purpose": "Prevent temperature and mixture-basis conversion errors.",
+        "Responsible team": "Computational team",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "P0",
+        "Requirement locator": "Definitions: property reference",
+        "Current evidence": "Unknown",
+        "Evidence type": "Unknown",
+        "Evidence source": "None supplied",
+        "Evidence locator": "Not available",
+        "Review state": "Needs information",
+        "Unresolved question": "Record K versus deg C, pressure units, mass/volume fraction and output units for each function.",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "All imported solid functions take T in K; rho kg/m^3, cp J/(kg*K), k W/(m*K). Prop-30 mass fraction 0.30 is reported; formulation verification pending.",
+        "Evidence type": "Reported",
+        "Evidence source": "VMAT; PG",
+        "Evidence locator": "VMAT properties units/coefficient_order; Fluids tab",
+        "Review state": "Needs review"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 66,
+      "expect": {
+        "Field ID": "M15",
+        "Package": "Modeling",
+        "Field": "Applicability domain",
+        "Purpose": "Prevent unsupported extrapolation across fluids or regimes.",
+        "Responsible team": "Computational team",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "P0; P2",
+        "Requirement locator": "Property reference; temperature/condensation applicability",
+        "Current evidence": "Insulation fit is reported valid 297-533 K; not an experiment operating range",
+        "Evidence type": "Reported",
+        "Evidence source": "MAT",
+        "Evidence locator": "Lines 38-40",
+        "Review state": "Needs review",
+        "Unresolved question": "Verify property-specific T/p/composition/phase domain from original sources.",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "User-authorized working intervals: pipe 278.15-813 K; fiberglass 278.15-533 K; heater strip 278.15-1089 K. ADR-0033 extends all nine functions to 5 C; extrapolation is not product validation or an operating limit.",
+        "Evidence type": "Modeling assumption",
+        "Evidence source": "VMAT; V5C",
+        "Evidence locator": "VMAT valid_temperature_K; ADR-0033 Decision and authority"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 67,
+      "expect": {
+        "Field ID": "M16",
+        "Package": "Modeling",
+        "Field": "Interpolation and out-of-range behavior",
+        "Purpose": "Make tables and correlations behave consistently.",
+        "Responsible team": "Computational team",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "DESIGN",
+        "Requirement locator": "Proposed implementation control",
+        "Current evidence": "Unknown",
+        "Evidence type": "Unknown",
+        "Evidence source": "None supplied",
+        "Evidence locator": "Not available",
+        "Review state": "Needs information",
+        "Unresolved question": "Specify interpolation; reject/flag extrapolation explicitly rather than silently clipping.",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "VMAT polynomial functions use ascending powers of T in K; density/cp constants as specified; all nine functions specify out_of_range: error. No fluid interpolation policy supplied.",
+        "Evidence type": "Reported",
+        "Evidence source": "VMAT",
+        "Evidence locator": "VMAT materials.*.properties model/coefficient_order/out_of_range",
+        "Review state": "Needs review"
+      }
+    },
+    {
+      "sheet": "Requirements",
+      "row": 69,
+      "expect": {
+        "Field ID": "M18",
+        "Package": "Modeling",
+        "Field": "Selection rationale and alternatives",
+        "Purpose": "Explain why both teams use this property model.",
+        "Responsible team": "Experimental + computational",
+        "Applicability": "VCU; 1-D and CFD / CHT",
+        "Requirement source": "USER",
+        "Requirement locator": "Requested material-property justification",
+        "Current evidence": "Unknown",
+        "Evidence type": "Unknown",
+        "Evidence source": "None supplied",
+        "Evidence locator": "Not available",
+        "Review state": "Needs information",
+        "Unresolved question": "Compare candidate sources and explain selection or any deliberate mixed-source set.",
+        "Selected choice": null,
+        "Decision scope / rationale": null,
+        "Reviewer / date": null,
+        "Effective configuration": null
+      },
+      "fields": {
+        "Current evidence": "Candidate working functions supplied by user; ADR-0033 authorizes low-temperature extrapolation. Reported independent pipe comparison has no retained comparison table; package transfer does not establish independent validation.",
+        "Evidence type": "Reported",
+        "Evidence source": "VMAT; V5C",
+        "Evidence locator": "VMAT provenance; ADR-0033 Evidence and limits",
+        "Review state": "Needs review"
+      }
+    },
+    {
+      "sheet": "Sources",
+      "append": {
+        "Source ID": "VMAT",
+        "File / record": "support/evidence/2026-10-16_CFG-001_vcu_references/vcu_candidate_materials_v3.yaml",
+        "Revision / context": "2026-10-07 v3",
+        "Locator guide": "materials.*.properties; provenance",
+        "Qualification": "Nine user-supplied solid-property candidates; not product verified; calibration-ineligible. Coverage wording in older provenance is superseded by VSEL."
+      }
+    },
+    {
+      "sheet": "Sources",
+      "append": {
+        "Source ID": "V5C",
+        "File / record": "support/evidence/2026-10-16_CFG-001_vcu_references/ADR-0033-vcu-solid-properties-5c.md",
+        "Revision / context": "2026-10-07 accepted working-range decision",
+        "Locator guide": "Decision and authority; Evidence and limits",
+        "Qualification": "User authorizes working extrapolation to 5 C, not source/product validation or an operating limit."
+      }
+    },
+    {
+      "sheet": "Sources",
+      "append": {
+        "Source ID": "VSEL",
+        "File / record": "support/evidence/2026-10-16_CFG-001_vcu_references/2026-10-14_GEO-008_rev9_working_selection.md",
+        "Revision / context": "2026-10-14 provisional working selection",
+        "Locator guide": "User direction and interpretation; Why H-A has a qualification",
+        "Qualification": "Dated working geometry/installation choices; historical run dates, tips and electrical footprint unresolved."
+      }
+    },
+    {
+      "sheet": "Sources",
+      "append": {
+        "Source ID": "VINS",
+        "File / record": "support/evidence/2026-10-16_CFG-001_vcu_references/insulation.yaml",
+        "Revision / context": "v5 2026-10-07, amended by VSEL for Rev9",
+        "Locator guide": "coverage; contact; regions",
+        "Qualification": "Regional thickness estimates/contact assumption; exact transitions and installed construction unverified. VSEL is later controlling top-leg evidence."
+      }
+    },
+    {
+      "sheet": "Insulation regions",
+      "row": 6,
+      "expect": {
+        "Region ID": "INS-01",
+        "Region": "Upcomer",
+        "Boundary reference": "Full segment",
+        "Coverage": "Unknown",
+        "Material ID": null,
+        "Thickness mm": null,
+        "Evidence type": "Unknown",
+        "Evidence file / location": null,
+        "Notes": null
+      },
+      "fields": {
+        "Evidence file / location": "support/evidence/2026-10-16_CFG-001_vcu_references/insulation.yaml / non_heater_main_pipe",
+        "Notes": "Reported approximate 50.8 mm fiberglass candidate; exact transitions/gaps and bare STC contacts unresolved. Whole-region coverage remains Unknown."
+      }
+    },
+    {
+      "sheet": "Insulation regions",
+      "row": 8,
+      "expect": {
+        "Region ID": "INS-03",
+        "Region": "Pre-cooler",
+        "Boundary reference": "Segment start to Complete jacket start",
+        "Coverage": "Unknown",
+        "Material ID": null,
+        "Thickness mm": null,
+        "Evidence type": "Unknown",
+        "Evidence file / location": null,
+        "Notes": null
+      },
+      "fields": {
+        "Coverage": "Bare",
+        "Evidence type": "Reported",
+        "Evidence file / location": "support/evidence/2026-10-16_CFG-001_vcu_references/2026-10-14_GEO-008_rev9_working_selection.md / whole top D-E leg",
+        "Notes": "October 14 user-reported working installation; not independently surveyed. Water jacket remains present; Bare does not imply room-air exposure beneath jacket."
+      }
+    },
+    {
+      "sheet": "Insulation regions",
+      "row": 9,
+      "expect": {
+        "Region ID": "INS-04",
+        "Region": "Cooler",
+        "Boundary reference": "Complete jacket start to Complete jacket end",
+        "Coverage": "Unknown",
+        "Material ID": null,
+        "Thickness mm": null,
+        "Evidence type": "Unknown",
+        "Evidence file / location": null,
+        "Notes": "Identify the insulated surface, especially jacket exterior versus pipe."
+      },
+      "fields": {
+        "Coverage": "Bare",
+        "Evidence type": "Reported",
+        "Evidence file / location": "support/evidence/2026-10-16_CFG-001_vcu_references/2026-10-14_GEO-008_rev9_working_selection.md / whole top D-E leg",
+        "Notes": "October 14 user-reported working installation; not independently surveyed. Water jacket remains present; Bare does not imply room-air exposure beneath jacket."
+      }
+    },
+    {
+      "sheet": "Insulation regions",
+      "row": 10,
+      "expect": {
+        "Region ID": "INS-05",
+        "Region": "Post-cooler",
+        "Boundary reference": "Complete jacket end to segment end",
+        "Coverage": "Unknown",
+        "Material ID": null,
+        "Thickness mm": null,
+        "Evidence type": "Unknown",
+        "Evidence file / location": null,
+        "Notes": null
+      },
+      "fields": {
+        "Coverage": "Bare",
+        "Evidence type": "Reported",
+        "Evidence file / location": "support/evidence/2026-10-16_CFG-001_vcu_references/2026-10-14_GEO-008_rev9_working_selection.md / whole top D-E leg",
+        "Notes": "October 14 user-reported working installation; not independently surveyed. Water jacket remains present; Bare does not imply room-air exposure beneath jacket."
+      }
+    },
+    {
+      "sheet": "Insulation regions",
+      "row": 12,
+      "expect": {
+        "Region ID": "INS-07",
+        "Region": "Downcomer",
+        "Boundary reference": "Full segment",
+        "Coverage": "Unknown",
+        "Material ID": null,
+        "Thickness mm": null,
+        "Evidence type": "Unknown",
+        "Evidence file / location": null,
+        "Notes": null
+      },
+      "fields": {
+        "Evidence file / location": "support/evidence/2026-10-16_CFG-001_vcu_references/insulation.yaml / non_heater_main_pipe",
+        "Notes": "Reported approximate 50.8 mm fiberglass candidate; exact transitions/gaps and bare STC contacts unresolved. Whole-region coverage remains Unknown."
+      }
+    },
+    {
+      "sheet": "Insulation regions",
+      "row": 14,
+      "expect": {
+        "Region ID": "INS-09",
+        "Region": "Heater",
+        "Boundary reference": "Full segment",
+        "Coverage": "Unknown",
+        "Material ID": null,
+        "Thickness mm": null,
+        "Evidence type": "Unknown",
+        "Evidence file / location": null,
+        "Notes": null
+      },
+      "fields": {
+        "Evidence file / location": "support/evidence/2026-10-16_CFG-001_vcu_references/insulation.yaml / heater_leg",
+        "Notes": "Reported approximate 6.35 mm calcium-aluminum-silicate strip only; exact coverage and installed stack unverified. Whole-region coverage remains Unknown."
+      }
+    },
+    {
+      "sheet": "CAD dimensions",
+      "headers": [
+        "Record ID",
+        "Component",
+        "Reference values",
+        "Units",
+        "Evidence / limitations"
+      ],
+      "rows": [
+        {
+          "Record ID": "DIM-01",
+          "Component": "Main swept loop",
+          "Reference values": "outer_diameter_mm=33.401",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / Main swept loop; Both main-loop definitions have only the outer pipe envelope. Main bore absent.; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F6"
+        },
+        {
+          "Record ID": "DIM-02",
+          "Component": "TLEP / BREP",
+          "Reference values": "outer_diameter_mm=33.401; inner_diameter_mm=26.924; wall_thickness_mm=3.238500000000002",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / TLEP / BREP; Annular exit tube cylinders; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F2 / F1"
+        },
+        {
+          "Record ID": "DIM-03",
+          "Component": "Cooling jacket shell",
+          "Reference values": "outer_diameter_mm=88.9; inner_diameter_mm=77.9272; wall_thickness_mm=5.486400000000003",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / Cooling jacket shell; Concentric shell cylinders; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F4 / F3"
+        },
+        {
+          "Record ID": "DIM-04",
+          "Component": "Jacket end plates",
+          "Reference values": "outer_diameter_mm=88.9; inner_diameter_mm=33.655; radial_width_mm=27.622500000000002; axial_thickness_mm=6.35",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / Jacket end plates; Inner diameter is the pipe clearance hole, not coolant-annulus diameter; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F2 / F1"
+        },
+        {
+          "Record ID": "DIM-05",
+          "Component": "Jacket port nipples",
+          "Reference values": "outer_diameter_mm=33.401; inner_diameter_mm=26.6446; wall_thickness_mm=3.3782000000000014",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / Jacket port nipples; OD is cylindrical land; thread shape is not represented by this value; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F1 / F27"
+        },
+        {
+          "Record ID": "DIM-06",
+          "Component": "HX hoses",
+          "Reference values": "outer_diameter_mm=35.814",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / HX hoses; Solid swept envelope; hose bore absent; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F2"
+        },
+        {
+          "Record ID": "DIM-07",
+          "Component": "Drain-valve body",
+          "Reference values": "outer_diameter_mm=42.545; inner_diameter_mm=34.671; wall_thickness_mm=3.937000000000001",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / Drain-valve body; Simplified body, multiple intersecting cylinder spans; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F7 / F2"
+        },
+        {
+          "Record ID": "DIM-08",
+          "Component": "LF / combined sensor spools",
+          "Reference values": "outer_diameter_mm=33.401; inner_diameter_mm=26.6446; wall_thickness_mm=3.3782000000000014",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / LF / combined sensor spools; Local spool dimensions; do not apply bore globally; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F5 / F4"
+        },
+        {
+          "Record ID": "DIM-09",
+          "Component": "PTC / JTC mount spools",
+          "Reference values": "outer_diameter_mm=33.528; inner_diameter_mm=25.4; wall_thickness_mm=4.064",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / PTC / JTC mount spools; Local 76.2 mm spool; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F3 / F2"
+        },
+        {
+          "Record ID": "DIM-10",
+          "Component": "TC sheath",
+          "Reference values": "outer_diameter_mm=3.175",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / TC sheath; External sheath only; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F1"
+        },
+        {
+          "Record ID": "DIM-11",
+          "Component": "PTC guide tubing",
+          "Reference values": "outer_diameter_mm=6.35; inner_diameter_mm=4.572; wall_thickness_mm=0.8889999999999998",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / PTC guide tubing; Local instrument tubing; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F1 / F2"
+        },
+        {
+          "Record ID": "DIM-12",
+          "Component": "LF guide tubing",
+          "Reference values": "outer_diameter_mm=6.35; inner_diameter_mm=3.8608; wall_thickness_mm=1.2446",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / LF guide tubing; Local instrument tubing; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F1 / F2"
+        },
+        {
+          "Record ID": "DIM-13",
+          "Component": "Fiber capillary tubing",
+          "Reference values": "outer_diameter_mm=1.5875; inner_diameter_mm=1.0922; wall_thickness_mm=0.24764999999999993",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / Fiber capillary tubing; Local optical capillary tubing; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F1 / F2"
+        },
+        {
+          "Record ID": "DIM-14",
+          "Component": "Expansion tank shell",
+          "Reference values": "outer_diameter_mm=203.2; inner_diameter_mm=198.09378228810465; wall_thickness_mm=2.55310885594767",
+          "Units": "mm",
+          "Evidence / limitations": "CAD-derived; DIA / Expansion tank shell; Outer axial span 311.15 mm; support/evidence/2026-10-16_CFG-001_vcu_references/VCU_Rev9_Diameters.csv / F2 / F1"
+        }
+      ],
+      "new": true
+    }
+  ]
+}
