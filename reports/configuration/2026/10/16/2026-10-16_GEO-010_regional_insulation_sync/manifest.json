@@ -1,0 +1,26 @@
+{
+  "task": "GEO-010",
+  "date": "2026-10-16",
+  "artifacts": [
+    {
+      "path": "README.md",
+      "bytes": 2979,
+      "sha256": "d7033fde89d6b14e699953e7a5d9cb3cd191049ad8fdd1202c1aa05fd0bf99b3"
+    },
+    {
+      "path": "build.log",
+      "bytes": 63521,
+      "sha256": "f3b4cd5d338705ae175beaa3a349ced9dd101df5376bffd37c5a2b693216dee1"
+    },
+    {
+      "path": "checks.json",
+      "bytes": 6130,
+      "sha256": "82daf0d5c709dec57de355e72cdbca980e177c83296a23bccc5df2fa23620c08"
+    },
+    {
+      "path": "tests.log",
+      "bytes": 2669,
+      "sha256": "ca8e745a25920a84e5834b6eaaa60a88787fb0051c86fe9c43f696b13db915f8"
+    }
+  ]
+}

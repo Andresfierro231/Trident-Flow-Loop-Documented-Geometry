@@ -1,0 +1,228 @@
+{
+  "task": "GEO-010",
+  "status": "passed",
+  "checks": [
+    {
+      "check": "INS-01",
+      "passed": true
+    },
+    {
+      "check": "INS-02",
+      "passed": true
+    },
+    {
+      "check": "INS-03",
+      "passed": true
+    },
+    {
+      "check": "INS-04",
+      "passed": true
+    },
+    {
+      "check": "INS-05",
+      "passed": true
+    },
+    {
+      "check": "INS-06",
+      "passed": true
+    },
+    {
+      "check": "INS-07",
+      "passed": true
+    },
+    {
+      "check": "INS-08",
+      "passed": true
+    },
+    {
+      "check": "INS-09",
+      "passed": true
+    },
+    {
+      "check": "INS-10",
+      "passed": true
+    },
+    {
+      "check": "Preserved Geometry",
+      "passed": true
+    },
+    {
+      "check": "Preserved Sensors",
+      "passed": true
+    },
+    {
+      "check": "Preserved Calibration",
+      "passed": true
+    },
+    {
+      "check": "Preserved Thermal spans",
+      "passed": true
+    },
+    {
+      "check": "Preserved Fluids",
+      "passed": true
+    },
+    {
+      "check": "Preserved Model choices",
+      "passed": true
+    },
+    {
+      "check": "Preserved Form sensor",
+      "passed": true
+    },
+    {
+      "check": "Preserved Form material",
+      "passed": true
+    },
+    {
+      "check": "Preserved Phase requests",
+      "passed": true
+    },
+    {
+      "check": "Preserved Review issues",
+      "passed": true
+    },
+    {
+      "check": "Preserved CAD dimensions",
+      "passed": true
+    },
+    {
+      "check": "Form contributor Your entry",
+      "passed": true
+    },
+    {
+      "check": "Form contributor Your evidence file / location",
+      "passed": true
+    },
+    {
+      "check": "Form contributor Entry evidence type",
+      "passed": true
+    },
+    {
+      "check": "Form contributor Reviewer / date",
+      "passed": true
+    },
+    {
+      "check": "Approvals preserved",
+      "passed": true
+    },
+    {
+      "check": "Material functions preserved",
+      "passed": true
+    },
+    {
+      "check": "Generated validity/hash",
+      "passed": true
+    },
+    {
+      "check": "Resolved input equality",
+      "passed": true
+    },
+    {
+      "check": "Source insulation.yaml",
+      "passed": true
+    },
+    {
+      "check": "Source rev9_working_selection_v3.json",
+      "passed": true
+    },
+    {
+      "check": "Source ADR-0025-vcu-regional-insulation-and-nominal-bore.md",
+      "passed": true
+    },
+    {
+      "check": "Source ADR-0026-vcu-full-loop-insulation-contact-and-fiberglass-range.md",
+      "passed": true
+    },
+    {
+      "check": "Source 2026-10-16_GEO-009_covered_top_corners.md",
+      "passed": true
+    },
+    {
+      "check": "Source vcu_candidate_materials_v3.yaml",
+      "passed": true
+    }
+  ],
+  "assignments": [
+    {
+      "region_id": "INS-01",
+      "segment": "upcomer",
+      "coverage": "Insulated",
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
+      "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+    },
+    {
+      "region_id": "INS-02",
+      "segment": "upper_left_bend",
+      "coverage": "Insulated",
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
+      "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+    },
+    {
+      "region_id": "INS-03",
+      "segment": "cooler_pre",
+      "coverage": "Bare",
+      "material_id": null,
+      "thickness_mm": null,
+      "basis": "Reported straight top D-E bare, GEO-008 retained; water jacket remains present."
+    },
+    {
+      "region_id": "INS-04",
+      "segment": "cooler_jacket",
+      "coverage": "Bare",
+      "material_id": null,
+      "thickness_mm": null,
+      "basis": "Reported straight top D-E bare, GEO-008 retained; water jacket remains present."
+    },
+    {
+      "region_id": "INS-05",
+      "segment": "cooler_post",
+      "coverage": "Bare",
+      "material_id": null,
+      "thickness_mm": null,
+      "basis": "Reported straight top D-E bare, GEO-008 retained; water jacket remains present."
+    },
+    {
+      "region_id": "INS-06",
+      "segment": "upper_right_bend",
+      "coverage": "Insulated",
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
+      "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+    },
+    {
+      "region_id": "INS-07",
+      "segment": "downcomer",
+      "coverage": "Insulated",
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
+      "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+    },
+    {
+      "region_id": "INS-08",
+      "segment": "lower_right_bend",
+      "coverage": "Insulated",
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
+      "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+    },
+    {
+      "region_id": "INS-09",
+      "segment": "heater",
+      "coverage": "Insulated",
+      "material_id": "HEATER-INS",
+      "thickness_mm": 6.35,
+      "basis": "Reported heater insulation: approximately 1/4 in calcium-aluminum-silicate ceramic-fiber strip only; no extra fiberglass. Thickness is an estimate, not measured."
+    },
+    {
+      "region_id": "INS-10",
+      "segment": "lower_left_bend",
+      "coverage": "Insulated",
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
+      "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+    }
+  ]
+}

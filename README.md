@@ -1,5 +1,7 @@
 # Trident configuration record
 
+Current workbook: **DRAFT-006**. [All regional coverage and both insulation types](reports/configuration/2026/10/16/2026-10-16_GEO-010_regional_insulation_sync/README.md) are now populated from reported VCU assignments; thicknesses are labeled approximate estimates.
+
 Record the flow-loop setup, measurements and supporting evidence in
 [VCU_inputs.xlsx](VCU_inputs.xlsx).
 
@@ -34,4 +36,4 @@ functions and their qualified working domains. See the [change record and
 checks](reports/configuration/2026/10/16/2026-10-16_CFG-001_vcu_reference_sync/README.md)
 and [portable source bundle](support/evidence/2026-10-16_CFG-001_vcu_references/README.md).
 
-Current correction (DRAFT-005, 2026-10-16): both entire upper corners are **Insulated** and LF-01 is covered locally. See [GEO-009](reports/configuration/2026/10/16/2026-10-16_GEO-009_covered_top_corners/README.md).
+Earlier correction (DRAFT-005, 2026-10-16): both entire upper corners are **Insulated** and LF-01 is covered locally. See [GEO-009](reports/configuration/2026/10/16/2026-10-16_GEO-009_covered_top_corners/README.md).

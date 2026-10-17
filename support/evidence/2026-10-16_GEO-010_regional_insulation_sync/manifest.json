@@ -1,0 +1,76 @@
+{
+  "task": "GEO-010",
+  "date": "2026-10-16",
+  "artifacts": [
+    {
+      "path": "2026-10-16_GEO-009_covered_top_corners.md",
+      "bytes": 1584,
+      "sha256": "68a7bd0957f2e791079b4f660e54aaf79d7952c8ecffdaa630a8ade63ef90dd8"
+    },
+    {
+      "path": "2026-10-16_GEO-010_regional_insulation_sync.md",
+      "bytes": 2512,
+      "sha256": "f3ca1c97fc72784d53624da36d9994387e6fb4c5f00de18b26c476d552ece9cd"
+    },
+    {
+      "path": "ADR-0025-vcu-regional-insulation-and-nominal-bore.md",
+      "bytes": 2580,
+      "sha256": "66e3ab2489f51ce8ea2aca8eaecf6f3e1f0351b78941aa11caa1ebf46800e7b9"
+    },
+    {
+      "path": "ADR-0026-vcu-full-loop-insulation-contact-and-fiberglass-range.md",
+      "bytes": 2698,
+      "sha256": "6cdd22596ddaf2b377f5257ea4d880f18999030c2a07d431a7900e9a4f7f0409"
+    },
+    {
+      "path": "INSULATION_CURRENT.md",
+      "bytes": 2954,
+      "sha256": "6ccf6dd5eee55d195e0aad52b8ec26cb2e1446f0c6a2d0215e62cb9bbe304fc8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1609,
+      "sha256": "4a1635aa50ddcc3bf023a76e239921a547eb407609a28fafb2761fa11b7a7562"
+    },
+    {
+      "path": "USER_CONFIRMATION.md",
+      "bytes": 442,
+      "sha256": "2b6faa3f0d6e51559bb8212d0da8aebb8f11b939ca2e6244b040c30fd40d5d7a"
+    },
+    {
+      "path": "VCU_inputs_before_GEO-010.xlsx",
+      "bytes": 63067,
+      "sha256": "4584f35dae67707ef479f3296b4eb2a2490c3480410906d9feaa8b05a4049865"
+    },
+    {
+      "path": "input_identity.json",
+      "bytes": 83,
+      "sha256": "d62cf860201134093a8cc28fbcd519c2b0d213e5b243ed16224fcfc8340320dd"
+    },
+    {
+      "path": "insulation.yaml",
+      "bytes": 4199,
+      "sha256": "677272f4529326fc60bf4876933a45c6843c5a333e10c567100c6931bb132117"
+    },
+    {
+      "path": "origins.json",
+      "bytes": 1963,
+      "sha256": "6b90df35c641831fd391ef98f5a1eea49f43c4abff1798164691cf3c35d08def"
+    },
+    {
+      "path": "region_assignments.json",
+      "bytes": 3228,
+      "sha256": "0ad1ac55a4c5badc8a1ffe41a46b65f1c6fe5a59188ce4aa9e47d912796befca"
+    },
+    {
+      "path": "rev9_working_selection_v3.json",
+      "bytes": 31122,
+      "sha256": "cbffd0159d4ad0257223e89f25e80114f454f93cd34ad4e76f609e28400db2c1"
+    },
+    {
+      "path": "vcu_candidate_materials_v3.yaml",
+      "bytes": 6116,
+      "sha256": "79fc1a00c9924904db996dfbd63100653ea8ae3a3ac7833d9fdf23998c0476d1"
+    }
+  ]
+}

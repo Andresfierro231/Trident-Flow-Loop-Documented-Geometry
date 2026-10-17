@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1500" viewBox="0 0 1400 1500"><rect width="100%" height="100%" fill="white"/>
 <text x="70.000" y="65.000" font-family="Arial, sans-serif" font-size="30" fill="#263D4B" text-anchor="start" font-weight="bold">INSULATION COVERAGE</text>
-<text x="70.000" y="102.000" font-family="Arial, sans-serif" font-size="17" fill="#576976" text-anchor="start">VCU-REV9-DRAFT-005 | recorded regional coverage</text>
+<text x="70.000" y="102.000" font-family="Arial, sans-serif" font-size="17" fill="#576976" text-anchor="start">VCU-REV9-DRAFT-006 | recorded regional coverage</text>
 <line x1="70.000" y1="125.000" x2="1330.000" y2="125.000" stroke="#CFD9DF" stroke-width="2"/>
 <line x1="80.000" y1="185.000" x2="150.000" y2="185.000" stroke="#287FA3" stroke-width="30" stroke-opacity="0.28"/>
 <text x="170.000" y="192.000" font-family="Arial, sans-serif" font-size="23" fill="#263D4B" text-anchor="start">Insulated</text>
@@ -8,13 +8,13 @@
 <text x="570.000" y="192.000" font-family="Arial, sans-serif" font-size="23" fill="#263D4B" text-anchor="start">Bare</text>
 <line x1="820.000" y1="185.000" x2="890.000" y2="185.000" stroke="#7B8992" stroke-width="22" stroke-dasharray="6 5" stroke-opacity="0.35"/>
 <text x="910.000" y="192.000" font-family="Arial, sans-serif" font-size="23" fill="#263D4B" text-anchor="start">Unknown (?)</text>
-<line x1="370.000" y1="973.358" x2="370.000" y2="415.678" stroke="#7B8992" stroke-width="22" stroke-dasharray="6 5" stroke-opacity="0.35"/>
+<line x1="370.000" y1="973.358" x2="370.000" y2="415.678" stroke="#287FA3" stroke-width="36" stroke-opacity="0.28"/>
 <line x1="370.000" y1="415.678" x2="401.040" y2="390.000" stroke="#287FA3" stroke-width="36" stroke-opacity="0.28"/>
 <line x1="1008.757" y1="505.928" x2="1030.000" y2="531.607" stroke="#287FA3" stroke-width="36" stroke-opacity="0.28"/>
-<line x1="1030.000" y1="531.607" x2="1030.000" y2="1093.617" stroke="#7B8992" stroke-width="22" stroke-dasharray="6 5" stroke-opacity="0.35"/>
-<line x1="1030.000" y1="1093.617" x2="996.253" y2="1114.378" stroke="#7B8992" stroke-width="22" stroke-dasharray="6 5" stroke-opacity="0.35"/>
-<line x1="996.253" y1="1114.378" x2="391.243" y2="999.036" stroke="#7B8992" stroke-width="22" stroke-dasharray="6 5" stroke-opacity="0.35"/>
-<line x1="391.243" y1="999.036" x2="370.000" y2="973.358" stroke="#7B8992" stroke-width="22" stroke-dasharray="6 5" stroke-opacity="0.35"/>
+<line x1="1030.000" y1="531.607" x2="1030.000" y2="1093.617" stroke="#287FA3" stroke-width="36" stroke-opacity="0.28"/>
+<line x1="1030.000" y1="1093.617" x2="996.253" y2="1114.378" stroke="#287FA3" stroke-width="36" stroke-opacity="0.28"/>
+<line x1="996.253" y1="1114.378" x2="391.243" y2="999.036" stroke="#287FA3" stroke-width="36" stroke-opacity="0.28"/>
+<line x1="391.243" y1="999.036" x2="370.000" y2="973.358" stroke="#287FA3" stroke-width="36" stroke-opacity="0.28"/>
 <line x1="370.000" y1="973.358" x2="370.000" y2="415.678" stroke="#263D4B" stroke-width="3"/>
 <line x1="370.000" y1="415.678" x2="401.040" y2="390.000" stroke="#263D4B" stroke-width="3" stroke-dasharray="6 5"/>
 <line x1="401.040" y1="390.000" x2="1008.757" y2="505.928" stroke="#263D4B" stroke-width="3"/>
@@ -25,7 +25,7 @@
 <line x1="391.243" y1="999.036" x2="370.000" y2="973.358" stroke="#263D4B" stroke-width="3" stroke-dasharray="6 5"/>
 <line x1="370.000" y1="694.518" x2="260.000" y2="758.000" stroke="#98A7B1" stroke-width="1"/>
 <text x="75.000" y="700.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">INS-01 / Upcomer</text>
-<text x="75.000" y="728.000" font-family="Arial, sans-serif" font-size="19" fill="#576976" text-anchor="start">Unknown (?)</text>
+<text x="75.000" y="728.000" font-family="Arial, sans-serif" font-size="19" fill="#576976" text-anchor="start">Insulated</text>
 <line x1="385.520" y1="402.839" x2="260.000" y2="398.000" stroke="#98A7B1" stroke-width="1"/>
 <text x="75.000" y="340.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">INS-02 / Top-left corner</text>
 <text x="75.000" y="368.000" font-family="Arial, sans-serif" font-size="19" fill="#576976" text-anchor="start">Insulated</text>
@@ -45,17 +45,17 @@
 <text x="1110.000" y="491.000" font-family="Arial, sans-serif" font-size="16" fill="#576976" text-anchor="start">Schematic corner</text>
 <line x1="1030.000" y1="812.612" x2="1100.000" y2="848.000" stroke="#98A7B1" stroke-width="1"/>
 <text x="1110.000" y="790.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">INS-07 / Downcomer</text>
-<text x="1110.000" y="818.000" font-family="Arial, sans-serif" font-size="19" fill="#576976" text-anchor="start">Unknown (?)</text>
+<text x="1110.000" y="818.000" font-family="Arial, sans-serif" font-size="19" fill="#576976" text-anchor="start">Insulated</text>
 <line x1="1013.127" y1="1103.997" x2="1100.000" y2="1208.000" stroke="#98A7B1" stroke-width="1"/>
 <text x="1110.000" y="1150.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">INS-08 / Bottom-right corner</text>
-<text x="1110.000" y="1178.000" font-family="Arial, sans-serif" font-size="19" fill="#576976" text-anchor="start">Unknown (?)</text>
+<text x="1110.000" y="1178.000" font-family="Arial, sans-serif" font-size="19" fill="#576976" text-anchor="start">Insulated</text>
 <text x="1110.000" y="1201.000" font-family="Arial, sans-serif" font-size="16" fill="#576976" text-anchor="start">Schematic corner</text>
 <line x1="693.748" y1="1056.707" x2="700.000" y2="1318.000" stroke="#98A7B1" stroke-width="1"/>
 <text x="700.000" y="1260.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="middle" font-weight="bold">INS-09 / Heater</text>
-<text x="700.000" y="1288.000" font-family="Arial, sans-serif" font-size="19" fill="#576976" text-anchor="middle">Unknown (?)</text>
+<text x="700.000" y="1288.000" font-family="Arial, sans-serif" font-size="19" fill="#576976" text-anchor="middle">Insulated</text>
 <line x1="380.621" y1="986.197" x2="260.000" y2="1208.000" stroke="#98A7B1" stroke-width="1"/>
 <text x="75.000" y="1150.000" font-family="Arial, sans-serif" font-size="20" fill="#263D4B" text-anchor="start" font-weight="bold">INS-10 / Bottom-left corner</text>
-<text x="75.000" y="1178.000" font-family="Arial, sans-serif" font-size="19" fill="#576976" text-anchor="start">Unknown (?)</text>
+<text x="75.000" y="1178.000" font-family="Arial, sans-serif" font-size="19" fill="#576976" text-anchor="start">Insulated</text>
 <text x="75.000" y="1201.000" font-family="Arial, sans-serif" font-size="16" fill="#576976" text-anchor="start">Schematic corner</text>
 <circle cx="458.355" cy="400.933" r="5" fill="white" stroke="#263D4B" stroke-width="2"/>
 <circle cx="921.276" cy="489.240" r="5" fill="white" stroke="#263D4B" stroke-width="2"/>

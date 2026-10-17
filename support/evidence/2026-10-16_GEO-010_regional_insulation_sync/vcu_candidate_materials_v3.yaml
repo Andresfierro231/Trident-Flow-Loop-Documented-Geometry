@@ -1,0 +1,161 @@
+schema_version: 1
+library_revision: vcu_user_candidates_2026-10-07_v3_5c
+supersedes:
+  library_revision: vcu_user_candidates_2026-09-26_v2
+  sha256: de41581c946317c0d0c6d377bf6193fad0195a06ddd414709d5089a58e0c1eee
+selection_status: provisional_user_candidates_not_product_verified
+materials:
+  vcu_pipe_316l_user_candidate_v1:
+    kind: solid
+    calibration_eligible: false
+    provenance:
+      source_id: vcu_user_forwarded_chatgpt_316l_2026-09-26
+      source_path: user_message_2026-09-26
+      source_revision: conversation_2026-09-26_vcu_materials
+      evidence_status: user_supplied_surrogate_no_original_fit_source
+      notes: "Approximate 316L candidate; compare to manufacturer data, but no installed\
+        \ grade or coefficient derivation is verified. The 293\u2013813 K working\
+        \ range is user supplied for rho and cp and provisionally applied to k. On\
+        \ 2026-10-07 the user authorized all three solid properties down to 5 C (278.15\
+        \ K), retaining the existing functions. The user reports checking the 316L\
+        \ extrapolation against another extrapolation; no comparison table was supplied.\
+        \ Newly allowed low-temperature intervals are extrapolated, not installed-product\
+        \ validated."
+    properties:
+      density:
+        model: polynomial
+        units: kg/m^3
+        coefficients:
+        - 8066.715
+        - -0.398373
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K:
+        - 278.15
+        - 813.0
+        out_of_range: error
+      heat_capacity:
+        model: polynomial
+        units: J/(kg*K)
+        coefficients:
+        - 279.256
+        - 0.732165
+        - -0.000459146
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K:
+        - 278.15
+        - 813.0
+        out_of_range: error
+      conductivity:
+        model: polynomial
+        units: W/(m*K)
+        coefficients:
+        - 9.248
+        - 0.01571
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K:
+        - 278.15
+        - 813.0
+        out_of_range: error
+  vcu_main_fiberglass_user_candidate_v1:
+    kind: insulation
+    calibration_eligible: false
+    provenance:
+      source_id: vcu_user_forwarded_chatgpt_fiberglass_2026-09-26
+      source_path: user_message_2026-09-26
+      source_revision: conversation_2026-09-26_vcu_materials
+      evidence_status: user_supplied_surrogate_product_unconfirmed
+      notes: "Assigned to every non-heater main-loop segment per user, including beneath\
+        \ the water cooler. Density/cp are constants; the original k fit was claimed\
+        \ for 297\u2013533 K. On 2026-09-26 the user explicitly allowed extrapolation\
+        \ down to 10 C (283.15 K). The 283.15\u2013297 K interval is extrapolated,\
+        \ not product-validated. Thermal expansion is neglected as a working geometry\
+        \ simplification. On 2026-10-07 the user authorized all three solid properties\
+        \ down to 5 C (278.15 K), retaining the existing functions. The user reports\
+        \ checking the 316L extrapolation against another extrapolation; no comparison\
+        \ table was supplied. Newly allowed low-temperature intervals are extrapolated,\
+        \ not installed-product validated."
+    properties:
+      density:
+        model: constant
+        units: kg/m^3
+        value: 72.08
+        valid_temperature_K:
+        - 278.15
+        - 533.0
+        out_of_range: error
+      heat_capacity:
+        model: constant
+        units: J/(kg*K)
+        value: 840.0
+        valid_temperature_K:
+        - 278.15
+        - 533.0
+        out_of_range: error
+      conductivity:
+        model: polynomial
+        units: W/(m*K)
+        coefficients:
+        - 0.0678938
+        - -0.000289613
+        - 5.84142e-07
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K:
+        - 278.15
+        - 533.0
+        out_of_range: error
+  vcu_heater_cas_strip_user_candidate_v1:
+    kind: insulation
+    calibration_eligible: false
+    provenance:
+      source_id: vcu_user_forwarded_chatgpt_cas_strip_2026-09-26
+      source_path: user_message_2026-09-26
+      source_revision: conversation_2026-09-26_vcu_materials
+      evidence_status: user_supplied_surrogate_product_unconfirmed
+      notes: Assigned only to heater leg per user. Density and 800 F conductivity
+        anchor are consistent with a McMaster calcium-aluminum-silicate strip listing,
+        but installed part and cp/k curve derivations are unverified. The original
+        proposed lower bound was 293 K; the user explicitly allowed extrapolation
+        down to 10 C (283.15 K) on 2026-09-26. On 2026-10-07 the user authorized all
+        three solid properties down to 5 C (278.15 K), retaining the existing functions.
+        The user reports checking the 316L extrapolation against another extrapolation;
+        no comparison table was supplied. Newly allowed low-temperature intervals
+        are extrapolated, not installed-product validated.
+    properties:
+      density:
+        model: constant
+        units: kg/m^3
+        value: 560.65
+        valid_temperature_K:
+        - 278.15
+        - 1089.0
+        out_of_range: error
+      heat_capacity:
+        model: polynomial
+        units: J/(kg*K)
+        coefficients:
+        - 709.85
+        - 0.3075
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K:
+        - 278.15
+        - 1089.0
+        out_of_range: error
+      conductivity:
+        model: polynomial
+        units: W/(m*K)
+        coefficients:
+        - 0.101729
+        - -0.000201327
+        - 3.21455e-07
+        coefficient_order: ascending_power_of_temperature_K
+        valid_temperature_K:
+        - 278.15
+        - 1089.0
+        out_of_range: error
+lower_range_extension:
+  date: '2026-10-07'
+  lower_temperature_K: 278.15
+  authority: explicit user direction; user reports independent 316L extrapolation
+    comparison checks out
+  evidence_status: user_approved_extrapolation_not_product_validation
+  coefficients_changed: false

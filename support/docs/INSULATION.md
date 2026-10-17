@@ -6,7 +6,7 @@ keep the gray region IDs, names and boundary references unchanged.
 1. Set **Coverage** to **Insulated**, **Bare**, or **Unknown** for each whole region.
    An unanswered physical question stays **Unknown**, rather than Bare.
 2. For insulated regions, optionally enter a **Material ID** from the Materials
-   tab and the measured **Thickness mm**. Do not enter zero for an unknown thickness.
+   tab and the **Thickness mm**. Do not enter zero for an unknown thickness.
    Clear insulation material and positive thickness when selecting Bare.
 3. Add the evidence type, file/page/photo location and relevant notes. Identify
    the surface covered, particularly whether cooler insulation is outside the
@@ -63,3 +63,5 @@ field remains for compatibility, but does not fill regional coverage or thicknes
 conflicting values appear in validation notes. Older workbooks without the new
 tab still build with all coverage Unknown. Existing dated checkpoints remain
 unchanged; new checkpoints automatically include the diagram and JSON.
+
+The current DRAFT-006 contains documented reported coverage: six ordinary-pipe/corner regions have approximately 50.8 mm fiberglass and the heater has approximately 6.35 mm ceramic strip only. These thicknesses are reported estimates, not installed measurements. Unknown product/certificate or exact survey details do not make known reported coverage Unknown. Keep evidence type and basis explicit. See [GEO-010](../../reports/configuration/2026/10/16/2026-10-16_GEO-010_regional_insulation_sync/README.md).

@@ -1,0 +1,32 @@
+[
+  {
+    "original": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/facilities/vcu_provisional/insulation.yaml",
+    "copy": "insulation.yaml",
+    "sha256": "677272f4529326fc60bf4876933a45c6843c5a333e10c567100c6931bb132117"
+  },
+  {
+    "original": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/facilities/vcu_provisional/rev9_working_selection_v3.json",
+    "copy": "rev9_working_selection_v3.json",
+    "sha256": "cbffd0159d4ad0257223e89f25e80114f454f93cd34ad4e76f609e28400db2c1"
+  },
+  {
+    "original": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/decisions/ADR-0025-vcu-regional-insulation-and-nominal-bore.md",
+    "copy": "ADR-0025-vcu-regional-insulation-and-nominal-bore.md",
+    "sha256": "66e3ab2489f51ce8ea2aca8eaecf6f3e1f0351b78941aa11caa1ebf46800e7b9"
+  },
+  {
+    "original": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/decisions/ADR-0026-vcu-full-loop-insulation-contact-and-fiberglass-range.md",
+    "copy": "ADR-0026-vcu-full-loop-insulation-contact-and-fiberglass-range.md",
+    "sha256": "6cdd22596ddaf2b377f5257ea4d880f18999030c2a07d431a7900e9a4f7f0409"
+  },
+  {
+    "original": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/decisions/2026-10-16_GEO-009_covered_top_corners.md",
+    "copy": "2026-10-16_GEO-009_covered_top_corners.md",
+    "sha256": "68a7bd0957f2e791079b4f660e54aaf79d7952c8ecffdaa630a8ade63ef90dd8"
+  },
+  {
+    "original": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/materials/vcu_candidate_materials_v3.yaml",
+    "copy": "vcu_candidate_materials_v3.yaml",
+    "sha256": "79fc1a00c9924904db996dfbd63100653ea8ae3a3ac7833d9fdf23998c0476d1"
+  }
+]

@@ -665,16 +665,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Geometry map; VCU insulation
 
 
-**Current evidence:** Reported fiberglass main insulation and calcium-aluminum-silicate heater strip. VINS v5 specifies regional candidates; product/installation evidence unresolved.
+**Current evidence:** Ordinary main piping (upcomer/downcomer and four corners): fiberglass MAIN-INS; heater: calcium-aluminum-silicate HEATER-INS strip only, no additional fiberglass.
 
 
 **Evidence type:** Reported
 
 
-**Evidence source:** MAT; VINS
+**Evidence source:** VREG; VTOP
 
 
-**Evidence locator:** Materials; insulation.yaml regions; source copies in support/evidence/2026-10-16_CFG-001_vcu_references
+**Evidence locator:** VREG regional YAML and ADR-0025/0026; VTOP corner/LF-01 correction; user reaffirmation 2026-10-16
 
 
 **Review state:** Needs review
@@ -718,16 +718,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Geometry map; VCU insulation
 
 
-**Current evidence:** Approximate regional estimates: ordinary insulated pipe 50.8 mm fiberglass; heater 6.35 mm strip only. Top D-E is bare per GEO-008. Not measured thicknesses.
+**Current evidence:** Reported estimates: ordinary insulated regions 50.8 mm (2 in); heater strip 6.35 mm (1/4 in). Not installed thickness measurements.
 
 
 **Evidence type:** Reported
 
 
-**Evidence source:** VINS; VSEL
+**Evidence source:** VREG; VTOP
 
 
-**Evidence locator:** insulation.yaml regions.non_heater_main_pipe and heater_leg; GEO-008 top-leg qualification
+**Evidence locator:** VREG regional YAML and ADR-0025/0026; VTOP corner/LF-01 correction; user reaffirmation 2026-10-16
 
 
 **Review state:** Needs review
@@ -771,16 +771,16 @@ Evidence type and review state are independent. All proposed owners require team
 **Requirement locator:** Method: facility and fluid configuration; geometry map
 
 
-**Current evidence:** User 2026-10-16: entire C-D/E-F upper corners insulated; LF-01 locally covered. Top D-E remains bare. Remaining vertical cutbacks and LF-01 coverage extent unknown.
+**Current evidence:** Reported coverage known for all ten regions: upcomer/downcomer, four corners and heater insulated; pre-cooler/jacket/post-cooler D-E bare. LF-01 covered. Exact local contacts and transitions remain open.
 
 
 **Evidence type:** Reported
 
 
-**Evidence source:** VSEL; VTOP
+**Evidence source:** VREG; VTOP
 
 
-**Evidence locator:** VTOP direct user clarification; Insulation regions INS-02/06; Sensors LF-01; regional model v6
+**Evidence locator:** VREG regional YAML and ADR-0025/0026; VTOP corner/LF-01 correction; user reaffirmation 2026-10-16
 
 
 **Review state:** Needs review
@@ -5125,4 +5125,18 @@ Evidence type and review state are independent. All proposed owners require team
 
 
 **Qualification:** Reported by user; no independent survey, optical extent, covered extent or historical run dates supplied.
+
+
+### VREG
+
+**File / record:** support/evidence/2026-10-16_GEO-010_regional_insulation_sync/README.md
+
+
+**Revision / context:** GEO-010 2026-10-16; regional v7 / working v3
+
+
+**Locator guide:** region_assignments.json; insulation.yaml; ADR-0025/0026; USER_CONFIRMATION.md
+
+
+**Qualification:** Reported coverage and approximate thickness estimates; product/fit validation, installed surveys and historical applicability remain separate.
 

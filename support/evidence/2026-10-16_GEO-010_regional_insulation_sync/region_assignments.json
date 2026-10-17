@@ -1,0 +1,82 @@
+[
+  {
+    "region_id": "INS-01",
+    "segment": "upcomer",
+    "coverage": "Insulated",
+    "material_id": "MAIN-INS",
+    "thickness_mm": 50.8,
+    "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+  },
+  {
+    "region_id": "INS-02",
+    "segment": "upper_left_bend",
+    "coverage": "Insulated",
+    "material_id": "MAIN-INS",
+    "thickness_mm": 50.8,
+    "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+  },
+  {
+    "region_id": "INS-03",
+    "segment": "cooler_pre",
+    "coverage": "Bare",
+    "material_id": null,
+    "thickness_mm": null,
+    "basis": "Reported straight top D-E bare, GEO-008 retained; water jacket remains present."
+  },
+  {
+    "region_id": "INS-04",
+    "segment": "cooler_jacket",
+    "coverage": "Bare",
+    "material_id": null,
+    "thickness_mm": null,
+    "basis": "Reported straight top D-E bare, GEO-008 retained; water jacket remains present."
+  },
+  {
+    "region_id": "INS-05",
+    "segment": "cooler_post",
+    "coverage": "Bare",
+    "material_id": null,
+    "thickness_mm": null,
+    "basis": "Reported straight top D-E bare, GEO-008 retained; water jacket remains present."
+  },
+  {
+    "region_id": "INS-06",
+    "segment": "upper_right_bend",
+    "coverage": "Insulated",
+    "material_id": "MAIN-INS",
+    "thickness_mm": 50.8,
+    "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+  },
+  {
+    "region_id": "INS-07",
+    "segment": "downcomer",
+    "coverage": "Insulated",
+    "material_id": "MAIN-INS",
+    "thickness_mm": 50.8,
+    "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+  },
+  {
+    "region_id": "INS-08",
+    "segment": "lower_right_bend",
+    "coverage": "Insulated",
+    "material_id": "MAIN-INS",
+    "thickness_mm": 50.8,
+    "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+  },
+  {
+    "region_id": "INS-09",
+    "segment": "heater",
+    "coverage": "Insulated",
+    "material_id": "HEATER-INS",
+    "thickness_mm": 6.35,
+    "basis": "Reported heater insulation: approximately 1/4 in calcium-aluminum-silicate ceramic-fiber strip only; no extra fiberglass. Thickness is an estimate, not measured."
+  },
+  {
+    "region_id": "INS-10",
+    "segment": "lower_left_bend",
+    "coverage": "Insulated",
+    "material_id": "MAIN-INS",
+    "thickness_mm": 50.8,
+    "basis": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
+  }
+]

@@ -1,7 +1,7 @@
 {
   "settings": {
     "Facility": "VCU",
-    "Configuration ID": "VCU-REV9-DRAFT-005",
+    "Configuration ID": "VCU-REV9-DRAFT-006",
     "Status": "Draft",
     "Geometry source": "VCU-R9-E01 (2026-10-08)",
     "Model support": "1-D and CFD / conjugate heat transfer",
@@ -17,7 +17,7 @@
     "Scope": "Main-loop geometry and sensor-position prototype",
     "Fluid scope": "VCU: Prop-30, air, water",
     "Effective date": "2026-10-16",
-    "Change summary": "GEO-009: entire covered top-left C-D and top-right E-F corners Insulated; LF-01 locally covered, per Andres Fierro 2026-10-16. Model regional insulation v6 and Rev9 working selection v2 agree. Other coverage, numerical geometry and historical evidence unchanged."
+    "Change summary": "GEO-010: all ten insulation regions synchronized: six ordinary-pipe fiberglass regions about 50.8 mm; heater ceramic strip only about 6.35 mm; three top D-E partitions Bare. Coverage Reported; thicknesses approximate estimates. LF-01 remains covered."
   },
   "segments": {
     "upcomer": {
@@ -990,7 +990,7 @@
     {
       "region_id": "INS-01",
       "name": "Upcomer",
-      "coverage": "Unknown",
+      "coverage": "Insulated",
       "segment": "upcomer",
       "segment_start_endpoint": "B",
       "segment_end_endpoint": "C",
@@ -1013,11 +1013,11 @@
         0.0
       ],
       "length_mm": 1219.2000000000003,
-      "material_id": null,
-      "thickness_mm": null,
-      "evidence_type": "Unknown",
-      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/insulation.yaml / non_heater_main_pipe",
-      "notes": "Reported approximate 50.8 mm fiberglass candidate; exact transitions/gaps and bare STC contacts unresolved. Whole-region coverage remains Unknown."
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
+      "evidence_type": "Reported",
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-010_regional_insulation_sync/insulation.yaml / regions; VREG; VCU-007/008 and GEO-009",
+      "notes": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
     },
     {
       "region_id": "INS-02",
@@ -1045,11 +1045,11 @@
         0.0
       ],
       "length_mm": null,
-      "material_id": null,
-      "thickness_mm": null,
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
       "evidence_type": "Reported",
-      "evidence_file_location": "support/evidence/2026-10-16_GEO-009_covered_top_corners/USER_CLARIFICATION.md / entire covered top-left C-D and top-right E-F corners",
-      "notes": "Entire corner insulated per corrected Andres Fierro statement 2026-10-16. Installed product and thickness unmeasured; model fiberglass estimate remains provisional."
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-010_regional_insulation_sync/insulation.yaml / regions; VREG; VCU-007/008 and GEO-009",
+      "notes": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
     },
     {
       "region_id": "INS-03",
@@ -1080,8 +1080,8 @@
       "material_id": null,
       "thickness_mm": null,
       "evidence_type": "Reported",
-      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/2026-10-14_GEO-008_rev9_working_selection.md / whole top D-E leg",
-      "notes": "October 14 user-reported working installation; not independently surveyed. Water jacket remains present; Bare does not imply room-air exposure beneath jacket."
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-010_regional_insulation_sync/insulation.yaml / regions; VREG; VCU-007/008 and GEO-009",
+      "notes": "Reported straight top D-E bare, GEO-008 retained; water jacket remains present."
     },
     {
       "region_id": "INS-04",
@@ -1112,8 +1112,8 @@
       "material_id": null,
       "thickness_mm": null,
       "evidence_type": "Reported",
-      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/2026-10-14_GEO-008_rev9_working_selection.md / whole top D-E leg",
-      "notes": "October 14 user-reported working installation; not independently surveyed. Water jacket remains present; Bare does not imply room-air exposure beneath jacket."
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-010_regional_insulation_sync/insulation.yaml / regions; VREG; VCU-007/008 and GEO-009",
+      "notes": "Reported straight top D-E bare, GEO-008 retained; water jacket remains present."
     },
     {
       "region_id": "INS-05",
@@ -1144,8 +1144,8 @@
       "material_id": null,
       "thickness_mm": null,
       "evidence_type": "Reported",
-      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/2026-10-14_GEO-008_rev9_working_selection.md / whole top D-E leg",
-      "notes": "October 14 user-reported working installation; not independently surveyed. Water jacket remains present; Bare does not imply room-air exposure beneath jacket."
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-010_regional_insulation_sync/insulation.yaml / regions; VREG; VCU-007/008 and GEO-009",
+      "notes": "Reported straight top D-E bare, GEO-008 retained; water jacket remains present."
     },
     {
       "region_id": "INS-06",
@@ -1173,16 +1173,16 @@
         0.0
       ],
       "length_mm": null,
-      "material_id": null,
-      "thickness_mm": null,
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
       "evidence_type": "Reported",
-      "evidence_file_location": "support/evidence/2026-10-16_GEO-009_covered_top_corners/USER_CLARIFICATION.md / entire covered top-left C-D and top-right E-F corners",
-      "notes": "Entire corner insulated per corrected Andres Fierro statement 2026-10-16. Installed product and thickness unmeasured; model fiberglass estimate remains provisional."
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-010_regional_insulation_sync/insulation.yaml / regions; VREG; VCU-007/008 and GEO-009",
+      "notes": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
     },
     {
       "region_id": "INS-07",
       "name": "Downcomer",
-      "coverage": "Unknown",
+      "coverage": "Insulated",
       "segment": "downcomer",
       "segment_start_endpoint": "F",
       "segment_end_endpoint": "G",
@@ -1205,16 +1205,16 @@
         0.0
       ],
       "length_mm": 1228.6685597466649,
-      "material_id": null,
-      "thickness_mm": null,
-      "evidence_type": "Unknown",
-      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/insulation.yaml / non_heater_main_pipe",
-      "notes": "Reported approximate 50.8 mm fiberglass candidate; exact transitions/gaps and bare STC contacts unresolved. Whole-region coverage remains Unknown."
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
+      "evidence_type": "Reported",
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-010_regional_insulation_sync/insulation.yaml / regions; VREG; VCU-007/008 and GEO-009",
+      "notes": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
     },
     {
       "region_id": "INS-08",
       "name": "Bottom-right corner",
-      "coverage": "Unknown",
+      "coverage": "Insulated",
       "segment": "lower_right_bend",
       "segment_start_endpoint": "G",
       "segment_end_endpoint": "H",
@@ -1237,16 +1237,16 @@
         0.0
       ],
       "length_mm": null,
-      "material_id": null,
-      "thickness_mm": null,
-      "evidence_type": "Unknown",
-      "evidence_file_location": null,
-      "notes": null
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
+      "evidence_type": "Reported",
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-010_regional_insulation_sync/insulation.yaml / regions; VREG; VCU-007/008 and GEO-009",
+      "notes": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
     },
     {
       "region_id": "INS-09",
       "name": "Heater",
-      "coverage": "Unknown",
+      "coverage": "Insulated",
       "segment": "heater",
       "segment_start_endpoint": "H",
       "segment_end_endpoint": "A",
@@ -1269,16 +1269,16 @@
         0.0
       ],
       "length_mm": 1346.4962148518246,
-      "material_id": null,
-      "thickness_mm": null,
-      "evidence_type": "Unknown",
-      "evidence_file_location": "support/evidence/2026-10-16_CFG-001_vcu_references/insulation.yaml / heater_leg",
-      "notes": "Reported approximate 6.35 mm calcium-aluminum-silicate strip only; exact coverage and installed stack unverified. Whole-region coverage remains Unknown."
+      "material_id": "HEATER-INS",
+      "thickness_mm": 6.35,
+      "evidence_type": "Reported",
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-010_regional_insulation_sync/insulation.yaml / regions; VREG; VCU-007/008 and GEO-009",
+      "notes": "Reported heater insulation: approximately 1/4 in calcium-aluminum-silicate ceramic-fiber strip only; no extra fiberglass. Thickness is an estimate, not measured."
     },
     {
       "region_id": "INS-10",
       "name": "Bottom-left corner",
-      "coverage": "Unknown",
+      "coverage": "Insulated",
       "segment": "lower_left_bend",
       "segment_start_endpoint": "A",
       "segment_end_endpoint": "B",
@@ -1301,11 +1301,11 @@
         0.0
       ],
       "length_mm": null,
-      "material_id": null,
-      "thickness_mm": null,
-      "evidence_type": "Unknown",
-      "evidence_file_location": null,
-      "notes": null
+      "material_id": "MAIN-INS",
+      "thickness_mm": 50.8,
+      "evidence_type": "Reported",
+      "evidence_file_location": "support/evidence/2026-10-16_GEO-010_regional_insulation_sync/insulation.yaml / regions; VREG; VCU-007/008 and GEO-009",
+      "notes": "Reported ordinary main-pipe fiberglass assignment, approximately 2 in; regional model candidate, not installed product/thickness validation. Local STC contacts/transition details remain separate."
     }
   ],
   "closure_gap_mm": 8.528702653865114e-06,
@@ -1318,5 +1318,5 @@
     "JTC-A/B, branch pipes, tank and coolant plumbing are retained as outstanding scope, not drawn.",
     "Model input draft only: missing bore, property selections, calibrations and approved boundary conditions."
   ],
-  "input_sha256": "4584f35dae67707ef479f3296b4eb2a2490c3480410906d9feaa8b05a4049865"
+  "input_sha256": "9ab25c5064b10aa61ecb3a240808b611a7dfc7a5a1a0c56392b4f7835f831a27"
 }

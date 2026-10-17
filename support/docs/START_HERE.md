@@ -10,7 +10,7 @@ Upload the saved workbook to GitHub to build the PDF; contributors do not need t
 | I want to document… | Open this tab | Example already supplied |
 |---|---|---|
 | A pipe and its insulation | **Form pipe** | VCU upcomer, B–C |
-| Which loop regions are insulated | **Insulation regions** | Ten named regions, initially Unknown |
+| Which loop regions are insulated | **Insulation regions** | Ten named regions with current reported assignments |
 | A sensor, its channel and calibration | **Form sensor** | Drawing reference STC-02 |
 | A material-property choice | **Form material** | Reported fiberglass insulation conductivity |
 

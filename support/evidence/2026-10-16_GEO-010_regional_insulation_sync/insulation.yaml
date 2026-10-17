@@ -1,0 +1,99 @@
+schema_version: 1
+facility_id: VCU
+insulation_revision: vcu_regional_insulation_v7_documented_region_sync_2026-10-16
+evidence_status: provisional_user_estimate_and_candidate_properties
+calibration_eligible: false
+supersedes:
+  insulation_revision: vcu_regional_insulation_v6_covered_top_corners_2026-10-16
+  sha256: bc750a87cd5504496dd5fafbfca6ba34673219a400f87697db793b3a98cd84b2
+coverage:
+  axial: insulated_vertical_upper_corners_and_heater_with_bare_straight_cooler
+  circumferential: full_360_degrees_on_insulated_sections
+  evidence_status: user_corrected_clarification_2026-10-16
+  no_uninsulated_main_loop_gap: false
+  bare_section_endpoints: top straight D-E bare; upper corners C-D/E-F covered; remaining
+    transition endpoints unknown
+  documentation_status: coverage recorded from user reports; installed survey and
+    exact transition details separate
+contact:
+  model: perfect_thermal_contact
+  interfacial_resistance_m2_K_W: 0.0
+  applies_to: insulation_interfaces_with_underlying_pipe_or_heater_surface
+  evidence_status: user_directed_model_assumption_2026-09-26
+regions:
+  non_heater_main_pipe:
+    material_id: vcu_main_fiberglass_user_candidate_v1
+    source_segment_ids:
+    - lower_left_bend
+    - upcomer
+    - upper_left_bend
+    - upper_right_bend
+    - downcomer
+    - lower_right_bend
+    partial_segment_coverage: []
+    thickness_m: 0.0508
+    source_value: 2.0
+    source_units: inch
+    relationship: outer_insulation_on_main_pipe_outside_heater_leg
+    includes_cooler_leg_under_water_jacket: false
+    thickness_status: approximate_user_estimate
+    material_status: user_supplied_fiberglass_candidate_product_unconfirmed
+  heater_leg:
+    material_id: vcu_heater_cas_strip_user_candidate_v1
+    source_segment_ids:
+    - heater
+    thickness_m: 0.00635
+    source_value: 0.25
+    source_units: inch
+    relationship: only_insulation_outside_pipe_on_straight_heater_leg
+    additional_two_inch_main_insulation: false
+    thickness_status: approximate_user_estimate
+    material_status: user_described_dense_flexible_calcium_aluminum_silicate_strip_product_unconfirmed
+  bare_cooler_and_connections:
+    material_id: none
+    source_segment_ids:
+    - cooler
+    bare_connection_parent_segment_ids: []
+    thickness_m: 0.0
+    relationship: bare_straight_cooler_D_E_only_upper_corners_covered
+    jacket_exterior_insulation: none
+    endpoint_status: upper corners excluded per corrected user report 2026-10-16;
+      other transition details unknown
+superseded_estimate:
+  revision: vcu_regional_insulation_v1_user_estimate
+  thickness_m: 0.0762
+  source_value: 3.0
+  source_units: inch
+  reason: replaced_by_2026-09-26_user_regional_estimates
+material_library: ../../materials/vcu_candidate_materials_v3.yaml
+open_items:
+- actual product names or part numbers and installation records
+- verify real contact gaps, heater/strip layer order, cladding, and exposed outer-surface
+  properties
+- primary property sources and uncertainty for the exact installed products
+- verify remaining transition boundaries and LF-01 optical/coverage extent; whole
+  upper-corner coverage is resolved
+local_coverage_references:
+- sensor_id: LF-01
+  coverage: insulated
+  segment: upcomer
+  from_endpoint: C
+  reference_distance_mm: 61.11391907730831
+  reference_basis: Rev9 mount reference; optical extent and sensing junction undefined
+  covered_start_mm: null
+  covered_end_mm: null
+  evidence_status: corrected_user_report_2026-10-16
+  note: LF-01 is covered. This supersedes the earlier same-session uncovered statement.
+    No whole-fiber extent or optical DAQ mapping is inferred.
+coverage_evidence:
+  upcomer_and_heater: explicit user reaffirmation 2026-10-16
+  ordinary_pipe_and_corners: VCU-007/008 regional assignment; upper corners reaffirmed
+    GEO-009
+  heater_layering: only 6.35 mm calcium-aluminum-silicate strip; no additional 50.8
+    mm fiberglass
+  thickness_basis: approximate user estimates, not measured thicknesses
+  source_decisions:
+  - ADR-0025-vcu-regional-insulation-and-nominal-bore.md
+  - ADR-0026-vcu-full-loop-insulation-contact-and-fiberglass-range.md
+  - 2026-10-16_GEO-009_covered_top_corners.md
+  unknowns_do_not_erase_reported_coverage: true
