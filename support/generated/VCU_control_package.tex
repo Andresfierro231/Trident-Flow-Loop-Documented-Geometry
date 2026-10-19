@@ -21,13 +21,13 @@
 \renewcommand{\footrulewidth}{0pt}
 \newcommand{\notebox}[1]{\par\noindent\colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{#1}}\par}
 
-\fancyfoot[L]{\footnotesize\color{muted}VCU-REV9-DRAFT-006 / Draft}
+\fancyfoot[L]{\footnotesize\color{muted}VCU-REV9-DRAFT-007 / Draft}
 \fancyfoot[R]{\footnotesize\thepage}
 \begin{document}
 {\color{navy}\LARGE\bfseries VCU configuration record}\par
 \refstepcounter{section}\label{overview}\addcontentsline{toc}{section}{\protect\numberline{1}Configuration overview}
 {\color{muted}Flow-loop setup, instruments and supporting evidence}\par\vspace{8pt}
-\textbf{Configuration:} VCU-REV9-DRAFT-006\par
+\textbf{Configuration:} VCU-REV9-DRAFT-007\par
 \textbf{Effective date:} 2026-10-16\par
 \textbf{Status:} Draft\par
 \textbf{Basis:} Rev9 CAD candidate. The installed configuration has not yet been verified.\par
@@ -64,7 +64,7 @@ Axis-end dimensions and the recorded jacket envelope. Bore and insulation measur
 \definecolor{cA3B0B9}{HTML}{A3B0B9}
 \definecolor{cCFD9DF}{HTML}{CFD9DF}
 \node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{8.40}{10.20}\selectfont\bfseries] at (70.000,65.000) {VCU / GEOMETRY AND THERMAL COVERAGE};
-\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-006 | generated from the editable workbook};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-007 | generated from the editable workbook};
 \draw[draw=cCFD9DF,line width=0.520pt] (70.000,125.000) -- (1330.000,125.000);
 \draw[draw=c263D4B,line width=1.300pt] (370.000,973.358) -- (370.000,415.678);
 \draw[draw=c263D4B,line width=1.300pt,dashed] (370.000,415.678) -- (401.040,390.000);
@@ -115,7 +115,7 @@ Use the workbook\textquotesingle s \textbf{Insulation regions} tab. Every covera
 \definecolor{c98A7B1}{HTML}{98A7B1}
 \definecolor{cCFD9DF}{HTML}{CFD9DF}
 \node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{8.40}{10.20}\selectfont\bfseries] at (70.000,65.000) {INSULATION COVERAGE};
-\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-006 | recorded regional coverage};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-007 | recorded regional coverage};
 \draw[draw=cCFD9DF,line width=0.520pt] (70.000,125.000) -- (1330.000,125.000);
 \draw[draw=c287FA3,line width=7.800pt,draw opacity=0.28] (80.000,185.000) -- (150.000,185.000);
 \node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{6.44}{7.82}\selectfont] at (170.000,192.000) {Insulated};
@@ -194,7 +194,7 @@ Geometric sensor references on the main loop. Drawing IDs are not confirmed DAQ 
 \definecolor{cA3B0B9}{HTML}{A3B0B9}
 \definecolor{cCFD9DF}{HTML}{CFD9DF}
 \node[anchor=base west,inner sep=0pt,text=c263D4B,font=\sffamily\fontsize{8.40}{10.20}\selectfont\bfseries] at (70.000,65.000) {VCU / SENSOR LOCATIONS};
-\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-006 | generated from the editable workbook};
+\node[anchor=base west,inner sep=0pt,text=c576976,font=\sffamily\fontsize{4.76}{5.78}\selectfont] at (70.000,102.000) {VCU-REV9-DRAFT-007 | generated from the editable workbook};
 \draw[draw=cCFD9DF,line width=0.520pt] (70.000,125.000) -- (1330.000,125.000);
 \draw[draw=c263D4B,line width=1.300pt] (370.000,973.358) -- (370.000,415.678);
 \draw[draw=c263D4B,line width=1.300pt,dashed] (370.000,415.678) -- (401.040,390.000);
@@ -331,9 +331,9 @@ Distances are measured along the named segment from the stated endpoint. A jacke
 Heater supply and circuit diagram & Not selected & Needs review \\[3pt]
 Measured heater power and uncertainty & Not selected & Needs information \\[3pt]
 Heater control and monitor signals & Not selected & Needs information \\[3pt]
-Coolant routing and measurement planes & Not selected & Needs information \\[3pt]
-Coolant flow and inlet/outlet measurements & Not selected & Needs information \\[3pt]
-Cooler feedback and setpoint history & Not selected & Needs information \\[3pt]
+Coolant routing and measurement planes & JTC-B/PTC5 inlet; JTC-A/PTC6 outlet & Needs review \\[3pt]
+Coolant flow and inlet/outlet measurements & Use temperature roles provisionally; do not invent flow or measured duty & Needs review \\[3pt]
+Cooler feedback and setpoint history & Treat oscillatory plateaus as potentially cyclic operation & Needs review \\[3pt]
 \bottomrule\end{longtable}\normalsize
 \vfill{\small Supporting records: \hyperref[model-records]{boundary and control choices}; \hyperref[requirements]{full evidence register}.}\par
 \clearpage\section{Materials and fluids}\label{materials-main}
@@ -343,9 +343,9 @@ Candidate identities are listed below. Circuit assignments and selected property
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.39\textwidth}>{\raggedright\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.18\textwidth}}
 \toprule
 \textbf{Fluid} & \textbf{Product} & \textbf{Circuit} & \textbf{Basis} \\\midrule\endhead
-PROP30 & Propylene glycol / water & \textit{Unknown} & Reported \\[3pt]
-AIR & Air & \textit{Unknown} & Reported \\[3pt]
-WATER & Water & \textit{Unknown} & Reported \\[3pt]
+PROP30 & Propylene glycol / water & Primary-loop candidate; select per run & Reported \\[3pt]
+AIR & Air & Primary-loop option and room ambient; distinguish per run & Reported \\[3pt]
+WATER & Water & Reported jacket coolant; primary-loop option per run & Reported \\[3pt]
 \bottomrule\end{longtable}\normalsize
 \subsection*{Material and property records}
 \small\setlength{\tabcolsep}{4pt}
@@ -369,9 +369,9 @@ The record must state how accurately the setup is known and what error is accept
 Dimension uncertainty and method & Not selected & Needs information \\[3pt]
 Measurement uncertainty and coverage & Not selected & Needs information \\[3pt]
 Property uncertainty and fit residuals & Not selected & Needs information \\[3pt]
-Steady-state class and acceptance limits & Not selected & Needs information \\[3pt]
+Steady-state class and acceptance limits & Keep exploratory classifications separate from accepted steady-state limits & Needs review \\[3pt]
 Mass/energy conservation and solution convergence & Not selected & Needs information \\[3pt]
-Validation metrics, discrepancy and applicability & Not selected & Needs information \\[3pt]
+Validation metrics, discrepancy and applicability & Retain conservation/uncertainty checks and predeclared unseen assessment & Needs review \\[3pt]
 \bottomrule\end{longtable}\normalsize
 \subsection*{Limits of this record}
 \begin{itemize}\item The main-loop geometry is a CAD candidate. Installed dimensions, bore and insulation need supporting measurements.\item Sensor stations are geometric references. Channel identity, calibration, junction positions and fiber sensing extents require evidence.\item Drawn bends are schematic connectors, not qualified hydraulic paths. The heater pieces have overlapping and offset CAD geometry.\item A successful document build checks input structure and drawing closure. It does not establish experimental or modeling readiness.\end{itemize}
@@ -411,7 +411,7 @@ Reported & A statement in notes or a communication; original evidence may still 
 Modeling assumption & A proposed idealization or convention requiring rationale. \\[3pt]
 Unknown & No supported value is available yet. \\[3pt]
 \bottomrule\end{longtable}\normalsize
-\textbf{Review state is separate:} Needs information, Needs review, Approved for stated use, or Not applicable with a reason. Approval must name the selected value, reviewer, date and scope. A CAD-derived value stays CAD-derived after review. This package establishes no approved physical or modeling choices.
+\textbf{Review state is separate:} Needs information, Needs review, Approved for stated use, or Not applicable with a reason. Approval must name the selected value, reviewer, date and scope. A CAD-derived value stays CAD-derived after review. Working selections are recorded with their scope and source; package release and installed verification remain pending.
 \subsection*{What belongs in each package?}
 \textbf{Configuration Control} describes the physical setup and measurement chain: geometry, insulation, fluids, instruments, calibration, heating/cooling, branch states and run identity.
 \textbf{Modeling Control} describes how that setup is represented: 1-D and CFD/CHT domains, boundary/initial conditions, shared properties, closures, numerical checks, uncertainty and independent validation.
@@ -423,11 +423,11 @@ Unknown & No supported value is available yet. \\[3pt]
 The configuration record supplies the measured inputs and uncertainties needed to compare an experiment with a model. Record what changed, which evidence applies, and what error is acceptable for the stated comparison. Do not replace an unknown with a nominal value to complete the document.
 \subsection*{Record identity}
 \textbf{Facility:} VCU\par
-\textbf{Configuration ID:} VCU-REV9-DRAFT-006\par
+\textbf{Configuration ID:} VCU-REV9-DRAFT-007\par
 \textbf{Status:} Draft\par
-\textbf{Scope:} Main-loop geometry and sensor-position prototype\par
-\textbf{Geometry source:} VCU-R9-E01 (2026-10-08)\par
-\textbf{Prepared by:} Codex; VCU reference synchronization requested by Andres Fierro\par
+\textbf{Scope:} VCU current understanding: Rev9 geometry, working channels, regional insulation, materials, boundaries and historical evidence limits\par
+\textbf{Geometry source:} VCU-R9-E01 (2026-10-08); WORK v3 working selection\par
+\textbf{Prepared by:} Codex / agent-root-cfg002; requested by Andres Fierro\par
 \textbf{Checked by:} \textit{Unknown}\par
 \textbf{Plan approval:} Unconfirmed\par
 \subsection*{Complete a dated package}
@@ -600,8 +600,8 @@ Example: drawing reference STC-02. Identify the actual hardware and channel inde
 \par\noindent\begin{minipage}{\textwidth}\small
 {\color{navy}\bfseries Exact DAQ channel / units}\hfill C23\par
 \colorbox{pale}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{
-\textbf{Reference only (Unknown):} Unknown; do not enter STC-02 as channel without checking\par
-{\footnotesize Source: SNS channel\_\allowbreak{}label\_\allowbreak{}in\_\allowbreak{}CAD blank}}}\par
+\textbf{Reference only (Reported):} STC-02 -> STC2, user-selected Rev9 working binding\par
+{\footnotesize Source: VSEL; WORK; historical run applicability/calibration unresolved}}}\par
 \textbf{Your entry:} {\color{muted}TO CONFIRM}\enspace\hrulefill\par
 {\footnotesize\textbf{Evidence:} file + page/photo/row: \hrulefill\par
 \textbf{Entry type / reviewer and date:} Unknown / Pending\par
@@ -1099,6 +1099,30 @@ All issues below are open. The suggested owners help route a question; they do n
 \textbf{Source / locator:} MAT lines 35-40; STEEL lines 3-21; PG figures\par
 \textbf{Affected fields:} M12-M19\par
 \end{minipage}\par\vspace{8pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{I10 | Historical applicability}
+\textbf{Finding:} STC5 changed location; Rev9 working map and historical Rev8 records have no installation date crosswalk.\par
+\textbf{Next decision:} Provide dated sensor/geometry applicability per run; retain original model versions.\par
+\textbf{Suggested owner:} Experimental + computational\par
+\textbf{Source / locator:} VSEL; WORK; FOLLOW; DAQISS; OPCYCLE\par
+\textbf{Affected fields:} C04; C23-C24; C46; M02\par
+\end{minipage}\par\vspace{8pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{I11 | Data validity and calibration}
+\textbf{Finding:} June12 nonphysical readings; Type B accuracy and status/scaling unqualified; slow temporal covariance matters.\par
+\textbf{Next decision:} Resolve DAQ status; version masks and correlation-aware uncertainty; retain raw.\par
+\textbf{Suggested owner:} Experimental + computational\par
+\textbf{Source / locator:} VSEL; WORK; FOLLOW; DAQISS; OPCYCLE\par
+\textbf{Affected fields:} C28-C32; M22-M24\par
+\end{minipage}\par\vspace{8pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{I12 | Boundary-control qualification}
+\textbf{Finding:} Chiller contribution reported; internal jacket route, flow, controller identity and switching logs absent.\par
+\textbf{Next decision:} Confirm PTC5/6 run-specific planes and controller/flow logs before causal or duty claims.\par
+\textbf{Suggested owner:} Experimental + computational\par
+\textbf{Source / locator:} VSEL; WORK; FOLLOW; DAQISS; OPCYCLE\par
+\textbf{Affected fields:} C39-C41; M09; M27\par
+\end{minipage}\par\vspace{8pt}
 \clearpage\section{Rev9 geometry and drawing conventions}\label{geometry-detail}
 Only the qualified Rev9 structured geometry seeds the CAD candidate. Original source rows are retained in support/reference/rev9\_extraction.json. Installed measurements, reported nominal sizes and selected model geometry remain separate records.
 \begin{itemize}
@@ -1118,7 +1142,7 @@ Both radius and angle are required for a full point. A blank is unknown, not zer
 \begin{itemize}
 \item Active heater: boundaries unknown; not drawn.
 \item Active cooling: boundaries unknown; not drawn.
-\item CAD references are not verified sensing junctions or acquisition-channel names.
+\item CAD references are not verified sensing junctions. Working acquisition bindings, when supplied, are reported separately.
 \item Bends are schematic connectors. No continuous hydraulic length is inferred.
 \item JTC-A/B, branch pipes, tank and coolant plumbing are retained as outstanding scope, not drawn.
 \item Model input draft only: missing bore, property selections, calibrations and approved boundary conditions.
@@ -1203,9 +1227,9 @@ Prop-30, air and water are permitted candidate options from the user. A circuit/
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.3\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.2\textwidth}}
 \toprule
 \textbf{Fluid} & \textbf{Product} & \textbf{Circuit} & \textbf{Range C} \\\midrule\endhead
-PROP30 & Propylene glycol / water & \textit{Unknown} & \textit{Unknown} \\[3pt]
-AIR & Air & \textit{Unknown} & \textit{Unknown} \\[3pt]
-WATER & Water & \textit{Unknown} & \textit{Unknown} \\[3pt]
+PROP30 & Propylene glycol / water & Primary-loop candidate; select per run & \textit{Unknown} \\[3pt]
+AIR & Air & Primary-loop option and room ambient; distinguish per run & \textit{Unknown} \\[3pt]
+WATER & Water & Reported jacket coolant; primary-loop option per run & \textit{Unknown} \\[3pt]
 \bottomrule\end{longtable}\normalsize
 \clearpage\section{Insulation region records}\label{insulation-detail}
 The Insulation regions workbook tab is the regional coverage record. Each state applies to the whole named region. Unknown coverage is distinct from confirmed bare pipe. Material and thickness are optional recorded inputs; no thermal resistance is calculated.
@@ -1373,13 +1397,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Shared / Experimental + computational\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} R9; Sheet 8 source identity\par
-\textbf{Current evidence [CAD-derived]:} Rev9 STEP SHA-256 78c6ae52bf39084f bd9b1306d28dcbe2 c1c4d5fccd334b0e 68c861022a1bfbcf\par
-\textbf{Evidence source / locator:} R9; Sheet 8\par
+\textbf{Current evidence [Reported]:} Rev9 is user-selected best current geometry for new work; existing solver/results remain versioned Rev8.\par
+\textbf{Evidence source / locator:} VSEL; WORK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
 \textbf{Review state:} Needs review\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Does this source match installed VCU hardware?\par
+\textbf{Selected choice:} Rev9 for new configuration documentation; no historical run migration\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Confirm installed configuration and dates; no physical release implied.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C05 | Coordinate datum and axes}
@@ -1415,13 +1439,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} P0; R9; Method geometry map; sheets 1-2\par
-\textbf{Current evidence [CAD-derived]:} Inclined CAD cylinder axes 10.800 deg to horizontal\par
-\textbf{Evidence source / locator:} R9; Sheets 1-2\par
+\textbf{Current evidence [Modeling assumption]:} Geometry-derived inclined axes about 10.8 deg; working local gravity (0,-1,0). Installed gravity survey absent.\par
+\textbf{Evidence source / locator:} VSEL; WORK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
 \textbf{Review state:} Needs review\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} What is the measured installed tilt and uncertainty?\par
+\textbf{Selected choice:} Use current local drawing frame and geometry-derived inclination provisionally\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Installed tilt/gravity and uncertainty still need survey.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C08 | Bend geometry and length basis}
@@ -1569,13 +1593,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; every configuration and affected run\par
 \textbf{Requirement source / locator:} USER; P0; Fluid scope; facility/fluid configuration\par
-\textbf{Current evidence [Reported]:} VCU options: Prop-30, air, water; no circuit assignment established\par
-\textbf{Evidence source / locator:} USER; Fluid clarification in chat\par
+\textbf{Current evidence [Reported]:} VCU options Prop-30/air/water; primary fill selected per run. Jacket water reported; ambient air role distinct.\par
+\textbf{Evidence source / locator:} USER; FLUIDCFG; XWALK; WORK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
 \textbf{Review state:} Needs review\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Which fluid occupies each circuit in this run?\par
+\textbf{Selected choice:} Run-specific primary fill; reported water jacket coolant\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Confirm fluid/batch in each acquisition; ambient filename alone is insufficient.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C19 | Composition and concentration basis}
@@ -1611,13 +1635,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; every configuration and affected run\par
 \textbf{Requirement source / locator:} P0; SNS; Instrumentation documentation; sensor rows\par
-\textbf{Current evidence [CAD-derived]:} 12 STC, 4 LF, 5 loop PTC and 2 JTC geometric references\par
-\textbf{Evidence source / locator:} R9; Sheet 5 inventory\par
+\textbf{Current evidence [Reported]:} Active geometry: 12 STC, 4 main PTC, 4 LF and 2 JTC = 22 references; 20 main-loop references. Original extraction has 23 including excluded PTC-X. Native core inventory has 20 channels incl. Amb/Tank; LF is not mapped.\par
+\textbf{Evidence source / locator:} VSEL; WORK; XWALK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
 \textbf{Review state:} Needs review\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Verify installed hardware count and channel identities for remaining sensors. PTC-X was removed from the active register at the repository owner's request on 2026-10-16; no physical removal is asserted.\par
+\textbf{Selected choice:} Exclude PTC-X from active register; preserve original reference\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Installed inventory, serials and fiber channels still need evidence.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C22 | Sensor model and serial number}
@@ -1639,13 +1663,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; every configuration and affected run\par
 \textbf{Requirement source / locator:} P0; Method instrumentation documentation\par
-\textbf{Current evidence [Unknown]:} Unverified; STEP does not encode acquisition-channel labels\par
-\textbf{Evidence source / locator:} SNS; channel\_\allowbreak{}label\_\allowbreak{}in\_\allowbreak{}CAD blank; label\_\allowbreak{}basis\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Trace cable/DAQ configuration and verify the mapping with a recorded check.\par
+\textbf{Current evidence [Reported]:} User-selected STC1-12/PTC1-4 matching Rev9 references; JTC-B=PTC5 inlet and JTC-A=PTC6 outlet. Amb/Tank native names have no accepted XYZ.\par
+\textbf{Evidence source / locator:} VSEL; WORK; XWALK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Use Native channels working register; LF remains unbound\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Verify cable/DAQ identity and historical run applicability; do not map by name alone.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C24 | Sensor segment, endpoint and axial distance}
@@ -1653,13 +1677,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} SNS; nearest\_\allowbreak{}endpoint, nearest\_\allowbreak{}distance\_\allowbreak{}mm\par
-\textbf{Current evidence [CAD-derived]:} STC-02: upcomer, B + 116.686 mm geometric reference\par
-\textbf{Evidence source / locator:} SNS; sensor\_\allowbreak{}id=STC-02\par
+\textbf{Current evidence [CAD-derived]:} Rev9 axial references preserved; STC5 is B+942.186081 mm, PTC4 H+63.716137 mm. User selects these for new work.\par
+\textbf{Evidence source / locator:} VSEL; WORK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
 \textbf{Review state:} Needs review\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Measure the actual sensing/contact reference and identify the point basis.\par
+\textbf{Selected choice:} Use Rev9 axial references; physical sensing tips remain unknown\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Survey actual sensing/contact point and historical installation dates.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C25 | Circumferential angle and zero reference}
@@ -1695,13 +1719,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} P0; Method instrumentation documentation\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Describe attachment, contact, insulation position and time response.\par
+\textbf{Current evidence [Reported]:} All STCs contact bare pipe locally per user; insulated parent regions remain per CURRENT. LF-01 locally covered. Actual attachment details unknown.\par
+\textbf{Evidence source / locator:} VSEL; VTOP; CURRENT; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Bare local STC contact; do not infer whole parent leg bare\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Attachment, window width, junction footprint, response and local contact resistance unknown.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C28 | Calibration date, certificate and validity}
@@ -1751,13 +1775,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; every configuration and affected run\par
 \textbf{Requirement source / locator:} P0; Instrumentation documentation and logging\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Supply evidence and request review.\par
+\textbf{Current evidence [Reported]:} Approximately 30 Hz native sampling documented for Sep2/4 only. Filtering/scaling and lag remain run-specific and unqualified.\par
+\textbf{Evidence source / locator:} DIAG; FOLLOW; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Use native timebase and per-run metadata; no universal sample-rate assignment\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Need instrument response, scaling/filtering and status-code evidence.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C32 | Clock synchronization and common-event check}
@@ -1779,13 +1803,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Shared / Experimental + computational\par
 \textbf{Applies to:} VCU Prop-30 draft campaign; requalify other fluids\par
 \textbf{Requirement source / locator:} P0; P1; P0 acceptance-channel matrix; P1 TC-Luna comparison\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Which channels are mandatory, and which alternates are approved with evidence?\par
+\textbf{Current evidence [Reported]:} Main-loop observations STC1-12/PTC1-4; jacket PTC5/6; Amb/Tank auxiliary; LF geometric only. No blanket mandatory-channel acceptance rule selected.\par
+\textbf{Evidence source / locator:} WORK; XWALK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Working roles in Native channels\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Preapprove mandatory/alternate roles for each intended use.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C34 | Heater element identity and active spans}
@@ -1863,13 +1887,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} P0; Method secondary-side energy-balance boundaries\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Confirm actual inlet/outlet, intervening hoses, bypasses, heat leaks and sensor planes.\par
+\textbf{Current evidence [Reported]:} Working jacket inlet JTC-B/PTC5, outlet JTC-A/PTC6; detailed internal routing and wetted sensing planes unverified.\par
+\textbf{Evidence source / locator:} VSEL; WORK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} JTC-B/PTC5 inlet; JTC-A/PTC6 outlet\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Confirm run-specific hoses, bypasses and physical sensing planes.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C40 | Coolant flow and inlet/outlet measurements}
@@ -1877,13 +1901,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} P0; Secondary-side boundaries\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Supply flow-meter basis, calibration, fluid properties, temperatures and signs.\par
+\textbf{Current evidence [Reported]:} PTC5/6 provide working inlet/outlet temperatures; coolant flow calibration and physical planes are unknown.\par
+\textbf{Evidence source / locator:} VSEL; WORK; FOLLOW; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Use temperature roles provisionally; do not invent flow or measured duty\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Obtain measured coolant flow, units, calibration, properties and timing.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C41 | Cooler feedback and setpoint history}
@@ -1891,13 +1915,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; every configuration and affected run\par
 \textbf{Requirement source / locator:} P0; Method logging and time synchronization\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Supply evidence and request review.\par
+\textbf{Current evidence [Reported]:} Chiller on/off contributes to hot-plateau oscillations per user. CAL-004 finds provisional temperature associations, not control causality.\par
+\textbf{Evidence source / locator:} OPCYCLE; FOLLOW; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Treat oscillatory plateaus as potentially cyclic operation\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Need controller sensor, setpoint/deadband, switching and exact intervals.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C42 | TLEP/BREP connections and termination}
@@ -1933,13 +1957,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU Prop-30 draft campaign; requalify other fluids\par
 \textbf{Requirement source / locator:} P0; Method environmental and condensation measurements\par
-\textbf{Current evidence [Reported]:} Draft calls for two room T/RH stations and cold exposed-surface measurements\par
-\textbf{Evidence source / locator:} P0; Method environmental measurements\par
+\textbf{Current evidence [Reported]:} Amb is a native ambient reference with unaccepted coordinates; room RH/two-station installation unverified. Bare STC contact does not establish an exposed ambient-surface measurement.\par
+\textbf{Evidence source / locator:} XWALK; VSEL; FOLLOW; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
 \textbf{Review state:} Needs review\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Are these channels installed? Under-insulation wall TCs are not exposed-surface measurements.\par
+\textbf{Selected choice:} Retain Amb role without inventing XYZ or RH channels\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Identify room sensor placement and actual exposed surface channels.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{C45 | Operating limits and alarm/interlock basis}
@@ -1961,13 +1985,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Configuration / Experimental team\par
 \textbf{Applies to:} VCU; every configuration and affected run\par
 \textbf{Requirement source / locator:} P0; P4; Campaign execution conventions; Phase 4 records\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Supply evidence and request review.\par
+\textbf{Current evidence [Reported]:} VCU inventory: 23 native sources, 22 readable; 19 CSVs are supplementary, not independent experiments. July29 unreadable; preserve hashes and run/event records.\par
+\textbf{Evidence source / locator:} DIAG; TRIAGE; FOLLOW; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Use source/run hashes and run-specific event logs\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} No universal experiment/fluid assignment; July15 ambient-named file may be liquid continuation.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M01 | Intended use and prediction targets}
@@ -1989,13 +2013,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Computational team\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} MODEL; P2; Run outputs; model freeze\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Record solver/code revision, resolved configuration and property version.\par
+\textbf{Current evidence [Reported]:} This documentation uses WORK v3 / regional v7 / material v3. Historical numerical studies keep original Rev8/insulation-v5 inputs.\par
+\textbf{Evidence source / locator:} WORK; CURRENT; FOLLOW; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} VCU-REV9-DRAFT-007 for current documentation only\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Record actual solver/input/property versions separately in every run.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M03 | Model domain and geometry simplifications}
@@ -2017,13 +2041,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} P0; Method geometry/model map\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Map physical sensing points or averages to cells/regions; include non-coincident offsets.\par
+\textbf{Current evidence [Modeling assumption]:} STCs observe outside wall locally on bare pipe; PTC1-4 treated as centerline fluid; JTC/PTC5/6 are jacket boundaries, not main-loop nodes.\par
+\textbf{Evidence source / locator:} VSEL; WORK; XWALK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Working observation operators in Calibration and Native channels\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Actual junction depths, response, finite footprints and mesh interpolation unknown.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M05 | Flow mode and governing equations}
@@ -2045,13 +2069,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Computational team\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} MODEL; P2; Model stages; reduced-zone thermal model\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Which layers, axial paths, capacitances and contacts are included?\par
+\textbf{Current evidence [Modeling assumption]:} Perfect insulation contact is a user-directed modeling assumption; local bare STCs and distinct fiberglass/ceramic regions retained.\par
+\textbf{Evidence source / locator:} VINS; VSEL; CURRENT; ASSUME; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Keep separate fluid/wall/insulation paths and declared contact assumption\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Model-specific storage, axial paths and contact sensitivity require review.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M07 | TLEP/BREP mathematical boundary conditions}
@@ -2059,13 +2083,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Computational team\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} USER; P0; Exit-pipe alignment request; configuration record\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Specify termination plane, mass/pressure and thermal conditions; no throughflow does not imply adiabatic.\par
+\textbf{Current evidence [Modeling assumption]:} Shared default omits BREP (ASM-020) and retains TLEP with experiment-specific temperature/pressure (ASM-021). No installed VCU boundary values are known.\par
+\textbf{Evidence source / locator:} ASSUME; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Provisional model-domain defaults only\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Select exact VCU termination planes and measured states before use; no-throughflow is not adiabatic.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M08 | Heater source distribution and power balance}
@@ -2087,13 +2111,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} P0; MODEL; Secondary boundaries; cooler forms\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Choose measured inlet/flow, imposed wall temperature or coefficient model with rationale.\par
+\textbf{Current evidence [Reported]:} Working PTC5 inlet/PTC6 outlet; measured cooler forcing varies; user reports chiller cycling. Coefficient/flow and active-span choices unresolved.\par
+\textbf{Evidence source / locator:} VSEL; WORK; OPCYCLE; FOLLOW; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Run-specific cooler input; compare cyclic mean/amplitude separately\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Need flow, routing, controller logs and qualified boundary/model choice.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M10 | External convection and radiation model}
@@ -2101,13 +2125,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Computational team\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} P2; MODEL; Reduced-zone heat loss; thermal network\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Record ambient assignment, emissivity, surface state, correlations and validity.\par
+\textbf{Current evidence [Reported]:} Reported insulated regions and bare D-E are known; jacket heat exchange is with water where present. Ambient coupling/emissivity unresolved.\par
+\textbf{Evidence source / locator:} CURRENT; VSEL; WORK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Separate room-air loss from coolant exchange\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Select qualified correlations, surface states, supports and ambient assignment.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M11 | Hydraulic friction and local losses}
@@ -2255,13 +2279,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Computational team\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} P0; P2; Model map; effective initial states\par
-\textbf{Current evidence [Reported]:} Reduced-zone temperature is an effective state, not automatically fluid/wall temperature\par
-\textbf{Evidence source / locator:} P2; MODEL; Reduced-zone model; reduced-zone paragraph\par
+\textbf{Current evidence [Modeling assumption]:} STC wall and assumed PTC centerline operators are explicit. Distributed optical extent and sensor lag unknown; reduced-zone states need their own averaging rule.\par
+\textbf{Evidence source / locator:} XWALK; VSEL; WORK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
 \textbf{Review state:} Needs review\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Define spatial/time averaging, lag and fluid-wall weighting.\par
+\textbf{Selected choice:} Do not equate effective-zone temperature with fluid or wall automatically\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Qualify lag/spatial/time averaging and noncoincident comparisons.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M22 | Steady-state class and acceptance limits}
@@ -2269,13 +2293,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
 \textbf{Applies to:} VCU Prop-30 draft campaign; requalify other fluids\par
 \textbf{Requirement source / locator:} P1; Section 2 Data Acceptance and Uncertainty\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Approve intended-use limits and demonstrate resolvability; do not loosen them to fit noise.\par
+\textbf{Current evidence [Reported]:} Sep2/4 are provisional ambient baseline candidates; stable mean cyclic operation differs from instantaneous equilibrium. No accepted comparison tolerances established.\par
+\textbf{Evidence source / locator:} DIAG; FOLLOW; OPCYCLE; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Keep exploratory classifications separate from accepted steady-state limits\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Approve intended-use tolerances and qualify run-specific intervals.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M23 | Accepted interval and target-attainment result}
@@ -2297,13 +2321,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Computational team\par
 \textbf{Applies to:} VCU Prop-30 draft campaign; requalify other fluids\par
 \textbf{Requirement source / locator:} P1; Required Outputs: correlation structure and uncertainty\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Freeze block/window rules, Type A/B and shared-error covariance with evidence.\par
+\textbf{Current evidence [Reported]:} Slow correlated variation persists after averaging; ten-second block means are not independent. CAL-004 temporal-block analyses address serial dependence; Type B calibration unknown.\par
+\textbf{Evidence source / locator:} DIAG; FOLLOW; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Use temporal correlation and joint-channel covariance; report block sensitivity\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} No universal validated block length, intrinsic noise floor or absolute accuracy supplied.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M25 | Calibration/withheld split and model freeze}
@@ -2311,13 +2335,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Computational team\par
 \textbf{Applies to:} VCU Prop-30 draft campaign; requalify other fluids\par
 \textbf{Requirement source / locator:} P2; P3; P4; P2 runs/freeze; P3 blind validation; P4 applicability case\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Declare run roles before fitting; record model/property/mapping versions and any reassignment.\par
+\textbf{Current evidence [Reported]:} Existing acquisitions have working calibration roles, not independent validation; no blind Rev9 split established. Historical model/configurations remain frozen to their own inputs.\par
+\textbf{Evidence source / locator:} FOLLOW; WORK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Declare held-out intervals/runs and model freeze before scoring\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Finalize scientific calibration/validation roles; empirical interval holdout is not facility validation.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M26 | Parameter identifiability and sensitivities}
@@ -2325,13 +2349,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Computational team\par
 \textbf{Applies to:} VCU Prop-30 draft campaign; requalify other fluids\par
 \textbf{Requirement source / locator:} P2; Required Outputs steps 5-7\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Report parameter covariance, residual structure, start-time and initial-state sensitivity.\par
+\textbf{Current evidence [Modeling assumption]:} Passive relaxation constrains time constants and parameter ratios; absolute conductance/capacitance scales need a fixed or measured-power anchor.\par
+\textbf{Evidence source / locator:} MODEL; FOLLOW; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Require identifiability and boundary/initial-state sensitivity before interpreting fitted material constants\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} No validated all-layer parameter identification or fitted properties imported.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M27 | Settling time and supported domain}
@@ -2339,13 +2363,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Computational team\par
 \textbf{Applies to:} VCU Prop-30 draft campaign; requalify other fluids\par
 \textbf{Requirement source / locator:} P2; Slowest loop time constant; Required Outputs\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Report uncertainty and conservative supported bound; do not use an archived plateau fit.\par
+\textbf{Current evidence [Reported]:} Response/settling estimates are conditional on boundary, interval and model. Oscillating hot plateaus need cycle metrics rather than assumed instantaneous settling.\par
+\textbf{Evidence source / locator:} FOLLOW; OPCYCLE; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} No universal settling time selected\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} Qualify confidence, start-time, boundary variability and supported domain.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M28 | Mass/energy conservation and solution convergence}
@@ -2395,13 +2419,13 @@ The Requirements workbook tab is the editable master. Each record states why the
 \textbf{Package / responsible team:} Modeling / Experimental + computational\par
 \textbf{Applies to:} VCU; 1-D and CFD / CHT\par
 \textbf{Requirement source / locator:} P2; P3; P4; Validation and disposition sections\par
-\textbf{Current evidence [Unknown]:} Unknown\par
-\textbf{Evidence source / locator:} None supplied; Not available\par
-\textbf{Review state:} Needs information\par
-\textbf{Selected choice:} None selected\par
-\textbf{Decision scope / rationale:} \textit{Unknown}\par
-\textbf{Reviewer / date; effective configuration:} Pending; Unknown\par
-\textbf{To resolve:} Define metrics and acceptance basis; preserve blind comparisons and model limitations.\par
+\textbf{Current evidence [Reported]:} Historical forward/boundary studies remain conditional; neither successful computation nor an empirical holdout validates the Rev9 facility model.\par
+\textbf{Evidence source / locator:} FOLLOW; WORK; See cited Sources locators and Current knowledge / Native channels; CFG-002 evidence bundle\par
+\textbf{Review state:} Needs review\par
+\textbf{Selected choice:} Retain conservation/uncertainty checks and predeclared unseen assessment\par
+\textbf{Decision scope / rationale:} Transferred documented working understanding; provisional use only; no installed or package release approval.\par
+\textbf{Reviewer / date; effective configuration:} Pending; VCU-REV9-DRAFT-007\par
+\textbf{To resolve:} No validated facility accuracy or release criterion supplied.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{M32 | Repeatability and path-dependence criteria}
@@ -2422,53 +2446,53 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \subsection{Model choices}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{TLEP and expansion tank}
-\textbf{Observed state:} \textit{Unknown}\par
-\textbf{1-D choice:} \textit{Unknown}\par
-\textbf{CFD / CHT choice:} \textit{Unknown}\par
-\textbf{Evidence / rationale:} Confirm level, vent/pressure, connectivity and thermal coupling.\par
-\textbf{Uncertainty / sensitivity:} \textit{Unknown}\par
-\textbf{Owner:} \textit{Unknown}\par
-\textbf{Status:} Unknown\par
+\textbf{Observed state:} Installed state unverified\par
+\textbf{1-D choice:} Shared default ASM-021 retains top exit with experiment-specific temperature/pressure\par
+\textbf{CFD / CHT choice:} Select physical termination and reservoir coupling explicitly; not an installed boundary assignment\par
+\textbf{Evidence / rationale:} ASSUME ASM-021; CAD dimensions\par
+\textbf{Uncertainty / sensitivity:} No pressure, tank level, vent state or thermal coupling selected.\par
+\textbf{Owner:} Computational + experimental review\par
+\textbf{Status:} Assumed\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{BREP and drain}
-\textbf{Observed state:} \textit{Unknown}\par
-\textbf{1-D choice:} \textit{Unknown}\par
-\textbf{CFD / CHT choice:} \textit{Unknown}\par
-\textbf{Evidence / rationale:} Confirm valve state, termination plane and thermal coupling.\par
-\textbf{Uncertainty / sensitivity:} \textit{Unknown}\par
-\textbf{Owner:} \textit{Unknown}\par
-\textbf{Status:} Unknown\par
+\textbf{Observed state:} Installed valve state unverified\par
+\textbf{1-D choice:} Shared default ASM-020 omits bottom exit; this is a model-domain choice\par
+\textbf{CFD / CHT choice:} Explicitly define omitted branch or physical termination and thermal losses\par
+\textbf{Evidence / rationale:} ASSUME ASM-020; CAD dimensions\par
+\textbf{Uncertainty / sensitivity:} No evidence that omitted means physically sealed or adiabatic.\par
+\textbf{Owner:} Computational + experimental review\par
+\textbf{Status:} Assumed\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{Heater power}
-\textbf{Observed state:} \textit{Unknown}\par
-\textbf{1-D choice:} \textit{Unknown}\par
-\textbf{CFD / CHT choice:} \textit{Unknown}\par
-\textbf{Evidence / rationale:} Electrical heater evidence conflicts with draft secondary-heater plan.\par
-\textbf{Uncertainty / sensitivity:} \textit{Unknown}\par
-\textbf{Owner:} \textit{Unknown}\par
-\textbf{Status:} Unknown\par
+\textbf{Observed state:} Electrical mat/band heating reported\par
+\textbf{1-D choice:} Integrate applied input to eta\_\allowbreak{}heater times measured electrical power; eta and power unselected\par
+\textbf{CFD / CHT choice:} Document element footprint, electrical metering, storage and external losses\par
+\textbf{Evidence / rationale:} HEAT; VSEL; Requirements C34-C37/M08\par
+\textbf{Uncertainty / sensitivity:} Voltage setting is not watts. No measured spatial split/efficiency or net duty supplied.\par
+\textbf{Owner:} Computational + experimental review\par
+\textbf{Status:} Reported\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{Cooler control}
-\textbf{Observed state:} \textit{Unknown}\par
-\textbf{1-D choice:} \textit{Unknown}\par
-\textbf{CFD / CHT choice:} \textit{Unknown}\par
-\textbf{Evidence / rationale:} Document coolant flow, inlet temperature, feedback and measurement planes.\par
-\textbf{Uncertainty / sensitivity:} \textit{Unknown}\par
-\textbf{Owner:} \textit{Unknown}\par
-\textbf{Status:} Unknown\par
+\textbf{Observed state:} User reports chiller on/off contributes to hot-plateau oscillations\par
+\textbf{1-D choice:} Use run-specific measured PTC5 inlet/flow when available; retain cyclic forcing\par
+\textbf{CFD / CHT choice:} Resolve jacket route/active span and measured inlet/flow before selecting boundary\par
+\textbf{Evidence / rationale:} OPCYCLE; FOLLOW; VSEL; WORK\par
+\textbf{Uncertainty / sensitivity:} PTC6 outlet is comparison/energy-balance information, not another arbitrary imposed boundary. Switching times and controller identity unknown.\par
+\textbf{Owner:} Computational + experimental review\par
+\textbf{Status:} Reported\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{External convection / radiation}
-\textbf{Observed state:} \textit{Unknown}\par
-\textbf{1-D choice:} \textit{Unknown}\par
-\textbf{CFD / CHT choice:} \textit{Unknown}\par
-\textbf{Evidence / rationale:} Document room environment, coverings, surfaces and supports.\par
-\textbf{Uncertainty / sensitivity:} \textit{Unknown}\par
-\textbf{Owner:} \textit{Unknown}\par
-\textbf{Status:} Unknown\par
+\textbf{Observed state:} Straight D-E bare; all STC contacts locally bare; remaining regions per VREG\par
+\textbf{1-D choice:} Separate coolant exchange under jacket from room-air losses; coefficient/emissivity unselected\par
+\textbf{CFD / CHT choice:} Resolve local surfaces, supports and coverings\par
+\textbf{Evidence / rationale:} VREG; CURRENT; VSEL\par
+\textbf{Uncertainty / sensitivity:} Local bare STC contact does not make whole parent leg bare. Ambient XYZ/RH and support conductances unknown.\par
+\textbf{Owner:} Computational + experimental review\par
+\textbf{Status:} Reported\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
 \subsection*{Initial conditions}
@@ -2529,6 +2553,56 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Uncertainty / sensitivity:} Electrical power split, storage, losses and footprint unresolved.\par
 \textbf{Owner:} Computational + experimental review\par
 \textbf{Status:} Modeling assumption\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{Working sensor observation operators}
+\textbf{Observed state:} 16 numbered main channels; two jacket channels\par
+\textbf{1-D choice:} STC outside wall; PTC1-4 centerline fluid assumption; PTC5 inlet/PTC6 outlet\par
+\textbf{CFD / CHT choice:} Use matching physical layer; do not interpret mount centroid as sensing junction\par
+\textbf{Evidence / rationale:} VSEL; WORK; XWALK; ASSUME ASM-023\par
+\textbf{Uncertainty / sensitivity:} LF optical extent and binding unknown; Amb/Tank coordinates unknown; Type B calibration unqualified.\par
+\textbf{Owner:} Computational + experimental review\par
+\textbf{Status:} Assumed\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{Frame and gravity}
+\textbf{Observed state:} Rev9 drawing frame B origin; x=B\_\allowbreak{}CAD\_\allowbreak{}Z-CAD\_\allowbreak{}Z; y=CAD\_\allowbreak{}Y-B\_\allowbreak{}CAD\_\allowbreak{}Y; n=CAD\_\allowbreak{}X-B\_\allowbreak{}CAD\_\allowbreak{}X\par
+\textbf{1-D choice:} Working local gravity (0,-1,0); derive inclination from geometry\par
+\textbf{CFD / CHT choice:} Retain n for ports/branches and qualify gravity against installed survey\par
+\textbf{Evidence / rationale:} VSEL; WORK\par
+\textbf{Uncertainty / sensitivity:} Working geometry convention, not independently measured gravity. No physical sensor angles inferred.\par
+\textbf{Owner:} Computational + experimental review\par
+\textbf{Status:} Assumed\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{Insulation contact}
+\textbf{Observed state:} Perfect contact was user-directed model assumption\par
+\textbf{1-D choice:} Perfect pipe/insulation contact candidate; preserve local bare STCs\par
+\textbf{CFD / CHT choice:} Contact resistance/attachment and support details require survey\par
+\textbf{Evidence / rationale:} VINS; ASSUME; VSEL; CURRENT\par
+\textbf{Uncertainty / sensitivity:} Perfect contact is not measured; thickness/material uncertainties remain unquantified.\par
+\textbf{Owner:} Computational + experimental review\par
+\textbf{Status:} Assumed\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{Historical configuration applicability}
+\textbf{Observed state:} STC5 moved; change date not supplied\par
+\textbf{1-D choice:} Retain original Rev8 configurations for historical computed results\par
+\textbf{CFD / CHT choice:} Do not relabel old meshes/results as Rev9\par
+\textbf{Evidence / rationale:} VSEL; WORK; FOLLOW\par
+\textbf{Uncertainty / sensitivity:} No run-to-installation validity dates supplied. This workbook does not activate solver migration.\par
+\textbf{Owner:} Computational + experimental review\par
+\textbf{Status:} Reported\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{Data validity and uncertainty}
+\textbf{Observed state:} June12 STC6/PTC2/PTC3 have nonphysical data; slow temporal correlation present\par
+\textbf{1-D choice:} Use source-hashed interval masks and temporal-block/covariance checks; keep raw immutable\par
+\textbf{CFD / CHT choice:} Apply same observation/validity/uncertainty contract\par
+\textbf{Evidence / rationale:} DAQISS; FOLLOW; DIAG\par
+\textbf{Uncertainty / sensitivity:} Diagnostics are not Type B accuracy or accepted steady windows. July29 has no readable waveform.\par
+\textbf{Owner:} Computational + experimental review\par
+\textbf{Status:} Reported\par
 \end{minipage}\par\vspace{5pt}
 \clearpage\subsection{Materials}
 \par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
@@ -2609,34 +2683,358 @@ These records reproduce the existing Model choices and Materials worksheets. Unk
 \textbf{Status:} Unknown\par
 \textbf{Source:} User fluid scope\par
 \end{minipage}\par\vspace{5pt}
+\subsection{Native channels}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC2}
+\textbf{Reference / domain:} STC-02 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC3}
+\textbf{Reference / domain:} STC-03 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC4}
+\textbf{Reference / domain:} STC-04 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC5}
+\textbf{Reference / domain:} STC-05 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC6}
+\textbf{Reference / domain:} STC-06 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{PTC1}
+\textbf{Reference / domain:} PTC-01 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Primary fluid; centerline observation assumed\par
+\textbf{Basis / source:} VSEL; WORK; XWALK / ASM-023\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC7}
+\textbf{Reference / domain:} STC-07 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{PTC3}
+\textbf{Reference / domain:} PTC-03 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Primary fluid; centerline observation assumed\par
+\textbf{Basis / source:} VSEL; WORK; XWALK / ASM-023\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC8}
+\textbf{Reference / domain:} STC-08 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC9}
+\textbf{Reference / domain:} STC-09 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC10}
+\textbf{Reference / domain:} STC-10 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC11}
+\textbf{Reference / domain:} STC-11 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{PTC4}
+\textbf{Reference / domain:} PTC-04 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Primary fluid; centerline observation assumed\par
+\textbf{Basis / source:} VSEL; WORK; XWALK / ASM-023\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC12}
+\textbf{Reference / domain:} STC-12 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{PTC2}
+\textbf{Reference / domain:} PTC-02 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Primary fluid; centerline observation assumed\par
+\textbf{Basis / source:} VSEL; WORK; XWALK / ASM-023\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{STC1}
+\textbf{Reference / domain:} STC-01 / main\_\allowbreak{}loop\par
+\textbf{Working role / operator:} Outside pipe surface; local bare contact\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{PTC6}
+\textbf{Reference / domain:} JTC-A / jacket\_\allowbreak{}port\par
+\textbf{Working role / operator:} jacket outlet\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{PTC5}
+\textbf{Reference / domain:} JTC-B / jacket\_\allowbreak{}port\par
+\textbf{Working role / operator:} jacket inlet\par
+\textbf{Basis / source:} VSEL; WORK; XWALK\par
+\textbf{Limits / next evidence:} Working binding, 2026-10-14. CAD reference is not sensing junction; calibration and historical applicability unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{Amb}
+\textbf{Reference / domain:} No accepted XYZ / auxiliary\par
+\textbf{Working role / operator:} Room ambient temperature reference\par
+\textbf{Basis / source:} XWALK; FOLLOW\par
+\textbf{Limits / next evidence:} Native name and candidate role; exact sensor placement, medium, calibration and run-specific use need confirmation.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{Tank}
+\textbf{Reference / domain:} No accepted XYZ / auxiliary\par
+\textbf{Working role / operator:} Tank / secondary-boundary temperature reference\par
+\textbf{Basis / source:} XWALK; FOLLOW\par
+\textbf{Limits / next evidence:} Native name and candidate role; exact sensor placement, medium, calibration and run-specific use need confirmation.\par
+\end{minipage}\par\vspace{5pt}
+\subsection{Current knowledge}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K01}
+\textbf{Topic:} Facility and configuration\par
+\textbf{Current understanding:} VCU only; Rev9 documentation DRAFT-007. Current geometry working v3, insulation v7, solid materials v3.\par
+\textbf{Basis / source:} WORK; CURRENT; VMAT\par
+\textbf{Limits / next evidence:} Draft, not an installed release or model-ready input; ACU evidence does not qualify VCU.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K02}
+\textbf{Topic:} Coordinates and lengths\par
+\textbf{Current understanding:} B origin; x=B\_\allowbreak{}CAD\_\allowbreak{}Z-CAD\_\allowbreak{}Z, y=CAD\_\allowbreak{}Y-B\_\allowbreak{}CAD\_\allowbreak{}Y, n=CAD\_\allowbreak{}X-B\_\allowbreak{}CAD\_\allowbreak{}X. Traverse B-C-D-E-F-G-H-A-B.\par
+\textbf{Basis / source:} VSEL; WORK; Geometry\par
+\textbf{Limits / next evidence:} A-H are axis endpoints, not virtual corners; lengths/projected spans and bend arcs have different bases.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K03}
+\textbf{Topic:} Gravity and inclination\par
+\textbf{Current understanding:} Working gravity (0,-1,0); straight inclined axes about 10.8 deg; heater chord about 10.79355 deg.\par
+\textbf{Basis / source:} VSEL; WORK\par
+\textbf{Limits / next evidence:} Installed gravity survey absent; keep n and do not conflate circumferential angle with inclination.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K04}
+\textbf{Topic:} Heater and lower-right geometry\par
+\textbf{Current understanding:} H-A projected union 1346.4962148518246 mm; pieces overlap 7.202344894878479 mm and are offset 0.1515510905213091 mm. G-H is reconstructed spine.\par
+\textbf{Basis / source:} VSEL; WORK; CAD dimensions\par
+\textbf{Limits / next evidence:} No exact connected hydraulic centerline or silent healing.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K05}
+\textbf{Topic:} Pipe dimensions\par
+\textbf{Current understanding:} Main OD 33.401 mm CAD-derived. Working main ID 26.64 mm rounded nominal, separate from unknown CAD bore; component-specific bores in CAD dimensions.\par
+\textbf{Basis / source:} VSEL; DIA; Model choices\par
+\textbf{Limits / next evidence:} Main Geometry ID remains blank; do not fill from local spools.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K06}
+\textbf{Topic:} Insulation\par
+\textbf{Current understanding:} Six ordinary-pipe regions fiberglass about 50.8 mm; straight heater ceramic strip only about 6.35 mm; three straight D-E regions bare. Both upper corners insulated; LF-01 locally covered.\par
+\textbf{Basis / source:} CURRENT; VREG; VTOP\par
+\textbf{Limits / next evidence:} Reported thickness estimates, not measured; local transition/contact surveys and product identity unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K07}
+\textbf{Topic:} STC contacts\par
+\textbf{Current understanding:} All 12 STCs contact bare pipe locally, including on insulated parent regions.\par
+\textbf{Basis / source:} VSEL; WORK\par
+\textbf{Limits / next evidence:} Do not turn local bare contact into whole-leg bare coverage. Footprints/windows/attachment response unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K08}
+\textbf{Topic:} Main sensor map\par
+\textbf{Current understanding:} 16 working numbered STC/PTC mappings populated in Sensors; STC5 B+942.186081 mm, PTC4 H+63.716137 mm.\par
+\textbf{Basis / source:} VSEL; WORK\par
+\textbf{Limits / next evidence:} Current working binding; physical tips, serials and historical change dates unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K09}
+\textbf{Topic:} Jacket map\par
+\textbf{Current understanding:} JTC-B = PTC5 inlet; JTC-A = PTC6 outlet. Port reference positions in WORK; no main-loop station invented.\par
+\textbf{Basis / source:} VSEL; WORK; Native channels\par
+\textbf{Limits / next evidence:} Internal flow routing and actual wetted measurement planes unverified.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K10}
+\textbf{Topic:} Sensor inventory and exclusions\par
+\textbf{Current understanding:} 22 active geometric references: 12 STC + 4 main PTC + 4 LF + 2 JTC; 20 on main loop. Original 23 includes excluded PTC-X. Native core register has 20 channels incl. Amb/Tank.\par
+\textbf{Basis / source:} WORK; XWALK; Review issues I04\par
+\textbf{Limits / next evidence:} PTC-X excluded from active records, not asserted physically removed. LF mounts are not fiber active extents/channels.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K11}
+\textbf{Topic:} Observation operators\par
+\textbf{Current understanding:} STC outside-wall surface; PTC1-4 centerline primary fluid is a working assumption. Amb/Tank lack accepted XYZ.\par
+\textbf{Basis / source:} XWALK; ASSUME ASM-023; VSEL\par
+\textbf{Limits / next evidence:} CAD references remain pipe points/mounts, never certified sensing junctions. Angles/radii remain blank.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K12}
+\textbf{Topic:} Calibration and DAQ\par
+\textbf{Current understanding:} Instrument certificates, corrections, Type B uncertainties, coverage factors and response are unknown. Sep2/4 native sampling about 30 Hz, scoped to those runs.\par
+\textbf{Basis / source:} DIAG; FOLLOW; Calibration\par
+\textbf{Limits / next evidence:} Do not invent calibrations from noise statistics or assign one rate/clock/filter globally.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K13}
+\textbf{Topic:} Heater source\par
+\textbf{Current understanding:} Electrical mat/band heaters reported; modeling extent full projected H-A. Real energized boundaries/power/efficiency/spatial split remain unknown.\par
+\textbf{Basis / source:} HEAT; VSEL; WORK\par
+\textbf{Limits / next evidence:} Measured Active heater span remains blank; voltage is not watts; clamp positions are mechanical only.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K14}
+\textbf{Topic:} Cooler geometry and boundaries\par
+\textbf{Current understanding:} Shell 1017.5875 mm; complete jacket 1030.2875 mm; envelope starts D+127.56180941009107 mm. Bare pipe under jacket exchanges with coolant.\par
+\textbf{Basis / source:} WORK; CAD dimensions; CURRENT\par
+\textbf{Limits / next evidence:} Active cooling extent, coolant flow and contact/routing unresolved; envelope is not automatically active area.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K15}
+\textbf{Topic:} Cooler cycling\par
+\textbf{Current understanding:} User reports on/off chiller contributes to heated-plateau oscillation; conditional CAL-004 associations exist.\par
+\textbf{Basis / source:} OPCYCLE; FOLLOW\par
+\textbf{Limits / next evidence:} No universal period/causality; need controller/switching logs. Separate settled cycle mean from instantaneous equilibrium.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K16}
+\textbf{Topic:} Fluids\par
+\textbf{Current understanding:} VCU options Prop-30 (reported 30\% PG by mass), air, water; reported jacket water; primary fill/circuit must be matched to run.\par
+\textbf{Basis / source:} USER; PG; FLUIDCFG; XWALK\par
+\textbf{Limits / next evidence:} Product/formulation/batch/property functions and operating limits unverified; air has both ambient and possible primary roles.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K17}
+\textbf{Topic:} Solid properties\par
+\textbf{Current understanding:} Nine candidate rho/cp/k functions already in Materials: pipe, fiberglass, heater ceramic. T in K; explicit SI outputs; out-of-range error.\par
+\textbf{Basis / source:} VMAT; V5C\par
+\textbf{Limits / next evidence:} Working domains pipe 278.15-813 K, fiberglass 278.15-533 K, strip 278.15-1089 K. 5 C extension authorized; not validated, calibration-eligible or operating limits.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K18}
+\textbf{Topic:} Topology and branches\par
+\textbf{Current understanding:} Each CAD exit tube 469.9 mm; top-exit/tank junction geometry does not certify hydraulics. Shared defaults omit BREP and retain TLEP with per-experiment temperature/pressure.\par
+\textbf{Basis / source:} CAD dimensions; ASSUME ASM-020/021\par
+\textbf{Limits / next evidence:} Installed valves, vents, fill level and actual boundaries unknown. No-throughflow is not adiabatic.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K19}
+\textbf{Topic:} Model and property selection\par
+\textbf{Current understanding:} Physics model and effective reduced-zone model have separate observation/identification contracts; no fluid property model or facility closures approved here.\par
+\textbf{Basis / source:} MODEL; FLUIDCFG; Model choices\par
+\textbf{Limits / next evidence:} No fitted constants imported or solver migration activated; property candidates calibration-ineligible.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K20}
+\textbf{Topic:} Historical applicability\par
+\textbf{Current understanding:} STC5 changed location; no change dates/run ranges. Earlier solver and diagnostic runs retain Rev8 and original insulation/material selections.\par
+\textbf{Basis / source:} VSEL; WORK; FOLLOW\par
+\textbf{Limits / next evidence:} Never relabel historical results Rev9 or retroactively relocate sensors without run-specific evidence.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K21}
+\textbf{Topic:} Experiment inventory\par
+\textbf{Current understanding:} 23 native TDMS sources, 22 readable; 19 supplementary CSVs are not independent experiments. July29 waveform unreadable. Sep2/4 provisional ambient candidates.\par
+\textbf{Basis / source:} DIAG; TRIAGE\par
+\textbf{Limits / next evidence:} Shape labels are exploratory, not evidence of heater commands/fluid identity or accepted steady intervals.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K22}
+\textbf{Topic:} Known data-quality failures\par
+\textbf{Current understanding:} June12 STC6/PTC2/PTC3 include nonphysical Celsius readings. Retain raw, quarantine affected channel intervals and propagate versioned masks; retain unaffected channels.\par
+\textbf{Basis / source:} DAQISS; FOLLOW\par
+\textbf{Limits / next evidence:} Cause/status/scaling unresolved. June17 auxiliary heater temperatures need separate screens; June17/23 transitions need event interpretation.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K23}
+\textbf{Topic:} Noise and uncertainty\par
+\textbf{Current understanding:} Slow correlated temperature motion persists with averaging; compact ten-second block results are not valid independent-block accuracy bars. CAL-004 explores temporal correlation/covariance.\par
+\textbf{Basis / source:} DIAG; FOLLOW\par
+\textbf{Limits / next evidence:} No universal noise floor, absolute accuracy, optimal averaging or validated block length established; Type B absent.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K24}
+\textbf{Topic:} Run identity and events\par
+\textbf{Current understanding:} Short July15 ambient-named acquisition may be same liquid experiment; clocks and media need confirmation. Chiller, heater and jolt events require run-specific logs.\par
+\textbf{Basis / source:} TRIAGE; FOLLOW\par
+\textbf{Limits / next evidence:} Do not call it an independent air-only test from filename or fit material constants without boundary/validity qualification.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K25}
+\textbf{Topic:} Identification and validation\par
+\textbf{Current understanding:} Relaxation gives time constants/parameter ratios without an absolute power or fixed-capacitance anchor. Existing fits/holdouts are conditional studies, not facility validation.\par
+\textbf{Basis / source:} MODEL; FOLLOW\par
+\textbf{Limits / next evidence:} Approve intended-use tolerances, identifiability, calibration/withheld split and frozen model before accuracy claims.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}
+\subsection*{K26}
+\textbf{Topic:} Remaining experimental returns\par
+\textbf{Current understanding:} Need installed surveys and dated photos, sensor identities/depths, calibration/DAQ status, real heater power/wiring, coolant flow/route/control, fluid batch, boundary states and historical dates.\par
+\textbf{Basis / source:} Requirements; Review issues; Phase requests\par
+\textbf{Limits / next evidence:} Plans P0-P4 remain draft; records do not authorize operation or establish Nick approval.\par
+\end{minipage}\par\vspace{5pt}
 \clearpage\subsection{Calibration summary}\label{calibration-detail}
 Complete certificates, corrections and acquisition details remain on Calibration and in the resolved input export.
 \small\setlength{\tabcolsep}{4pt}
 \begin{longtable}{>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.26\textwidth}}
 \toprule
 \textbf{Sensor} & \textbf{Last calibration} & \textbf{Uncertainty} & \textbf{Model mapping} \\\midrule\endhead
-STC-02 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-STC-03 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-STC-04 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-STC-05 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
+STC-02 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
+STC-03 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
+STC-04 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
+STC-05 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
 LF-01 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-STC-06 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-PTC-01 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-STC-07 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
+STC-06 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
+PTC-01 & \textit{Unknown} & \textit{Unknown} & Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK. / Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK. \\[3pt]
+STC-07 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
 LF-03 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-PTC-03 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-STC-08 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-STC-09 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-STC-10 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-STC-11 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
+PTC-03 & \textit{Unknown} & \textit{Unknown} & Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK. / Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK. \\[3pt]
+STC-08 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
+STC-09 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
+STC-10 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
+STC-11 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
 LF-04 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-PTC-04 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-STC-12 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
+PTC-04 & \textit{Unknown} & \textit{Unknown} & Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK. / Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK. \\[3pt]
+STC-12 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
 LF-02 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-PTC-02 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-STC-01 & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-JTC-A & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
-JTC-B & \textit{Unknown} & \textit{Unknown} & \textit{Unknown} \\[3pt]
+PTC-02 & \textit{Unknown} & \textit{Unknown} & Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK. / Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK. \\[3pt]
+STC-01 & \textit{Unknown} & \textit{Unknown} & Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. / Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK. \\[3pt]
+JTC-A & \textit{Unknown} & \textit{Unknown} & PTC6 = jacket outlet; port mount reference only; wetted measurement plane unknown. VSEL; WORK. / PTC6 = jacket outlet; port mount reference only; wetted measurement plane unknown. VSEL; WORK. \\[3pt]
+JTC-B & \textit{Unknown} & \textit{Unknown} & PTC5 = jacket inlet; port mount reference only; wetted measurement plane unknown. VSEL; WORK. / PTC5 = jacket inlet; port mount reference only; wetted measurement plane unknown. VSEL; WORK. \\[3pt]
 \bottomrule\end{longtable}\normalsize
 \clearpage\section{Source catalog and limits of use}\label{sources-detail}
 Use the source ID with the row/page/section locator. Source files are not operating instructions. Exact local paths and read-time file hashes are recorded in support/reference/source\_manifest.json. Files remain at their supplied locations; they are not all duplicated into this repository.
@@ -2769,7 +3167,7 @@ Use the source ID with the row/page/section locator. Source files are not operat
 \subsection*{VINS | support/evidence/2026-10-16\_\allowbreak{}CFG-001\_\allowbreak{}vcu\_\allowbreak{}references/insulation.yaml}
 \textbf{Revision / context:} v5 2026-10-07, amended by VSEL for Rev9\par
 \textbf{Find it:} coverage; contact; regions\par
-\textbf{Qualification:} Regional thickness estimates/contact assumption; exact transitions and installed construction unverified. VSEL is later controlling top-leg evidence.\par
+\textbf{Qualification:} Historical regional v5. Current coverage is VREG/CURRENT and WORK v3; all STC contacts bare per VSEL. Preserve v5 as provenance only.\par
 \end{minipage}\par\vspace{5pt}
 \par\noindent\begin{minipage}{\textwidth}\small
 \subsection*{VTOP | support/evidence/2026-10-16\_\allowbreak{}GEO-009\_\allowbreak{}covered\_\allowbreak{}top\_\allowbreak{}corners/USER\_\allowbreak{}CLARIFICATION.md}
@@ -2783,9 +3181,72 @@ Use the source ID with the row/page/section locator. Source files are not operat
 \textbf{Find it:} region\_\allowbreak{}assignments.json; insulation.yaml; ADR-0025/0026; USER\_\allowbreak{}CONFIRMATION.md\par
 \textbf{Qualification:} Reported coverage and approximate thickness estimates; product/fit validation, installed surveys and historical applicability remain separate.\par
 \end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small
+\subsection*{WORK | support/evidence/2026-10-16\_\allowbreak{}CFG-002\_\allowbreak{}vcu\_\allowbreak{}current\_\allowbreak{}understanding/WORK\_\allowbreak{}rev9\_\allowbreak{}working\_\allowbreak{}selection\_\allowbreak{}v3.json}
+\textbf{Revision / context:} Rev9 working selection v3; GEO-010 2026-10-16\par
+\textbf{Find it:} sensors, heater, jacket, insulation; historical\_\allowbreak{}run\_\allowbreak{}applicability\par
+\textbf{Qualification:} Working choices; not installed survey, calibration or historical run migration.\par
+\end{minipage}\par\vspace{5pt}
+\clearpage{\large\bfseries Source catalog --- continued}\par
+\par\noindent\begin{minipage}{\textwidth}\small
+\subsection*{XWALK | support/evidence/2026-10-16\_\allowbreak{}CFG-002\_\allowbreak{}vcu\_\allowbreak{}current\_\allowbreak{}understanding/XWALK\_\allowbreak{}2026-10-05\_\allowbreak{}VCU\_\allowbreak{}WORKING\_\allowbreak{}SENSOR\_\allowbreak{}CROSSWALK.md}
+\textbf{Revision / context:} 2026-10-05 historical Rev8 crosswalk\par
+\textbf{Find it:} Working measurement operators and native channel roles\par
+\textbf{Qualification:} Use radial operators/native roles only; Rev8 stations, old insulation and unpaired JTC wording superseded by VSEL/VREG/WORK.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small
+\subsection*{DIAG | support/evidence/2026-10-16\_\allowbreak{}CFG-002\_\allowbreak{}vcu\_\allowbreak{}current\_\allowbreak{}understanding/DIAG\_\allowbreak{}README.md}
+\textbf{Revision / context:} CAL-003 2026-10-08\par
+\textbf{Find it:} Quality issues; ambient correlation; chiller operator report\par
+\textbf{Qualification:} Installed-system diagnostics, not sensor accuracy; compact ten-second blocks remain correlated. CAL-004 follow-up supersedes initial masks/method limitations.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small
+\subsection*{FOLLOW | support/evidence/2026-10-16\_\allowbreak{}CFG-002\_\allowbreak{}vcu\_\allowbreak{}current\_\allowbreak{}understanding/FOLLOW\_\allowbreak{}README.md}
+\textbf{Revision / context:} CAL-004 2026-10-08 follow-up\par
+\textbf{Find it:} Native validity; temporal uncertainty; heated associations; forward comparisons\par
+\textbf{Qualification:} Conditional historical Rev8/insulation-v5 analysis. Numerical correlations do not prove controller causality or validate Rev9.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small
+\subsection*{DAQISS | support/evidence/2026-10-16\_\allowbreak{}CFG-002\_\allowbreak{}vcu\_\allowbreak{}current\_\allowbreak{}understanding/DAQISS\_\allowbreak{}EXPERIMENTAL\_\allowbreak{}TEAM\_\allowbreak{}CLARIFICATION.md}
+\textbf{Revision / context:} 2026-10-08 source-linked clarification draft\par
+\textbf{Find it:} June12 source hash and channel invalid counts; June17/23 events\par
+\textbf{Qualification:} Draft for user to send; not sent and not answered.\par
+\end{minipage}\par\vspace{5pt}
+\clearpage{\large\bfseries Source catalog --- continued}\par
+\par\noindent\begin{minipage}{\textwidth}\small
+\subsection*{OPCYCLE | support/evidence/2026-10-16\_\allowbreak{}CFG-002\_\allowbreak{}vcu\_\allowbreak{}current\_\allowbreak{}understanding/OPCYCLE\_\allowbreak{}operator\_\allowbreak{}update.json}
+\textbf{Revision / context:} Direct user report 2026-10-08\par
+\textbf{Find it:} statements and unknown\par
+\textbf{Qualification:} Chiller on/off contributes to hot-plateau oscillation; exact intervals/control logs unknown.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small
+\subsection*{TRIAGE | support/evidence/2026-10-16\_\allowbreak{}CFG-002\_\allowbreak{}vcu\_\allowbreak{}current\_\allowbreak{}understanding/TRIAGE\_\allowbreak{}README.md}
+\textbf{Revision / context:} CAL-003 2026-10-07\par
+\textbf{Find it:} July15 identity/clock limits; July29 source\par
+\textbf{Qualification:} Short ambient-named July15 file may be same liquid experiment; not independently established air run.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small
+\subsection*{FLUIDCFG | support/evidence/2026-10-16\_\allowbreak{}CFG-002\_\allowbreak{}vcu\_\allowbreak{}current\_\allowbreak{}understanding/FLUIDCFG\_\allowbreak{}fluid.yaml}
+\textbf{Revision / context:} Provisional identity configuration\par
+\textbf{Find it:} identity, unresolved, runtime\_\allowbreak{}property\_\allowbreak{}selection\par
+\textbf{Qualification:} Prop-30 identity candidate; no selected numerical fluid property model. Later USER reports 30\% mass basis.\par
+\end{minipage}\par\vspace{5pt}
+\par\noindent\begin{minipage}{\textwidth}\small
+\subsection*{ASSUME | support/evidence/2026-10-16\_\allowbreak{}CFG-002\_\allowbreak{}vcu\_\allowbreak{}current\_\allowbreak{}understanding/ASSUME\_\allowbreak{}ASSUMPTIONS.md}
+\textbf{Revision / context:} Snapshot read 2026-10-16\par
+\textbf{Find it:} ASM-020/021/022/023/026/027; later VSEL/VREG overrides\par
+\textbf{Qualification:} Shared model defaults are modeling choices, not observed VCU valve states. Historical heater lengths/contact/ranges superseded by later dated decisions.\par
+\end{minipage}\par\vspace{5pt}
+\clearpage{\large\bfseries Source catalog --- continued}\par
+\par\noindent\begin{minipage}{\textwidth}\small
+\subsection*{CURRENT | support/evidence/2026-10-16\_\allowbreak{}CFG-002\_\allowbreak{}vcu\_\allowbreak{}current\_\allowbreak{}understanding/CURRENT\_\allowbreak{}INSULATION\_\allowbreak{}CURRENT.md}
+\textbf{Revision / context:} GEO-010 2026-10-16\par
+\textbf{Find it:} Regional assignment table and qualifications\par
+\textbf{Qualification:} Current reported coverage; estimated thickness; not product confirmation.\par
+\end{minipage}\par\vspace{5pt}
 \subsection*{Context retained outside the VCU baseline}
 ACU general-arrangement drawings, ANEC-000126 sensor labels, ACU sensor naming notes and ACU images belong to ACU. They supply no VCU values or channel mappings here. The supplied VCU overview PNGs identify Rev8 as their source and are visual-format references only. Mixed geometry archives and note links require member-level facility/revision checks; their contents are not imported wholesale.
 \subsection*{Generated record identity}
-\textbf{Workbook SHA-256 (spaces only for wrapping):} 9ab25c5064b10aa6 1ecb3a240808b611 a7dfc7a5a1a0c563 92b4f7835f831a27\par
+\textbf{Workbook SHA-256 (spaces only for wrapping):} f973e12efea86364 abeeaac16e16ff8c bf2d28a520667c61 774685ebe55cfc03\par
 All form answers, source rows and requirement fields are exported to support/generated/resolved\_inputs.json. The readable register is also available in support/generated/requirements\_and\_evidence.md. A successful build verifies the input structure and drawing geometry, not experimental or modeling readiness.
 \end{document}

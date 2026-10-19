@@ -1,0 +1,72 @@
+[
+  {
+    "source_id": "WORK",
+    "original_path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/facilities/vcu_provisional/rev9_working_selection_v3.json",
+    "portable_path": "support/evidence/2026-10-16_CFG-002_vcu_current_understanding/WORK_rev9_working_selection_v3.json",
+    "sha256": "cbffd0159d4ad0257223e89f25e80114f454f93cd34ad4e76f609e28400db2c1",
+    "bytes": 31122
+  },
+  {
+    "source_id": "XWALK",
+    "original_path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/data/2026-10-05_VCU_WORKING_SENSOR_CROSSWALK.md",
+    "portable_path": "support/evidence/2026-10-16_CFG-002_vcu_current_understanding/XWALK_2026-10-05_VCU_WORKING_SENSOR_CROSSWALK.md",
+    "sha256": "a839ed627737fea326d2efbd73293efe9007e543621fe2d2c93a66980a50bfc4",
+    "bytes": 5061
+  },
+  {
+    "source_id": "DIAG",
+    "original_path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/reports/data/2026/10/08/2026-10-08_CAL-003_vcu_diagnostics_findings/README.md",
+    "portable_path": "support/evidence/2026-10-16_CFG-002_vcu_current_understanding/DIAG_README.md",
+    "sha256": "9dd9d7fc8b24b3dcf3fb85a8bc6e6dd8653aa5b2b96f922a77e0a13de31d4513",
+    "bytes": 12295
+  },
+  {
+    "source_id": "FOLLOW",
+    "original_path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/reports/data/2026/10/08/2026-10-08_CAL-004_vcu_boundary_followup/README.md",
+    "portable_path": "support/evidence/2026-10-16_CFG-002_vcu_current_understanding/FOLLOW_README.md",
+    "sha256": "70a568c1bcbd3124ad188fbf725071e6565707bc0f1311290d1bc1d1d38ef625",
+    "bytes": 17086
+  },
+  {
+    "source_id": "DAQISS",
+    "original_path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/reports/data/2026/10/08/2026-10-08_CAL-004_vcu_boundary_followup/EXPERIMENTAL_TEAM_CLARIFICATION.md",
+    "portable_path": "support/evidence/2026-10-16_CFG-002_vcu_current_understanding/DAQISS_EXPERIMENTAL_TEAM_CLARIFICATION.md",
+    "sha256": "42c155c773b3e04870ee2e899faf1153af50f9c371a7fbd03fc2bb5e95ca4c0d",
+    "bytes": 2483
+  },
+  {
+    "source_id": "OPCYCLE",
+    "original_path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/reports/data/2026/10/08/2026-10-08_CAL-003_vcu_diagnostics_findings/operator_update.json",
+    "portable_path": "support/evidence/2026-10-16_CFG-002_vcu_current_understanding/OPCYCLE_operator_update.json",
+    "sha256": "e34626ac038bbdb7d83e6c89f3849660d13692e4e4ccf5867dcd3957414b9aa8",
+    "bytes": 709
+  },
+  {
+    "source_id": "TRIAGE",
+    "original_path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/reports/data/2026/10/07/2026-10-07_CAL-003_vcu_5c_properties_and_run_triage/README.md",
+    "portable_path": "support/evidence/2026-10-16_CFG-002_vcu_current_understanding/TRIAGE_README.md",
+    "sha256": "3e94b4c610e0c322405ed742691f942aa82b9edc811a616348cbfd34d34032fe",
+    "bytes": 7264
+  },
+  {
+    "source_id": "FLUIDCFG",
+    "original_path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/facilities/vcu_provisional/fluid.yaml",
+    "portable_path": "support/evidence/2026-10-16_CFG-002_vcu_current_understanding/FLUIDCFG_fluid.yaml",
+    "sha256": "f96a6ac99c7dff17b6ff23bd938b7b94b8ea5867c761d4295b125275c9f20302",
+    "bytes": 1026
+  },
+  {
+    "source_id": "ASSUME",
+    "original_path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/ASSUMPTIONS.md",
+    "portable_path": "support/evidence/2026-10-16_CFG-002_vcu_current_understanding/ASSUME_ASSUMPTIONS.md",
+    "sha256": "4ed49d3813b2fd57fbc37d3ddb585fb85fd3dc667c6ff2a918595234d20752c4",
+    "bytes": 11830
+  },
+  {
+    "source_id": "CURRENT",
+    "original_path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/facilities/vcu_provisional/INSULATION_CURRENT.md",
+    "portable_path": "support/evidence/2026-10-16_CFG-002_vcu_current_understanding/CURRENT_INSULATION_CURRENT.md",
+    "sha256": "6ccf6dd5eee55d195e0aad52b8ec26cb2e1446f0c6a2d0215e62cb9bbe304fc8",
+    "bytes": 2954
+  }
+]

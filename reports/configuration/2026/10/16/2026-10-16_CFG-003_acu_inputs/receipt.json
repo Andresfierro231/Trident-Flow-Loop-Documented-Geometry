@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "exit_code": 0,
+  "task_id": "CFG-003",
+  "elapsed_seconds": 2.923854760825634,
+  "result": "ACU-REVB-DRAFT-001 installed; 697 checks/four tests passed; VCU master and all existing generated artifacts preserved",
+  "output_paths": [
+    "/scratch/09748/andresfierro231/projects_scratch/Papers/UTexas_Research/utilities/Trident-Flow-Loop-Documented-Geometry/ACU_inputs.xlsx",
+    "/scratch/09748/andresfierro231/projects_scratch/Papers/UTexas_Research/utilities/Trident-Flow-Loop-Documented-Geometry/reports/configuration/2026/10/16/2026-10-16_CFG-003_acu_inputs/README.md"
+  ],
+  "files_installed": 50,
+  "workbook_sha256": "4eeed111763ded9e1b1253cef5ad24d481c3f2cccbc7bc13dd17ba1bb61e7e98",
+  "preserved_vcu_artifacts": {
+    "VCU_inputs.xlsx": "f973e12efea86364abeeaac16e16ff8cbf2d28a520667c61774685ebe55cfc03",
+    "support/generated/geometry.svg": "cdbc789b04aa1b19fa9ce839a5306f0bbf6fd836fa93a6e076fe1f0b81e3734a",
+    "support/generated/angle_convention.svg": "6284041cd7d6d24590d5d54c855667e797de47d8150d056793b004d761f6b117",
+    "support/generated/validation.json": "d2b83c4bd3bc06a3e88887cbc84aafa0a53e0bdf21be26c9e2f667b939e40cbe",
+    "support/generated/insulation.svg": "e12969fd043575dfdcfda52d41cafb85b5365dc15e0f1c2a3d57d1fe26a003b9",
+    "support/generated/geometry_and_sensors.json": "4d98051a6a1f3be8116f9b50759da67f7e6eee84abe9ccece640be96e878f85b",
+    "support/generated/resolved_inputs.json": "8236e9eae137eddcff7e986650773bea86fd52308ea801817e7b0d2773a35ef7",
+    "support/generated/insulation_regions.json": "11264a0f0b5649d182bb05464601deb2c790e6d127deee71630463a86ddc8f2e",
+    "support/generated/sensors.svg": "363b9bb59691c158aca018475805a0a0a0c27ecbb38921b49c62aeacf1f45d4f",
+    "support/generated/requirements_and_evidence.md": "499334ac7f80355c0d19ab4c4acd1ccd19316e97fa01b66b7d2fdd5b3f109d4c",
+    "support/generated/VCU_control_package.tex": "777c6c55afbb9bd15c465b9bf42d913fb1bfd0f0bcb75a4ea127716a220893e6"
+  }
+}

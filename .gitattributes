@@ -1,0 +1,6 @@
+# Preserve immutable evidence snapshots and raw logs byte-for-byte.
+# Their original CRLF/trailing whitespace is covered by recorded SHA-256 hashes.
+/support/evidence/2026-10-16_CFG-002_vcu_current_understanding/** -text -whitespace
+/support/evidence/2026-10-16_CFG-003_acu_inputs/** -text -whitespace
+/reports/configuration/2026/10/16/2026-10-16_CFG-002_vcu_current_understanding/*.log -text -whitespace
+/reports/configuration/2026/10/16/2026-10-16_CFG-003_acu_inputs/*.log -text -whitespace

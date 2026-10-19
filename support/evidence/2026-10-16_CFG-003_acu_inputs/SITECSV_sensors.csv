@@ -1,0 +1,55 @@
+sheet,name,model,location,epics_prefix,daq_notes,url
+Heat,Thermocouples,,,,,
+Heat,TC-ETH1.1,SCAIN-062U-12,Exp Tank Band Heater,NCDT1:HEAT,"All Thermocouple measurements go through an Automation Direct p1-04THM module somewhere (16-bit, ~200ms sample time)",https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-CH1.1,SCAIN-062U-12,Cooler Heater ch1,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-EP1.1,SCAIN-062U-12,Exp Tank Downpipe,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-DT2.1,SCAIN-062U-12,Drain Tank Band Heater 2,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-CP2.1,SCAIN-062U-12,Vertical Section Cold 2,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-HP2.1,SCAIN-062U-12,Vertical Section Hot 2,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-EW1.1,,Exp Tank Thermowell,NCDT1:HEAT,,
+Heat,TC-CH1.2,,Inner Cooler Pipe Temp 1,NCDT1:HEAT,,
+Heat,TC-EP1.2,SCAIN-062U-12,Exp Tank Downpipe Salt Temp,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-DP1.3,SCAIN-062U-12,Drain Tank Downpipe Salt Temp 2,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-HP2.2,SCAIN-062U-12,Vertical Section Hot Salt Temp,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-DT1.1,SCAIN-062U-12,Drain Tank Band Heater 1,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-CP1.1,SCAIN-062U-12,Vertical Section Cold 1,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-HP1.1,SCAIN-062U-12,Vertical Section Hot 1,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-DP1.1,SCAIN-062U-12,Drain Tank Downpipe,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-DF1.1,SCAIN-062U-12,Drain Tank Flange,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-CH2.1,SCAIN-062U-12,Cooler Heater ch2,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-DW1.1,,,NCDT1:HEAT,,
+Heat,TC-CP1.2,SCAIN-062U-12,Vertical Section Cold Salt Temp,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-DP1.2,SCAIN-062U-12,Drain Tank Downpipe Salt Temp,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-DF1.2,SCAIN-062U-12,Drain Tank Flange Surface Temp,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-CH2.2,,Inner Cooler Pipe Temp 2,NCDT1:HEAT,,
+Heat,TC-EP1.3,SCAIN-062U-12,Exp Tank Downpipe Salt Temp 2,NCDT1:HEAT,,https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12
+Heat,TC-MH1.3,,,NCDT1:HEAT,,
+Heat,TC-MH1.1,,,NCDT1:HEAT,,
+Heat,TC-MH1.2,,,NCDT1:HEAT,,
+Heat,Cooler Air Sensors,,,,,
+Heat,RTD1,PR-31-3-100-A-1/8-1200-M12-1,Cooler Inlet Temp,NCDT1:COOLER,These are read using an AutomationDirect p1-04RTD,https://www.dwyeromega.com/en-us/rtd-probes-with-high-temperature-molded-m12-connectors/PR-31/p/PR-31-3-100-A-1-8-1200-M12-1
+Heat,RTD2,PR-31-3-100-A-1/8-1200-M12-1,Cooler Outlet Temp,NCDT1:COOLER,,https://www.dwyeromega.com/en-us/rtd-probes-with-high-temperature-molded-m12-connectors/PR-31/p/PR-31-3-100-A-1-8-1200-M12-1
+Heat,VELO1,FMA900A,Air Velocity Sensor 1,NCDT1:COOLER,p1-04ADL-2 (13-bit),https://assets.omega.com/spec/FMA900A.pdf
+Heat,VELO2,FTS200-1002,Air Velocity Sensor 2,NCDT1:COOLER,p1-04ADL-1 (13-bit),https://cdn.automationdirect.com/static/specs/fts1002thermalflow.pdf
+Heat,Cooler Controls,,,,The cooler is fan driven using a WEG VFD.  The VFD is controlled using modbus TCP,
+Heat,VFD1,weg cfw500,,NCDT1:COOLER,,
+GAS,Gas Control,,,,,
+GAS,EV01,SC912YN16VFBA4,Gas solenoid - Inlet to Cover Gas System,NCDT1:GAS,These are controlled using an AutomationDirect p1-04TRS,https://www.automationdirect.com/adc/shopping/catalog/valves/solenoid_process_valves/process_valves/sc912yn16vfba4
+GAS,EV11,<tameson part>,Gas solenoid - Drain Tank Exhaust / drying,NCDT1:GAS,,
+GAS,EV12,<tameson part>,Gas solenoid - Equalization Valve between tanks,NCDT1:GAS,,
+GAS,EV41,<tameson part>,Gas solenoid - Exp Tank Exhaust,NCDT1:GAS,,
+GAS,FC31,MC-1SLPM-D-MODTCPIP-PCV10-.25COMP-IB,Mass Flow Controller - Exp Tank Cover Gas,NCDT1:GAS,We communicate with the Alicat devices using ModbusTCP.  Each device reports back a number of measurements and control parameters,https://www.alicat.com/products/gas-flow/mass-flow-controller/laminar-dp-mass-flow-controllers/
+GAS,PC11,PCD-15PSID-D-MODTCPIP-PCV65-.25COMP,Differential Pressure Controller - Salt Level Control,NCDT1:GAS,,https://www.alicat.com/products/pressure/pressure-controller/pressure-controllers/
+GAS,Gas Monitoring,,,,,
+GAS,DT11,S24AS-D-MQP,Humidity / Dewpoint - Drain Tank Exhaust / drying,NCDT1:GAS,These are read using an RS485 Serial Module & Modbus RTU,https://www.mouser.com/ProductDetail/Banner-Engineering/S24AS-D-MQP?qs=HoCaDK9Nz5eYPTk2RGZ%252B%2Fw%3D%3D
+GAS,DT01,S24AS-D-MQP,Humidity / Dewpoint - Inlet (Supply) Gas Reference,NCDT1:GAS,,https://www.mouser.com/ProductDetail/Banner-Engineering/S24AS-D-MQP?qs=HoCaDK9Nz5eYPTk2RGZ%252B%2Fw%3D%3D
+GAS,DT41,S24AS-D-MQP,Humidity / Dewpoint - Exp Tank Cover Gas Measurement,NCDT1:GAS,,https://www.mouser.com/ProductDetail/Banner-Engineering/S24AS-D-MQP?qs=HoCaDK9Nz5eYPTk2RGZ%252B%2Fw%3D%3D
+GAS,PT11,626-02-GH-P1-E6-S1,Pressure Transducer - Drain Tank Gas Inlet,NCDT1:GAS,"These are read using a AutomationDirect p1-04adl-1 (13-bit resolution, 10ms sample time)","https://www.dwyeromega.com/en-us/accurate-industrial-pressure-transmitters-0-25-1-accuracy-nema-4x/p/Series-626-628  Need to configure: Accuracy: 0.25%, Range: 0-50psia, Housing type: GH (general purpose), Fittings:1/4"" Male NPT, Cables and connectors: M12-4pin connector, Electrical output: 4-20 mA, 2 wire"
+GAS,PT31,626-02-GH-P1-E6-S1,Pressure Transducer - Drain Tank Gas Inlet,,,"https://www.dwyeromega.com/en-us/accurate-industrial-pressure-transmitters-0-25-1-accuracy-nema-4x/p/Series-626-628  Need to configure: Accuracy: 0.25%, Range: 0-50psia, Housing type: GH (general purpose), Fittings:1/4"" Male NPT, Cables and connectors: M12-4pin connector, Electrical output: 4-20 mA, 2 wire"
+GAS,PT41,626-02-GH-P1-E6-S1,Pressure Transducer - Drain Tank Gas Inlet,,,"https://www.dwyeromega.com/en-us/accurate-industrial-pressure-transmitters-0-25-1-accuracy-nema-4x/p/Series-626-628  Need to configure: Accuracy: 0.25%, Range: 0-50psia, Housing type: GH (general purpose), Fittings:1/4"" Male NPT, Cables and connectors: M12-4pin connector, Electrical output: 4-20 mA, 2 wire"
+Other,Salt Level,,,,"Outputs a configurable analog signal, read with p1-04ADL-1 (13-bit)",
+Other,RADAR0,Vega Puls 6S,Exp Tank,NCDT1:LEVEL,,https://www.vega.com/en-us/products/product-catalog/level/radar/vegapuls-62
+Other,Flow Measurement,,,,Sporian read using ascii serial connection over TCP,
+Other,FLOW1,940-000-0395-00,,NCDT1:FLOW,,https://sporian.com/wp-content/uploads/2025/04/630-000-0199_Thermaflow_700_Product_Sheet.pdf
+Other,Additional Temp,,,,,
+Other,<not yet implemented>,ODiSi 7100,4 sections:,,,https://lunainc.com/product/odisi-7100-series

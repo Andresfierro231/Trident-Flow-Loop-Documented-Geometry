@@ -1,0 +1,42 @@
+schema_version: 1
+facility_id: ACU
+selection_id: acu_revb_arc_centerline_reviewed_2026_09_09
+status: provisional_reviewed_not_calibration_eligible
+calibration_eligible: false
+units: mm
+coordinate_frame: CAD_GLOBAL_XYZ
+representation: full_straight_tangent_spans_plus_torus_centerline_arcs
+source_tables:
+  pipe_segments: {path: docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/pipe_segments.csv, sha256: af294e86bf788f212d989897c64a73963e4029227725ac4909d412c5fdd11347}
+  comparisons: {path: docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/comparisons.csv, sha256: fb48852fdc531a47a30740aff99e523858b56f662d71c34c8f09f5662ad90021}
+  bends: {path: docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/bends.csv, sha256: 9e2fcd944a0e6bd58a5de9a2af1cee274a9676325aa6a3d927aa7d0f497807e9}
+  thermal_zones: {path: docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/thermal_zones.csv, sha256: 2375427cd2fc1ca7ee2f2b8930b9d44abf855746ed3f92dac057c8fa58cbc9b4}
+  components: {path: docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/components.csv, sha256: f3f58fe8e0643e93b86cd67eb9b3c15633216d07017060e098797d2f9fea611c}
+  exits: {path: docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/exits.csv, sha256: 721be5153bf448e8b50564da6c8315e0c14eaf0843a92af5e423e598f7c3de9d}
+  sensors: {path: docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/sensors.csv, sha256: dcbf6de2f9a19188734fd23bef019f074c4ffbc6b0adc6b28ca5171156c9aae5}
+main_loop:
+- {id: BOTTOM, kind: straight, length_mm: 1312.9431182408052, chord_mm: 1312.9431182408052, source_locator: 'pipe_segments.csv:BOTTOM'}
+- {id: BOTTOM_UP, kind: torus_arc, length_mm: 119.60112938169449, chord_mm: 109.5591585736649, radius_mm: 83.17090898088263, sweep_deg: 82.39226939487126, source_locator: 'pipe_segments.csv:BOTTOM_UP;bends.csv:BOTTOM_UP'}
+- {id: UP, kind: straight, length_mm: 1268.878246025913, chord_mm: 1268.878246025913, source_locator: 'pipe_segments.csv:UP'}
+- {id: UP_TOP, kind: torus_arc, length_mm: 141.68798726496186, chord_mm: 125.16545520005099, radius_mm: 83.17090898085316, sweep_deg: 97.6077306051152, source_locator: 'pipe_segments.csv:UP_TOP;bends.csv:UP_TOP'}
+- {id: TOP, kind: straight, length_mm: 1313.722983459119, chord_mm: 1313.722983459119, source_locator: 'pipe_segments.csv:TOP'}
+- {id: TOP_DOWN, kind: torus_arc, length_mm: 120.434226556285, chord_mm: 110.31552763115725, radius_mm: 83.7214403108993, sweep_deg: 82.42061848163381, source_locator: 'pipe_segments.csv:TOP_DOWN;bends.csv:TOP_DOWN'}
+- {id: DOWN, kind: straight, length_mm: 1267.6837839802597, chord_mm: 1267.6837839802597, source_locator: 'pipe_segments.csv:DOWN'}
+- {id: DOWN_BOTTOM, kind: torus_arc, length_mm: 142.58443527239305, chord_mm: 125.96667271300528, radius_mm: 83.72144031089955, sweep_deg: 97.5793815183662, source_locator: 'pipe_segments.csv:DOWN_BOTTOM;bends.csv:DOWN_BOTTOM'}
+total_centerline_length_mm: 5687.535910181431
+schematic_dimension_scopes:
+  bottom_long_cylindrical_face_mm: {value: 1255.4, source_locator: 'comparisons.csv:heater_full_tangent_length/pdf_value_mm', relation: excludes_short_continuation_and_model_gap}
+  top_long_cylindrical_face_mm: {value: 1256.6, source_locator: 'comparisons.csv:cooler_full_tangent_length/pdf_value_mm', relation: excludes_57_15_mm_short_continuation}
+  lower_horizontal_axis_span_mm: {value: 1468.4369800179702, source_locator: 'comparisons.csv:bottom_vertical_axis_offset/cad_value_mm', relation: projected_span_including_corner_offsets}
+  bottom_straight_inclination_deg: {value: 7.579, source_locator: 'pipe_segments.csv:BOTTOM/delta_x_mm,delta_y_mm', relation: derived_from_cad_endpoints_rounded}
+  note: Schematic long-face dimensions and axis spans are distinct from the full tangent-to-tangent straights in main_loop.
+pipe: {id_mm: 26.6446, od_mm: 33.401, source_locator: 'components.csv:MAIN_PIPE'}
+heater: {hardware: external_wrap, start_offset_mm: 42.94311824074805, length_mm: 1238.25, end_clearance_mm: 31.75, source_locator: 'thermal_zones.csv:HEATING_TAPE'}
+cooler: {hardware: enveloping_jacket, start_offset_mm: 215.17298345909083, length_mm: 1016.0, end_clearance_mm: 82.55, shell_id_mm: 149.1996, shell_od_mm: 158.75, source_locator: 'thermal_zones.csv:COOLING_JACKET;components.csv:COOLING_JACKET'}
+exits:
+- {id: TLEP, length_mm: 203.2, id_mm: 32.4612, od_mm: 42.164, source_locator: 'exits.csv:TLEP;components.csv:TLEP_MAIN_TUBE'}
+- {id: BREP, length_mm: 800.1, id_mm: 32.4612, od_mm: 42.164, source_locator: 'exits.csv:BREP;components.csv:BREP_MAIN_TUBE'}
+known_discrepancies:
+- Bottom tangent span includes a 0.4331381515 mm modeled axial gap.
+- Exit face limits are not certified junction or tank-port boundary planes.
+- Sensor IDs and coordinates are not native DAQ channel mappings.

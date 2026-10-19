@@ -1,0 +1,936 @@
+{
+  "status": "pass",
+  "checks": 232,
+  "passed": 232,
+  "workbook_sha256": "f973e12efea86364abeeaac16e16ff8cbf2d28a520667c61774685ebe55cfc03",
+  "details": [
+    {
+      "check": "baseline hash",
+      "pass": true
+    },
+    {
+      "check": "Sources baseline row 26",
+      "pass": true
+    },
+    {
+      "check": "Start baseline row 7",
+      "pass": true
+    },
+    {
+      "check": "Start baseline row 16",
+      "pass": true
+    },
+    {
+      "check": "Start baseline row 20",
+      "pass": true
+    },
+    {
+      "check": "Start baseline row 23",
+      "pass": true
+    },
+    {
+      "check": "Start baseline row 9",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 6",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 7",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 8",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 9",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 11",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 12",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 13",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 15",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 16",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 17",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 18",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 19",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 22",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 23",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 25",
+      "pass": true
+    },
+    {
+      "check": "Sensors baseline row 26",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 6",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 7",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 8",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 9",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 11",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 12",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 13",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 15",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 16",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 17",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 18",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 19",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 22",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 23",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 25",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 26",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 27",
+      "pass": true
+    },
+    {
+      "check": "Calibration baseline row 28",
+      "pass": true
+    },
+    {
+      "check": "Thermal spans baseline row 7",
+      "pass": true
+    },
+    {
+      "check": "Thermal spans baseline row 8",
+      "pass": true
+    },
+    {
+      "check": "Fluids baseline row 6",
+      "pass": true
+    },
+    {
+      "check": "Fluids baseline row 8",
+      "pass": true
+    },
+    {
+      "check": "Fluids baseline row 7",
+      "pass": true
+    },
+    {
+      "check": "Model choices baseline row 6",
+      "pass": true
+    },
+    {
+      "check": "Model choices baseline row 7",
+      "pass": true
+    },
+    {
+      "check": "Model choices baseline row 8",
+      "pass": true
+    },
+    {
+      "check": "Model choices baseline row 9",
+      "pass": true
+    },
+    {
+      "check": "Model choices baseline row 10",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 9",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 12",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 23",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 26",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 28",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 29",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 32",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 36",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 38",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 44",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 45",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 46",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 49",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 51",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 53",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 55",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 57",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 58",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 60",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 61",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 72",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 73",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 75",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 76",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 77",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 78",
+      "pass": true
+    },
+    {
+      "check": "Requirements baseline row 82",
+      "pass": true
+    },
+    {
+      "check": "Form sensor baseline row 8",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Start",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Geometry",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Sensors",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Calibration",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Thermal spans",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Fluids",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Materials",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Model choices",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Form pipe",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Form sensor",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Form material",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Requirements",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Phase requests",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Review issues",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Sources",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Insulation regions",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: CAD dimensions",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Native channels",
+      "pass": true
+    },
+    {
+      "check": "exact intended sheet values: Current knowledge",
+      "pass": true
+    },
+    {
+      "check": "portable source hash WORK",
+      "pass": true
+    },
+    {
+      "check": "portable source hash XWALK",
+      "pass": true
+    },
+    {
+      "check": "portable source hash DIAG",
+      "pass": true
+    },
+    {
+      "check": "portable source hash FOLLOW",
+      "pass": true
+    },
+    {
+      "check": "portable source hash DAQISS",
+      "pass": true
+    },
+    {
+      "check": "portable source hash OPCYCLE",
+      "pass": true
+    },
+    {
+      "check": "portable source hash TRIAGE",
+      "pass": true
+    },
+    {
+      "check": "portable source hash FLUIDCFG",
+      "pass": true
+    },
+    {
+      "check": "portable source hash ASSUME",
+      "pass": true
+    },
+    {
+      "check": "portable source hash CURRENT",
+      "pass": true
+    },
+    {
+      "check": "fully preserved Geometry",
+      "pass": true
+    },
+    {
+      "check": "fully preserved Materials",
+      "pass": true
+    },
+    {
+      "check": "fully preserved Insulation regions",
+      "pass": true
+    },
+    {
+      "check": "fully preserved CAD dimensions",
+      "pass": true
+    },
+    {
+      "check": "fully preserved Phase requests",
+      "pass": true
+    },
+    {
+      "check": "fully preserved Form pipe",
+      "pass": true
+    },
+    {
+      "check": "fully preserved Form material",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-02",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-02",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-02",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-03",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-03",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-03",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-04",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-04",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-04",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-05",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-05",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-05",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station LF-01",
+      "pass": true
+    },
+    {
+      "check": "working channel LF-01",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle LF-01",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-06",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-06",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-06",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station PTC-01",
+      "pass": true
+    },
+    {
+      "check": "working channel PTC-01",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle PTC-01",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-07",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-07",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-07",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station LF-03",
+      "pass": true
+    },
+    {
+      "check": "working channel LF-03",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle LF-03",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station PTC-03",
+      "pass": true
+    },
+    {
+      "check": "working channel PTC-03",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle PTC-03",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-08",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-08",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-08",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-09",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-09",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-09",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-10",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-10",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-10",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-11",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-11",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-11",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station LF-04",
+      "pass": true
+    },
+    {
+      "check": "working channel LF-04",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle LF-04",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station PTC-04",
+      "pass": true
+    },
+    {
+      "check": "working channel PTC-04",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle PTC-04",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-12",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-12",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-12",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station LF-02",
+      "pass": true
+    },
+    {
+      "check": "working channel LF-02",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle LF-02",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station PTC-02",
+      "pass": true
+    },
+    {
+      "check": "working channel PTC-02",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle PTC-02",
+      "pass": true
+    },
+    {
+      "check": "Rev9 station STC-01",
+      "pass": true
+    },
+    {
+      "check": "working channel STC-01",
+      "pass": true
+    },
+    {
+      "check": "no invented radius/angle STC-01",
+      "pass": true
+    },
+    {
+      "check": "16 main bindings",
+      "pass": true
+    },
+    {
+      "check": "20 native channels",
+      "pass": true
+    },
+    {
+      "check": "jacket role PTC5",
+      "pass": true
+    },
+    {
+      "check": "jacket role PTC6",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-02",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-03",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-04",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-05",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration LF-01",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-06",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration PTC-01",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-07",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration LF-03",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration PTC-03",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-08",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-09",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-10",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-11",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration LF-04",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration PTC-04",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-12",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration LF-02",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration PTC-02",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration STC-01",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration JTC-A",
+      "pass": true
+    },
+    {
+      "check": "no invented calibration JTC-B",
+      "pass": true
+    },
+    {
+      "check": "measured thermal extent remains unknown Active heater",
+      "pass": true
+    },
+    {
+      "check": "measured thermal extent remains unknown Active cooling",
+      "pass": true
+    },
+    {
+      "check": "main bore null",
+      "pass": true
+    },
+    {
+      "check": "excluded PTC-X absent",
+      "pass": true
+    },
+    {
+      "check": "26 current knowledge topics",
+      "pass": true
+    },
+    {
+      "check": "78 requirements preserved",
+      "pass": true
+    },
+    {
+      "check": "no release approval invented",
+      "pass": true
+    },
+    {
+      "check": "no operating limits invented PROP30",
+      "pass": true
+    },
+    {
+      "check": "no operating limits invented AIR",
+      "pass": true
+    },
+    {
+      "check": "no operating limits invented WATER",
+      "pass": true
+    },
+    {
+      "check": "untouched XLSX member xl/styles.xml",
+      "pass": true
+    },
+    {
+      "check": "untouched XLSX member xl/theme/theme1.xml",
+      "pass": true
+    },
+    {
+      "check": "untouched XLSX member xl/sharedStrings.xml",
+      "pass": true
+    },
+    {
+      "check": "untouched XLSX member xl/tables/table1.xml",
+      "pass": true
+    },
+    {
+      "check": "untouched XLSX member xl/tables/table2.xml",
+      "pass": true
+    },
+    {
+      "check": "untouched XLSX member xl/tables/table3.xml",
+      "pass": true
+    },
+    {
+      "check": "untouched XLSX member xl/tables/table4.xml",
+      "pass": true
+    },
+    {
+      "check": "untouched XLSX member _rels/.rels",
+      "pass": true
+    },
+    {
+      "check": "generated resolved input equality",
+      "pass": true
+    },
+    {
+      "check": "generated workbook hash",
+      "pass": true
+    },
+    {
+      "check": "geometry closure",
+      "pass": true
+    },
+    {
+      "check": "model readiness remains false",
+      "pass": true
+    },
+    {
+      "check": "LaTeX exports Native channels",
+      "pass": true
+    },
+    {
+      "check": "LaTeX exports Current knowledge",
+      "pass": true
+    },
+    {
+      "check": "LaTeX exports June12",
+      "pass": true
+    },
+    {
+      "check": "LaTeX exports PTC5",
+      "pass": true
+    },
+    {
+      "check": "LaTeX exports VCU-REV9-DRAFT-007",
+      "pass": true
+    },
+    {
+      "check": "readable register exports Native channels",
+      "pass": true
+    },
+    {
+      "check": "readable register exports Current knowledge",
+      "pass": true
+    },
+    {
+      "check": "readable register exports June12",
+      "pass": true
+    },
+    {
+      "check": "readable register exports PTC5",
+      "pass": true
+    }
+  ]
+}

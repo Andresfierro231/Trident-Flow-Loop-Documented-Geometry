@@ -1,0 +1,312 @@
+[
+  {
+    "Source ID": "GREADME",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GREADME_README.md",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/README.md",
+    "SHA-256": "675d91977be05d8894637683f31c8bc501b38bdb58e9429df7e08713cd90d2a5",
+    "Bytes": 5035
+  },
+  {
+    "Source ID": "GSEG",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GSEG_pipe_segments.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/pipe_segments.csv",
+    "SHA-256": "af294e86bf788f212d989897c64a73963e4029227725ac4909d412c5fdd11347",
+    "Bytes": 3142
+  },
+  {
+    "Source ID": "GBEND",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GBEND_bends.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/bends.csv",
+    "SHA-256": "9e2fcd944a0e6bd58a5de9a2af1cee274a9676325aa6a3d927aa7d0f497807e9",
+    "Bytes": 1194
+  },
+  {
+    "Source ID": "GCOMP",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GCOMP_components.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/components.csv",
+    "SHA-256": "f3f58fe8e0643e93b86cd67eb9b3c15633216d07017060e098797d2f9fea611c",
+    "Bytes": 713
+  },
+  {
+    "Source ID": "GSENS",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GSENS_sensors.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/sensors.csv",
+    "SHA-256": "dcbf6de2f9a19188734fd23bef019f074c4ffbc6b0adc6b28ca5171156c9aae5",
+    "Bytes": 10435
+  },
+  {
+    "Source ID": "GPOINT",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GPOINT_sensor_points.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/sensor_points.csv",
+    "SHA-256": "8ada7a808346d584444184ae6d2b9efe2ac4ddf7d4f49925a53944905446a5c2",
+    "Bytes": 7196
+  },
+  {
+    "Source ID": "GNAMED",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GNAMED_named_locations.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/named_locations.csv",
+    "SHA-256": "29c0ae8e93479ce79ae7df799d637b811e0061ec00f734ea6cebf3c721c6b23c",
+    "Bytes": 4294
+  },
+  {
+    "Source ID": "GZONE",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GZONE_thermal_zones.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/thermal_zones.csv",
+    "SHA-256": "2375427cd2fc1ca7ee2f2b8930b9d44abf855746ed3f92dac057c8fa58cbc9b4",
+    "Bytes": 950
+  },
+  {
+    "Source ID": "GEXIT",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GEXIT_exits.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/exits.csv",
+    "SHA-256": "721be5153bf448e8b50564da6c8315e0c14eaf0843a92af5e423e598f7c3de9d",
+    "Bytes": 944
+  },
+  {
+    "Source ID": "GISS",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GISS_issues.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/issues.csv",
+    "SHA-256": "e4fb0bab1bc4283382c4c6e9d2a28263a79b6f8f81b09a276bac4913b8d5e41d",
+    "Bytes": 2207
+  },
+  {
+    "Source ID": "GSRC",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GSRC_sources.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/sources.csv",
+    "SHA-256": "64c0fbddc86a344f0850fffb43394cc7f9811a37b6e3edc88c3e875a4f219886",
+    "Bytes": 571
+  },
+  {
+    "Source ID": "GCMP",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GCMP_comparisons.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/comparisons.csv",
+    "SHA-256": "fb48852fdc531a47a30740aff99e523858b56f662d71c34c8f09f5662ad90021",
+    "Bytes": 4804
+  },
+  {
+    "Source ID": "GSTATION",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GSTATION_leg_stations.csv",
+    "Revision / context": "ACU Rev B / CAD-primary schema 2.0; supplied 2026-09-08",
+    "Locator guide": "CSV row ID and source_file/source_locator; README conventions",
+    "Qualification": "Existing text derivative of saved CAD. Not an installed survey, fabrication release, native-channel map or verified sensing junction. Original CAD source hash is GSRC; no CAD opened.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/geometry/first_extraction/ACU_loop_draft/ACU_Code_Package_RevB/leg_stations.csv",
+    "SHA-256": "8e29c4adf17d13b592bc86581e11dc71d1cbef03f430b40af4eda6818773b693",
+    "Bytes": 1311
+  },
+  {
+    "Source ID": "GSELECT",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/GSELECT_acu_revb_reviewed.yaml",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "main_loop, pipe, heater, cooler, source_tables, schematic_dimension_scopes",
+    "Qualification": "Reviewed provisional ACU Rev B geometry outranks SAM/code candidates; calibration_eligible=false.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/geometry_sources/acu_revb_reviewed.yaml",
+    "SHA-256": "5992fbf26306c285e1b13cf9bb8c93e4053d0a7361d8b82491fd73ae4c2975ed",
+    "Bytes": 4838
+  },
+  {
+    "Source ID": "AMAT",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/AMAT_acu_candidate_materials_v1.yaml",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "library_revision and materials.*.properties/provenance",
+    "Qualification": "ACU candidate library v2; Jin working default, Kirst/table alternatives. Legacy solid candidates; no installed identity, primary range or uncertainty qualification. All calibration-ineligible; no low-temperature extension.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/materials/acu_candidate_materials_v1.yaml",
+    "SHA-256": "2c96549a45afe1b595db101a9b914581d1553141f2676f7582725737efa687cf",
+    "Bytes": 8248
+  },
+  {
+    "Source ID": "MTABLE",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/MTABLE_hitec_tamu_conversation_table_v1.csv",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "Every temperature/property row",
+    "Qualification": "Legacy TAMU table alternative, not new measured ACU data.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/materials/hitec_tamu_conversation_table_v1.csv",
+    "SHA-256": "5faa5f1d79c73db2e79c86eaea5d246c17119bb245cf68ba07f537a306071b87",
+    "Bytes": 1907
+  },
+  {
+    "Source ID": "MASSIGN",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/MASSIGN_material_assignments.yaml",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "assignments, insulation.candidate_range_m",
+    "Qualification": "Provisional Jin/316L/ceramic model selections; not certified installed construction. General thickness range 25.4-50.8 mm; no point estimate.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/facilities/acu_provisional/material_assignments.yaml",
+    "SHA-256": "5ad8f76ed2599976803002f7cedea7577e6c2a9af64ccd9fd774af27bc88f3dc",
+    "Bytes": 491
+  },
+  {
+    "Source ID": "COOL",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/COOL_cooler_model.yaml",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "coolant, primary_contact, secondary_direction, unresolved",
+    "Qualification": "ACU air jacket, bare primary pipe, shell-to-room path; untrained provisional interface.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/facilities/acu_provisional/cooler_model.yaml",
+    "SHA-256": "27421220df45936c7f0ca4c88e8499655d969448cceda3bcde23f24605bf9015",
+    "Bytes": 986
+  },
+  {
+    "Source ID": "ADR15",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/ADR15_ADR-0015-selectable-cooler-and-controlled-countercurrent-jacket.md",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "Decision; Why and boundaries",
+    "Qualification": "User-reported controlled counter-current ambient-inlet jacket; no measured per-run flow, outlet planes or UA.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/decisions/ADR-0015-selectable-cooler-and-controlled-countercurrent-jacket.md",
+    "SHA-256": "25498440d902e9987fb0ee0592ae01599e6e67885d75cf9215251929222ad4eb",
+    "Bytes": 2481
+  },
+  {
+    "Source ID": "ADR22",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/ADR22_ADR-0022-facility-bound-cooler-parameters.md",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "Decision; Consequences and limits, ACU portions only",
+    "Qualification": "Requires ACU-specific bare-pipe air and explicit shell/room exchange. Synthetic interface values are not facility inputs.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/decisions/ADR-0022-facility-bound-cooler-parameters.md",
+    "SHA-256": "f54b420b4a6fed984fe3710e5c01e20c0bbfca2d2c4a8f755ce309f2f2002a5d",
+    "Bytes": 3116
+  },
+  {
+    "Source ID": "BC",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/BC_boundaries.yaml",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "exit_topology; cooler selection; experiment-owned inputs",
+    "Qualification": "Model defaults only; synthetic 90 W, eta=1 and no-flow diagnostic are not physical measurements.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/config/facilities/acu_provisional/boundaries.yaml",
+    "SHA-256": "9fc870ac9cde831da0eed1d69a0c303e18bd0b13135dd53d1d503932ea64a70c",
+    "Bytes": 1775
+  },
+  {
+    "Source ID": "DAQHOLD",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/DAQHOLD_DAQ-004.md",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "User hold; six questions before an ACU operating case",
+    "Qualification": "ACU operating-data processing paused 2026-09-29. This workbook only transcribes existing documentation.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/coordination/tasks/DAQ-004.md",
+    "SHA-256": "aa13e6e9de36ca00efc5234d50e3887c11637c8b51b55d1725e5f6be598e71a2",
+    "Bytes": 3760
+  },
+  {
+    "Source ID": "DAQCHECK",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/DAQCHECK_ACU_DAQ_003_CONFIRMATION_CHECKLIST.md",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "Channel families; clock/run identity; candidate window",
+    "Qualification": "Existing 145-channel run registry and candidate operator interval are not accepted installation/window evidence. No raw data processed.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/docs/data/ACU_DAQ_003_CONFIRMATION_CHECKLIST.md",
+    "SHA-256": "23c8ed7f59fa04b860fe0dafca5b052312e9ae267b56ff71cd9b68e09426d61d",
+    "Bytes": 7960
+  },
+  {
+    "Source ID": "SITEGATE",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/SITEGATE_DAQ-006.md",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "Input and scope; permitted output and acceptance",
+    "Qualification": "Pinned site declarations are candidate evidence; do not equate branch with 2026-09-15 installation.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/coordination/tasks/DAQ-006.md",
+    "SHA-256": "e59b56d23ef5f3e91833a4a02327457ce66b906f64cd3a27f3d651ac5b34451d",
+    "Bytes": 1491
+  },
+  {
+    "Source ID": "PROPIMPL",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/PROPIMPL_properties.py",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "property_to_dict and ExponentialInverseTemperatureProperty",
+    "Qualification": "Equation semantics for candidate-property transcription, not primary material validation.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/src/trident_thermal/materials/properties.py",
+    "SHA-256": "989c74acce5b0f37858c1103ab6a6f669ee6275e0849156f3067b55220764546",
+    "Bytes": 16483
+  },
+  {
+    "Source ID": "STATUS",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/STATUS_STATUS.md",
+    "Revision / context": "Working tree snapshot 2026-10-16; model HEAD a12a2f4c7ef076e1d0538d2e36c935ad89284fd3",
+    "Locator guide": "ACU-specific current physics/insulation summary and hold; exact lines in provenance",
+    "Qualification": "Shared status snapshot: use ACU claims only; lower-authority diagnostic constants not physical inputs.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/andrew_WorkSpace/trident_modeling_initiative/STATUS.md",
+    "SHA-256": "de933126046da6466af5da6e3c001d1e109ae70c5cb671c63b878a87b9a51f24",
+    "Bytes": 59124
+  },
+  {
+    "Source ID": "SITECH",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/SITECH_acu_flowloop.toml",
+    "Revision / context": "b7e1714d25200f289061ab1430695f455a82cae1",
+    "Locator guide": "Exact [channel.\"PV\"], [[instrument]] id, [instrument_class.\"id\"], or original workbook row",
+    "Qualification": "Site declaration snapshot, not run-applicability sign-off. Original sensor workbook has priority over its TOML/CSV transcription. Units absent stay unknown; aliases not merged.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/acu-flowloop-site::site/channel-maps/acu_flowloop.toml",
+    "SHA-256": "6eb1e46674e2eae49286aed1224bb1bd5431aa20d293307a47f3aa640f06a693",
+    "Bytes": 11252
+  },
+  {
+    "Source ID": "SITEINST",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/SITEINST_instruments.toml",
+    "Revision / context": "b7e1714d25200f289061ab1430695f455a82cae1",
+    "Locator guide": "Exact [channel.\"PV\"], [[instrument]] id, [instrument_class.\"id\"], or original workbook row",
+    "Qualification": "Site declaration snapshot, not run-applicability sign-off. Original sensor workbook has priority over its TOML/CSV transcription. Units absent stay unknown; aliases not merged.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/acu-flowloop-site::site/instruments/instruments.toml",
+    "SHA-256": "a08b1ea29deabfc308bd6bb42989bd319a72605439430a21060c3777cdea4f57",
+    "Bytes": 13553
+  },
+  {
+    "Source ID": "SITECSV",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/SITECSV_sensors.csv",
+    "Revision / context": "b7e1714d25200f289061ab1430695f455a82cae1",
+    "Locator guide": "Exact [channel.\"PV\"], [[instrument]] id, [instrument_class.\"id\"], or original workbook row",
+    "Qualification": "Site declaration snapshot, not run-applicability sign-off. Original sensor workbook has priority over its TOML/CSV transcription. Units absent stay unknown; aliases not merged.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/acu-flowloop-site::site/instruments/sensors.csv",
+    "SHA-256": "7da9f38cc755e772bcd8ced7c12afa8cb8b965c4a025d6d3f4ed05a31a66f7d8",
+    "Bytes": 8454
+  },
+  {
+    "Source ID": "SITEXLSX",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/SITEXLSX_ACU-STNCL-sensors.xlsx",
+    "Revision / context": "b7e1714d25200f289061ab1430695f455a82cae1",
+    "Locator guide": "Exact [channel.\"PV\"], [[instrument]] id, [instrument_class.\"id\"], or original workbook row",
+    "Qualification": "Site declaration snapshot, not run-applicability sign-off. Original sensor workbook has priority over its TOML/CSV transcription. Units absent stay unknown; aliases not merged.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/acu-flowloop-site::site/instruments/sources/ACU-STNCL-sensors.xlsx",
+    "SHA-256": "481d24e331357b6123a11c2ffeb4ba39b38c53a21b977c717456e1957530b6e9",
+    "Bytes": 18162
+  },
+  {
+    "Source ID": "SITEREAD",
+    "File / record": "support/evidence/2026-10-16_CFG-003_acu_inputs/SITEREAD_README.md",
+    "Revision / context": "b7e1714d25200f289061ab1430695f455a82cae1",
+    "Locator guide": "Exact [channel.\"PV\"], [[instrument]] id, [instrument_class.\"id\"], or original workbook row",
+    "Qualification": "Site declaration snapshot, not run-applicability sign-off. Original sensor workbook has priority over its TOML/CSV transcription. Units absent stay unknown; aliases not merged.",
+    "Original path": "/scratch/09748/andresfierro231/projects_scratch/Trident/acu-flowloop-site::site/instruments/README.md",
+    "SHA-256": "710c6fc2cdb9171705eb1e143cda96f038c59d29b49636addf6f52dc3c211c24",
+    "Bytes": 4930
+  }
+]

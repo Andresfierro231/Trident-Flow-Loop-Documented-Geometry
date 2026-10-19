@@ -1,0 +1,2833 @@
+{
+  "status": "pass",
+  "task_id": "CFG-003",
+  "configuration": "ACU-REVB-DRAFT-001",
+  "checks": 697,
+  "passed": 697,
+  "workbook_sha256": "4eeed111763ded9e1b1253cef5ad24d481c3f2cccbc7bc13dd17ba1bb61e7e98",
+  "physical_centerline_mm": 5687.535910181431,
+  "model_ready": false,
+  "operating_data_processed": false,
+  "visual_inspection": false,
+  "counts": {
+    "Start": 19,
+    "Geometry": 8,
+    "Sensors": 15,
+    "Sensor points": 26,
+    "Calibration": 15,
+    "Thermal spans": 4,
+    "Fluids": 3,
+    "Materials": 6,
+    "Property branches": 25,
+    "Fluid table": 42,
+    "Insulation regions": 11,
+    "Model choices": 12,
+    "Native channels": 119,
+    "Instruments": 48,
+    "Site source rows": 58,
+    "Instrument classes": 20,
+    "CAD dimensions": 6,
+    "Requirements": 78,
+    "Form pipe": 10,
+    "Form sensor": 14,
+    "Form material": 9,
+    "Phase requests": 10,
+    "Review issues": 13,
+    "Current knowledge": 16,
+    "Sources": 32,
+    "Bends": 4,
+    "Exits": 2,
+    "Named locations": 20,
+    "Provenance": 6114
+  },
+  "details": [
+    {
+      "check": "source hash GREADME",
+      "pass": true
+    },
+    {
+      "check": "source hash GSEG",
+      "pass": true
+    },
+    {
+      "check": "source hash GBEND",
+      "pass": true
+    },
+    {
+      "check": "source hash GCOMP",
+      "pass": true
+    },
+    {
+      "check": "source hash GSENS",
+      "pass": true
+    },
+    {
+      "check": "source hash GPOINT",
+      "pass": true
+    },
+    {
+      "check": "source hash GNAMED",
+      "pass": true
+    },
+    {
+      "check": "source hash GZONE",
+      "pass": true
+    },
+    {
+      "check": "source hash GEXIT",
+      "pass": true
+    },
+    {
+      "check": "source hash GISS",
+      "pass": true
+    },
+    {
+      "check": "source hash GSRC",
+      "pass": true
+    },
+    {
+      "check": "source hash GCMP",
+      "pass": true
+    },
+    {
+      "check": "source hash GSTATION",
+      "pass": true
+    },
+    {
+      "check": "source hash GSELECT",
+      "pass": true
+    },
+    {
+      "check": "source hash AMAT",
+      "pass": true
+    },
+    {
+      "check": "source hash MTABLE",
+      "pass": true
+    },
+    {
+      "check": "source hash MASSIGN",
+      "pass": true
+    },
+    {
+      "check": "source hash COOL",
+      "pass": true
+    },
+    {
+      "check": "source hash ADR15",
+      "pass": true
+    },
+    {
+      "check": "source hash ADR22",
+      "pass": true
+    },
+    {
+      "check": "source hash BC",
+      "pass": true
+    },
+    {
+      "check": "source hash DAQHOLD",
+      "pass": true
+    },
+    {
+      "check": "source hash DAQCHECK",
+      "pass": true
+    },
+    {
+      "check": "source hash SITEGATE",
+      "pass": true
+    },
+    {
+      "check": "source hash PROPIMPL",
+      "pass": true
+    },
+    {
+      "check": "source hash STATUS",
+      "pass": true
+    },
+    {
+      "check": "source hash SITECH",
+      "pass": true
+    },
+    {
+      "check": "source hash SITEINST",
+      "pass": true
+    },
+    {
+      "check": "source hash SITECSV",
+      "pass": true
+    },
+    {
+      "check": "source hash SITEXLSX",
+      "pass": true
+    },
+    {
+      "check": "source hash SITEREAD",
+      "pass": true
+    },
+    {
+      "check": "reviewed geometry authority hash pipe_segments",
+      "pass": true
+    },
+    {
+      "check": "reviewed geometry authority hash comparisons",
+      "pass": true
+    },
+    {
+      "check": "reviewed geometry authority hash bends",
+      "pass": true
+    },
+    {
+      "check": "reviewed geometry authority hash thermal_zones",
+      "pass": true
+    },
+    {
+      "check": "reviewed geometry authority hash components",
+      "pass": true
+    },
+    {
+      "check": "reviewed geometry authority hash exits",
+      "pass": true
+    },
+    {
+      "check": "reviewed geometry authority hash sensors",
+      "pass": true
+    },
+    {
+      "check": "torus arc BOTTOM_UP",
+      "pass": true
+    },
+    {
+      "check": "torus arc UP_TOP",
+      "pass": true
+    },
+    {
+      "check": "torus arc TOP_DOWN",
+      "pass": true
+    },
+    {
+      "check": "torus arc DOWN_BOTTOM",
+      "pass": true
+    },
+    {
+      "check": "facility ACU",
+      "pass": true
+    },
+    {
+      "check": "draft configuration",
+      "pass": true
+    },
+    {
+      "check": "inventory Geometry",
+      "pass": true
+    },
+    {
+      "check": "inventory Sensors",
+      "pass": true
+    },
+    {
+      "check": "inventory Sensor points",
+      "pass": true
+    },
+    {
+      "check": "inventory Native channels",
+      "pass": true
+    },
+    {
+      "check": "inventory Instruments",
+      "pass": true
+    },
+    {
+      "check": "inventory Instrument classes",
+      "pass": true
+    },
+    {
+      "check": "inventory Requirements",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Start",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Geometry",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Sensors",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Sensor points",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Calibration",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Thermal spans",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Fluids",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Materials",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Property branches",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Fluid table",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Insulation regions",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Model choices",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Native channels",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Instruments",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Site source rows",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Instrument classes",
+      "pass": true
+    },
+    {
+      "check": "seed transcription CAD dimensions",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Requirements",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Form pipe",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Form sensor",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Form material",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Phase requests",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Review issues",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Current knowledge",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Sources",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Bends",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Exits",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Named locations",
+      "pass": true
+    },
+    {
+      "check": "seed transcription Provenance",
+      "pass": true
+    },
+    {
+      "check": "centerline BOTTOM",
+      "pass": true
+    },
+    {
+      "check": "main bore/OD BOTTOM",
+      "pass": true
+    },
+    {
+      "check": "no blanket thickness BOTTOM",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM startx",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM starty",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM startz",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM endx",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM endy",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM endz",
+      "pass": true
+    },
+    {
+      "check": "direction BOTTOM",
+      "pass": true
+    },
+    {
+      "check": "centerline BOTTOM_UP",
+      "pass": true
+    },
+    {
+      "check": "main bore/OD BOTTOM_UP",
+      "pass": true
+    },
+    {
+      "check": "no blanket thickness BOTTOM_UP",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM_UP startx",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM_UP starty",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM_UP startz",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM_UP endx",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM_UP endy",
+      "pass": true
+    },
+    {
+      "check": "XYZ BOTTOM_UP endz",
+      "pass": true
+    },
+    {
+      "check": "centerline UP",
+      "pass": true
+    },
+    {
+      "check": "main bore/OD UP",
+      "pass": true
+    },
+    {
+      "check": "no blanket thickness UP",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP startx",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP starty",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP startz",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP endx",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP endy",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP endz",
+      "pass": true
+    },
+    {
+      "check": "direction UP",
+      "pass": true
+    },
+    {
+      "check": "centerline UP_TOP",
+      "pass": true
+    },
+    {
+      "check": "main bore/OD UP_TOP",
+      "pass": true
+    },
+    {
+      "check": "no blanket thickness UP_TOP",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP_TOP startx",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP_TOP starty",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP_TOP startz",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP_TOP endx",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP_TOP endy",
+      "pass": true
+    },
+    {
+      "check": "XYZ UP_TOP endz",
+      "pass": true
+    },
+    {
+      "check": "centerline TOP",
+      "pass": true
+    },
+    {
+      "check": "main bore/OD TOP",
+      "pass": true
+    },
+    {
+      "check": "no blanket thickness TOP",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP startx",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP starty",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP startz",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP endx",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP endy",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP endz",
+      "pass": true
+    },
+    {
+      "check": "direction TOP",
+      "pass": true
+    },
+    {
+      "check": "centerline TOP_DOWN",
+      "pass": true
+    },
+    {
+      "check": "main bore/OD TOP_DOWN",
+      "pass": true
+    },
+    {
+      "check": "no blanket thickness TOP_DOWN",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP_DOWN startx",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP_DOWN starty",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP_DOWN startz",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP_DOWN endx",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP_DOWN endy",
+      "pass": true
+    },
+    {
+      "check": "XYZ TOP_DOWN endz",
+      "pass": true
+    },
+    {
+      "check": "centerline DOWN",
+      "pass": true
+    },
+    {
+      "check": "main bore/OD DOWN",
+      "pass": true
+    },
+    {
+      "check": "no blanket thickness DOWN",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN startx",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN starty",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN startz",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN endx",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN endy",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN endz",
+      "pass": true
+    },
+    {
+      "check": "direction DOWN",
+      "pass": true
+    },
+    {
+      "check": "centerline DOWN_BOTTOM",
+      "pass": true
+    },
+    {
+      "check": "main bore/OD DOWN_BOTTOM",
+      "pass": true
+    },
+    {
+      "check": "no blanket thickness DOWN_BOTTOM",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN_BOTTOM startx",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN_BOTTOM starty",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN_BOTTOM startz",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN_BOTTOM endx",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN_BOTTOM endy",
+      "pass": true
+    },
+    {
+      "check": "XYZ DOWN_BOTTOM endz",
+      "pass": true
+    },
+    {
+      "check": "total physical centerline",
+      "pass": true
+    },
+    {
+      "check": "endpoint continuity BOTTOM",
+      "pass": true
+    },
+    {
+      "check": "endpoint continuity BOTTOM_UP",
+      "pass": true
+    },
+    {
+      "check": "endpoint continuity UP",
+      "pass": true
+    },
+    {
+      "check": "endpoint continuity UP_TOP",
+      "pass": true
+    },
+    {
+      "check": "endpoint continuity TOP",
+      "pass": true
+    },
+    {
+      "check": "endpoint continuity TOP_DOWN",
+      "pass": true
+    },
+    {
+      "check": "endpoint continuity DOWN",
+      "pass": true
+    },
+    {
+      "check": "endpoint continuity DOWN_BOTTOM",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_FIB01",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_FIB01",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB01 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB01 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB01 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_FIB02",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_FIB02",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB02 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB02 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB02 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_FIB03",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_FIB03",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB03 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB03 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB03 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_FIB04",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_FIB04",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB04 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB04 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_FIB04 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_WT01",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_WT01",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT01 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT01 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT01 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_WT02",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_WT02",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT02 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT02 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT02 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_WT03",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_WT03",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT03 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT03 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT03 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_WT04",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_WT04",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT04 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT04 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT04 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_WT05",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_WT05",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT05 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT05 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT05 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_WT06",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_WT06",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT06 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT06 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT06 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_WT07",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_WT07",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT07 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT07 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_WT07 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_PT01",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_PT01",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT01 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT01 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT01 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_PT02",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_PT02",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT02 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT02 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT02 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_PT03",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_PT03",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT03 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT03 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT03 z",
+      "pass": true
+    },
+    {
+      "check": "sensor station ACU_PT04",
+      "pass": true
+    },
+    {
+      "check": "no invented sensor operator ACU_PT04",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT04 x",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT04 y",
+      "pass": true
+    },
+    {
+      "check": "saved sensor XYZ ACU_PT04 z",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_FIB01_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_FIB02_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_FIB03_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_FIB04_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT01_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT01_END",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT02_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT02_END",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT03_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT03_END",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT04_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT04_END",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT05_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT05_END",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT06_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT06_END",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT07_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_WT07_END",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_PT01_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_PT01_END",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_PT02_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_PT02_END",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_PT03_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_PT03_END",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_PT04_START",
+      "pass": true
+    },
+    {
+      "check": "saved point ACU_PT04_END",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_FIB01",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_FIB02",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_FIB03",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_FIB04",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_WT01",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_WT02",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_WT03",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_WT04",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_WT05",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_WT06",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_WT07",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_PT01",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_PT02",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_PT03",
+      "pass": true
+    },
+    {
+      "check": "unknown calibration ACU_PT04",
+      "pass": true
+    },
+    {
+      "check": "hardware span Heating tape hardware",
+      "pass": true
+    },
+    {
+      "check": "hardware span Cooling jacket hardware",
+      "pass": true
+    },
+    {
+      "check": "unknown measured active span Active heater",
+      "pass": true
+    },
+    {
+      "check": "unknown measured active span Active cooling",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:COOLER:RTD1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:COOLER:RTD2",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:COOLER:VELO1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:COOLER:VELO2",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:COOLER:VELO2:Temp",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:DT01:DewC",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:DT01:Humidity",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:DT01:TempC",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:DT11:DewC",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:DT11:Humidity",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:DT11:TempC",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:DT41:DewC",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:DT41:Humidity",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:DT41:TempC",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:EV01",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:EV11",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:EV12",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:EV41",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC1:MassFlow",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC1:Pressure1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC1:RunMode",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC1:Setpoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC1:Temp",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC1:Valve",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC1:ValveControl",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC1:VolFlow",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC31:MassFlow",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC31:Pressure1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC31:RunMode",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC31:Setpoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC31:Temp",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC31:Valve",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC31:ValveControl",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:FC31:VolFlow",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:MFC1:setpoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC11:MassFlow",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC11:Pressure1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC11:Pressure2",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC11:RunMode",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC11:Setpoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC11:Temp",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC11:Valve",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC11:ValveControl",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC11:VolFlow",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC1:MassFlow",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC1:Pressure1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC1:Pressure2",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC1:RunMode",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC1:Setpoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC1:Temp",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC1:Valve",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC1:ValveControl",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PC1:VolFlow",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PT11",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PT31",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:GAS:PT41",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CH1:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CH1:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CH1:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CH2:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CH2:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CH2:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CP1:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CP1:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CP1:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CP2:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CP2:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-CP2:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DF1:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DF1:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DF1:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DP1:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DP1:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DP1:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DT1:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DT1:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DT1:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DT2:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DT2:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-DT2:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-EP1:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-EP1:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-EP1:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-EP2:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-EP2:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-EP2:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-ET1:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-ET1:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-ET1:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-HP1:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-HP1:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-HP1:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-HP2:OutputPower",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-HP2:SetPoint",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:HE-HP2:Time",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-CH1_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-CH1_2",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-CH2_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-CH2_2",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-CP1_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-CP1_2",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-CP2_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-DF1_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-DF1_2",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-DP1_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-DP1_2",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-DP1_3",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-DT1_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-DT2_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-DW1_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-EP1_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-EP1_2",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-EP1_3",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-EP2_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-ET1_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-EW1_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-HP1_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-HP2_1",
+      "pass": true
+    },
+    {
+      "check": "exact site channel NCDT1:HEAT:TC-HP2_2",
+      "pass": true
+    },
+    {
+      "check": "13 PWM widths in ms",
+      "pass": true
+    },
+    {
+      "check": "exact class ad-p1-04thm",
+      "pass": true
+    },
+    {
+      "check": "exact class ad-p1-04rtd",
+      "pass": true
+    },
+    {
+      "check": "exact class ad-p1-04adl-1",
+      "pass": true
+    },
+    {
+      "check": "exact class ad-p1-04adl-2",
+      "pass": true
+    },
+    {
+      "check": "exact class ad-p1-04trs",
+      "pass": true
+    },
+    {
+      "check": "exact class omega-scain-062u-12",
+      "pass": true
+    },
+    {
+      "check": "exact class omega-pr-31-3-100",
+      "pass": true
+    },
+    {
+      "check": "exact class dwyer-626-02-gh-p1-e6-s1",
+      "pass": true
+    },
+    {
+      "check": "exact class omega-fma900a",
+      "pass": true
+    },
+    {
+      "check": "exact class ad-fts200-1002",
+      "pass": true
+    },
+    {
+      "check": "exact class banner-s24as-d-mqp",
+      "pass": true
+    },
+    {
+      "check": "exact class alicat-mc-1slpm",
+      "pass": true
+    },
+    {
+      "check": "exact class alicat-pcd-15psid",
+      "pass": true
+    },
+    {
+      "check": "exact class asco-sc912yn16vfba4",
+      "pass": true
+    },
+    {
+      "check": "exact class tameson-solenoid",
+      "pass": true
+    },
+    {
+      "check": "exact class weg-cfw500",
+      "pass": true
+    },
+    {
+      "check": "exact class vega-puls-6s",
+      "pass": true
+    },
+    {
+      "check": "exact class sporian-thermaflow-700",
+      "pass": true
+    },
+    {
+      "check": "exact class luna-odisi-7100",
+      "pass": true
+    },
+    {
+      "check": "exact class thermocouple-unspecified",
+      "pass": true
+    },
+    {
+      "check": "exact instrument RTD1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument RTD2",
+      "pass": true
+    },
+    {
+      "check": "exact instrument VELO1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument VELO2",
+      "pass": true
+    },
+    {
+      "check": "exact instrument DT01",
+      "pass": true
+    },
+    {
+      "check": "exact instrument DT11",
+      "pass": true
+    },
+    {
+      "check": "exact instrument DT41",
+      "pass": true
+    },
+    {
+      "check": "exact instrument PT11",
+      "pass": true
+    },
+    {
+      "check": "exact instrument PT31",
+      "pass": true
+    },
+    {
+      "check": "exact instrument PT41",
+      "pass": true
+    },
+    {
+      "check": "exact instrument FC31",
+      "pass": true
+    },
+    {
+      "check": "exact instrument PC11",
+      "pass": true
+    },
+    {
+      "check": "exact instrument EV01",
+      "pass": true
+    },
+    {
+      "check": "exact instrument EV11",
+      "pass": true
+    },
+    {
+      "check": "exact instrument EV12",
+      "pass": true
+    },
+    {
+      "check": "exact instrument EV41",
+      "pass": true
+    },
+    {
+      "check": "exact instrument VFD1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument RADAR0",
+      "pass": true
+    },
+    {
+      "check": "exact instrument FLOW1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument ODISI-7100",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-CH1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-CH1.2",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-CH2.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-CH2.2",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-CP1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-CP1.2",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-CP2.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-DF1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-DF1.2",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-DP1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-DP1.2",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-DP1.3",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-DT1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-DT2.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-DW1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-EP1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-EP1.2",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-EP1.3",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-EP2.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-ET1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-EW1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-HP1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-HP2.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-HP2.2",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-ETH1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-MH1.1",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-MH1.2",
+      "pass": true
+    },
+    {
+      "check": "exact instrument TC-MH1.3",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!4",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!5",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!6",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!7",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!8",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!9",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!10",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!11",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!12",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!13",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!14",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!15",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!16",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!17",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!18",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!19",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!20",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!21",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!22",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!23",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!24",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!25",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!26",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!27",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!28",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!29",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!30",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!33",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!34",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!35",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!36",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!37",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!39",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Heat!40",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!4",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!5",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!6",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!7",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!8",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!9",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!10",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!12",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!13",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!14",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!15",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!17",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!18",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row GAS!19",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Other!4",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Other!5",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Other!8",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Other!9",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Other!11",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Other!12",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Other!13",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Other!14",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Other!15",
+      "pass": true
+    },
+    {
+      "check": "original sensor workbook row Other!16",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_jin_ethan_case_config_v1/density",
+      "pass": true
+    },
+    {
+      "check": "polynomial coefficients hitec_jin_ethan_case_config_v1/density",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_jin_ethan_case_config_v1/heat_capacity",
+      "pass": true
+    },
+    {
+      "check": "constant hitec_jin_ethan_case_config_v1/heat_capacity",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_jin_ethan_case_config_v1/conductivity",
+      "pass": true
+    },
+    {
+      "check": "polynomial coefficients hitec_jin_ethan_case_config_v1/conductivity",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_jin_ethan_case_config_v1/viscosity",
+      "pass": true
+    },
+    {
+      "check": "exponential coefficients hitec_jin_ethan_case_config_v1",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_kirst_ethan_report_v1/density",
+      "pass": true
+    },
+    {
+      "check": "polynomial coefficients hitec_kirst_ethan_report_v1/density",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_kirst_ethan_report_v1/heat_capacity",
+      "pass": true
+    },
+    {
+      "check": "constant hitec_kirst_ethan_report_v1/heat_capacity",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_kirst_ethan_report_v1/conductivity",
+      "pass": true
+    },
+    {
+      "check": "polynomial coefficients hitec_kirst_ethan_report_v1/conductivity",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_kirst_ethan_report_v1/viscosity",
+      "pass": true
+    },
+    {
+      "check": "exponential coefficients hitec_kirst_ethan_report_v1",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_tamu_conversation_table_v1/density",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_tamu_conversation_table_v1/heat_capacity",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_tamu_conversation_table_v1/conductivity",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_tamu_conversation_table_v1/viscosity",
+      "pass": true
+    },
+    {
+      "check": "property definition hitec_tamu_conversation_table_v1/surface_tension",
+      "pass": true
+    },
+    {
+      "check": "property definition stainless_316l_tamu_polynomial_v1/density",
+      "pass": true
+    },
+    {
+      "check": "polynomial coefficients stainless_316l_tamu_polynomial_v1/density",
+      "pass": true
+    },
+    {
+      "check": "property definition stainless_316l_tamu_polynomial_v1/heat_capacity",
+      "pass": true
+    },
+    {
+      "check": "polynomial coefficients stainless_316l_tamu_polynomial_v1/heat_capacity",
+      "pass": true
+    },
+    {
+      "check": "property definition stainless_316l_tamu_polynomial_v1/conductivity",
+      "pass": true
+    },
+    {
+      "check": "polynomial coefficients stainless_316l_tamu_polynomial_v1/conductivity",
+      "pass": true
+    },
+    {
+      "check": "property definition stainless_316l_tamu_polynomial_v1/emissivity",
+      "pass": true
+    },
+    {
+      "check": "constant stainless_316l_tamu_polynomial_v1/emissivity",
+      "pass": true
+    },
+    {
+      "check": "property definition ceramic_insulation_tamu_polynomial_v1/density",
+      "pass": true
+    },
+    {
+      "check": "constant ceramic_insulation_tamu_polynomial_v1/density",
+      "pass": true
+    },
+    {
+      "check": "property definition ceramic_insulation_tamu_polynomial_v1/heat_capacity",
+      "pass": true
+    },
+    {
+      "check": "constant ceramic_insulation_tamu_polynomial_v1/heat_capacity",
+      "pass": true
+    },
+    {
+      "check": "property definition ceramic_insulation_tamu_polynomial_v1/conductivity",
+      "pass": true
+    },
+    {
+      "check": "polynomial coefficients ceramic_insulation_tamu_polynomial_v1/conductivity",
+      "pass": true
+    },
+    {
+      "check": "property definition ceramic_insulation_tamu_polynomial_v1/emissivity",
+      "pass": true
+    },
+    {
+      "check": "constant ceramic_insulation_tamu_polynomial_v1/emissivity",
+      "pass": true
+    },
+    {
+      "check": "property definition fiberglass_insulation_tamu_polynomial_v1/density",
+      "pass": true
+    },
+    {
+      "check": "constant fiberglass_insulation_tamu_polynomial_v1/density",
+      "pass": true
+    },
+    {
+      "check": "property definition fiberglass_insulation_tamu_polynomial_v1/heat_capacity",
+      "pass": true
+    },
+    {
+      "check": "constant fiberglass_insulation_tamu_polynomial_v1/heat_capacity",
+      "pass": true
+    },
+    {
+      "check": "property definition fiberglass_insulation_tamu_polynomial_v1/conductivity",
+      "pass": true
+    },
+    {
+      "check": "polynomial coefficients fiberglass_insulation_tamu_polynomial_v1/conductivity",
+      "pass": true
+    },
+    {
+      "check": "property definition fiberglass_insulation_tamu_polynomial_v1/emissivity",
+      "pass": true
+    },
+    {
+      "check": "constant fiberglass_insulation_tamu_polynomial_v1/emissivity",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=400",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=405",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=410",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=415",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=420",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=425",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=430",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=435",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=440",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=445",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=450",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=455",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=460",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=465",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=470",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=475",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=480",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=485",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=490",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=495",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=500",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=505",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=510",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=515",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=520",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=525",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=530",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=535",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=540",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=545",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=550",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=555",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=560",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=565",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=570",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=575",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=580",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=585",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=590",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=595",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=600",
+      "pass": true
+    },
+    {
+      "check": "legacy fluid table T=605",
+      "pass": true
+    },
+    {
+      "check": "no invented operating limits HITEC",
+      "pass": true
+    },
+    {
+      "check": "no invented operating limits AIR-JACKET",
+      "pass": true
+    },
+    {
+      "check": "no invented operating limits AIR-ROOM",
+      "pass": true
+    },
+    {
+      "check": "blank intake Form pipe",
+      "pass": true
+    },
+    {
+      "check": "blank intake Form sensor",
+      "pass": true
+    },
+    {
+      "check": "blank intake Form material",
+      "pass": true
+    },
+    {
+      "check": "no physical approval invented",
+      "pass": true
+    },
+    {
+      "check": "unique source IDs",
+      "pass": true
+    },
+    {
+      "check": "unique cell provenance",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Start",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Start",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Geometry",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Geometry",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Sensors",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Sensors",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Sensor points",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Sensor points",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Calibration",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Calibration",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Thermal spans",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Thermal spans",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Fluids",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Fluids",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Materials",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Materials",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Property branches",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Property branches",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Fluid table",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Fluid table",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Insulation regions",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Insulation regions",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Model choices",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Model choices",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Native channels",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Native channels",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Instruments",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Instruments",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Site source rows",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Site source rows",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Instrument classes",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Instrument classes",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance CAD dimensions",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources CAD dimensions",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Requirements",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Requirements",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Form pipe",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Form pipe",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Form sensor",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Form sensor",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Form material",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Form material",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Phase requests",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Phase requests",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Review issues",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Review issues",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Current knowledge",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Current knowledge",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Sources",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Sources",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Bends",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Bends",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Exits",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Exits",
+      "pass": true
+    },
+    {
+      "check": "all populated cells have provenance Named locations",
+      "pass": true
+    },
+    {
+      "check": "valid provenance sources Named locations",
+      "pass": true
+    },
+    {
+      "check": "ZIP CRC",
+      "pass": true
+    },
+    {
+      "check": "no hidden sheets or shared-string leftovers",
+      "pass": true
+    },
+    {
+      "check": "no foreign value VCU",
+      "pass": true
+    },
+    {
+      "check": "no foreign value Prop-30",
+      "pass": true
+    },
+    {
+      "check": "no foreign value PROP30",
+      "pass": true
+    },
+    {
+      "check": "no foreign value JTC-A",
+      "pass": true
+    },
+    {
+      "check": "no foreign value JTC-B",
+      "pass": true
+    },
+    {
+      "check": "no foreign value PTC-X",
+      "pass": true
+    },
+    {
+      "check": "no foreign value STC-",
+      "pass": true
+    },
+    {
+      "check": "no foreign value 942.186081",
+      "pass": true
+    },
+    {
+      "check": "no foreign value 1346.496214",
+      "pass": true
+    },
+    {
+      "check": "no foreign value 5556K73",
+      "pass": true
+    },
+    {
+      "check": "no foreign value 4057K14",
+      "pass": true
+    },
+    {
+      "check": "no macros/embedded drawings",
+      "pass": true
+    }
+  ]
+}

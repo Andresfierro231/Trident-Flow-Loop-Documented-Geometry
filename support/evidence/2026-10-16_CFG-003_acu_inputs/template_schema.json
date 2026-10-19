@@ -1,0 +1,215 @@
+{
+  "source_file": "/scratch/09748/andresfierro231/projects_scratch/Papers/UTexas_Research/utilities/Trident-Flow-Loop-Documented-Geometry/VCU_inputs.xlsx",
+  "sha256": "f973e12efea86364abeeaac16e16ff8cbf2d28a520667c61774685ebe55cfc03",
+  "role": "Generic table headers only; styles, package metadata, strings and data rows recreated for ACU",
+  "headers": {
+    "Start": [
+      "Field",
+      "Value",
+      "Guidance"
+    ],
+    "Geometry": [
+      "Segment",
+      "Kind",
+      "Start",
+      "End",
+      "Length mm",
+      "Phi deg",
+      "Bend dx mm",
+      "Bend dy mm",
+      "ID mm",
+      "OD mm",
+      "Insulation mm",
+      "Status",
+      "Source",
+      "Notes"
+    ],
+    "Sensors": [
+      "Sensor ID",
+      "Type",
+      "Segment",
+      "From endpoint",
+      "Distance mm",
+      "Circumference deg",
+      "Radius mm",
+      "DAQ channel",
+      "Status",
+      "Point basis",
+      "Source",
+      "Notes"
+    ],
+    "Calibration": [
+      "Sensor ID",
+      "Model / serial",
+      "Last calibration",
+      "Certificate",
+      "Range",
+      "Correction",
+      "Uncertainty",
+      "Coverage factor",
+      "Acquisition / lag",
+      "1-D mapping",
+      "CFD mapping",
+      "Status"
+    ],
+    "Thermal spans": [
+      "Feature",
+      "Segment",
+      "From endpoint",
+      "Start mm",
+      "End mm",
+      "Role",
+      "Status",
+      "Source",
+      "Notes"
+    ],
+    "Fluids": [
+      "Fluid ID",
+      "Facility",
+      "Product",
+      "Concentration",
+      "Basis",
+      "Circuit",
+      "Minimum C",
+      "Maximum C",
+      "Property source",
+      "Status"
+    ],
+    "Materials": [
+      "Material ID",
+      "Identity / product",
+      "Property",
+      "Equation / table",
+      "Input units",
+      "Output units",
+      "Valid domain",
+      "Uncertainty",
+      "Rationale",
+      "Status",
+      "Source"
+    ],
+    "Model choices": [
+      "Interface / topic",
+      "Observed state",
+      "1-D choice",
+      "CFD / CHT choice",
+      "Evidence / rationale",
+      "Uncertainty / sensitivity",
+      "Owner",
+      "Status"
+    ],
+    "Form pipe": [
+      "Field ID",
+      "What to record",
+      "Reference only",
+      "Reference basis",
+      "Reference source",
+      "Your entry",
+      "Your evidence file / location",
+      "Entry evidence type",
+      "Reviewer / date"
+    ],
+    "Form sensor": [
+      "Field ID",
+      "What to record",
+      "Reference only",
+      "Reference basis",
+      "Reference source",
+      "Your entry",
+      "Your evidence file / location",
+      "Entry evidence type",
+      "Reviewer / date"
+    ],
+    "Form material": [
+      "Field ID",
+      "What to record",
+      "Reference only",
+      "Reference basis",
+      "Reference source",
+      "Your entry",
+      "Your evidence file / location",
+      "Entry evidence type",
+      "Reviewer / date"
+    ],
+    "Requirements": [
+      "Field ID",
+      "Package",
+      "Field",
+      "Purpose",
+      "Responsible team",
+      "Applicability",
+      "Requirement source",
+      "Requirement locator",
+      "Current evidence",
+      "Evidence type",
+      "Evidence source",
+      "Evidence locator",
+      "Review state",
+      "Unresolved question",
+      "Selected choice",
+      "Decision scope / rationale",
+      "Reviewer / date",
+      "Effective configuration"
+    ],
+    "Phase requests": [
+      "Request ID",
+      "Phase",
+      "Request",
+      "Experimental-team action",
+      "Return this evidence",
+      "Review partner",
+      "Field IDs",
+      "Source locator",
+      "VCU adaptation / caution",
+      "Completion check"
+    ],
+    "Review issues": [
+      "Issue ID",
+      "Kind",
+      "Source and locator",
+      "What conflicts / is missing",
+      "Suggested owner",
+      "Resolution needed",
+      "Affected fields"
+    ],
+    "Sources": [
+      "Source ID",
+      "File / record",
+      "Revision / context",
+      "Locator guide",
+      "Qualification"
+    ],
+    "Insulation regions": [
+      "Region ID",
+      "Region",
+      "Boundary reference",
+      "Coverage",
+      "Material ID",
+      "Thickness mm",
+      "Evidence type",
+      "Evidence file / location",
+      "Notes"
+    ],
+    "CAD dimensions": [
+      "Record ID",
+      "Component",
+      "Reference values",
+      "Units",
+      "Evidence / limitations"
+    ],
+    "Native channels": [
+      "Native channel",
+      "Reference / domain",
+      "Working role / operator",
+      "Basis / source",
+      "Limits / next evidence"
+    ],
+    "Current knowledge": [
+      "Record ID",
+      "Topic",
+      "Current understanding",
+      "Basis / source",
+      "Limits / next evidence"
+    ]
+  }
+}

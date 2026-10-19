@@ -1,0 +1,49 @@
+{
+  "task_id": "CFG-003",
+  "date": "2026-10-16",
+  "artifacts": [
+    {
+      "path": "README.md",
+      "bytes": 5010,
+      "sha256": "981357e41f5b6d29c354a76782c243f10e48de8c92414d9812ec1d672c615527"
+    },
+    {
+      "path": "checks.json",
+      "bytes": 58970,
+      "sha256": "145311d4c541ab5fa6889954371187a08eea04e50a3a8b6d58f270b237c9627c"
+    },
+    {
+      "path": "summary.json",
+      "bytes": 1154,
+      "sha256": "909849c6fa26c49fd9a553994f367e3762be6c4819327f725e8c2a01477a2872"
+    },
+    {
+      "path": "tests.log",
+      "bytes": 3556,
+      "sha256": "7225b7c86f46027f4b11a4bed0d4818ac0e3ce7b586a9dbe6ed2083c676e046a"
+    },
+    {
+      "path": "receipt.json",
+      "bytes": 1978,
+      "sha256": "37683a6c8721669c80715e0c5be6875df900e7debe98757c83d29c4aaccdd465"
+    }
+  ],
+  "workbook": {
+    "path": "../../../../../../ACU_inputs.xlsx",
+    "sha256": "4eeed111763ded9e1b1253cef5ad24d481c3f2cccbc7bc13dd17ba1bb61e7e98"
+  },
+  "producers": [
+    {
+      "path": "../../../../../../support/scripts/prepare_acu_inputs.py",
+      "sha256": "38e06241ceccda02ac81ebcfdbb5533e4522eb1e41030a103f7813ef9e9c64f6"
+    },
+    {
+      "path": "../../../../../../support/scripts/acu_workbook.py",
+      "sha256": "5f124c466488ae5472784646250addd2570b1e9f94e6a57f97291dd30494608a"
+    },
+    {
+      "path": "../../../../../../support/scripts/test_acu_workbook.py",
+      "sha256": "c3127795be7315495fd8922727bc0e492046736d6f036e532c087fc1aa89ad9b"
+    }
+  ]
+}

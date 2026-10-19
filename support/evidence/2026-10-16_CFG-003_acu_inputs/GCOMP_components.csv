@@ -1,0 +1,5 @@
+component_id,od_mm,id_mm,wall_thickness_mm,source_file,source_kind,source_locator
+MAIN_PIPE,33.400999999999996,26.644599999999997,3.3781999999999996,Annotated_ACU(2).FCStd,cad_extraction,Part__Feature140.Face16/Face11; analytical cylinder radii
+COOLING_JACKET,158.75,149.19959999999998,4.775200000000012,Annotated_ACU(2).FCStd,cad_extraction,Part__Feature145.Face8/Face7; analytical cylinder radii
+TLEP_MAIN_TUBE,42.163999999999994,32.4612,4.851399999999998,Annotated_ACU(2).FCStd,cad_extraction,Part__Feature141.Face6/Face4; analytical cylinder radii
+BREP_MAIN_TUBE,42.163999999999994,32.4612,4.851399999999998,Annotated_ACU(2).FCStd,cad_extraction,Part__Feature142.Face96/Face94; analytical cylinder radii

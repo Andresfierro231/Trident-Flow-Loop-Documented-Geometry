@@ -35,7 +35,7 @@ For a different segment, sensor or material, save a separate response copy. Ask 
 
 ## Where to find more detail
 
-**Phase requests** lists 17 specific returns requested by the draft STNCL plans. **Requirements** contains 78 field records; filter by responsible team or package. **Review issues** lists nine unresolved conflicts or qualification gaps. **Sources** explains the short source IDs, such as SEG, MAT and P0.
+**Phase requests** lists 17 specific returns requested by the draft STNCL plans. **Requirements** contains 78 field records; filter by responsible team or package. **Review issues** lists twelve unresolved conflicts or qualification gaps. **Current knowledge** summarizes the current qualified understanding; **Native channels** records 20 core native channels, including jacket, ambient and tank roles. **Sources** explains the short source IDs, such as SEG, MAT and P0.
 
 The PDF opens with seven pages describing the configuration. Contributor guides, forms and administrative records are in linked appendices. Form responses appear when the maintainer regenerates it. They **do not automatically change geometry, channel mappings or selected properties**.
 

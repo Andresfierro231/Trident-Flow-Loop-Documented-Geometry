@@ -1,0 +1,498 @@
+# ACU STNCL — what the instruments ARE (ADR-028).
+#
+# Transcribed 2026-09-25 from the site's own sensor list, kept beside this file
+# at sources/ACU-STNCL-sensors.xlsx and extracted as sensors.csv. Every value
+# here is written down in that document. Nothing is inferred.
+#
+# Two kinds of entry, following the DeepLynx metatype/node shape (ADR-028):
+#
+#   [instrument_class."<id>"]  one model of hardware, and everything true of
+#                              every unit of it
+#   [[instrument]]             one installed unit, where it sits, and the
+#                              channels it feeds
+#
+# A property nobody wrote down is ABSENT, not zero and not guessed. Several
+# units below are deliberately missing: the document does not state them, and
+# they are what the open ask to the site is for.
+
+schema_ref = "acu-flowloop/epics-v1"
+
+# --------------------------------------------------------------------------
+# Acquisition modules.
+#
+# A fault word belongs to the module that could not read, not to the sensor
+# that was being read, which is why these are classes of their own and why
+# the sensors name them with `read_by`. One line here reaches every channel
+# that module serves.
+# --------------------------------------------------------------------------
+
+[instrument_class."ad-p1-04thm"]
+maker = "AutomationDirect"
+model = "P1-04THM"
+kind = "acquisition_module"
+bits = 16
+sample_period_s = 0.2
+note = "All thermocouple measurements go through this module."
+
+[instrument_class."ad-p1-04rtd"]
+maker = "AutomationDirect"
+model = "P1-04RTD"
+kind = "acquisition_module"
+
+[instrument_class."ad-p1-04adl-1"]
+maker = "AutomationDirect"
+model = "P1-04ADL-1"
+kind = "acquisition_module"
+bits = 13
+sample_period_s = 0.01
+
+[instrument_class."ad-p1-04adl-2"]
+maker = "AutomationDirect"
+model = "P1-04ADL-2"
+kind = "acquisition_module"
+bits = 13
+
+[instrument_class."ad-p1-04trs"]
+maker = "AutomationDirect"
+model = "P1-04TRS"
+kind = "relay_module"
+
+# --------------------------------------------------------------------------
+# Sensors
+# --------------------------------------------------------------------------
+
+[instrument_class."omega-scain-062u-12"]
+maker = "Dwyer Omega"
+model = "SCAIN-062U-12"
+kind = "thermocouple"
+measures = "temperature"
+unit = "degC"
+read_by = "ad-p1-04thm"
+url = "https://www.dwyeromega.com/en-us/thermocouple-probes-with-removable-miniature-connectors/QD-MINI-NOT-MOLDED/p/SCAIN-062U-12"
+
+[instrument_class."omega-pr-31-3-100"]
+maker = "Dwyer Omega"
+model = "PR-31-3-100-A-1/8-1200-M12-1"
+kind = "rtd"
+measures = "temperature"
+unit = "degC"
+read_by = "ad-p1-04rtd"
+
+[instrument_class."dwyer-626-02-gh-p1-e6-s1"]
+maker = "Dwyer Omega"
+model = "626-02-GH-P1-E6-S1"
+kind = "pressure_transmitter"
+measures = "pressure"
+unit = "psia"
+range_min = 0.0
+range_max = 50.0
+# 0.25 PERCENT OF SPAN, not 0.25 psia. Named as a percentage on purpose: an
+# absolute and a relative accuracy are different quantities and a reader that
+# cannot tell them apart will be wrong by a factor of the span.
+uncertainty_pct_of_span = 0.25
+read_by = "ad-p1-04adl-1"
+note = "Document adds: 'Need to configure' the range and accuracy, so confirm before relying on them."
+
+[instrument_class."omega-fma900a"]
+maker = "Omega"
+model = "FMA900A"
+kind = "air_velocity_sensor"
+measures = "velocity"
+read_by = "ad-p1-04adl-2"
+# No unit. The document does not state one, and a velocity sensor's unit is
+# not readable off its model number.
+
+[instrument_class."ad-fts200-1002"]
+maker = "AutomationDirect"
+model = "FTS200-1002"
+kind = "thermal_flow_sensor"
+measures = "velocity"
+read_by = "ad-p1-04adl-1"
+
+[instrument_class."banner-s24as-d-mqp"]
+maker = "Banner Engineering"
+model = "S24AS-D-MQP"
+kind = "dewpoint_humidity_sensor"
+protocol = "modbus-rtu-rs485"
+
+[instrument_class."alicat-mc-1slpm"]
+maker = "Alicat"
+model = "MC-1SLPM-D-MODTCPIP-PCV10-.25COMP-IB"
+kind = "mass_flow_controller"
+protocol = "modbus-tcp"
+# No unit, deliberately. "1SLPM" in the model number almost certainly means a
+# one standard litre per minute full scale, and ADR-028 D6 says we do not read
+# units out of model numbers. It is a question to the site, not a declaration.
+
+[instrument_class."alicat-pcd-15psid"]
+maker = "Alicat"
+model = "PCD-15PSID-D-MODTCPIP-PCV65-.25COMP"
+kind = "pressure_controller"
+protocol = "modbus-tcp"
+
+[instrument_class."asco-sc912yn16vfba4"]
+maker = "ASCO"
+model = "SC912YN16VFBA4"
+kind = "solenoid_valve"
+read_by = "ad-p1-04trs"
+
+[instrument_class."tameson-solenoid"]
+kind = "solenoid_valve"
+read_by = "ad-p1-04trs"
+note = "Model recorded only as '<tameson part>' in the source document."
+
+[instrument_class."weg-cfw500"]
+maker = "WEG"
+model = "CFW500"
+kind = "vfd"
+protocol = "modbus-tcp"
+note = "Drives the cooler fan."
+
+[instrument_class."vega-puls-6s"]
+maker = "Vega"
+model = "VEGAPULS 6S"
+kind = "level_radar"
+measures = "level"
+read_by = "ad-p1-04adl-1"
+note = "Outputs a configurable analog signal."
+
+[instrument_class."sporian-thermaflow-700"]
+maker = "Sporian"
+model = "940-000-0395-00"
+kind = "flow_meter"
+measures = "flow"
+protocol = "ascii-serial-over-tcp"
+
+[instrument_class."luna-odisi-7100"]
+maker = "LUNA Innovations"
+model = "ODiSi 7100"
+kind = "fiber_optic_temperature"
+measures = "temperature"
+note = "Marked '<not yet implemented>' in the source document."
+
+# --------------------------------------------------------------------------
+# Installed units.
+#
+# Channel names are the PVs as acquired. An instrument with an empty
+# `channels` list is installed and sends us nothing, which is a finding rather
+# than an omission: see the README.
+# --------------------------------------------------------------------------
+
+[[instrument]]
+id = "RTD1"
+class = "omega-pr-31-3-100"
+placement = "Cooler inlet"
+channels = ["NCDT1:COOLER:RTD1"]
+
+[[instrument]]
+id = "RTD2"
+class = "omega-pr-31-3-100"
+placement = "Cooler outlet"
+channels = ["NCDT1:COOLER:RTD2"]
+
+[[instrument]]
+id = "VELO1"
+class = "omega-fma900a"
+placement = "Cooler air path"
+channels = ["NCDT1:COOLER:VELO1"]
+
+[[instrument]]
+id = "VELO2"
+class = "ad-fts200-1002"
+placement = "Cooler air path"
+channels = ["NCDT1:COOLER:VELO2", "NCDT1:COOLER:VELO2:Temp"]
+
+[[instrument]]
+id = "DT01"
+class = "banner-s24as-d-mqp"
+placement = "Inlet (supply) gas reference"
+channels = ["NCDT1:GAS:DT01:DewC", "NCDT1:GAS:DT01:Humidity", "NCDT1:GAS:DT01:TempC"]
+
+[[instrument]]
+id = "DT11"
+class = "banner-s24as-d-mqp"
+placement = "Drain tank exhaust / drying"
+channels = ["NCDT1:GAS:DT11:DewC", "NCDT1:GAS:DT11:Humidity", "NCDT1:GAS:DT11:TempC"]
+
+[[instrument]]
+id = "DT41"
+class = "banner-s24as-d-mqp"
+placement = "Exp tank cover gas"
+channels = ["NCDT1:GAS:DT41:DewC", "NCDT1:GAS:DT41:Humidity", "NCDT1:GAS:DT41:TempC"]
+
+[[instrument]]
+id = "PT11"
+class = "dwyer-626-02-gh-p1-e6-s1"
+placement = "Drain tank gas inlet"
+channels = ["NCDT1:GAS:PT11"]
+
+[[instrument]]
+id = "PT31"
+class = "dwyer-626-02-gh-p1-e6-s1"
+placement = "Drain tank gas inlet (source document repeats this location for PT11, PT31 and PT41; confirm)"
+channels = ["NCDT1:GAS:PT31"]
+
+[[instrument]]
+id = "PT41"
+class = "dwyer-626-02-gh-p1-e6-s1"
+placement = "Drain tank gas inlet (source document repeats this location; confirm)"
+channels = ["NCDT1:GAS:PT41"]
+
+[[instrument]]
+id = "FC31"
+class = "alicat-mc-1slpm"
+placement = "Exp tank cover gas"
+channels = [
+  "NCDT1:GAS:FC31:MassFlow", "NCDT1:GAS:FC31:Pressure1", "NCDT1:GAS:FC31:RunMode",
+  "NCDT1:GAS:FC31:Setpoint", "NCDT1:GAS:FC31:Temp", "NCDT1:GAS:FC31:Valve",
+  "NCDT1:GAS:FC31:ValveControl", "NCDT1:GAS:FC31:VolFlow",
+]
+
+[[instrument]]
+id = "PC11"
+class = "alicat-pcd-15psid"
+placement = "Salt level control"
+channels = [
+  "NCDT1:GAS:PC11:Pressure1", "NCDT1:GAS:PC11:Pressure2", "NCDT1:GAS:PC11:RunMode",
+  "NCDT1:GAS:PC11:Setpoint", "NCDT1:GAS:PC11:Temp", "NCDT1:GAS:PC11:Valve",
+  "NCDT1:GAS:PC11:ValveControl", "NCDT1:GAS:PC11:VolFlow",
+]
+
+[[instrument]]
+id = "EV01"
+class = "asco-sc912yn16vfba4"
+placement = "Inlet to cover gas system"
+channels = ["NCDT1:GAS:EV01"]
+
+[[instrument]]
+id = "EV11"
+class = "tameson-solenoid"
+placement = "Drain tank exhaust / drying"
+channels = ["NCDT1:GAS:EV11"]
+
+[[instrument]]
+id = "EV12"
+class = "tameson-solenoid"
+placement = "Equalization valve between tanks"
+channels = ["NCDT1:GAS:EV12"]
+
+[[instrument]]
+id = "EV41"
+class = "tameson-solenoid"
+placement = "Exp tank exhaust"
+channels = ["NCDT1:GAS:EV41"]
+
+[[instrument]]
+id = "VFD1"
+class = "weg-cfw500"
+placement = "Cooler fan"
+channels = []
+
+[[instrument]]
+id = "RADAR0"
+class = "vega-puls-6s"
+placement = "Exp tank"
+channels = []
+
+[[instrument]]
+id = "FLOW1"
+class = "sporian-thermaflow-700"
+channels = []
+
+[[instrument]]
+id = "ODISI-7100"
+class = "luna-odisi-7100"
+placement = "Four sections: cold leg, hot leg, cross-section cold, cross-section hot"
+channels = []
+
+# --------------------------------------------------------------------------
+# Thermocouples.
+#
+# The PV spells the tag with an underscore (TC-CH1_1) and the sensor list
+# spells it with a dot (TC-CH1.1). That is a transcription difference, not two
+# instruments, and it is stated here rather than resolved by renaming anything:
+# silver carries the PV exactly as acquired.
+#
+# Two PVs below have no row in the sensor list and are declared against a
+# thermocouple class with no model, because "a thermocouple on the 16-bit
+# module" is what the document supports and the model number is not.
+# --------------------------------------------------------------------------
+
+[instrument_class."thermocouple-unspecified"]
+kind = "thermocouple"
+measures = "temperature"
+unit = "degC"
+read_by = "ad-p1-04thm"
+note = "Model not recorded in the source document."
+
+
+[[instrument]]
+id = "TC-CH1.1"
+class = "omega-scain-062u-12"
+placement = "Cooler Heater ch1"
+channels = ["NCDT1:HEAT:TC-CH1_1"]
+
+[[instrument]]
+id = "TC-CH1.2"
+class = "omega-scain-062u-12"
+placement = "Inner Cooler Pipe Temp 1"
+channels = ["NCDT1:HEAT:TC-CH1_2"]
+
+[[instrument]]
+id = "TC-CH2.1"
+class = "omega-scain-062u-12"
+placement = "Cooler Heater ch2"
+channels = ["NCDT1:HEAT:TC-CH2_1"]
+
+[[instrument]]
+id = "TC-CH2.2"
+class = "omega-scain-062u-12"
+placement = "Inner Cooler Pipe Temp 2"
+channels = ["NCDT1:HEAT:TC-CH2_2"]
+
+[[instrument]]
+id = "TC-CP1.1"
+class = "omega-scain-062u-12"
+placement = "Vertical Section Cold 1"
+channels = ["NCDT1:HEAT:TC-CP1_1"]
+
+[[instrument]]
+id = "TC-CP1.2"
+class = "omega-scain-062u-12"
+placement = "Vertical Section Cold Salt Temp"
+channels = ["NCDT1:HEAT:TC-CP1_2"]
+
+[[instrument]]
+id = "TC-CP2.1"
+class = "omega-scain-062u-12"
+placement = "Vertical Section Cold 2"
+channels = ["NCDT1:HEAT:TC-CP2_1"]
+
+[[instrument]]
+id = "TC-DF1.1"
+class = "omega-scain-062u-12"
+placement = "Drain Tank Flange"
+channels = ["NCDT1:HEAT:TC-DF1_1"]
+
+[[instrument]]
+id = "TC-DF1.2"
+class = "omega-scain-062u-12"
+placement = "Drain Tank Flange Surface Temp"
+channels = ["NCDT1:HEAT:TC-DF1_2"]
+
+[[instrument]]
+id = "TC-DP1.1"
+class = "omega-scain-062u-12"
+placement = "Drain Tank Downpipe"
+channels = ["NCDT1:HEAT:TC-DP1_1"]
+
+[[instrument]]
+id = "TC-DP1.2"
+class = "omega-scain-062u-12"
+placement = "Drain Tank Downpipe Salt Temp"
+channels = ["NCDT1:HEAT:TC-DP1_2"]
+
+[[instrument]]
+id = "TC-DP1.3"
+class = "omega-scain-062u-12"
+placement = "Drain Tank Downpipe Salt Temp 2"
+channels = ["NCDT1:HEAT:TC-DP1_3"]
+
+[[instrument]]
+id = "TC-DT1.1"
+class = "omega-scain-062u-12"
+placement = "Drain Tank Band Heater 1"
+channels = ["NCDT1:HEAT:TC-DT1_1"]
+
+[[instrument]]
+id = "TC-DT2.1"
+class = "omega-scain-062u-12"
+placement = "Drain Tank Band Heater 2"
+channels = ["NCDT1:HEAT:TC-DT2_1"]
+
+[[instrument]]
+id = "TC-DW1.1"
+class = "omega-scain-062u-12"
+channels = ["NCDT1:HEAT:TC-DW1_1"]
+
+[[instrument]]
+id = "TC-EP1.1"
+class = "omega-scain-062u-12"
+placement = "Exp Tank Downpipe"
+channels = ["NCDT1:HEAT:TC-EP1_1"]
+
+[[instrument]]
+id = "TC-EP1.2"
+class = "omega-scain-062u-12"
+placement = "Exp Tank Downpipe Salt Temp"
+channels = ["NCDT1:HEAT:TC-EP1_2"]
+
+[[instrument]]
+id = "TC-EP1.3"
+class = "omega-scain-062u-12"
+placement = "Exp Tank Downpipe Salt Temp 2"
+channels = ["NCDT1:HEAT:TC-EP1_3"]
+
+[[instrument]]
+id = "TC-EP2.1"
+class = "thermocouple-unspecified"
+channels = ["NCDT1:HEAT:TC-EP2_1"]
+
+[[instrument]]
+id = "TC-ET1.1"
+class = "thermocouple-unspecified"
+channels = ["NCDT1:HEAT:TC-ET1_1"]
+
+[[instrument]]
+id = "TC-EW1.1"
+class = "omega-scain-062u-12"
+placement = "Exp Tank Thermowell"
+channels = ["NCDT1:HEAT:TC-EW1_1"]
+
+[[instrument]]
+id = "TC-HP1.1"
+class = "omega-scain-062u-12"
+placement = "Vertical Section Hot 1"
+channels = ["NCDT1:HEAT:TC-HP1_1"]
+
+[[instrument]]
+id = "TC-HP2.1"
+class = "omega-scain-062u-12"
+placement = "Vertical Section Hot 2"
+channels = ["NCDT1:HEAT:TC-HP2_1"]
+
+[[instrument]]
+id = "TC-HP2.2"
+class = "omega-scain-062u-12"
+placement = "Vertical Section Hot Salt Temp"
+channels = ["NCDT1:HEAT:TC-HP2_2"]
+
+# Declared by the site and sending us nothing. Three thermocouples on a
+# manifold heater and one on the exp tank band heater appear in the sensor
+# list with no PV anywhere in the data.
+#
+# TC-ETH1.1 and the PV NCDT1:HEAT:TC-ET1_1 may be the same instrument spelled
+# two ways. That is a QUESTION for the site, not a merge: a name that looks
+# like a typo is sometimes two real instruments, and joining them here would
+# assert something nobody checked.
+
+[[instrument]]
+id = "TC-ETH1.1"
+class = "omega-scain-062u-12"
+placement = "Exp Tank Band Heater"
+channels = []
+
+[[instrument]]
+id = "TC-MH1.1"
+class = "omega-scain-062u-12"
+channels = []
+
+[[instrument]]
+id = "TC-MH1.2"
+class = "omega-scain-062u-12"
+channels = []
+
+[[instrument]]
+id = "TC-MH1.3"
+class = "omega-scain-062u-12"
+channels = []

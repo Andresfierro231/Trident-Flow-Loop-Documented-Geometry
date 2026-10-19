@@ -1,6 +1,11 @@
 # Trident configuration record
 
-Current workbook: **DRAFT-006**. [All regional coverage and both insulation types](reports/configuration/2026/10/16/2026-10-16_GEO-010_regional_insulation_sync/README.md) are now populated from reported VCU assignments; thicknesses are labeled approximate estimates.
+## ACU configuration workbook
+
+[ACU_inputs.xlsx](ACU_inputs.xlsx) is the independent **ACU-REVB-DRAFT-001** master, populated from reviewed Rev B text geometry and source-qualified ACU material/instrument records. Start with **Current knowledge** and **Provenance**. See the [ACU guide](support/docs/ACU_START_HERE.md) and [dated evidence audit](reports/configuration/2026/10/16/2026-10-16_CFG-003_acu_inputs/README.md). The default PDF workflow below builds the VCU document; ACU uses its own validation/export command.
+
+
+Current workbook: **DRAFT-007**. [Current-understanding audit](reports/configuration/2026/10/16/2026-10-16_CFG-002_vcu_current_understanding/README.md) reconciles working channel bindings, observation operators, boundaries and historical data limits. Open **Current knowledge** and **Native channels** for the qualified summary. [All regional coverage and both insulation types](reports/configuration/2026/10/16/2026-10-16_GEO-010_regional_insulation_sync/README.md) are now populated from reported VCU assignments; thicknesses are labeled approximate estimates.
 
 Record the flow-loop setup, measurements and supporting evidence in
 [VCU_inputs.xlsx](VCU_inputs.xlsx).

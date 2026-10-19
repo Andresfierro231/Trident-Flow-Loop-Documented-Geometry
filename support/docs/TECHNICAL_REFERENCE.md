@@ -6,7 +6,7 @@ An editable workbook generates labeled vector drawings, a standalone LaTeX docum
 
 Read **[START_HERE.md](START_HERE.md)** for the five-step form workflow. Experimental contributors fill the three Form tabs and return evidence; they do not need to run software. The [maintainer guide](MAINTAINER_START.md) explains review and regeneration. The [modeling guide](MODELING_START.md) covers shared properties, boundaries and validation.
 
-This increment adds **78 field requirements**, **17 phase information requests**, **nine review issues**, and **17 source records**. The three sample forms separate reference evidence, new responses and review. All physical/model choices remain draft.
+This increment adds **78 field requirements**, **17 phase information requests**, **twelve review issues**, and a source catalog with portable decision and diagnostic snapshots. The three sample forms separate reference evidence, new responses and review. All physical/model choices remain draft.
 
 From the repository folder, run `python3 support/scripts/build.py` to regenerate and compile the PDF, or `python3 support/scripts/generate.py` to regenerate outputs only. The root `main.tex` includes the generated standalone document. Review `support/generated/validation.json` before using any output. A failed build leaves prior figures in place and marks them stale. A successful build records the workbook hash. This prototype always marks modeling readiness false.
 
@@ -23,6 +23,7 @@ The generator needs Python 3.9+ and no third-party Python packages. The LaTeX do
 | Review issues | Open conflicts, proposed owner, affected fields and needed resolution |
 | Sources | Source IDs, revision/context, locator guidance and qualifications |
 | Insulation regions | Ten whole-region coverage dropdowns, material/thickness and evidence; see [insulation guide](INSULATION.md) |
+| Current knowledge / Native channels | Qualified current understanding and working core native-channel roles; includes jacket/ambient/tank without invented main-loop coordinates |
 | Geometry | Segment lengths/directions, bend offsets, pipe bore/OD and insulation thickness |
 | Sensors | Sensor type, segment, endpoint, distance along the pipe, circumferential angle, radius, DAQ identity and point meaning |
 | Calibration | Instrument identity, calibration date/certificate, corrections, uncertainty, acquisition behavior and 1-D/CFD mapping |
@@ -63,11 +64,11 @@ The full-loop diagram shows axial stations. Entered angles also create per-senso
 
 The starting geometry and sensor stationing come from the supplied VCU Rev9 CAD extraction, drawing issue 2026-10-08. Original imported segment/sensor rows are preserved in `support/reference/rev9_extraction.json`; initial workbook values are preserved in `support/reference/initial_tables.json`, with the added control records in `support/reference/initial_control_tables.json`. They are audit references, not alternate editable inputs. See `support/reference/SOURCES.md` and `support/reference/source_manifest.json` for source identity, exact supplied paths and read-time file hashes.
 
-CAD sensor IDs are not confirmed DAQ names. The model contains PTC-X, while a supplied note calls it a fluke. The record remains visible with that conflict until the installed hardware is checked. JTC-A/B remain on the Calibration sheet; coolant-port geometry is not included in this main-loop drawing version.
+CAD sensor IDs are not confirmed DAQ names. The model contains PTC-X, while a supplied note calls it a fluke. The record remains visible with that conflict until the installed hardware is checked. JTC-B/PTC5 inlet and JTC-A/PTC6 outlet are working bindings on Calibration and Native channels; coolant-port geometry is not included in this main-loop drawing version.
 
-The main-loop bore and insulation fields are blank pending installed/specification evidence. Heater clamp extents are not energized heater boundaries. Only the complete jacket envelope is prefilled. Enter one thermal-span row per heater element when the active boundaries are known.
+The main-loop CAD bore remains blank; nominal ID is a separate model choice. Regional insulation coverage and estimated thickness are reported in Insulation regions. Heater clamp extents are not energized heater boundaries. Only the complete jacket envelope is prefilled. Enter one thermal-span row per heater element when the active boundaries are known.
 
-VCU fluid choices are Prop-30, air and water. Prop-30 is reported as 30% propylene glycol by mass; product/formulation and original property source require confirmation. Circuit assignments and experimental temperature limits remain unknown. ACU HITEC/water configurations belong in a separate facility package. The generator explicitly rejects an ACU facility tag.
+VCU fluid choices are Prop-30, air and water. Prop-30 is reported as 30% propylene glycol by mass; product/formulation and original property source require confirmation. Circuit roles are reported candidates; primary fill remains run-specific and experimental temperature limits remain unknown. ACU HITEC/water configurations belong in a separate facility package. The generator explicitly rejects an ACU facility tag.
 
 Material entries are reported candidates. No correlations have been independently qualified here. The supplied STNCL plans remain draft requirements until their approval status is confirmed. In particular, their secondary-fluid heater energy accounting needs adaptation to VCU's reported electrical heaters.
 
@@ -93,7 +94,7 @@ The document summarizes selected calibration and geometry fields; the workbook a
 python3 -m unittest discover -s support/tests -v
 ```
 
-All 30 behavior checks pass. Behavior tests use the saved workbook under `support/tests/fixtures/` so contributors can change the working workbook without invalidating seed-specific checks; the build validates the actual working workbook separately. They cover loop closure, endpoint reversal, coordinate/angle transforms, unknown versus zero, geometry changes, impossible distances, duplicate IDs, VCU/ACU separation, full workbook regeneration, source references, complete review decisions, form responses reaching the document without changing baseline geometry, and configuration-first ordering with valid navigation targets. The seven original data sheets were also compared with the pre-edit workbook and remain unchanged.
+All 30 behavior checks pass. Behavior tests use the saved workbook under `support/tests/fixtures/` so contributors can change the working workbook without invalidating seed-specific checks; the build validates the actual working workbook separately. They cover loop closure, endpoint reversal, coordinate/angle transforms, unknown versus zero, geometry changes, impossible distances, duplicate IDs, VCU/ACU separation, full workbook regeneration, source references, complete review decisions, form responses reaching the document without changing baseline geometry, and configuration-first ordering with valid navigation targets. Original geometry and measured unknowns are preserved; dated reports document later working-channel, material and insulation updates.
 
 The repository PDF build compiles the root entry point with repeated passes for contents and cross-references. The reorganized document has been rendered for page-layout review. These checks do not verify installed hardware or simulation validity; there are no spreadsheet formulas or macros.
 

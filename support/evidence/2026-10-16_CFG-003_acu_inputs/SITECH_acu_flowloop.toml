@@ -1,0 +1,428 @@
+# ACU STNCL — EPICS channel map for the acu-flowloop deposit.
+#
+# Generated 2026-09-04 by joining the site's authoritative sensor list
+# (Design_Documentation/Instrumentation Documents/sensors.xlsx) to the
+# channel table shipped with the archive deposit (Raw_Data/channels.csv).
+# `description` is the site's own wording, copied verbatim.
+#
+# Units are declared only where the tag makes them unambiguous. A blank unit
+# means unknown, which is the honest value until ACU exports the archiver's
+# EGU field — a guessed unit is worse than an absent one.
+#
+#
+# 2026-09-25, from the site (Dale Cox, ACU), three answers:
+#
+#  * `HE-*:Time` is the PWM PULSE WIDTH in MILLISECONDS — how long the channel
+#    is left on — not an elapsed timer. This file said `unit = "s"` for all
+#    thirteen, which is wrong by a factor of a thousand, and a wrong unit is
+#    invisible downstream while an absent one is not.
+#
+#  * The `SetPoint` / `Setpoint` spelling difference is DELIBERATE, not a typo:
+#    different drivers written by different people, and no naming convention
+#    was enforced on the PVs. Do not "normalise" it. A map does not rename
+#    channels, and here the two spellings are what the site actually publishes.
+#
+#  * EPICS PVs can carry `.DESC` and `.EGU`, and whether ACU's are populated is
+#    UNDETERMINED — it needs a code sweep on their side. So the plan of "one
+#    Channel Access sweep returns every unit" is not yet a plan; it may return
+#    empty tags.
+#
+# This file is DATA, not code: a site supplies it, the platform reads it
+# (ADR-023-A1 §A1.3). It does not rename channels — silver carries the source
+# PV, and this adds the unit and the human description around it.
+
+schema_ref = "acu-flowloop/epics-v1"
+
+[channel."NCDT1:COOLER:RTD1"]
+unit = "degC"
+description = "Cooler Inlet Temp"
+
+[channel."NCDT1:COOLER:RTD2"]
+unit = "degC"
+description = "Cooler Outlet Temp"
+
+[channel."NCDT1:COOLER:VELO1"]
+description = "Air Velocity Sensor 1"
+
+[channel."NCDT1:COOLER:VELO2"]
+description = "Air Velocity Sensor 2"
+
+[channel."NCDT1:COOLER:VELO2:Temp"]
+description = "Air Velocity Sensor 2"
+
+[channel."NCDT1:GAS:DT01:DewC"]
+unit = "degC"
+description = "Humidity / Dewpoint - Inlet (Supply) Gas Reference"
+
+[channel."NCDT1:GAS:DT01:Humidity"]
+unit = "%RH"
+description = "Humidity / Dewpoint - Inlet (Supply) Gas Reference"
+
+[channel."NCDT1:GAS:DT01:TempC"]
+unit = "degC"
+description = "Humidity / Dewpoint - Inlet (Supply) Gas Reference"
+
+[channel."NCDT1:GAS:DT11:DewC"]
+unit = "degC"
+description = "Humidity / Dewpoint - Drain Tank Exhaust / drying"
+
+[channel."NCDT1:GAS:DT11:Humidity"]
+unit = "%RH"
+description = "Humidity / Dewpoint - Drain Tank Exhaust / drying"
+
+[channel."NCDT1:GAS:DT11:TempC"]
+unit = "degC"
+description = "Humidity / Dewpoint - Drain Tank Exhaust / drying"
+
+[channel."NCDT1:GAS:DT41:DewC"]
+unit = "degC"
+description = "Humidity / Dewpoint - Exp Tank Cover Gas Measurement"
+
+[channel."NCDT1:GAS:DT41:Humidity"]
+unit = "%RH"
+description = "Humidity / Dewpoint - Exp Tank Cover Gas Measurement"
+
+[channel."NCDT1:GAS:DT41:TempC"]
+unit = "degC"
+description = "Humidity / Dewpoint - Exp Tank Cover Gas Measurement"
+
+[channel."NCDT1:GAS:EV01"]
+description = "Gas solenoid - Inlet to Cover Gas System"
+
+[channel."NCDT1:GAS:EV11"]
+description = "Gas solenoid - Drain Tank Exhaust / drying"
+
+[channel."NCDT1:GAS:EV12"]
+description = "Gas solenoid - Equalization Valve between tanks"
+
+[channel."NCDT1:GAS:EV41"]
+description = "Gas solenoid - Exp Tank Exhaust"
+
+[channel."NCDT1:GAS:FC1:MassFlow"]
+unit = "sccm"
+
+[channel."NCDT1:GAS:FC1:Pressure1"]
+unit = "psi"
+
+[channel."NCDT1:GAS:FC1:RunMode"]
+
+[channel."NCDT1:GAS:FC1:Setpoint"]
+
+[channel."NCDT1:GAS:FC1:Temp"]
+
+[channel."NCDT1:GAS:FC1:Valve"]
+
+[channel."NCDT1:GAS:FC1:ValveControl"]
+
+[channel."NCDT1:GAS:FC1:VolFlow"]
+
+[channel."NCDT1:GAS:FC31:MassFlow"]
+unit = "sccm"
+description = "Mass Flow Controller - Exp Tank Cover Gas"
+
+[channel."NCDT1:GAS:FC31:Pressure1"]
+unit = "psi"
+description = "Mass Flow Controller - Exp Tank Cover Gas"
+
+[channel."NCDT1:GAS:FC31:RunMode"]
+description = "Mass Flow Controller - Exp Tank Cover Gas"
+
+[channel."NCDT1:GAS:FC31:Setpoint"]
+description = "Mass Flow Controller - Exp Tank Cover Gas"
+
+[channel."NCDT1:GAS:FC31:Temp"]
+description = "Mass Flow Controller - Exp Tank Cover Gas"
+
+[channel."NCDT1:GAS:FC31:Valve"]
+description = "Mass Flow Controller - Exp Tank Cover Gas"
+
+[channel."NCDT1:GAS:FC31:ValveControl"]
+description = "Mass Flow Controller - Exp Tank Cover Gas"
+
+[channel."NCDT1:GAS:FC31:VolFlow"]
+description = "Mass Flow Controller - Exp Tank Cover Gas"
+
+[channel."NCDT1:GAS:MFC1:setpoint"]
+
+[channel."NCDT1:GAS:PC11:MassFlow"]
+unit = "sccm"
+description = "Differential Pressure Controller - Salt Level Control"
+
+[channel."NCDT1:GAS:PC11:Pressure1"]
+unit = "psi"
+description = "Differential Pressure Controller - Salt Level Control"
+
+[channel."NCDT1:GAS:PC11:Pressure2"]
+unit = "psi"
+description = "Differential Pressure Controller - Salt Level Control"
+
+[channel."NCDT1:GAS:PC11:RunMode"]
+description = "Differential Pressure Controller - Salt Level Control"
+
+[channel."NCDT1:GAS:PC11:Setpoint"]
+description = "Differential Pressure Controller - Salt Level Control"
+
+[channel."NCDT1:GAS:PC11:Temp"]
+description = "Differential Pressure Controller - Salt Level Control"
+
+[channel."NCDT1:GAS:PC11:Valve"]
+description = "Differential Pressure Controller - Salt Level Control"
+
+[channel."NCDT1:GAS:PC11:ValveControl"]
+description = "Differential Pressure Controller - Salt Level Control"
+
+[channel."NCDT1:GAS:PC11:VolFlow"]
+description = "Differential Pressure Controller - Salt Level Control"
+
+[channel."NCDT1:GAS:PC1:MassFlow"]
+unit = "sccm"
+
+[channel."NCDT1:GAS:PC1:Pressure1"]
+unit = "psi"
+
+[channel."NCDT1:GAS:PC1:Pressure2"]
+unit = "psi"
+
+[channel."NCDT1:GAS:PC1:RunMode"]
+
+[channel."NCDT1:GAS:PC1:Setpoint"]
+
+[channel."NCDT1:GAS:PC1:Temp"]
+
+[channel."NCDT1:GAS:PC1:Valve"]
+
+[channel."NCDT1:GAS:PC1:ValveControl"]
+
+[channel."NCDT1:GAS:PC1:VolFlow"]
+
+[channel."NCDT1:GAS:PT11"]
+description = "Pressure Transducer - Drain Tank Gas Inlet"
+
+[channel."NCDT1:GAS:PT31"]
+description = "Pressure Transducer - Drain Tank Gas Inlet"
+
+[channel."NCDT1:GAS:PT41"]
+description = "Pressure Transducer - Drain Tank Gas Inlet"
+
+[channel."NCDT1:HEAT:HE-CH1:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-CH1:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-CH1:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-CH2:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-CH2:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-CH2:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-CP1:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-CP1:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-CP1:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-CP2:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-CP2:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-CP2:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-DF1:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-DF1:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-DF1:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-DP1:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-DP1:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-DP1:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-DT1:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-DT1:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-DT1:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-DT2:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-DT2:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-DT2:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-EP1:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-EP1:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-EP1:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-EP2:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-EP2:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-EP2:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-ET1:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-ET1:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-ET1:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-HP1:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-HP1:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-HP1:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:HE-HP2:OutputPower"]
+unit = "%"
+
+[channel."NCDT1:HEAT:HE-HP2:SetPoint"]
+
+[channel."NCDT1:HEAT:HE-HP2:Time"]
+unit = "ms"
+role = "pwm_pulse_width"
+description = "PWM pulse width: how long the channel is left on"
+
+[channel."NCDT1:HEAT:TC-CH1_1"]
+unit = "degC"
+description = "Cooler Heater ch1"
+
+[channel."NCDT1:HEAT:TC-CH1_2"]
+unit = "degC"
+description = "Inner Cooler Pipe Temp 1"
+
+[channel."NCDT1:HEAT:TC-CH2_1"]
+unit = "degC"
+description = "Cooler Heater ch2"
+
+[channel."NCDT1:HEAT:TC-CH2_2"]
+unit = "degC"
+description = "Inner Cooler Pipe Temp 2"
+
+[channel."NCDT1:HEAT:TC-CP1_1"]
+unit = "degC"
+description = "Vertical Section Cold 1"
+
+[channel."NCDT1:HEAT:TC-CP1_2"]
+unit = "degC"
+description = "Vertical Section Cold Salt Temp"
+
+[channel."NCDT1:HEAT:TC-CP2_1"]
+unit = "degC"
+description = "Vertical Section Cold 2"
+
+[channel."NCDT1:HEAT:TC-DF1_1"]
+unit = "degC"
+description = "Drain Tank Flange"
+
+[channel."NCDT1:HEAT:TC-DF1_2"]
+unit = "degC"
+description = "Drain Tank Flange Surface Temp"
+
+[channel."NCDT1:HEAT:TC-DP1_1"]
+unit = "degC"
+description = "Drain Tank Downpipe"
+
+[channel."NCDT1:HEAT:TC-DP1_2"]
+unit = "degC"
+description = "Drain Tank Downpipe Salt Temp"
+
+[channel."NCDT1:HEAT:TC-DP1_3"]
+unit = "degC"
+description = "Drain Tank Downpipe Salt Temp 2"
+
+[channel."NCDT1:HEAT:TC-DT1_1"]
+unit = "degC"
+description = "Drain Tank Band Heater 1"
+
+[channel."NCDT1:HEAT:TC-DT2_1"]
+unit = "degC"
+description = "Drain Tank Band Heater 2"
+
+[channel."NCDT1:HEAT:TC-DW1_1"]
+unit = "degC"
+
+[channel."NCDT1:HEAT:TC-EP1_1"]
+unit = "degC"
+description = "Exp Tank Downpipe"
+
+[channel."NCDT1:HEAT:TC-EP1_2"]
+unit = "degC"
+description = "Exp Tank Downpipe Salt Temp"
+
+[channel."NCDT1:HEAT:TC-EP1_3"]
+unit = "degC"
+description = "Exp Tank Downpipe Salt Temp 2"
+
+[channel."NCDT1:HEAT:TC-EP2_1"]
+unit = "degC"
+
+[channel."NCDT1:HEAT:TC-ET1_1"]
+unit = "degC"
+
+[channel."NCDT1:HEAT:TC-EW1_1"]
+unit = "degC"
+description = "Exp Tank Thermowell"
+
+[channel."NCDT1:HEAT:TC-HP1_1"]
+unit = "degC"
+description = "Vertical Section Hot 1"
+
+[channel."NCDT1:HEAT:TC-HP2_1"]
+unit = "degC"
+description = "Vertical Section Hot 2"
+
+[channel."NCDT1:HEAT:TC-HP2_2"]
+unit = "degC"
+description = "Vertical Section Hot Salt Temp"

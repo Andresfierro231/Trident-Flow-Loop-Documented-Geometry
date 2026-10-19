@@ -96,7 +96,7 @@ def build_report(tables, model, figs, digest, tex, latex_table, insulation_figur
             {'a':'Reported','b':'A statement in notes or a communication; original evidence may still be needed.'},
             {'a':'Modeling assumption','b':'A proposed idealization or convention requiring rationale.'},
             {'a':'Unknown','b':'No supported value is available yet.'}], ['Evidence type','What it means'],['a','b'],[.24,.68]),
-        r'\textbf{Review state is separate:} Needs information, Needs review, Approved for stated use, or Not applicable with a reason. Approval must name the selected value, reviewer, date and scope. A CAD-derived value stays CAD-derived after review. This package establishes no approved physical or modeling choices.',
+        r'\textbf{Review state is separate:} Needs information, Needs review, Approved for stated use, or Not applicable with a reason. Approval must name the selected value, reviewer, date and scope. A CAD-derived value stays CAD-derived after review. Working selections are recorded with their scope and source; package release and installed verification remain pending.',
         r'\subsection*{What belongs in each package?}',
         r'\textbf{Configuration Control} describes the physical setup and measurement chain: geometry, insulation, fluids, instruments, calibration, heating/cooling, branch states and run identity.',
         r'\textbf{Modeling Control} describes how that setup is represented: 1-D and CFD/CHT domains, boundary/initial conditions, shared properties, closures, numerical checks, uncertainty and independent validation.',
@@ -263,9 +263,9 @@ def build_report(tables, model, figs, digest, tex, latex_table, insulation_figur
 
     out += [section('Current model and material input records', 'model-records'),
         r'These records reproduce the existing Model choices and Materials worksheets. Unknown inputs remain visible. New answers in the three prototype forms are evidence for review; they do not automatically populate these records.']
-    for name, key in [('Model choices','Interface / topic'),('Materials','Material ID')]:
+    for name, key in [('Model choices','Interface / topic'),('Materials','Material ID'),('Native channels','Native channel'),('Current knowledge','Record ID')]:
         out += [(r'\clearpage' if name=='Materials' else '')+r'\subsection{'+esc(name)+'}']
-        for i,row in enumerate(tables[name]):
+        for i,row in enumerate(tables.get(name, [])):
             out += [r'\par\noindent\begin{minipage}{\textwidth}\small\setlength{\parskip}{2pt}',r'\subsection*{'+esc(row[key])+'}']
             out.extend(line(k,v) for k,v in row.items() if k!=key)
             out += [r'\end{minipage}\par\vspace{5pt}']
@@ -297,9 +297,9 @@ def markdown_register(tables):
     out = ['# VCU requirements and evidence register',
            'Generated from `VCU_inputs.xlsx`. Edit the workbook and regenerate. Draft; no release approval is implied.',
            'Evidence type and review state are independent. All proposed owners require team confirmation.']
-    for name, key in [('Requirements','Field ID'), ('Phase requests','Request ID'), ('Review issues','Issue ID'), ('Sources','Source ID')]:
+    for name, key in [('Requirements','Field ID'), ('Phase requests','Request ID'), ('Review issues','Issue ID'), ('Sources','Source ID'), ('Native channels','Native channel'), ('Current knowledge','Record ID')]:
         out.append('## '+name)
-        for row in tables[name]:
+        for row in tables.get(name, []):
             out.append('### '+str(row[key]))
             out.extend(f'**{k}:** {v if v not in (None, "") else "Unknown"}\n' for k,v in row.items() if k!=key)
     return '\n\n'.join(out)+'\n'

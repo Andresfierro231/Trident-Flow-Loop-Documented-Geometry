@@ -1,23 +1,23 @@
 {
   "settings": {
     "Facility": "VCU",
-    "Configuration ID": "VCU-REV9-DRAFT-006",
+    "Configuration ID": "VCU-REV9-DRAFT-007",
     "Status": "Draft",
-    "Geometry source": "VCU-R9-E01 (2026-10-08)",
+    "Geometry source": "VCU-R9-E01 (2026-10-08); WORK v3 working selection",
     "Model support": "1-D and CFD / conjugate heat transfer",
     "Origin": "B",
     "Phi convention": "Clockwise from +y",
     "Circumference convention": "Top = 0; right-hand about segment direction",
     "Closure tolerance mm": 0.1,
     "Plan approval": "Unconfirmed",
-    "Prepared by": "Codex; VCU reference synchronization requested by Andres Fierro",
+    "Prepared by": "Codex / agent-root-cfg002; requested by Andres Fierro",
     "Checked by": null,
     "Editing sequence": "Start with Form tabs, or Insulation regions for whole-region coverage.",
     "Output refresh": "Upload to GitHub; Actions builds the PDF. See support/docs/DATED_CHECKPOINTS.md.",
-    "Scope": "Main-loop geometry and sensor-position prototype",
+    "Scope": "VCU current understanding: Rev9 geometry, working channels, regional insulation, materials, boundaries and historical evidence limits",
     "Fluid scope": "VCU: Prop-30, air, water",
     "Effective date": "2026-10-16",
-    "Change summary": "GEO-010: all ten insulation regions synchronized: six ordinary-pipe fiberglass regions about 50.8 mm; heater ceramic strip only about 6.35 mm; three top D-E partitions Bare. Coverage Reported; thicknesses approximate estimates. LF-01 remains covered."
+    "Change summary": "CFG-002: reconcile working STC/PTC channels and observation operators; add jacket/ambient/tank native register and current-knowledge audit; refresh requirements, cooler cycling and data-quality limits. Preserve geometry, material equations, insulation and unknown measured inputs."
   },
   "segments": {
     "upcomer": {
@@ -288,11 +288,11 @@
       "Distance mm": 116.68608092269051,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC2",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC2 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 116.68608092269051,
       "axis_xyz_mm": [
         0.0,
@@ -311,8 +311,8 @@
         -1.0
       ],
       "zero_reference": "Drawing +x (vertical pipe)",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     },
     {
       "Sensor ID": "STC-03",
@@ -322,11 +322,11 @@
       "Distance mm": 446.8860809226908,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC3",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC3 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 446.8860809226908,
       "axis_xyz_mm": [
         0.0,
@@ -345,8 +345,8 @@
         -1.0
       ],
       "zero_reference": "Drawing +x (vertical pipe)",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     },
     {
       "Sensor ID": "STC-04",
@@ -356,11 +356,11 @@
       "Distance mm": 492.9139190773103,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC4",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC4 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 726.28608092269,
       "axis_xyz_mm": [
         0.0,
@@ -379,8 +379,8 @@
         -1.0
       ],
       "zero_reference": "Drawing +x (vertical pipe)",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     },
     {
       "Sensor ID": "STC-05",
@@ -390,11 +390,11 @@
       "Distance mm": 277.01391907730977,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC5",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC5 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. Changed location: use Rev9 B+942.186081 mm for new work; change date not supplied. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 942.1860809226905,
       "axis_xyz_mm": [
         0.0,
@@ -413,8 +413,8 @@
         -1.0
       ],
       "zero_reference": "Drawing +x (vertical pipe)",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     },
     {
       "Sensor ID": "LF-01",
@@ -458,11 +458,11 @@
       "Distance mm": 69.14180941010166,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC6",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "CAD body-to-pipe gap 0.0000 mm; contact unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC6 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. CAD body-to-pipe gap 0.0000 mm; contact unverified. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 69.14180941010166,
       "axis_xyz_mm": [
         135.7759600044287,
@@ -481,8 +481,8 @@
         1.0
       ],
       "zero_reference": "Projected upward vertical",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     },
     {
       "Sensor ID": "PTC-01",
@@ -492,11 +492,11 @@
       "Distance mm": 97.07953205569167,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "PTC1",
+      "Status": "Reported",
       "Point basis": "Mount reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel PTC1 (2026-10-14); axial reference remains CAD-derived. XWALK/ASM-023: centerline fluid temperature is a working observation assumption, not a measured junction depth. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 97.07953205569167,
       "axis_xyz_mm": [
         163.21882877358598,
@@ -515,8 +515,8 @@
         1.0
       ],
       "zero_reference": "Projected upward vertical",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK.",
+      "cfd_mapping": "Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK."
     },
     {
       "Sensor ID": "STC-07",
@@ -526,11 +526,11 @@
       "Distance mm": 155.33069058990282,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC7",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "CAD body-to-pipe gap 0.0000 mm; contact unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC7 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. CAD body-to-pipe gap 0.0000 mm; contact unverified. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 1197.219309410103,
       "axis_xyz_mm": [
         1243.8721060883242,
@@ -549,8 +549,8 @@
         1.0
       ],
       "zero_reference": "Projected upward vertical",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     },
     {
       "Sensor ID": "LF-03",
@@ -594,11 +594,11 @@
       "Distance mm": 85.48068924237009,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "PTC3",
+      "Status": "Reported",
       "Point basis": "Mount reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel PTC3 (2026-10-14); axial reference remains CAD-derived. XWALK/ASM-023: centerline fluid temperature is a working observation assumption, not a measured junction depth. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 1267.0693107576358,
       "axis_xyz_mm": [
         1312.4848718753874,
@@ -617,8 +617,8 @@
         1.0
       ],
       "zero_reference": "Projected upward vertical",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK.",
+      "cfd_mapping": "Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK."
     },
     {
       "Sensor ID": "STC-08",
@@ -628,11 +628,11 @@
       "Distance mm": 183.10450241506305,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC8",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC8 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 183.10450241506305,
       "axis_xyz_mm": [
         1442.8926209730969,
@@ -651,8 +651,8 @@
         1.0
       ],
       "zero_reference": "Drawing +x (vertical pipe)",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     },
     {
       "Sensor ID": "STC-09",
@@ -662,11 +662,11 @@
       "Distance mm": 411.70450241506296,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC9",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC9 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 411.70450241506296,
       "axis_xyz_mm": [
         1442.8926209730992,
@@ -685,8 +685,8 @@
         1.0
       ],
       "zero_reference": "Drawing +x (vertical pipe)",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     },
     {
       "Sensor ID": "STC-10",
@@ -696,11 +696,11 @@
       "Distance mm": 537.5640573316018,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC10",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC10 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 691.104502415063,
       "axis_xyz_mm": [
         1442.8926209731019,
@@ -719,8 +719,8 @@
         1.0
       ],
       "zero_reference": "Drawing +x (vertical pipe)",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     },
     {
       "Sensor ID": "STC-11",
@@ -730,11 +730,11 @@
       "Distance mm": 283.56405733160227,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC11",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC11 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 945.1045024150626,
       "axis_xyz_mm": [
         1442.8926209731044,
@@ -753,8 +753,8 @@
         1.0
       ],
       "zero_reference": "Drawing +x (vertical pipe)",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     },
     {
       "Sensor ID": "LF-04",
@@ -798,11 +798,11 @@
       "Distance mm": 63.71613723891599,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "PTC4",
+      "Status": "Reported",
       "Point basis": "Mount reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel PTC4 (2026-10-14); axial reference remains CAD-derived. XWALK/ASM-023: centerline fluid temperature is a working observation assumption, not a measured junction depth. User confirms Rev9 location. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 63.71613723891599,
       "axis_xyz_mm": [
         1306.5267280537823,
@@ -821,8 +821,8 @@
         -1.0
       ],
       "zero_reference": "Projected upward vertical",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK.",
+      "cfd_mapping": "Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK."
     },
     {
       "Sensor ID": "STC-12",
@@ -832,11 +832,11 @@
       "Distance mm": 69.29306137124466,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC12",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Multiple closest-point solutions; not a verified sensing junction.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC12 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. Multiple closest-point solutions; not a verified sensing junction. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 69.29306137124466,
       "axis_xyz_mm": [
         1301.0484689967009,
@@ -855,8 +855,8 @@
         -1.0
       ],
       "zero_reference": "Projected upward vertical",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     },
     {
       "Sensor ID": "LF-02",
@@ -900,11 +900,11 @@
       "Distance mm": 83.39435631483525,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "PTC2",
+      "Status": "Reported",
       "Point basis": "Mount reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "Actual sensing location and channel mapping unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel PTC2 (2026-10-14); axial reference remains CAD-derived. XWALK/ASM-023: centerline fluid temperature is a working observation assumption, not a measured junction depth. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 1263.1018585369893,
       "axis_xyz_mm": [
         128.3601375228311,
@@ -923,8 +923,8 @@
         -1.0
       ],
       "zero_reference": "Projected upward vertical",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK.",
+      "cfd_mapping": "Centerline fluid temperature at Rev9 axial reference, working assumption; mount is not a measured tip. XWALK/ASM-023; VSEL; WORK."
     },
     {
       "Sensor ID": "STC-01",
@@ -934,11 +934,11 @@
       "Distance mm": 49.42799112307716,
       "Circumference deg": null,
       "Radius mm": null,
-      "DAQ channel": null,
-      "Status": "CAD-derived",
+      "DAQ channel": "STC1",
+      "Status": "Reported",
       "Point basis": "Pipe reference",
-      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7",
-      "Notes": "CAD body-to-pipe gap 1.0455 mm; contact unverified.",
+      "Source": "VCU-R9-E01 (2026-10-08) sheets 5-7; VSEL; WORK; XWALK",
+      "Notes": "VSEL/WORK: user-selected working channel STC1 (2026-10-14); axial reference remains CAD-derived. All STCs contact bare pipe locally; parent-region insulation remains per VREG. CAD body-to-pipe gap 1.0455 mm; contact unverified. Physical junction/attachment and historical run applicability remain unverified.",
       "station_from_start_mm": 1297.0682237287474,
       "axis_xyz_mm": [
         94.99469389607862,
@@ -957,8 +957,8 @@
         -1.0
       ],
       "zero_reference": "Projected upward vertical",
-      "one_d_mapping": null,
-      "cfd_mapping": null
+      "one_d_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK.",
+      "cfd_mapping": "Outside pipe surface at Rev9 axial reference; local bare contact; physical junction unresolved. VSEL; WORK; XWALK."
     }
   ],
   "thermal_spans": [
@@ -1313,10 +1313,10 @@
   "notes": [
     "Active heater: boundaries unknown; not drawn.",
     "Active cooling: boundaries unknown; not drawn.",
-    "CAD references are not verified sensing junctions or acquisition-channel names.",
+    "CAD references are not verified sensing junctions. Working acquisition bindings, when supplied, are reported separately.",
     "Bends are schematic connectors. No continuous hydraulic length is inferred.",
     "JTC-A/B, branch pipes, tank and coolant plumbing are retained as outstanding scope, not drawn.",
     "Model input draft only: missing bore, property selections, calibrations and approved boundary conditions."
   ],
-  "input_sha256": "9ab25c5064b10aa61ecb3a240808b611a7dfc7a5a1a0c56392b4f7835f831a27"
+  "input_sha256": "f973e12efea86364abeeaac16e16ff8cbf2d28a520667c61774685ebe55cfc03"
 }

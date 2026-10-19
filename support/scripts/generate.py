@@ -215,7 +215,7 @@ def solve(tables):
         hi=number(r['Maximum C'],r['Fluid ID']+' maximum',True)
         if lo is not None and hi is not None and lo>=hi:
             raise ValueError(f'{r["Fluid ID"]}: temperature range is reversed or empty.')
-    notes += ['CAD references are not verified sensing junctions or acquisition-channel names.',
+    notes += ['CAD references are not verified sensing junctions. Working acquisition bindings, when supplied, are reported separately.',
               'Bends are schematic connectors. No continuous hydraulic length is inferred.',
               'JTC-A/B, branch pipes, tank and coolant plumbing are retained as outstanding scope, not drawn.',
               'Model input draft only: missing bore, property selections, calibrations and approved boundary conditions.']
