@@ -186,7 +186,10 @@ class InsulationTests(unittest.TestCase):
             pdf = root/'support/output/pdf'
             pdf.mkdir(parents=True)
             (pdf/'VCU_control_package.pdf').write_bytes(b'Test PDF fixture')
-            identity = {name:sha256(root/name) for name in ('VCU_inputs.xlsx','support/generated/VCU_control_package.tex','support/output/pdf/VCU_control_package.pdf')}
+            (pdf/'VCU_detailed_audit.pdf').write_bytes(b'Test audit PDF fixture')
+            identity = {name:sha256(root/name) for name in (
+                'VCU_inputs.xlsx','support/generated/VCU_control_package.tex','support/output/pdf/VCU_control_package.pdf',
+                'support/generated/VCU_detailed_audit.tex','support/output/pdf/VCU_detailed_audit.pdf')}
             (pdf/'build_manifest.json').write_text(json.dumps(identity))
             saved = create_checkpoint(root,'test-user','source-test-commit')
             self.assertEqual((saved/'generated/insulation_regions.json').read_bytes(),(out/'insulation_regions.json').read_bytes())

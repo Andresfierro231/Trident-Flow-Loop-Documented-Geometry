@@ -80,7 +80,8 @@ Material entries are reported candidates. No correlations have been independentl
 - `sensors.svg`: automatic sensor labels and leader lines.
 - `angle_convention.svg`: coordinate guide.
 - `sensor_angles_*.svg`: added when circumferential angles are supplied.
-- `VCU_control_package.tex`: standalone configuration record with seven technical pages, internal navigation, embedded TikZ figures, and linked appendices containing contributor guides, forms, review issues, requirements, model/material records and sources.
+- `VCU_control_package.tex`: concise default configuration record with the technical diagrams, compact geometry/insulation/channel/model summaries, open decisions and sources. Empty prototype forms and full evidence cards remain in the workbook and audit.
+- `VCU_detailed_audit.tex`: complete supporting record with contributor guides, all forms and phase requests, review issues, requirements/evidence, model/material records, channel-specific limits and source qualifications. Compile `audit.tex` to read this version. The normal build compiles both PDFs.
 - `requirements_and_evidence.md`: searchable, readable export of the full requirements, phase requests, issues and source catalog.
 - `resolved_inputs.json`: every input row in readable form for review and version comparison.
 - `geometry_and_sensors.json`: endpoint coordinates, axial sensor stations, optional 3-D points, mapping fields and qualifications.

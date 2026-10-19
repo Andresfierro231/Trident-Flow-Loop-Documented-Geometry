@@ -6,6 +6,7 @@ on:
     paths:
       - VCU_inputs.xlsx
       - main.tex
+      - audit.tex
       - support/scripts/**
       - support/tests/**
       - support/evidence/**
@@ -53,6 +54,7 @@ jobs:
           name: VCU-control-document
           path: |
             support/output/pdf/VCU_control_package.pdf
+            support/output/pdf/VCU_detailed_audit.pdf
             support/output/pdf/build_manifest.json
           if-no-files-found: error
           retention-days: 90

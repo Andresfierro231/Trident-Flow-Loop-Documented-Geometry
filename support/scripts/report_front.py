@@ -1,7 +1,7 @@
 """A short configuration record, with links into the supporting appendices."""
 
 
-def build_front(tables, model, figs, esc, line, section, table, insulation_figure):
+def build_front(tables, model, figs, esc, line, section, table, insulation_figure, compact=False):
     settings = model['settings']
     requirements = {r['Field ID']: r for r in tables['Requirements']}
 
@@ -88,7 +88,7 @@ def build_front(tables, model, figs, esc, line, section, table, insulation_figur
         figure(insulation_figure),
         r'{\small Details: ' + link('insulation-detail', 'materials, thickness and evidence by region') + r'. No resistance factors or boundary conditions are calculated.}\par',
         section('Instruments', 'instruments-main'),
-        r'Geometric sensor references on the main loop. Drawing IDs are not confirmed DAQ channel names.',
+        r'Geometric sensor references on the main loop. Working native-channel bindings are documented separately; installed junctions and calibration still require evidence.',
         figure(figs[1]),
         r'{\small Details: ' + link('calibration-detail', 'calibration and model mapping') + r'; ' + link('form-sensor', 'sensor evidence form') + r'. Jacket-port sensors JTC-A/B are retained in the calibration record.}\par',
         section('Heating and cooling', 'thermal-main'),
@@ -103,14 +103,14 @@ def build_front(tables, model, figs, esc, line, section, table, insulation_figur
         table([{'topic': requirements[key]['Field'], 'value': decision(key), 'state': requirements[key]['Review state']}
                for key in ('C35','C36','C37','C39','C40','C41')],
               ['Record','Selected choice','Review'], ['topic','value','state'], [.43,.24,.23]),
-        r'\vfill{\small Supporting records: ' + link('model-records','boundary and control choices') + r'; ' + link('requirements','full evidence register') + r'.}\par',
+        r'\vfill{\small Supporting records: ' + link('model-records','boundary and control choices') + r'; ' + link('requirements','decisions and evidence') + r'.}\par',
         section('Materials and fluids', 'materials-main'),
         r'Candidate identities are listed below. Circuit assignments and selected property models require their own evidence.',
         r'\subsection*{Fluids}',
         table(tables['Fluids'], ['Fluid','Product','Circuit','Basis'], ['Fluid ID','Product','Circuit','Status'], [.15,.39,.18,.18]),
         r'\subsection*{Material and property records}',
         table(tables['Materials'], ['Record','Identity / product','Basis'], ['Material ID','Identity / product','Status'], [.18,.53,.19]),
-        r'\vfill{\small Equations, units, applicability and uncertainty: ' + link('model-records','full material records') + r'. To propose a property choice: ' + link('form-material','material evidence form') + r'.}\par',
+        r'\vfill{\small Property applicability and model choices: ' + link('model-records','technical records') + r'. To propose a property choice: ' + link('form-material','material evidence form') + r'. Full equations and units remain in the workbook and detailed audit.}\par',
         section('Uncertainty and limitations', 'uncertainty-main'),
         r'The record must state how accurately the setup is known and what error is acceptable for each intended comparison.',
         table([{'topic': requirements[key]['Field'], 'value': decision(key), 'state': requirements[key]['Review state']}
@@ -118,9 +118,13 @@ def build_front(tables, model, figs, esc, line, section, table, insulation_figur
               ['Basis for comparison','Selected choice','Review'], ['topic','value','state'], [.43,.24,.23]),
         r'\subsection*{Limits of this record}',
         r'\begin{itemize}\item The main-loop geometry is a CAD candidate. Installed dimensions, bore and insulation need supporting measurements.\item Sensor stations are geometric references. Channel identity, calibration, junction positions and fiber sensing extents require evidence.\item Drawn bends are schematic connectors, not qualified hydraulic paths. The heater pieces have overlapping and offset CAD geometry.\item A successful document build checks input structure and drawing closure. It does not establish experimental or modeling readiness.\end{itemize}',
-        r'\vfill{\small Follow up: ' + link('issues-detail','open issues') + r'; ' + link('requirements','requirements and decisions') + r'; ' + link('sources-detail','source catalog') + r'.}\par',
+        r'\vfill{\small Follow up: ' + link('issues-detail','open issues') + r'; ' + link('requirements','requirements and decisions') + r'; ' + link('sources-detail','source catalog') + r'.}\par']
+    if not compact:
+        out += [
         r'\clearpage\phantomsection\label{appendices}\pdfbookmark[0]{Appendices}{appendix-bookmark}',
         r'{\color{navy}\LARGE\bfseries Appendices}\par',
         r'Instructions, evidence and administrative detail. Return to the ' + link('overview','configuration overview') + r' at any time using the page header.\par',
         r'\tableofcontents']
+        out[0] = out[0].replace('pdftitle={VCU Configuration Record}',
+                                'pdftitle={VCU Configuration Record - Detailed Audit}')
     return '\n'.join(out)

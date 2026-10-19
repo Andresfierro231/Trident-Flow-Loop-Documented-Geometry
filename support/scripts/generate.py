@@ -378,8 +378,9 @@ def latex_table(rows, headers, keys, widths):
     return '\n'.join(out+[r'\bottomrule\end{longtable}\normalsize'])
 
 
-def report(tables, model, figs, digest):
-    return build_report(tables, model, figs, digest, tex, latex_table, insulation_diagram(model, Drawing))
+def report(tables, model, figs, digest, detailed=False):
+    return build_report(tables, model, figs, digest, tex, latex_table,
+                        insulation_diagram(model, Drawing), detailed=detailed)
 
 
 def generate(filename, outdir):
@@ -406,6 +407,7 @@ def generate(filename, outdir):
     for old in out.glob('sensor_angles_*.svg'):
         if old.stem not in names: old.unlink()
     (out/'VCU_control_package.tex').write_text(report(tables,model,figs,digest))
+    (out/'VCU_detailed_audit.tex').write_text(report(tables,model,figs,digest,detailed=True))
     (out/'requirements_and_evidence.md').write_text(markdown_register(tables))
     (out/'resolved_inputs.json').write_text(json.dumps(tables,indent=2,ensure_ascii=False))
     (out/'geometry_and_sensors.json').write_text(json.dumps(model,indent=2,ensure_ascii=False))

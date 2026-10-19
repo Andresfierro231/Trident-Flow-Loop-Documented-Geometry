@@ -55,7 +55,14 @@ def validate(tables):
         raise ValueError('Phase requests: duplicate Request ID.')
 
 
-def build_report(tables, model, figs, digest, tex, latex_table, insulation_figure):
+def build_report(tables, model, figs, digest, tex, latex_table, insulation_figure, detailed=False):
+    if not detailed:
+        from report_summary import build_summary
+        return build_summary(tables, model, figs, digest, tex, latex_table, insulation_figure)
+    return build_audit_report(tables, model, figs, digest, tex, latex_table, insulation_figure)
+
+
+def build_audit_report(tables, model, figs, digest, tex, latex_table, insulation_figure):
     """Keep the front easy to use; put the complete traceable register in appendices."""
     def esc(value):
         if isinstance(value, str):

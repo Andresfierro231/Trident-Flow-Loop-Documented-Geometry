@@ -67,6 +67,32 @@ class CheckpointTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'stale or invalid'):
             c.create_checkpoint(self.root, 'test-user', 'source-test-commit')
 
+    def add_audit(self):
+        names = ('support/generated/VCU_detailed_audit.tex', 'support/output/pdf/VCU_detailed_audit.pdf')
+        for name in names:
+            (self.root / name).write_bytes(b'Audit fixture')
+        path = self.root / 'support/output/pdf/build_manifest.json'
+        build = json.loads(path.read_text())
+        build.update({name: c.sha256(self.root / name) for name in names})
+        path.write_text(json.dumps(build))
+
+    def test_checkpoint_retains_matching_detailed_audit(self):
+        self.add_audit()
+        saved = c.create_checkpoint(self.root, 'test-user', 'source-test-commit')
+        manifest = json.loads((saved / 'manifest.json').read_text())
+        self.assertEqual((saved / 'VCU_detailed_audit.pdf').read_bytes(), b'Audit fixture')
+        self.assertEqual(manifest['files']['VCU_detailed_audit.pdf'], c.sha256(saved / 'VCU_detailed_audit.pdf'))
+
+    def test_stale_or_missing_detailed_audit_is_rejected(self):
+        self.add_audit()
+        path = self.root / 'support/output/pdf/VCU_detailed_audit.pdf'
+        path.write_bytes(b'Changed audit fixture')
+        with self.assertRaisesRegex(ValueError, 'detailed audit'):
+            c.create_checkpoint(self.root, 'test-user', 'source-test-commit')
+        path.unlink()
+        with self.assertRaisesRegex(ValueError, 'detailed audit'):
+            c.create_checkpoint(self.root, 'test-user', 'source-test-commit')
+
 
 if __name__ == '__main__':
     unittest.main()

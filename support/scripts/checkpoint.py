@@ -43,6 +43,12 @@ def create_checkpoint(root, actor, source_commit):
                 'support/output/pdf/VCU_control_package.pdf')
     if any(build.get(name) != sha256(root / name) for name in required):
         raise ValueError('The PDF or workbook has changed since the last successful build. Rebuild first.')
+    # Legacy checkpoints have only the configuration PDF. New builds must bind
+    # the detailed audit source and PDF to the same build manifest as well.
+    audit = ('support/generated/VCU_detailed_audit.tex', 'support/output/pdf/VCU_detailed_audit.pdf')
+    has_audit = any((root / name).exists() or name in build for name in audit)
+    if has_audit and any(not (root / name).is_file() or build.get(name) != sha256(root / name) for name in audit):
+        raise ValueError('The detailed audit has changed or is missing. Rebuild first.')
     resolved = json.loads((generated / 'resolved_inputs.json').read_text())
     if resolved != read_workbook(root / 'VCU_inputs.xlsx'):
         raise ValueError('Generated data does not match the saved workbook. Rebuild first.')
@@ -60,6 +66,8 @@ def create_checkpoint(root, actor, source_commit):
         staged.mkdir()
         shutil.copy2(root / 'VCU_inputs.xlsx', staged / 'VCU_inputs.xlsx')
         shutil.copy2(root / required[2], staged / 'VCU_control_package.pdf')
+        if has_audit:
+            shutil.copy2(root / audit[1], staged / 'VCU_detailed_audit.pdf')
         shutil.copytree(generated, staged / 'generated')
         if evidence.exists():
             shutil.copytree(evidence, staged / 'evidence')

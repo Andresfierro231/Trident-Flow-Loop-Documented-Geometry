@@ -94,7 +94,8 @@ class GeometryTests(unittest.TestCase):
             m=g.generate(fn,Path(temp)/'out')
             self.assertAlmostEqual(m['sensors'][0]['axis_xyz_mm'][1],200,5)
             self.assertIn('B + 200.0 mm',(Path(temp)/'out/sensors.svg').read_text())
-            self.assertIn('200.000',(Path(temp)/'out/VCU_control_package.tex').read_text())
+            self.assertIn('B + 200.0 mm',(Path(temp)/'out/VCU_control_package.tex').read_text())
+            self.assertIn('200.000',(Path(temp)/'out/VCU_detailed_audit.tex').read_text())
             self.assertTrue(any('edited input' in n for n in m['notes']))
 
 

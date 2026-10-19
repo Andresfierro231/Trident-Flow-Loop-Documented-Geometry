@@ -88,6 +88,40 @@ class ControlRecordsTests(unittest.TestCase):
             records = json.loads((Path(temp)/'out/resolved_inputs.json').read_text())
             self.assertEqual(records['Form pipe'][1]['Reference only'], '1219.200 mm')
 
+    def test_short_document_preserves_evidence_in_separate_audit(self):
+        with tempfile.TemporaryDirectory() as temp:
+            g.generate(ROOT/'tests/fixtures/VCU_inputs.xlsx', Path(temp))
+            short = (Path(temp)/'VCU_control_package.tex').read_text()
+            audit = (Path(temp)/'VCU_detailed_audit.tex').read_text()
+            self.assertNotIn('TO CONFIRM', short)
+            self.assertNotIn('Complete requirements and evidence register', short)
+            self.assertIn('Complete requirements and evidence register', audit)
+            self.assertIn('TO CONFIRM', audit)
+            for row in self.tables['Requirements']:
+                self.assertIn(row['Field ID'] + ' | ', audit)
+            for row in self.tables['Review issues']:
+                self.assertIn(row['Issue ID'] + ' | ', short)
+            for report in (short, audit):
+                labels = re.findall(r'\\label\{([^}]+)\}', report)
+                self.assertEqual(len(labels), len(set(labels)))
+                self.assertTrue(set(re.findall(r'\\hyperref\[([^]]+)\]', report)).issubset(labels))
+
+    def test_entered_calibration_evidence_is_not_hidden_by_shared_gap_summary(self):
+        self.tables['Calibration'][0]['Last calibration'] = '2026-10-19 test certificate'
+        self.tables['Calibration'][0]['Uncertainty'] = '0.25 K test uncertainty'
+        model = g.solve(self.tables)
+        report = g.report(self.tables, model, g.diagrams(model), 'test-workbook')
+        self.assertIn('2026-10-19 test certificate', report)
+        self.assertIn('0.25 K test uncertainty', report)
+
+    def test_distinct_model_mappings_survive_summary_fallback(self):
+        self.tables['Calibration'][0]['1-D mapping'] = 'Distinct axial model mapping'
+        self.tables['Calibration'][0]['CFD mapping'] = 'Distinct volume model mapping'
+        model = g.solve(self.tables)
+        report = g.report(self.tables, model, g.diagrams(model), 'test-workbook')
+        self.assertIn('Distinct axial model mapping', report)
+        self.assertIn('Distinct volume model mapping', report)
+
 
 if __name__=='__main__':
     unittest.main()

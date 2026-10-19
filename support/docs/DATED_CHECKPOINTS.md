@@ -31,7 +31,9 @@ revision and checksum. External files are not downloaded automatically.
 Open [Actions → Build document](https://github.com/Andresfierro231/Trident-Flow-Loop-Documented-Geometry/actions/workflows/document.yml).
 The workbook upload starts a build. Open the successful run and download
 **VCU-control-document** under **Artifacts** (GitHub sign-in is required).
-It contains the PDF and its build identity. Check the date, configuration ID,
+It contains **VCU_control_package.pdf** (the concise default),
+**VCU_detailed_audit.pdf** (the full supporting record) and their build identity.
+Check the date, configuration ID,
 drawings and affected tables before sharing it. If the build fails, open the
 failed step for its error; a failed build is not a new usable document.
 
@@ -45,6 +47,7 @@ The workflow builds the workbook again and saves:
 support/checkpoints/YYYY-MM-DD_Configuration-ID/
     VCU_inputs.xlsx
     VCU_control_package.pdf
+    VCU_detailed_audit.pdf
     generated/
     evidence/
     manifest.json
@@ -70,6 +73,10 @@ For a linked project, pull the latest GitHub changes in Overleaf, select
 workbook through Overleaf instead, upload it there, push the Overleaf changes
 to GitHub, wait for Actions to finish, then pull the generated changes back and
 recompile. Recompile alone does not read a changed workbook.
+
+To compile the complete supporting record instead, select `audit.tex` as the
+main document. Both entry points use LaTeX generated from the same workbook.
+The audit retains the forms, phase requests and full requirements/source records.
 
 Overleaf GitHub synchronization requires premium/Commons access and an initial
 link by the project owner. Import this repository as a new Overleaf project if

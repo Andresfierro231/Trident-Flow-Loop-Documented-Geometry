@@ -31,6 +31,14 @@ The checkpoint saves the workbook, PDF, generated records, evidence and file
 hashes together in `support/checkpoints/YYYY-MM-DD_Configuration-ID/`.
 Keep old checkpoints unchanged. No terminal or `make` command is needed.
 
+The default **VCU_control_package.pdf** is the concise configuration record:
+diagrams, technical summaries, open decisions and compact references.
+**VCU_detailed_audit.pdf** is built alongside it and retains the complete forms,
+phase requests, requirements/evidence register and source qualifications.
+Both are included in the **VCU-control-document** download. The workbook and
+complete data exports retain all records. In Overleaf, use `main.tex` for the
+concise document or `audit.tex` for the detailed record.
+
 [Step-by-step checkpoint and Overleaf instructions](support/docs/DATED_CHECKPOINTS.md).
 
 Build instructions, references and tools live in [support/](support/README.md).
