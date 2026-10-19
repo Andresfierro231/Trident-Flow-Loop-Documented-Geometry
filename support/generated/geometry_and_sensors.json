@@ -10,7 +10,7 @@
     "Circumference convention": "Top = 0; right-hand about segment direction",
     "Closure tolerance mm": 0.1,
     "Plan approval": "Unconfirmed",
-    "Prepared by": "Codex / agent-root-cfg002; requested by Andres Fierro",
+    "Prepared by": null,
     "Checked by": null,
     "Editing sequence": "Start with Form tabs, or Insulation regions for whole-region coverage.",
     "Output refresh": "Upload to GitHub; Actions builds the PDF. See support/docs/DATED_CHECKPOINTS.md.",
@@ -1318,5 +1318,5 @@
     "JTC-A/B, branch pipes, tank and coolant plumbing are retained as outstanding scope, not drawn.",
     "Model input draft only: missing bore, property selections, calibrations and approved boundary conditions."
   ],
-  "input_sha256": "f973e12efea86364abeeaac16e16ff8cbf2d28a520667c61774685ebe55cfc03"
+  "input_sha256": "9485aa3457f9bef7348d91543a8682fe90c3c9e8c41c40d0c0f9f70ba67cd9d0"
 }
